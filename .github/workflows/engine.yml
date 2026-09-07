@@ -36,4 +36,5 @@ jobs:
           git config user.name "qfa-engine[bot]"
           git config user.email "engine@qfa.local"
           git add state/chain-state.json
+          git pull --rebase origin main || true
           git diff --cached --quiet || git commit -m "engine state: beat $(date -u +%Y%m%dT%H%M%SZ) [skip ci]" && git push || echo state-push-deferred
