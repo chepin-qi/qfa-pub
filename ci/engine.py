@@ -32,6 +32,32 @@ def push_files(files,message,repo='qfa-quantum-lab',branch='main'):
     ur=gh(f'/repos/chepin-qi/{repo}/git/refs/heads/{branch}','PATCH',{'sha':nc['sha'],'force':False})
     return ('object' in ur) or ('ref' in ur)
 def sha12(b): return hashlib.sha256(b).hexdigest()[:12]
+
+def rebuild_snet(rounds_lines):
+    import ast as _ast
+    def _alist(r):
+        a=r.get("artifacts",[])
+        if isinstance(a,str):
+            try: a=_ast.literal_eval(a)
+            except Exception: a=[a]
+        return list(a) if a else []
+    rr=[json.loads(l) for l in rounds_lines if l.strip()]
+    nodes=[{"id":"genesis-anchor","kind":"chain_anchor","note":"Session-0=2026-08-22T19:55:41Z Initial commit 0d00e958cb"}]
+    edges=[];prev="genesis-anchor";chain=[]
+    for r in rr:
+        nid="R%02d-%s"%(int(r["round"]),str(r["role"]))
+        canon=json.dumps(r,ensure_ascii=False,sort_keys=True)
+        h=hashlib.sha256((prev+canon).encode()).hexdigest();chain.append(h)
+        nodes.append({"id":nid,"kind":"qa_round","round":r["round"],"session":r.get("session"),"role":r.get("role"),"ts":r.get("ts"),"ts_precision":r.get("ts_precision"),"proxy":r.get("proxy"),"content_sha256_12":hashlib.sha256(r.get("content","").encode()).hexdigest()[:12],"hash12":h[:12]})
+        edges.append({"from":prev,"to":nid,"type":"chain_prev"});prev=h
+        for a in _alist(r):
+            edges.append({"from":nid,"to":"art:"+a,"type":"PRODUCED_BY⇄YIELDED"})
+    arts=sorted({a for r in rr for a in _alist(r)})
+    nodes+=[{"id":"art:"+a,"kind":"artifact_ref"} for a in arts]
+    sn={"net":"session-content-tensor-net/v1","line":"qfa","harvest":"transcript_harvest/2 (qf-beat 增量·规范化)","counts":{"rounds":len(rr),"verbatim_live":sum(1 for r in rr if r.get("verbatim") in (True,"True")),"proxy_rounds":sum(1 for r in rr if r.get("proxy") in ("proxy-evidence","proxy-summary","proxy-redact"))},"chain_tip12":chain[-1][:12] if chain else "","nodes":nodes,"edges":edges}
+    sn["state_digest"]=hashlib.sha256(json.dumps({"nodes":nodes,"edges":edges},ensure_ascii=False,sort_keys=True).encode()).hexdigest()
+    return sn
+
 ST='state/chain-state.json'
 st=json.loads(open(ST).read())
 today=time.strftime('%Y-%m-%d',time.gmtime())
@@ -123,7 +149,8 @@ else:
     rounds.append(json.dumps(round_entry,ensure_ascii=False))
     files={'session-raw/qfa/rounds.jsonl':'\n'.join(rounds)+'\n',
            f'capsule/engine/ECAP-{seq:04d}.json':json.dumps(ecap,ensure_ascii=False,indent=1)+'\n',
-           'outbox/qfa-outbox.json':json.dumps(ob,ensure_ascii=False,indent=1)+'\n'}
+           'outbox/qfa-outbox.json':json.dumps(ob,ensure_ascii=False,indent=1)+'\n',
+           'session-raw/qfa/session-content-tensor-net.json':json.dumps(rebuild_snet(rounds),ensure_ascii=False,indent=1)+'\n'}
     if not DRY:
         ok=push_files(files,f"era-CI R{rn} @cfts — engine self-cascade beat: {evs[:120]} [engine]")
         print('private push:',ok)
