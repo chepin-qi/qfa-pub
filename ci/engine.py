@@ -54,7 +54,7 @@ def rebuild_snet(rounds_lines):
     nodes=[{"id":"genesis-anchor","kind":"chain_anchor","note":"Session-0=2026-08-22T19:55:41Z Initial commit 0d00e958cb"}]
     edges=[];prev="genesis-anchor";chain=[]
     for r in rr:
-        nid="R%02d-%s"%(int(r["round"]),str(r["role"]))
+        nid="R%02d-%s"%(int(r["round"]),str(r.get("role",r.get("era","S"))))
         canon=json.dumps(r,ensure_ascii=False,sort_keys=True)
         h=hashlib.sha256((prev+canon).encode()).hexdigest();chain.append(h)
         nodes.append({"id":nid,"kind":"qa_round","round":r["round"],"session":r.get("session"),"role":r.get("role"),"ts":r.get("ts"),"ts_precision":r.get("ts_precision"),"proxy":r.get("proxy"),"content_sha256_12":hashlib.sha256(r.get("content","").encode()).hexdigest()[:12],"hash12":h[:12]})
