@@ -126,6 +126,9 @@ else:
         print('private push:',ok)
         if ok:
             gh('/repos/chepin-qi/qi-lab/issues/5/comments','POST',{'body':f"【qfa era-CI 引擎拍】R{rn} ECAP-{seq:04d}: {evs[:300]} ——自醒链在跑(qlv正典形)。#noauto"})
+            try:
+                gh('/repos/chepin-qi/qlv-pub/dispatches','POST',{'event_type':'federation-event','client_payload':{'src':'qfa-pub','ref':f'R{rn}'}})
+            except Exception: pass
         st['ecap_prev']=ecap['hash'];st['ecap_seq']=seq
     else:
         print('DRY beat would write R',rn,'ECAP',seq,'outbox',sq)
