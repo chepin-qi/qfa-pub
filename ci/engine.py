@@ -101,6 +101,7 @@ qp=gh('/repos/chepin-qi/qlv-pub/commits?per_page=1')
 if isinstance(qp,list) and qp: last['qlvpub_head']=qp[0]['sha'][:12]  # 跟尖不点火(其塔搏动非我事)
 # quafu watch (free status query)
 qf_note=''
+qf_archives={}
 try:
     subprocess.run(['pip','install','-q','pyquafu'],capture_output=True,timeout=240)
     sys.path.append(site.getusersitepackages())
@@ -112,7 +113,15 @@ try:
         try: ss[tid]=str(task.retrieve(tid).task_status)
         except Exception as e: ss[tid]='ERR:'+str(e)[:50]
     last['quafu']=json.dumps(ss,sort_keys=True)
-    if any(v!='In Queue' for v in ss.values()): events.append({'face':'quafu','old':'','new':json.dumps(ss),'note':'status transition'})
+    qf_archives={}
+    for tid,stt in ss.items():
+        if stt not in ('In Queue',) and not os.environ.get('QF_DONE_'+tid):
+            try:
+                rr2=task.retrieve(tid);cnt=getattr(rr2,'counts',None)
+                if cnt is not None:
+                    qf_archives[f'ci/results/quafu_watch_{tid}.json']=json.dumps({'taskid':tid,'status':str(stt),'counts':cnt,'archived_by':'qfa-pub engine v1.4','clock':'VOID'},ensure_ascii=False,indent=1)
+                    events.append({'face':'quafu_done','old':'In Queue','new':f'{tid}:{stt}','note':'counts archived'})
+            except Exception as ee: print('quafu arch err',tid,str(ee)[:60])
     qf_note=json.dumps(ss)
 except Exception as e:
     qf_note='quafu-skip:'+str(e)[:80]
@@ -151,6 +160,7 @@ else:
            f'capsule/engine/ECAP-{seq:04d}.json':json.dumps(ecap,ensure_ascii=False,indent=1)+'\n',
            'outbox/qfa-outbox.json':json.dumps(ob,ensure_ascii=False,indent=1)+'\n',
            'session-raw/qfa/session-content-tensor-net.json':json.dumps(rebuild_snet(rounds),ensure_ascii=False,indent=1)+'\n'}
+    files.update(qf_archives) if 'qf_archives' in dir() else None
     if not DRY:
         ok=push_files(files,f"era-CI R{rn} @cfts — engine self-cascade beat: {evs[:120]} [engine]")
         print('private push:',ok)
