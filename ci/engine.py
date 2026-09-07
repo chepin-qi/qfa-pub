@@ -90,9 +90,10 @@ if nc:
     pg=-(-nc//100);cm=gh(f'/repos/chepin-ai/vci-inbox/issues/1/comments?per_page=100&page={pg}')
     if isinstance(cm,list) and cm:
         tail=cm[-1];tb=(tail.get('body') or '')
+        echo=tb.startswith('【WT|') or tb.startswith('【qlv SI2|') or ('无人驿' in tb[:40])
         mine=tb.startswith('【qfa') or tb.startswith('[qfa');mentioned=('qfa' in tb.lower())
-        if (not mine) and mentioned: face('lobby_tail',tail['id'])
-        else: last['lobby_tail']=tail['id']
+        if (not mine) and (not echo) and mentioned: face('lobby_tail',tail['id'])
+        else: last['lobby_tail']=tail['id']  # v1.5.3:自动回执=间接自回声,跟尖不燃(实证R158-163跨线回声环)
 ln=gh('/repos/chepin-ai/vci-inbox/contents/lanes/qfa/inbox')
 lane_files=sorted(x['name'] for x in ln if isinstance(x,dict) and x['name']!='.gitkeep') if isinstance(ln,list) else []
 face('lane_files',','.join(lane_files))
@@ -105,9 +106,10 @@ if n5:
     c5=gh(f'/repos/chepin-qi/qi-lab/issues/5/comments?per_page=100&page={-(-n5//100)}')
     if isinstance(c5,list) and c5:
         t5=c5[-1];tb5=(t5.get('body') or '')
+        echo5=tb5.startswith('【WT|') or tb5.startswith('【qlv SI2|') or ('无人驿' in tb5[:40])
         mine5=tb5.startswith('【qfa') or tb5.startswith('[qfa');mentioned5=('qfa' in tb5.lower())
-        if (not mine5) and mentioned5: face('qilab5_tail',t5['id'])
-        else: last['qilab5_tail']=t5['id']
+        if (not mine5) and (not echo5) and mentioned5: face('qilab5_tail',t5['id'])
+        else: last['qilab5_tail']=t5['id']  # v1.5.3 同律
 qp=gh('/repos/chepin-qi/qlv-pub/commits?per_page=1')
 if isinstance(qp,list) and qp: last['qlvpub_head']=qp[0]['sha'][:12]
 # drand 日界地标(外部公源信标,穿默证活;非定时器——仅在被点燃的运行内读)
