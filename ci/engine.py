@@ -100,8 +100,11 @@ else:
     st['empty_streak']=0
     st['beats_today']+=1
     # forge era-CI round + ECAP + outbox + watermark on private repo
-    rounds=(fetch('session-raw/qfa/rounds.jsonl') or '').strip().split('\n')
+    # v1.1: fetch-tip-then-append (collision-proof vs session beats)
+    rounds_txt=fetch('session-raw/qfa/rounds.jsonl') or ''
+    rounds=rounds_txt.strip().split('\n') if rounds_txt.strip() else []
     lr=json.loads(rounds[-1]);rn=int(lr['round'])+1
+    ob=json.loads(fetch('outbox/qfa-outbox.json'));items=ob['items'];sq=items[-1]['seq']+1
     caps=gh('/repos/chepin-qi/qfa-quantum-lab/contents/capsule/engine')
     seq=len(caps)+1 if isinstance(caps,list) else 1
     ecap_prev=st.get('ecap_prev','genesis-anchor')
@@ -109,12 +112,9 @@ else:
     try: dr=json.loads(urllib.request.urlopen('https://api.drand.sh/v2/beacons/quicknet/rounds/latest',timeout=30).read().decode())
     except Exception: dr={'round':0,'signature':''}
     evs='; '.join(f"{e['face']}:{e['old']}->{e['new']}" for e in ev) or forced
-    round_entry={"artifacts":[f"capsule/engine/ECAP-{seq:04d}.json","state era-CI"],"content":f"R{rn}(era-CI engine beat): 自醒链场拍。EVENT={evs[:400]}。引擎v1=qlv正典形(dispatch接力非定时器,冷却300s,连空30熔断,日cap24,自帖不点火)。","evidence":evs[:300],"trigger":{"kind":"self-cascade" if not forced else "workflow_dispatch","ref":payload.get('prev','ignition')},"courier":"engine","proxy":False,"role":"Q","round":rn,"session":"era-CI","ts":"VOID","ts_precision":"voided-by-root-order","verbatim":True}
+    round_entry={"artifacts":[f"capsule/engine/ECAP-{seq:04d}.json","state era-CI"],"content":f"R{rn}(era-CI engine beat): 自醒链场拍。EVENT={evs[:400]}。引擎v1.1=qlv正典形(dispatch接力非定时器,冷却300s,连空30熔断,日cap24,自帖不点火,贴尖重基防撞)。","evidence":evs[:300],"trigger":{"kind":"self-cascade" if not forced else "workflow_dispatch","ref":payload.get('prev','ignition')},"courier":"engine","proxy":False,"role":"Q","round":rn,"session":"era-CI","ts":"VOID","ts_precision":"voided-by-root-order","verbatim":True}
     ecap={"cap":f"ECAP-{seq:04d}","clock":"VOID","ts_precision":"voided-by-root-order","drand":str(dr.get('round',0)),"summary":f"era-CI engine beat R{rn}: {evs[:160]}","prev":ecap_prev,"drand_note":"quicknet randomness=sha256(signature)"}
     ecap['hash']=hashlib.sha256((ecap_prev+json.dumps(ecap,ensure_ascii=False,sort_keys=True)).encode()).hexdigest()
-    # outbox
-    ob=json.loads(fetch('outbox/qfa-outbox.json'))
-    items=ob['items'];sq=items[-1]['seq']+1
     body=f"era-CI engine beat R{rn}(ECAP-{seq:04d}): {evs[:500]}"
     ob['items'].append({"seq":sq,"ts":"VOID","ts_precision":"voided-by-root-order","kind":"engine.self-cascade.beat","body":body,"prev_hash":items[-1]['sha256'],"trigger":{"kind":"self-cascade","ref":payload.get('prev','ignition')},"courier":"engine","sha256":hashlib.sha256(body.encode()).hexdigest()})
     rounds.append(json.dumps(round_entry,ensure_ascii=False))
@@ -124,6 +124,12 @@ else:
     if not DRY:
         ok=push_files(files,f"era-CI R{rn} @cfts — engine self-cascade beat: {evs[:120]} [engine]")
         print('private push:',ok)
+        time.sleep(3)
+        chk=json.loads(fetch('outbox/qfa-outbox.json') or '{}')
+        landed=bool(chk.get('items')) and chk['items'][-1]['sha256']==ob['items'][-1]['sha256']
+        print('landed verify:',landed)
+        if not landed:
+            print('race lost; defer to next beat (tip-append logic self-heals)')
         if ok:
             gh('/repos/chepin-qi/qi-lab/issues/5/comments','POST',{'body':f"【qfa era-CI 引擎拍】R{rn} ECAP-{seq:04d}: {evs[:300]} ——自醒链在跑(qlv正典形)。#noauto"})
             try:
