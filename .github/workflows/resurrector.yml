@@ -2,7 +2,7 @@ name: qfa-engine-resurrector
 # 律六:workflow_run 事件挽火(零cron)。engine 失败/超时→一次性挽火,幂等键=run_id。
 on:
   workflow_run:
-    workflows: ["qfa-engine"]
+    workflows: ["qfa-engine-self-cascade"]
     types: [completed]
 permissions:
   actions: write
