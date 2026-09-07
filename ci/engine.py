@@ -99,7 +99,8 @@ face('lane_files',','.join(lane_files))
 for n_ in (4,5,6,7):
     ii=gh(f'/repos/chepin-ai/vci-inbox/issues/{n_}')
     face(f'issue{n_}_c',ii.get('comments',0))
-i5=gh('/repos/chepin-qi/qi-lab/issues/5');n5=i5.get('comments',0);face('qilab5_n',n5)
+i5=gh('/repos/chepin-qi/qi-lab/issues/5');n5=i5.get('comments',0)
+last['qilab5_n']=n5  # v1.5.2:计数面跟尖不燃——我引擎烽火自增n5致自激环(实证R153-155),燃点=尾帖非我且@qfa
 if n5:
     c5=gh(f'/repos/chepin-qi/qi-lab/issues/5/comments?per_page=100&page={-(-n5//100)}')
     if isinstance(c5,list) and c5:
