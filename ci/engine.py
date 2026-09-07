@@ -49,7 +49,7 @@ ib=fetch('inbox/qfa-inbox.json') or '{"tasks":[]}'
 ibj=json.loads(ib);ids=[t.get('id') for t in ibj['tasks']]
 face('inbox_len',len(ibj['tasks']));face('inbox_max',str(max([i for i in ids if isinstance(i,int)]or[0])))
 i1=gh('/repos/chepin-ai/vci-inbox/issues/1');nc=i1.get('comments',0)
-face('lobby_n',nc)
+last['lobby_n']=nc  # 纯计数跟尖不燃,燃点=尾帖qfa名
 if nc:
     pg=-(-nc//100);cm=gh(f'/repos/chepin-ai/vci-inbox/issues/1/comments?per_page=100&page={pg}')
     if isinstance(cm,list) and cm:
