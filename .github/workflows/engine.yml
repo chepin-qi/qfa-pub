@@ -27,7 +27,7 @@ jobs:
           GH_PAT: ${{ secrets.GH_PAT }}
           QF_QUAFU_KEY: ${{ secrets.QF_QUAFU_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PAYLOAD: ${{ toJson(github.event.client_payload) }}
+          PAYLOAD: ${{ toJson(github.event.client_payload) || toJson(github.event.inputs) || '{}' }}
         run: python3 ci/engine.py
       - name: persist state
         env:

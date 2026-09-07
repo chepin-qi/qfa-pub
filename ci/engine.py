@@ -36,7 +36,7 @@ ST='state/chain-state.json'
 st=json.loads(open(ST).read())
 today=time.strftime('%Y-%m-%d',time.gmtime())
 if st.get('day')!=today: st['day']=today;st['beats_today']=0;st['empty_streak']=0
-payload=json.loads(os.environ.get('PAYLOAD','{}'))
+payload=json.loads(os.environ.get('PAYLOAD') or '{}') or {}
 forced=payload.get('reason','')
 # ---- harvest faces ----
 last=st.setdefault('last',{})
