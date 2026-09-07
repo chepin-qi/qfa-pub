@@ -2,13 +2,13 @@
  "v": "engine-state/1",
  "ignited": "beat-42",
  "day": "2026-09-07",
- "beats_today": 6,
+ "beats_today": 7,
  "empty_streak": 0,
  "last": {
   "inbox_len": 41,
   "inbox_max": "38",
-  "lobby_n": 869,
-  "lobby_tail": 5565777561,
+  "lobby_n": 871,
+  "lobby_tail": 5565922169,
   "lane_files": "",
   "issue4_c": 0,
   "issue5_c": 0,
@@ -16,11 +16,11 @@
   "issue7_c": 0,
   "qilab5_n": 157,
   "qilab5_tail": 5565867844,
-  "qlvpub_head": "2a23f947807a",
+  "qlvpub_head": "ab7ef755a4d0",
   "quafu": "{\"8BAFA1E022273996\": \"In Queue\", \"8BB169201FA3F5D4\": \"In Queue\", \"8CAEDC103963FC6D\": \"In Queue\"}"
  },
- "ecap_prev": "0e2ea47626937dac542ad7b94b7c4acab0a201d38e9c584a7d242ec09c43d12e",
- "ecap_seq": 41,
+ "ecap_prev": "cae23b9cf0f86231a05c434cdcfb374658095731cfbb9c4636639b67eee53396",
+ "ecap_seq": 42,
  "note": "v1.2 dampened 2026-09-07: v1.1 noise-runaway 41 beats in 2h (face-churn as events, cap leaked via state-push races) — 案在账不抹史; counter restarted 6/12",
- "last_run": "2026-09-07T06:12:12Z"
+ "last_run": "2026-09-07T06:17:56Z"
 }
