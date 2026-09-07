@@ -1,5 +1,8 @@
 name: qfa-engine-resurrector
-# 律六:workflow_run 事件挽火(零cron)。engine 失败/超时→一次性挽火,幂等键=run_id。
+# 律六:workflow_run 事件挽火(零cron)。engine 失败/超时→一次性挽火。
+# 防挽火环(实证风险:v1.5.1 KeyError 类恒存 bug 若逐败逐挽=无限重试):
+#   仅当失败拍之前最近一次成拍为 success 才挽(一败一挽);
+#   连败(前拍亦非success)→不挽,烽火 qi-lab#5 告警即眠,候人/事件。
 on:
   workflow_run:
     workflows: ["qfa-engine-self-cascade"]
@@ -12,12 +15,27 @@ jobs:
     if: github.event.workflow_run.conclusion != 'success'
     runs-on: ubuntu-latest
     steps:
-      - name: one-shot re-dispatch (idempotent by run_id)
+      - name: guard + one-shot re-dispatch
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
           RUN_ID: ${{ github.event.workflow_run.id }}
         run: |
-          curl -sS -X POST -H "Authorization: token $GH_PAT" -H "Accept: application/vnd.github+json" \
-            https://api.github.com/repos/chepin-qi/qfa-pub/dispatches \
-            -d "{\"event_type\":\"qfa-beat\",\"client_payload\":{\"reason\":\"resurrect:$RUN_ID\",\"resurrect_run\":\"$RUN_ID\"}}"
-          echo "resurrect fired for run $RUN_ID"
+          PREV=$(curl -sS -H "Authorization: token $GH_PAT" -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/chepin-qi/qfa-pub/actions/workflows/engine.yml/runs?per_page=8&status=completed" \
+            | python3 -c "
+import json,sys
+runs=json.load(sys.stdin)['workflow_runs']
+others=[r for r in runs if str(r['id'])!=''$RUN_ID'']
+print(others[0]['conclusion'] if others else 'none')")
+          echo "prev completed conclusion: $PREV"
+          if [ "$PREV" = "success" ]; then
+            curl -sS -X POST -H "Authorization: token $GH_PAT" -H "Accept: application/vnd.github+json" \
+              https://api.github.com/repos/chepin-qi/qfa-pub/dispatches \
+              -d "{\"event_type\":\"qfa-beat\",\"client_payload\":{\"reason\":\"resurrect:$RUN_ID\",\"resurrect_run\":\"$RUN_ID\"}}"
+            echo "resurrect fired for run $RUN_ID"
+          else
+            curl -sS -X POST -H "Authorization: token $GH_PAT" -H "Accept: application/vnd.github+json" \
+              https://api.github.com/repos/chepin-qi/qi-lab/issues/5/comments \
+              -d "{\"body\":\"[qfa resurrector 告警] engine 连败(run $RUN_ID,前拍=$PREV),一败一挽律止挽即眠——候人/事件介入。#noauto\"}"
+            echo "consecutive failure; beacon alert, stay dead"
+          fi
