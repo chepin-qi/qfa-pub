@@ -1,11 +1,26 @@
 {
  "v": "engine-state/1",
  "ignited": "beat-42",
- "day": "",
- "beats_today": 0,
+ "day": "2026-09-07",
+ "beats_today": 1,
  "empty_streak": 0,
- "last": {},
- "ecap_prev": "genesis-anchor",
- "ecap_seq": 0,
- "note": "public: counters+hash pointers only"
+ "last": {
+  "inbox_len": 41,
+  "inbox_max": "38",
+  "lobby_n": 864,
+  "lobby_tail": 5564836206,
+  "lane_files": "",
+  "issue4_c": 0,
+  "issue5_c": 0,
+  "issue6_c": 0,
+  "issue7_c": 0,
+  "qilab5_n": 96,
+  "qilab5_tail": 5564878661,
+  "qlvpub_head": "04a504242ad5",
+  "quafu": "{\"8BAFA1E022273996\": \"In Queue\", \"8BB169201FA3F5D4\": \"In Queue\", \"8CAEDC103963FC6D\": \"In Queue\"}"
+ },
+ "ecap_prev": "b0c6a0254a898d43c101966bd5aedc8d9be901899574cc78ee4f19d515c0fc6d",
+ "ecap_seq": 1,
+ "note": "public: counters+hash pointers only",
+ "last_run": "2026-09-07T04:08:28Z"
 }
