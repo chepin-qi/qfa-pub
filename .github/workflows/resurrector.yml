@@ -1,0 +1,23 @@
+name: qfa-engine-resurrector
+# 律六:workflow_run 事件挽火(零cron)。engine 失败/超时→一次性挽火,幂等键=run_id。
+on:
+  workflow_run:
+    workflows: ["qfa-engine"]
+    types: [completed]
+permissions:
+  actions: write
+  contents: read
+jobs:
+  resurrect:
+    if: github.event.workflow_run.conclusion != 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - name: one-shot re-dispatch (idempotent by run_id)
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+          RUN_ID: ${{ github.event.workflow_run.id }}
+        run: |
+          curl -sS -X POST -H "Authorization: token $GH_PAT" -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/chepin-qi/qfa-pub/dispatches \
+            -d "{\"event_type\":\"qfa-beat\",\"client_payload\":{\"reason\":\"resurrect:$RUN_ID\",\"resurrect_run\":\"$RUN_ID\"}}"
+          echo "resurrect fired for run $RUN_ID"
