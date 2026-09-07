@@ -1,0 +1,39 @@
+name: qfa-engine-self-cascade
+on:
+  repository_dispatch:
+    types: [qfa-beat]
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'ignition reason'
+        required: false
+        default: 'manual'
+# 禁定时器律:无 schedule。每拍=事件点燃;链=事件接力。
+permissions:
+  contents: write
+concurrency:
+  group: qfa-engine
+  cancel-in-progress: false
+jobs:
+  beat:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: engine beat
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+          QF_QUAFU_KEY: ${{ secrets.QF_QUAFU_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PAYLOAD: ${{ toJson(github.event.client_payload) }}
+        run: python3 ci/engine.py
+      - name: persist state
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "qfa-engine[bot]"
+          git config user.email "engine@qfa.local"
+          git add state/chain-state.json
+          git diff --cached --quiet || git commit -m "engine state: beat $(date -u +%Y%m%dT%H%M%SZ) [skip ci]" && git push || echo state-push-deferred

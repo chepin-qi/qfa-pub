@@ -1,0 +1,11 @@
+{
+ "v": "engine-state/1",
+ "ignited": "beat-42",
+ "day": "",
+ "beats_today": 0,
+ "empty_streak": 0,
+ "last": {},
+ "ecap_prev": "genesis-anchor",
+ "ecap_seq": 0,
+ "note": "public: counters+hash pointers only"
+}
