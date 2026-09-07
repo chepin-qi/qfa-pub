@@ -2,7 +2,7 @@
  "v": "engine-state/1",
  "ignited": "beat-42",
  "day": "2026-09-07",
- "beats_today": 7,
+ "beats_today": 8,
  "empty_streak": 0,
  "last": {
   "inbox_len": 41,
@@ -14,13 +14,13 @@
   "issue5_c": 0,
   "issue6_c": 0,
   "issue7_c": 0,
-  "qilab5_n": 110,
-  "qilab5_tail": 5565034195,
+  "qilab5_n": 113,
+  "qilab5_tail": 5565069235,
   "qlvpub_head": "aab8d0407efe",
   "quafu": "{\"8BAFA1E022273996\": \"In Queue\", \"8BB169201FA3F5D4\": \"In Queue\", \"8CAEDC103963FC6D\": \"In Queue\"}"
  },
- "ecap_prev": "52b46537c1c7f01faa8c53b0dbbf7430aea4216c73d8aa4889faeda528294868",
- "ecap_seq": 13,
+ "ecap_prev": "293b5169e5b81ac660040819ff550c277da1de0c60d15923953f9be404d0ed2f",
+ "ecap_seq": 15,
  "note": "public: counters+hash pointers only",
- "last_run": "2026-09-07T04:30:22Z"
+ "last_run": "2026-09-07T04:34:00Z"
 }
