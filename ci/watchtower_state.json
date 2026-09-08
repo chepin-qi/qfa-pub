@@ -10,14 +10,14 @@
       0,
       0,
       0,
-      0,
-      0,
       1,
+      0,
+      0,
       0
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 10,
+    "dominant_bin": 8,
     "C_streak": 0,
     "verdict": "进行式"
   }

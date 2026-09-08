@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-08T11:32:47Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "selftest",
+    "ref": "WT-SELFTEST-01",
+    "high_value": false
+  },
+  "verdict": "【WT判词】事件:WT-SELFTEST-01 巡塔自检，以TOWER-NUDGE-02-cfts铸塔为样例，验证开工→落账全链。|性态:自环验证，无外部触发，未涉真机钱面，流程空转。|建议处置:逐段执行扫描→细收→裁决→落账；落账标记SELFTEST-VOID；裸候不主动外呼；诚实边界内不编未测数据。|锚:米田边律/WAKE-PROTO/AUTH-OTP-02",
+  "usage": {
+    "prompt_tokens": 211,
+    "completion_tokens": 638,
+    "total_tokens": 849,
+    "completion_tokens_details": {
+      "reasoning_tokens": 516
+    }
+  }
+}
