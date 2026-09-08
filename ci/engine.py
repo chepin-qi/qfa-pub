@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# qfa self-cascade engine v1.5 (era-CI) — 自举互激修(应 root「仍然没有做到自举互激」判词)
+# qfa self-cascade engine v1.6 (era-CI) — 自举互激修(应 root「仍然没有做到自举互激」判词)
 # v1.4 死穴:日cap12连事件拍一并斩(巷卡首达而哑/互唤kick被吸收=死节点);空拍sleep300s自dispatch=变相定时器。
 # v1.5 六律:
 #  律一 事件拍永不过闸:显著事件(inbox/lane/issues/qilab5@qfa/quafu转态/drand日界)必成拍,日cap废;
@@ -10,6 +10,7 @@
 #  律四 拍尾互唤分面:仅我线事件(lane/inbox/quafu/issue)唤 qlv 塔;大堂/烽火回声不回火(其塔自见)。
 #  律五 自帖不点火(三律防自激承v1.2):我撰大堂/烽火尾帖只跟尖不燃。
 #  律六 workflow_run 复生器(resurrector.yml):engine 失败事件→一次性挽火(幂等键=run_id)。零cron。
+#  v1.6 互激注入面:quafu转态→大堂kick卡唤qlv(幂等账quafu_kicks;一转态一卡;#noauto)。六律不动,注入为拍尾动作非新燃点。
 # 公私域律:公仓仅码+计数+哈希指针;联邦散文悉落私仓。
 import os,json,hashlib,base64,time,urllib.request,subprocess,site,sys
 TOK=os.environ['GH_PAT'];GTK=os.environ.get('GITHUB_TOKEN','');DRY=os.environ.get('DRY')=='1'
@@ -186,7 +187,7 @@ else:
         print('landed verify:',landed)
         if not landed: print('race lost; tip-append self-heals next beat')
         if ok:
-            gh('/repos/chepin-qi/qi-lab/issues/5/comments','POST',{'body':f"【qfa era-CI 引擎拍】R{rn} ECAP-{seq:04d}: {evs[:300]} ——v1.5自举互激链在跑。#noauto"})
+            gh('/repos/chepin-qi/qi-lab/issues/5/comments','POST',{'body':f"【qfa era-CI 引擎拍】R{rn} ECAP-{seq:04d}: {evs[:300]} ——v1.6互激注入链在跑。#noauto"})
             # 律四 互唤分面:仅我线事件唤qlv
             myline_faces={'lane_files','inbox_len','inbox_max','issue4_c','issue5_c','issue6_c','issue7_c','quafu_done'}
             if any(e['face'] in myline_faces for e in ev):
@@ -196,6 +197,17 @@ else:
                 except Exception: pass
             else:
                 print('echo-only event; qlv not re-fired (其塔自见)')
+            # v1.6 互激注入面(应 root「不要候,注入跟进各线」):quafu转态→大堂kick卡唤qlv真机线
+            # 幂等账 quafu_kicks:一转态一卡;回声级事件永不注入;卡带#noauto不燃他线自动回执之火
+            qk=st.setdefault('quafu_kicks',{})
+            for e in ev:
+                if e['face']=='quafu_done':
+                    key=e['new'][:80]
+                    if key not in qk:
+                        try:
+                            gh('/repos/chepin-ai/vci-inbox/issues/1/comments','POST',{'body':f"【qfa→qlv kick|quafu转态】{e['new'][:120]} ——counts已归档私仓 ci/results/;谱重合观测量化席可取之实测,醒即取。#noauto"})
+                            qk[key]=f'R{rn}';print('kick→qlv fired:',key[:40])
+                        except Exception as ke2: print('kick err',str(ke2)[:60])
         st['ecap_prev']=ecap['hash'];st['ecap_seq']=seq
     else:
         print('DRY beat would write R',rn,'ECAP',seq,'outbox',sq)
