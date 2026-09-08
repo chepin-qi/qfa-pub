@@ -248,6 +248,16 @@ def main():
         except Exception as e:
             qlv_wake = 'pair.err ' + str(e)[:120]
     print(json.dumps({'events': len(evs), 'fired': fired, 'cascade': cascade, 'pend': pend, 'qlv_wake': qlv_wake}, ensure_ascii=False))
+    # AUTORESPONDER-01 输入件:事件面落盘(高值事件供 SI2 应答段)
+    try:
+        ard = os.path.join(ROOT, 'ci', 'auto-receipts')
+        os.makedirs(ard, exist_ok=True)
+        if evs:
+            json.dump({'ts': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()),
+                       'evs': evs[:5], 'pend': pend},
+                      open(os.path.join(ard, '_last_event.json'), 'w'), ensure_ascii=False)
+    except Exception as e:
+        print('last_event.err', str(e)[:100])
 
 if __name__ == '__main__':
     main()
