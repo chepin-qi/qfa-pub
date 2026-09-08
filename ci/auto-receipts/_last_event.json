@@ -1,0 +1,1 @@
+{"ts": "2026-09-08T11:09:31Z", "evs": [{"kind": "selftest", "ref": "WT-SELFTEST-01", "summary": "巡塔自检:以 TOWER-NUDGE-02-cfts 铸塔为样例事件,验证 开工→落账 全链。", "high_value": false}], "pend": []}

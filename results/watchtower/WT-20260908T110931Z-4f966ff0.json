@@ -1,0 +1,10 @@
+{
+  "ts": "2026-09-08T11:09:31Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "selftest",
+    "ref": "WT-SELFTEST-01",
+    "high_value": false
+  },
+  "verdict_error": "NO-KEY:开工面候装钥 KIMI_API_KEY_VCI1(钱面不越)"
+}
