@@ -1,0 +1,24 @@
+{
+  "cadence": {
+    "v": "METER-CADENCE-01-cand",
+    "w12": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "sigma": 1.0,
+    "lock": null,
+    "dominant_bin": 0,
+    "C_streak": 1,
+    "verdict": "C-窗"
+  }
+}
