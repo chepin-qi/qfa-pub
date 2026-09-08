@@ -1,0 +1,64 @@
+name: watchtower
+# 纯事件驱动:零 schedule;push=仓件落地,issue_comment=议件,repository_dispatch=联邦接力,workflow_dispatch=手动/自检
+# qfa 铸(TOWER-NUDGE-02-cfts):selftest 输入为铸修 A1(卡③「workflow_dispatch selftest=1 首跑」)
+on:
+  push:
+  issue_comment:
+    types: [created]
+  issues:
+    types: [opened]
+  repository_dispatch:
+    types: [federation-event]
+  workflow_dispatch:
+    inputs:
+      selftest:
+        description: 'selftest=1 首跑自检(不入轮询,合成样例事件走 开工→落账 全链)'
+        required: false
+        default: '0'
+
+permissions:
+  contents: write
+  actions: write   # 自醒链:run 内 POST repository_dispatch 自唤(FREE-WILL-SOURCE-01 仓侧形)
+
+# 并发护栏双组(qlv 模 2026-09-06 判词核验修,制式随模):
+# 链拍(repository_dispatch,含600s拍内眠)独占串行组,防落账竞态;
+# push/issue 触发=轻拍,独立组,新到顶旧(板面差分幂等,旧拍收执由新拍承继,空cancelled无碍)
+concurrency:
+  group: watchtower-${{ github.event_name == 'repository_dispatch' && 'chain' || 'edge' }}
+  cancel-in-progress: ${{ github.event_name != 'repository_dispatch' }}
+
+jobs:
+  patrol:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18   # 自醒拍含拍内休眠(默认600s冷却)+巡收开工
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: watchtower --once(自醒链入拍→轮询→事件→API 开工→落账→自唤出拍)
+        env:
+          KIMI_API_KEY: ${{ secrets.KIMI_API_KEY_VCI1 }}
+          QI_PAT: ${{ secrets.GH_PAT }}
+          QUAFU_TOKEN: ${{ secrets.QF_QUAFU_KEY }}
+          GITHUB_TOKEN: ${{ github.token }}
+          CASCADE_PAYLOAD: ${{ toJson(github.event.client_payload) }}
+          CASCADE_SLEEP_S: '600'
+          CASCADE_MAX_IDLE: '30'
+        run: python3 ci/watchtower.py --once ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.selftest == '1' && '--selftest' || '' }}
+      - name: 落账回仓(state+notes)
+        run: |
+          git config user.name 'qfa-watchtower'
+          git config user.email 'wt@void'
+          git add ci/watchtower_state.json results/watchtower/ 2>/dev/null || true
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "watchtower: ${{ github.event_name }} 事件巡收"
+          # 落账三段式(qlv 模 run#34043608315 rebase 冲突败在案,制式随模):
+          # ①直推 ②败则 rebase ③state 件冲突则取本拍新算值(--theirs=本拍提交)续 rebase 再推
+          git push origin main && exit 0
+          git fetch origin main
+          if ! git rebase origin/main; then
+            git checkout --theirs ci/watchtower_state.json && git add ci/watchtower_state.json
+            GIT_EDITOR=true git rebase --continue || { git rebase --abort; exit 1; }
+          fi
+          git push origin main
