@@ -2,10 +2,10 @@
   "cadence": {
     "v": "METER-CADENCE-01-cand",
     "w12": [
+      0,
+      0,
+      0,
       1,
-      0,
-      0,
-      0,
       0,
       0,
       0,
@@ -17,8 +17,8 @@
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 0,
-    "C_streak": 1,
-    "verdict": "C-窗"
+    "dominant_bin": 3,
+    "C_streak": 0,
+    "verdict": "进行式"
   }
 }
