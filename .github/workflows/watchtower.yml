@@ -46,11 +46,17 @@ jobs:
           CASCADE_SLEEP_S: '600'
           CASCADE_MAX_IDLE: '30'
         run: python3 ci/watchtower.py --once ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.selftest == '1' && '--selftest' || '' }}
+      - name: autoresponder(SI2 自动应答:高值事件→Kimi API 判词→本地回执+大堂互激帖)
+        if: always()
+        env:
+          KIMI_API_KEY: ${{ secrets.KIMI_API_KEY_VCI1 }}
+          QI_PAT: ${{ secrets.GH_PAT }}
+        run: python3 ci/autoresponder.py || true
       - name: 落账回仓(state+notes)
         run: |
           git config user.name 'qfa-watchtower'
           git config user.email 'wt@void'
-          git add ci/watchtower_state.json results/watchtower/ 2>/dev/null || true
+          git add ci/watchtower_state.json ci/auto-receipts/ results/watchtower/ 2>/dev/null || true
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "watchtower: ${{ github.event_name }} 事件巡收"
           # 落账三段式(qlv 模 run#34043608315 rebase 冲突败在案,制式随模):
