@@ -2,10 +2,10 @@
  "cadence": {
   "v": "METER-CADENCE-01-cand",
   "w12": [
+   1,
    0,
    0,
-   1,
-   1,
+   0,
    0,
    0,
    0,
@@ -17,12 +17,12 @@
   ],
   "sigma": 1.0,
   "lock": null,
-  "dominant_bin": 2,
-  "C_streak": 0,
-  "verdict": "进行式"
+  "dominant_bin": 0,
+  "C_streak": 1,
+  "verdict": "C-窗"
  },
- "beacon_max": 5605250913,
- "qlv_head": "c4bd78fa0927ba17e18c56f75bdaa873a07f82eb",
+ "beacon_max": 5605425365,
+ "qlv_head": "75e1dee0f63fd3c8d79ea8487e8986464a627782",
  "quafu": {
   "8CAEDC103963FC6D": "0",
   "8BAFA1E022273996": "0",
@@ -40,7 +40,7 @@
  },
  "autoresp": {
   "date": "2026-09-09",
-  "calls": 7,
-  "last_fp": "8db79ca39bc6"
+  "calls": 8,
+  "last_fp": "e83768714832"
  }
 }

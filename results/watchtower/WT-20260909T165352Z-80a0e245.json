@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-09T16:53:31Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "qlv.beat",
+    "ref": "75e1dee0",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qlv-pub main HEAD 迁移 c4bd78fa→75e1dee0| 性态:常规前向推进，无回滚、冲突或异常标识，属正常 beat 节拍| 建议处置:裸候，常规落账，不主动干预| 锚:ref=75e1dee0; 前锚 c4bd78fa",
+  "usage": {
+    "prompt_tokens": 200,
+    "completion_tokens": 746,
+    "total_tokens": 946,
+    "cached_tokens": 200,
+    "completion_tokens_details": {
+      "reasoning_tokens": 659
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 200
+    }
+  }
+}
