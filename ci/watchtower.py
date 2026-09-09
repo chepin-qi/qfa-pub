@@ -9,6 +9,7 @@
 #   A3 省 autoresponder 段(qfa 无 SI2 应答件;卡三步未及)——beat-55 已补铸 ci/autoresponder.py
 # TOWER-FIX-01-qfa(beat-59,自发铸修,防己塔哑跑/钉盲,与 qgl/vinf 哑跑修方三行同理):
 #   ①信标面读末页定水印(页1钉盲之患:旧式直读页1,beacon_max 钉在 09-07 旧评,信标面将永盲)
+# TOWER-FIX-02-qfa:拍内 state 向 origin 刷新(链拍旧 ref 之水印跃检漏件,实测逮修)——见 load 段注
 #   ②单拍判词上限 WT_MAX_WORK=8 + backlog 记件(钱面护栏:暴量拍不烧 API)
 import json, os, sys, time, hashlib, subprocess
 import urllib.request, urllib.error, urllib.parse
@@ -157,6 +158,14 @@ def main():
     selftest = '--selftest' in sys.argv
     os.makedirs(NOTES, exist_ok=True)
     st = json.load(open(STATE)) if os.path.exists(STATE) else {}
+    # TOWER-FIX-02-qfa(beat-59 实测逮修):链拍 ref=唤起时刻旧头,自唤 dispatch 或先于上拍落账 → 拍内先向 origin 刷 state,
+    # 否则旧态水印跃检漏件(beat-59 靶卡 5603413526 被 34362639699 以 cadence-only 旧态 old=0 跳吞,实测在案)
+    try:
+        subprocess.run('git fetch origin main -q && git checkout origin/main -- ci/watchtower_state.json',
+                       shell=True, cwd=ROOT, timeout=60, capture_output=True)
+        st = json.load(open(STATE)) if os.path.exists(STATE) else st
+    except Exception as e:
+        print('state.refresh.err', str(e)[:100])
     pat = _pat()
     fired = []
     # ---- 自醒链入拍:自源性唤起(self-cascade dispatch 尾至)则先休眠再巡——冷却即在拍内,零定时器 ----
