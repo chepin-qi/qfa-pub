@@ -4,7 +4,7 @@
   "w12": [
    0,
    0,
-   0,
+   1,
    0,
    0,
    0,
@@ -17,12 +17,12 @@
   ],
   "sigma": 1.0,
   "lock": null,
-  "dominant_bin": null,
+  "dominant_bin": 2,
   "C_streak": 0,
   "verdict": "进行式"
  },
  "beacon_max": 5604314295,
- "qlv_head": "61d1c528e8692648398e878041a14a550adce956",
+ "qlv_head": "bd2a0f5d8d466def528caefe3ebcfa517a737a0c",
  "quafu": {
   "8CAEDC103963FC6D": "0",
   "8BAFA1E022273996": "0",
@@ -40,7 +40,7 @@
  },
  "autoresp": {
   "date": "2026-09-09",
-  "calls": 4,
-  "last_fp": "27d2a8ef64b6"
+  "calls": 5,
+  "last_fp": "912aeef3a7c3"
  }
 }

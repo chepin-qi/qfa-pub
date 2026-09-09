@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-09T15:43:04Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "qlv.beat",
+    "ref": "bd2a0f5d",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qlv-pub仓库main分支HEAD迁移，源提交61d1c528，目标提交bd2a0f5d。| 性态:qlv.beat触发，属例行版本节拍，无异常告警，正常迭代推进。| 建议处置:已收已裁，无需人工干预，裸候后续流水线/beat反馈。| 锚:git-ref-update机制(https://git-scm.com/book/en/v2/Git-Internals-Git-References)。",
+  "usage": {
+    "prompt_tokens": 205,
+    "completion_tokens": 727,
+    "total_tokens": 932,
+    "completion_tokens_details": {
+      "reasoning_tokens": 622
+    }
+  }
+}
