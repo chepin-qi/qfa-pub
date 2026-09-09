@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-09T16:30:49Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "qlv.beat",
+    "ref": "c4bd78fa",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qlv-pub main HEAD迁移 c5a0d5b6→c4bd78fa| 性态:常规qlv.beat节拍，属版本控制常态推进，未触发异常哨兵，无告警标签| 建议处置:核验c4bd78fa提交签名及CI闸口状态；确认为计划内发版后落账归档；若闸口未过或签名异常则立即冻结回退| 锚:挂接该仓发布工单或流水线编号补全他线追溯链",
+  "usage": {
+    "prompt_tokens": 202,
+    "completion_tokens": 900,
+    "total_tokens": 1102,
+    "cached_tokens": 202,
+    "completion_tokens_details": {
+      "reasoning_tokens": 782
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 202
+    }
+  }
+}

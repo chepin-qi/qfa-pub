@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-09T16:31:16Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:cisvr-draft-beat37-20260909T1608Z-qfa.json",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:巷卡19→20，cisvr-draft-beat37节拍件落柜qfa/inbox| 性态:lane.drop裸候增量，无工具位未实测哈希与内文，无冲突标记| 建议处置:WAKE-PROTO落账，归入beat37草稿序列，裸候不拉取，待cisvr终稿或下一节拍触发合并| 锚:lanes/cisvr/outbox:beat37-chain, lanes/meta/ledger:qfa-drop-20260909T1608Z",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 1300,
+    "total_tokens": 1522,
+    "cached_tokens": 222,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1182
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 222
+    }
+  }
+}
