@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-09T15:21:13Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "qlv.beat",
+    "ref": "61d1c528",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qlv-pub main HEAD 迁移 7a4d30ea→61d1c528(ref=61d1c528)| 性态:分支指针常规迭代，属版本推进/合并落账；未触发异常，diff 未实测扫描| 建议处置:按 WAKE-PROTO 细收变更范围，确认签名及 CI 通过后落账归档；裸候后续 beat 或部署联动| 锚:qlv.dev 线提交一致性交叉校验，ops.ci 锚定 61d1c528 构建结果",
+  "usage": {
+    "prompt_tokens": 202,
+    "completion_tokens": 1182,
+    "total_tokens": 1384,
+    "cached_tokens": 202,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1056
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 202
+    }
+  }
+}
