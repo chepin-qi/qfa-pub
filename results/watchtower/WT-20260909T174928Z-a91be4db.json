@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-09T17:49:01Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "qlv.beat",
+    "ref": "69988574",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qlv-pub main HEAD迁移 38619b09→69988574，beat到件| 性态:头指针漂移，无附异常阻塞或冲突标记，属常规节拍事件；未触发与触发未响应之辨暂不可考| 建议处置:次次落账已收，裸候下一拍；建议巡检69988574提交差分以确认迁移合理性| 锚:qfa.qlv.pub.migrate.69988574",
+  "usage": {
+    "prompt_tokens": 196,
+    "completion_tokens": 984,
+    "total_tokens": 1180,
+    "cached_tokens": 196,
+    "completion_tokens_details": {
+      "reasoning_tokens": 878
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 196
+    }
+  }
+}
