@@ -2,14 +2,14 @@
  "cadence": {
   "v": "METER-CADENCE-01-cand",
   "w12": [
+   2,
+   0,
+   0,
    0,
    0,
    1,
    0,
-   0,
-   0,
-   0,
-   0,
+   1,
    0,
    0,
    0,
@@ -17,18 +17,18 @@
   ],
   "sigma": 1.0,
   "lock": null,
-  "dominant_bin": 2,
-  "C_streak": 0,
-  "verdict": "进行式"
+  "dominant_bin": 0,
+  "C_streak": 1,
+  "verdict": "C-窗"
  },
- "beacon_max": 5604314295,
- "qlv_head": "bd2a0f5d8d466def528caefe3ebcfa517a737a0c",
+ "beacon_max": 5604925394,
+ "qlv_head": "c5a0d5b63b9a7ce5b06a433929c91dabdaf164ad",
  "quafu": {
   "8CAEDC103963FC6D": "0",
   "8BAFA1E022273996": "0",
   "8BB169201FA3F5D4": "0"
  },
- "lane_inbox_count": 18,
+ "lane_inbox_count": 19,
  "faces": {
   "lgt-line#1": 3,
   "vci-cfts#1": 2,
@@ -40,7 +40,7 @@
  },
  "autoresp": {
   "date": "2026-09-09",
-  "calls": 5,
-  "last_fp": "912aeef3a7c3"
+  "calls": 6,
+  "last_fp": "2411a0474624"
  }
 }

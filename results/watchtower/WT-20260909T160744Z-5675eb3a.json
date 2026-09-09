@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-09T16:07:17Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "qlv.beat",
+    "ref": "c5a0d5b6",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件：qlv-pub仓库main分支HEAD迁移，原头bd2a0f5d移至c5a0d5b6| 性态：常规代码集成事件，属正常分支指针移动，无异常告警表征| 建议处置：裸候。落账备查，无需回拉或阻断；若后续CI报红则升单| 锚：c5a0d5b6←bd2a0f5d",
+  "usage": {
+    "prompt_tokens": 207,
+    "completion_tokens": 963,
+    "total_tokens": 1170,
+    "cached_tokens": 207,
+    "completion_tokens_details": {
+      "reasoning_tokens": 859
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 207
+    }
+  }
+}

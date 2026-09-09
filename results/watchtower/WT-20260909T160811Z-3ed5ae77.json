@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-09T16:07:44Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:cisvr-direct-beat35-20260909T135238-qfa.json",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:巷卡18→19切换，cisvr-direct-beat35心跳文件落件inbox|性态:lane.drop报入，属direct-beat序列单文件级轮替；无链式告警实测数据，判为未触发异常响应，非真机掉线|建议处置:归档本件，核对19号心跳连续性；若18号旧卡无回包则标记退役，依AUTH-OTP-02落账后裸候，不主动寻求回应|锚:lanes/qfa/archive:cisvr-direct-beat34-*.json",
+  "usage": {
+    "prompt_tokens": 220,
+    "completion_tokens": 1036,
+    "total_tokens": 1256,
+    "cached_tokens": 220,
+    "completion_tokens_details": {
+      "reasoning_tokens": 910
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 220
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-09T16:06:29Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "beacon.comment",
+    "ref": "qi-lab#5:5604762470",
+    "high_value": false
+  },
+  "verdict": "【WT判词】事件:era-CI拍R195/ECAP-0082，drand_day 1112→1113迭代，v1.6互激注入链带#noauto跑。| 性态:周期计数正常推进，链式注入活跃，无异常告警，属常规comment beacon。| 建议处置:落账归档；因#noauto不触发自动下游，无需干预，持续观测链式状态。| 锚:drand_day周期锚/互激链v1.6运行态。",
+  "usage": {
+    "prompt_tokens": 227,
+    "completion_tokens": 789,
+    "total_tokens": 1016,
+    "cached_tokens": 227,
+    "completion_tokens_details": {
+      "reasoning_tokens": 674
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 227
+    }
+  }
+}
