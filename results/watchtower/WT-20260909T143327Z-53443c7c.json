@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-09T14:32:54Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "beacon.comment",
+    "ref": "qi-lab#5:5603599246",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:beat-59靶件二实测，靶一5603413526链拍旧ref水印跃检跳吞(run34362639699)，态37f74279检出，old=0静默播种，TOWER-FIX-02拍内态刷已铸，自醒链拍自取证SI5→SI3→SI2全链|性态:新亚型「跃检」(stale-ref watermark leapfrog)，拍内态刷修复|建议处置:落账qfa-pub results/，亚型入库续观|锚:qi-lab#5:5603599246",
+  "usage": {
+    "prompt_tokens": 346,
+    "completion_tokens": 1246,
+    "total_tokens": 1592,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1112
+    }
+  }
+}

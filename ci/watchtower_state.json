@@ -1,41 +1,46 @@
 {
-  "cadence": {
-    "v": "METER-CADENCE-01-cand",
-    "w12": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    "sigma": 1.0,
-    "lock": null,
-    "dominant_bin": null,
-    "C_streak": 0,
-    "verdict": "进行式"
-  },
-  "beacon_max": 5603516044,
-  "qlv_head": "a100d940a0c73034abdea2f2050e7283915f84ad",
-  "quafu": {
-    "8CAEDC103963FC6D": "0",
-    "8BAFA1E022273996": "0",
-    "8BB169201FA3F5D4": "0"
-  },
-  "lane_inbox_count": 18,
-  "faces": {
-    "lgt-line#1": 3,
-    "vci-cfts#1": 2,
-    "vci-inbox#3": 5,
-    "vci-inbox#2": 0,
-    "vci-usrm#21": 1,
-    "vci-ucif2#1": 1,
-    "vci-vinf#6": 1
-  }
+ "cadence": {
+  "v": "METER-CADENCE-01-cand",
+  "w12": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0
+  ],
+  "sigma": 1.0,
+  "lock": null,
+  "dominant_bin": 9,
+  "C_streak": 0,
+  "verdict": "进行式"
+ },
+ "beacon_max": 5603599246,
+ "qlv_head": "a100d940a0c73034abdea2f2050e7283915f84ad",
+ "quafu": {
+  "8CAEDC103963FC6D": "0",
+  "8BAFA1E022273996": "0",
+  "8BB169201FA3F5D4": "0"
+ },
+ "lane_inbox_count": 18,
+ "faces": {
+  "lgt-line#1": 3,
+  "vci-cfts#1": 2,
+  "vci-inbox#3": 5,
+  "vci-inbox#2": 0,
+  "vci-usrm#21": 1,
+  "vci-ucif2#1": 1,
+  "vci-vinf#6": 1
+ },
+ "autoresp": {
+  "date": "2026-09-09",
+  "calls": 1,
+  "last_fp": "05713bcd3fe9"
+ }
 }
