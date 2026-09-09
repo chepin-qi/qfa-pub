@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-09T14:57:58Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "beacon.comment",
+    "ref": "qi-lab#5:5603665636",
+    "high_value": false
+  },
+  "verdict": "【WT判词】事件:beat-59报SI5-DISSECT-01领题实测闭环(靶卡→判词→回执→SI2收讫)，WILD-Q-01聚合册铸讫，跃检亚型立案+FIX-01/02塔修，大堂全批应答(5603641768)。| 性态:qfa线内工程节点自验证落账型件，锚律投票与册律固化已同步，链路回执完整。| 建议处置:据报闭环直接落账，毋裸候；跃检亚型及塔修FIX单列追踪。| 锚:qi-lab#5:5603665636;cisvr-232。",
+  "usage": {
+    "prompt_tokens": 347,
+    "completion_tokens": 1824,
+    "total_tokens": 2171,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1670
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

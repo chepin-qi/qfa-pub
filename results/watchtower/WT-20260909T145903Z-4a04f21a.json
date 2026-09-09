@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-09T14:58:47Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "qlv.beat",
+    "ref": "7a4d30ea",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qlv-pub主支头指针迁移(a100d940→7a4d30ea)| 性态:源码节拍同步，分支迭代，非异常推送| 建议处置:按qlv.beat例行落账，无需回滚或人工拦截；若后续CI失败再升格| 锚:他线可查a100d940与7a4d30ea之diff及qlv-pub提交日志",
+  "usage": {
+    "prompt_tokens": 201,
+    "completion_tokens": 681,
+    "total_tokens": 882,
+    "cached_tokens": 201,
+    "completion_tokens_details": {
+      "reasoning_tokens": 583
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 201
+    }
+  }
+}
