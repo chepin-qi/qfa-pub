@@ -6,7 +6,10 @@
 # 铸修在案(对 qlv 模三处适配,制式不变):
 #   A1 workflow_dispatch 增 selftest 输入(卡③「workflow_dispatch selftest=1 首跑」;qlv 模裸 dispatch 无输入)
 #   A2 NO-KEY 降级:KIMI 钥缺→判词面记 verdict_error 不炸拍(巡面/巷面/落账面无钥照跑;钱面候 root 装钥,不越)
-#   A3 省 autoresponder 段(qfa 无 SI2 应答件;卡三步未及)
+#   A3 省 autoresponder 段(qfa 无 SI2 应答件;卡三步未及)——beat-55 已补铸 ci/autoresponder.py
+# TOWER-FIX-01-qfa(beat-59,自发铸修,防己塔哑跑/钉盲,与 qgl/vinf 哑跑修方三行同理):
+#   ①信标面读末页定水印(页1钉盲之患:旧式直读页1,beacon_max 钉在 09-07 旧评,信标面将永盲)
+#   ②单拍判词上限 WT_MAX_WORK=8 + backlog 记件(钱面护栏:暴量拍不烧 API)
 import json, os, sys, time, hashlib, subprocess
 import urllib.request, urllib.error, urllib.parse
 
@@ -62,7 +65,10 @@ def poll(pat, st):
     """返回 events 列表:[{kind, ref, summary, high_value}]"""
     ev = []
     # ① 信标 qi-lab#5 新评论
-    cmts = gh_get('/repos/chepin-qi/qi-lab/issues/5/comments?per_page=100', pat)
+    # TOWER-FIX-01-qfa ①:信标面须读末页(页1=最旧,直读则水印钉死旧页→信标面永盲;issue 元取评论总数定末页)
+    _n = gh_get('/repos/chepin-qi/qi-lab/issues/5', pat).get('comments', 0)
+    _pg = (_n + 99) // 100 or 1
+    cmts = gh_get(f'/repos/chepin-qi/qi-lab/issues/5/comments?per_page=100&page={_pg}', pat)
     mx = max([c['id'] for c in cmts], default=0)
     old = st.get('beacon_max', 0)
     if old and mx > old:
@@ -170,7 +176,16 @@ def main():
         evs = [{'kind':'selftest','ref':'WT-SELFTEST-01','summary':'巡塔自检:以 TOWER-NUDGE-02-cfts 铸塔为样例事件,验证 开工→落账 全链。','high_value':False}]
     else:
         evs = poll(pat, st)
-    for ev in evs:
+    # TOWER-FIX-01-qfa ②:钱面护栏——单拍判词上限 WT_MAX_WORK(默8),溢出记 backlog 件不耗 API;水印照常前进不重扫
+    MAX_WORK = int(os.environ.get('WT_MAX_WORK', '8'))
+    work_evs, backlog_evs = evs[:MAX_WORK], evs[MAX_WORK:]
+    if backlog_evs:
+        bfn = os.path.join(NOTES, 'WT-' + time.strftime('%Y%m%dT%H%M%SZ', time.gmtime()) + '-backlog.json')
+        json.dump({'ts': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()), 'clock': 'VOID',
+                   'backlog': [{'kind': e['kind'], 'ref': e['ref']} for e in backlog_evs],
+                   'note': '钱面护栏:溢出件本拍不判;水印已进,下拍不重扫'},
+                  open(bfn, 'w'), ensure_ascii=False, indent=2)
+    for ev in work_evs:
         # 公仓净化:note 不载原文摘要(私仓面内容不外流),仅 kind/ref/判词
         note = {'ts': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()), 'clock':'VOID',
                 'event': {'kind': ev['kind'], 'ref': ev['ref'], 'high_value': ev.get('high_value', False)}}
