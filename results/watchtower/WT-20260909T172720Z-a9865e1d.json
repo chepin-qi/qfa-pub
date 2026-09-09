@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-09T17:27:00Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "qlv.beat",
+    "ref": "38619b09",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qlv-pub仓库main分支HEAD迁移，75e1dee0→38619b09| 性态:代码版本常规迭代/同步，单节拍事件，未见冲突或异常回滚征象| 建议处置:裸候归档；若接CI线可透传触发下游构建，无需人工拦截| 锚:关联dev线diff审校或pub-release节拍链38619b09",
+  "usage": {
+    "prompt_tokens": 199,
+    "completion_tokens": 797,
+    "total_tokens": 996,
+    "completion_tokens_details": {
+      "reasoning_tokens": 702
+    }
+  }
+}
