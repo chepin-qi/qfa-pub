@@ -11,18 +11,18 @@
       0,
       0,
       0,
-      1,
       0,
-      0
+      0,
+      1
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 9,
+    "dominant_bin": 11,
     "C_streak": 0,
     "verdict": "进行式"
   },
   "beacon_max": 5624547624,
-  "qlv_head": "43a842c443272aa7acfd5be9fe7d1ad2c5a12186",
+  "qlv_head": "ca2641c7b9233029c696d1508801652a04e1a47b",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
