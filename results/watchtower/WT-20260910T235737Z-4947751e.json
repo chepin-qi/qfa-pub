@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-10T23:57:12Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:otp-20260910T232733Z-浪涌一号-lvlu.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop 浪涌一号-lvlu 巷卡16→17 单件到件|性态:otp-02投必有件,摘要到卡;文本工位无工具,未越真机钱面,属裸候不主动求应|建议处置:WAKE-PROTO扫描-细收-裁决-落账毕,巷卡17已入次次落账,候回检|锚:lanes/core/.manifest/otp-02-vault",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 1124,
+    "total_tokens": 1346,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1015
+    }
+  }
+}

@@ -2,33 +2,33 @@
   "cadence": {
     "v": "METER-CADENCE-01-cand",
     "w12": [
-      2,
-      0,
       0,
       0,
       0,
       1,
-      3,
       0,
       0,
       6,
+      0,
+      0,
+      0,
       0,
       0
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 9,
+    "dominant_bin": 6,
     "C_streak": 0,
     "verdict": "进行式"
   },
-  "beacon_max": 5627006699,
-  "qlv_head": "9f6d20897da13db5bd7f5a5addae25d53122c36c",
+  "beacon_max": 5627108930,
+  "qlv_head": "bf29b2dcbdd0183838291101f24a2e6a7be9be40",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
     "8BB169201FA3F5D4": "0"
   },
-  "lane_inbox_count": 16,
+  "lane_inbox_count": 17,
   "faces": {
     "lgt-line#1": 3,
     "vci-cfts#1": 2,
@@ -47,7 +47,7 @@
     "last_fp": "77605983797e"
   },
   "lobby_max": 5626948740,
-  "hub_feed_sha": "95de91614d263504080f9b78ca20ea939b7924f9",
+  "hub_feed_sha": "3b46f75cdd6c1c6d7e4fbbadffa63dc9e1d02f1b",
   "quests": {
     "SEALED-V2-RESEAL": "open",
     "ISSUE-874-COMMENT": "open",
@@ -70,6 +70,7 @@
     "n": 0,
     "idle_run": 0,
     "last": "",
-    "beats": 7
-  }
+    "beats": 8
+  },
+  "idem": []
 }
