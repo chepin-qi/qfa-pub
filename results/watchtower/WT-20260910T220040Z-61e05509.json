@@ -1,0 +1,33 @@
+{
+  "ts": "2026-09-10T22:00:20Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:RESP-beat61-20260910-qfa.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa线beat61 inbox收lane.drop投递，RESP-beat61-20260910-qfa.md指征巷卡2→3级位漂移| 性态:单次级位迁移，未触发风暴，未实测丢包/时延，属常规落位调整| 建议处置:落账归档，比对beat60基线核越真机钱面；裸候，不主动求应| 锚:lanes/core/beat61-base.md",
+  "usage": {
+    "prompt_tokens": 210,
+    "completion_tokens": 1050,
+    "total_tokens": 1260,
+    "cached_tokens": 210,
+    "completion_tokens_details": {
+      "reasoning_tokens": 943
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 210
+    }
+  },
+  "beacon_comment": 5626014587,
+  "resp": "收执。按 lane.drop 摘要，巷卡由 2 转 3 已落位。件文未随附，无实测项，不补叙、不编数。处置完毕。\n\n【锚】lanes/qfa/inbox:RESP-beat61-20260910-qfa.md | lane.drop | 2→3",
+  "resp_usage": {
+    "prompt_tokens": 156,
+    "completion_tokens": 971,
+    "total_tokens": 1127,
+    "completion_tokens_details": {
+      "reasoning_tokens": 897
+    }
+  },
+  "resp_posted": "201"
+}
