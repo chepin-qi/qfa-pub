@@ -65,7 +65,8 @@ jobs:
           git push origin main && exit 0
           git fetch origin main
           if ! git rebase origin/main; then
-            git checkout --theirs ci/watchtower_state.json && git add ci/watchtower_state.json
+            # TOWER-FIX-05b-qfa(抢账逮修,beat-62 实测 run#34535187992):_last_event.json 等非 state 件亦冲突,三段式须全目覆盖
+            git checkout --theirs ci/watchtower_state.json ci/auto-receipts/ && git add ci/watchtower_state.json ci/auto-receipts/
             GIT_EDITOR=true git rebase --continue || { git rebase --abort; exit 1; }
           fi
           git push origin main
