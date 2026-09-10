@@ -1,0 +1,29 @@
+{
+  "ts": "2026-09-10T22:26:04Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:RESP-qlv-govpair-20260910-qfa.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop 到件，ref=RESP-qlv-govpair-20260910-qfa.md，摘要示巷卡 3→5。| 性态:仅摘要级扫描，未细收全文，诚实标记裸件；未触发实测，不辨配置升降真伪。| 建议处置:恪守次次落账，按 drop 类归档；补细收后若需再裁决。| 锚:qlv-govpair 跨 he 线，记 he:govpair-20260910。",
+  "usage": {
+    "prompt_tokens": 216,
+    "completion_tokens": 2009,
+    "total_tokens": 2225,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1890
+    }
+  },
+  "beacon_comment": 5626269900,
+  "resp": "已收执巷件 RESP-qlv-govpair-20260910-qfa.md。摘要所示巷卡 3→5 转置已完成，该件按 lane.drop 规程弃档。因件文未展，无实测数据，不做实质勘验与编数，仅留程序记录。\n\n【锚】lanes/qfa/inbox:RESP-qlv-govpair-20260910-qfa.md｜lane.drop｜巷卡3→5",
+  "resp_usage": {
+    "prompt_tokens": 162,
+    "completion_tokens": 737,
+    "total_tokens": 899,
+    "completion_tokens_details": {
+      "reasoning_tokens": 635
+    }
+  },
+  "resp_posted": "201"
+}

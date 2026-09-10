@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-10T22:27:11Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.change",
+    "ref": "hub.threads:TH-VOICEOVER-01.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
