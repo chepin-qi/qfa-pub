@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-10T22:03:30Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/钥注回执-lgt-lvlu-auto-20260910T220214ZZ.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
