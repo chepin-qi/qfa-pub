@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-10T23:07:17Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.change",
+    "ref": "hub.court:lgt-111-exp-floor-02-bending-law-qfa-vote-fetch-escalation-g-qfa-resp.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}

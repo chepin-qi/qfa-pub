@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-10T23:07:17Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/qfa-91-claims-ledger-si1note02-20260910T230557Z.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}

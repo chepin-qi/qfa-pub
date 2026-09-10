@@ -1,0 +1,27 @@
+{
+  "ts": "2026-09-10T23:07:17Z",
+  "clock": "VOID",
+  "backlog": [
+    {
+      "kind": "hub.feed",
+      "ref": "公告板/qlv-voice-20260910T225500Z.md"
+    },
+    {
+      "kind": "hub.feed",
+      "ref": "公告板/钥注回执-lgt-lvlu-auto-20260910T230354ZZ.md"
+    },
+    {
+      "kind": "hub.feed",
+      "ref": "公告板/vinf-voice-20260910T225216Z.md"
+    },
+    {
+      "kind": "hub.feed",
+      "ref": "公告板/lgt-112-si5-closed-tower-public-migrated-20260910T1615Z.md"
+    },
+    {
+      "kind": "quest.hit",
+      "ref": "USRM-SI1-BRIDGE"
+    }
+  ],
+  "note": "钱面护栏:溢出件本拍不判;水印已进,下拍不重扫"
+}
