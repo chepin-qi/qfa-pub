@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-10T23:12:22Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:RESP-qlv-govpair-20260910-qfa.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}

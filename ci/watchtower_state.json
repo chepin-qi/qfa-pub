@@ -3,32 +3,32 @@
     "v": "METER-CADENCE-01-cand",
     "w12": [
       0,
-      0,
-      0,
       6,
       0,
       0,
+      1,
+      0,
+      0,
+      1,
       0,
       1,
       3,
-      0,
-      1,
-      2
+      0
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 3,
+    "dominant_bin": 1,
     "C_streak": 0,
     "verdict": "进行式"
   },
-  "beacon_max": 5626616874,
-  "qlv_head": "c9f790661c6646ad332ed4ccf5c991d2907aaf2a",
+  "beacon_max": 5626672615,
+  "qlv_head": "a4d3cdec373031c3eec1fa6443e73c105c942c04",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
     "8BB169201FA3F5D4": "0"
   },
-  "lane_inbox_count": 10,
+  "lane_inbox_count": 13,
   "faces": {
     "lgt-line#1": 3,
     "vci-cfts#1": 2,
@@ -47,16 +47,13 @@
     "last_fp": "77605983797e"
   },
   "lobby_max": 5626315226,
-  "hub_feed_sha": "ce7c855200d3462acb1a16a4b50104d026ebbda8",
+  "hub_feed_sha": "cc78538cd5bf9c509b207aaf11778c4ee7985838",
   "quests": {
     "SEALED-V2-RESEAL": "open",
     "ISSUE-874-COMMENT": "open",
     "WILDQ-MERGED-QFA": "open",
     "CFTS-REPO-SEED": "open",
-    "VINF-WILDQ-ANSWER": "open",
-    "LGT-LOOP-PK-APPEAR": "open",
-    "USRM-SI1-BRIDGE": "hit:20260910T230715Z",
-    "QLV-SEMANTIC-V2": "open"
+    "VINF-WILDQ-ANSWER": "open"
   },
   "quests_boot": "2026-09-10T22:00:19Z",
   "qn_ISSUE-874-COMMENT": 0,
