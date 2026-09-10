@@ -121,7 +121,9 @@ def poll(pat, st):
             except Exception:
                 pass
             ev.append({'kind':'lane.drop','ref':f'lanes/qfa/inbox:{latest}',
-                       'summary':f"巷卡 {prev_cnt}→{cnt},最新 {latest}",'high_value':True,'context':_lctx})
+                       'summary':f"巷卡 {prev_cnt}→{cnt},最新 {latest}",
+                       'high_value':not latest.startswith(('RESP-', '_')),  # FIX-05c:自署RESP/账件降格滤自环(首应即燃自帖实测逮修)
+                       'context':_lctx})
         st['lane_inbox_count'] = cnt
     except Exception as e:
         ev.append({'kind':'lane.poll.err','ref':'lanes/qfa/inbox','summary':str(e)[:120],'high_value':False})
