@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-10T22:03:45Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "selftest",
+    "ref": "WT-SELFTEST-01",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
