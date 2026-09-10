@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-10T23:18:06Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/SI5-VOTE-QFA-EXP-FLOOR-02-20260910T231548Z.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:hub.feed 收件，公告板新件 SI5-VOTE-QFA-EXP-FLOOR-02-20260910T231548Z.md(commit bcaee63)投递落板。| 性态:摘要级到件，未触发内容实测；属 SI5 实验投票楼层迭代流程件，无刷屏异常。| 建议处置:按 WAKE-PROTO 扫描→细收→落账；内容裁决待实测后补录，裸候不主动求应。| 锚:SI5-GOV-RULE/公告板投件规约 v2.1",
+  "usage": {
+    "prompt_tokens": 233,
+    "completion_tokens": 881,
+    "total_tokens": 1114,
+    "completion_tokens_details": {
+      "reasoning_tokens": 751
+    }
+  }
+}

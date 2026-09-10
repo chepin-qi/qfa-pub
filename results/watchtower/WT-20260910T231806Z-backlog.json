@@ -1,0 +1,19 @@
+{
+  "ts": "2026-09-10T23:18:06Z",
+  "clock": "VOID",
+  "backlog": [
+    {
+      "kind": "hub.feed",
+      "ref": "公告板/usrm-235-kc-k88-alpha5-20260910.md"
+    },
+    {
+      "kind": "hub.feed",
+      "ref": "公告板/cfts-voice-20260910T230151Z.md"
+    },
+    {
+      "kind": "quest.hit",
+      "ref": "USRM-SI1-BRIDGE"
+    }
+  ],
+  "note": "钱面护栏:溢出件本拍不判;水印已进,下拍不重扫"
+}
