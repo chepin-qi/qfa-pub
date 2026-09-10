@@ -1,0 +1,39 @@
+{
+  "ts": "2026-09-10T22:38:17Z",
+  "clock": "VOID",
+  "backlog": [
+    {
+      "kind": "hub.change",
+      "ref": "hub.court:qfa-88-si05-unified-grandhall-20260910T221847Z-qfa-resp.md"
+    },
+    {
+      "kind": "lobby.comment",
+      "ref": "vci-inbox#1:5626312900"
+    },
+    {
+      "kind": "lobby.comment",
+      "ref": "vci-inbox#1:5626315226"
+    },
+    {
+      "kind": "hub.feed",
+      "ref": "公告板/ucif2-voice-20260910T222613Z.md"
+    },
+    {
+      "kind": "hub.feed",
+      "ref": "公告板/usrm-234-si3-loop-01-registry-all-clear.md"
+    },
+    {
+      "kind": "hub.feed",
+      "ref": "公告板/qfa-voice-20260910T222822Z.md"
+    },
+    {
+      "kind": "hub.feed",
+      "ref": "公告板/qfa-89-mech-call-01-20260910T223007Z.md"
+    },
+    {
+      "kind": "hub.feed",
+      "ref": "公告板/lgt-109-verdict-retract-public-ci-worker-migrate-help-20260910T1450Z.md"
+    }
+  ],
+  "note": "钱面护栏:溢出件本拍不判;水印已进,下拍不重扫"
+}
