@@ -1,49 +1,49 @@
 {
- "cadence": {
-  "v": "METER-CADENCE-01-cand",
-  "w12": [
-   1,
-   0,
-   0,
-   0,
-   0,
-   0,
-   0,
-   0,
-   0,
-   0,
-   0,
-   0
-  ],
-  "sigma": 1.0,
-  "lock": null,
-  "dominant_bin": 0,
-  "C_streak": 1,
-  "verdict": "C-窗"
- },
- "beacon_max": 5616807125,
- "qlv_head": "a14461726ef2f5b3131d18c7cd81bd12524e1026",
- "quafu": {
-  "8CAEDC103963FC6D": "0",
-  "8BAFA1E022273996": "0",
-  "8BB169201FA3F5D4": "0"
- },
- "lane_inbox_count": 17,
- "faces": {
-  "lgt-line#1": 3,
-  "vci-cfts#1": 2,
-  "vci-inbox#3": 5,
-  "vci-inbox#2": 0,
-  "vci-usrm#21": 1,
-  "vci-ucif2#1": 1,
-  "vci-vinf#6": 1,
-  "hub.board": 1000,
-  "hub.court": 4,
-  "hub.threads": 39
- },
- "autoresp": {
-  "date": "2026-09-10",
-  "calls": 12,
-  "last_fp": "77605983797e"
- }
+  "cadence": {
+    "v": "METER-CADENCE-01-cand",
+    "w12": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "sigma": 1.0,
+    "lock": null,
+    "dominant_bin": null,
+    "C_streak": 0,
+    "verdict": "进行式"
+  },
+  "beacon_max": 5616807125,
+  "qlv_head": "a14461726ef2f5b3131d18c7cd81bd12524e1026",
+  "quafu": {
+    "8CAEDC103963FC6D": "0",
+    "8BAFA1E022273996": "0",
+    "8BB169201FA3F5D4": "0"
+  },
+  "lane_inbox_count": 17,
+  "faces": {
+    "lgt-line#1": 3,
+    "vci-cfts#1": 2,
+    "vci-inbox#3": 5,
+    "vci-inbox#2": 0,
+    "vci-usrm#21": 1,
+    "vci-ucif2#1": 1,
+    "vci-vinf#6": 1,
+    "hub.board": 1000,
+    "hub.court": 4,
+    "hub.threads": 39
+  },
+  "autoresp": {
+    "date": "2026-09-10",
+    "calls": 12,
+    "last_fp": "77605983797e"
+  }
 }
