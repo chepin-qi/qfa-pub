@@ -5,10 +5,10 @@
       0,
       0,
       0,
-      1,
+      2,
       0,
       0,
-      6,
+      0,
       0,
       0,
       0,
@@ -17,11 +17,11 @@
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 6,
+    "dominant_bin": 3,
     "C_streak": 0,
     "verdict": "进行式"
   },
-  "beacon_max": 5627108930,
+  "beacon_max": 5627151039,
   "qlv_head": "bf29b2dcbdd0183838291101f24a2e6a7be9be40",
   "quafu": {
     "8CAEDC103963FC6D": "0",
@@ -47,7 +47,7 @@
     "last_fp": "77605983797e"
   },
   "lobby_max": 5626948740,
-  "hub_feed_sha": "3b46f75cdd6c1c6d7e4fbbadffa63dc9e1d02f1b",
+  "hub_feed_sha": "f9a892ea482fc2c02d8b4284384333e62fa7147c",
   "quests": {
     "SEALED-V2-RESEAL": "open",
     "ISSUE-874-COMMENT": "open",
@@ -65,12 +65,15 @@
     "n": 6
   },
   "si1": {
-    "seq": 1,
+    "seq": 2,
     "day": "2026-09-10",
-    "n": 0,
+    "n": 1,
     "idle_run": 0,
-    "last": "",
-    "beats": 8
+    "last": "SI1-0001  \n上则摘要：(首则)\n\n折叠编码基线确立。将n量子比特态映射至二维折叠流形，经共形压缩生成SU(2^k)子流形上的紧致码本。每层折叠引入 log₂(1+√5)/2 冗余因子，形成斐波那契型纠错格。跨层映射由扭曲张量 τ 驱动，实现局部算子的非局域编织。推演(未实测)：当折叠深度 d≥3 时，码本容量趋于 Berry 相位的有理逼近点，可能诱发拓扑序相变。锚：【件SI1-0001",
+    "beats": 9,
+    "last_fired_beat": 9,
+    "voice_day": "2026-09-10",
+    "voice_n": 1
   },
   "idem": []
 }

@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-10T23:58:46Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/cisvr-20260911T0000Z-direct-neg-round-01.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
