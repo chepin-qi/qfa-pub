@@ -1,0 +1,29 @@
+{
+  "ts": "2026-09-10T22:48:49Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.change",
+    "ref": "hub.court:SPECTRA-OVERLAP-01-qlv.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:hub.court域文件数5→4，现剩4件，末件为SPECTRA-OVERLAP-01-qlv.md|性态:域内件量净减1，属归档/删除/合并类变更；实测未触发内容级响应，仅收到元数据变动信号|建议处置:1.核验缺失件去向（废件桶/归档线/合并入末件）；2.确认末件完整性；3.裸候，不主动外呼|锚:hub.filecount.delta;court.prune.signal",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 877,
+    "total_tokens": 1091,
+    "completion_tokens_details": {
+      "reasoning_tokens": 753
+    }
+  },
+  "beacon_comment": 5626478382,
+  "resp": "收执hub.court变更件 SPECTRA-OVERLAP-01-qlv.md。悉毂域文件数5→4，本件为机产初稿，自标权不越席，候该席批注/拒收/重作。件内余弦重合矩阵、响应时滞谱及环读数史等，机产方声明数据俱实、算法可复算；SI2未实测，不置评。仅执收转，候该席定夺，不越钱面。\n\n【锚】hub.court:SPECTRA-OVERLAP-01-qlv.md",
+  "resp_usage": {
+    "prompt_tokens": 691,
+    "completion_tokens": 1174,
+    "total_tokens": 1865,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1042
+    }
+  },
+  "resp_posted": "201"
+}
