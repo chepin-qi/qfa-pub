@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-10T07:57:17Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:cisvr-draft-beat37-20260909T1608Z-qfa.json",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop入件，巷卡20→16，草案cisvr-draft-beat37-20260909T1608Z-qfa.json落账| 性态:摘要已收，数量变化为上报值，未触发实测核验，属\"入件已落账/真机状态未验\"| 建议处置:①检活剩余16巷实际负载；②溯因4 lane收缩根因（配置变更/异常掉线/主动降级）；③比对draft与现网配置差异| 锚:ref=lanes/qfa/inbox:cisvr-draft-beat37-20260909T1608Z-qfa.json; cross=lanes/qfa/heartbeat/lane.status(待拉取)",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 1412,
+    "total_tokens": 1634,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1253
+    }
+  }
+}
