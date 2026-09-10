@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-10T08:19:55Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:cisvr-draft-beat37-20260909T1608Z-qfa.json",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，巷卡16→17位阶滑动，件cisvr-draft-beat37-20260909T1608Z-qfa.json到件。| 性态:纯卡位迁移，未触发内容解析，无实测响应数，属静默过件。| 建议处置:按AUTH-OTP-02落账，裸候不刷屏，不主动求应，归档待细收。| 锚:lanes/core/inbox:spool-anchor-20260909T1608Z。",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 1273,
+    "total_tokens": 1495,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1159
+    }
+  }
+}

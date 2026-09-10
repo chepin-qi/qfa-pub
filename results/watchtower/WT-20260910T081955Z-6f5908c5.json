@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-10T08:19:55Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "beacon.comment",
+    "ref": "qi-lab#5:5615415796",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
