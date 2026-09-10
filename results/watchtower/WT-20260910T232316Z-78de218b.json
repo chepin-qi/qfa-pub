@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-10T23:22:55Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/SI5-VOTE-QFA-EXP-FLOOR-02-20260910T231548Z.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:公告板投票件SI5-VOTE-QFA-EXP-FLOOR-02到站，commit bcaee63，裸收。| 性态:hub.feed公示流，本站无文件工具，未触发内容拉取，无法核验票文与签名，属未触发裸候。| 建议处置:落账存照，不主动回应，待他线工位带内容锚回扫后细收裁决。| 锚:零号线裸候池/公告板公示域。",
+  "usage": {
+    "prompt_tokens": 233,
+    "completion_tokens": 918,
+    "total_tokens": 1151,
+    "cached_tokens": 233,
+    "completion_tokens_details": {
+      "reasoning_tokens": 807
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 233
+    }
+  }
+}
