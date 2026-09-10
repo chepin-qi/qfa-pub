@@ -1,1 +1,1 @@
-{"ts": "2026-09-10T20:00:56Z", "evs": [{"kind": "qlv.beat", "ref": "19e88b98", "summary": "qlv-pub main 头迁移 05eca80d→19e88b98", "high_value": false}], "pend": ["quafu:8CAEDC103963FC6D", "quafu:8BAFA1E022273996", "quafu:8BB169201FA3F5D4"]}
+{"ts": "2026-09-10T20:21:39Z", "evs": [{"kind": "qlv.beat", "ref": "af9d7d13", "summary": "qlv-pub main 头迁移 19e88b98→af9d7d13", "high_value": false}], "pend": ["quafu:8CAEDC103963FC6D", "quafu:8BAFA1E022273996", "quafu:8BB169201FA3F5D4"]}
