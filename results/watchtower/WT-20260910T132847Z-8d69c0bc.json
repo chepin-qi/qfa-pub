@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-10T13:28:15Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:cisvr-draft-beat37-20260909T1608Z-qfa.json",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lanes/qfa/inbox 到件，巷卡 17→18，载体 cisvr-draft-beat37-20260909T1608Z-qfa.json 入栈，属 lane.drop。| 性态:文件已触达，工位无读取工具，未启内容解析与实测，状态为到件未细收。| 建议处置:按 WAKE-PROTO 完成扫描落账；不越真机钱面，不主动寻求回应，裸候下游显式触发或裁决指令。| 锚:meta/lane/18, cisvr-draft-beat37-ref",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 1095,
+    "total_tokens": 1317,
+    "completion_tokens_details": {
+      "reasoning_tokens": 961
+    }
+  }
+}
