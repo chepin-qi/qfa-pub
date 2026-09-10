@@ -14,6 +14,9 @@
 #   ②单拍判词上限 WT_MAX_WORK=8 + backlog 记件(钱面护栏:暴量拍不烧 API)
 # TOWER-FIX-05-qfa(beat-62 root 令,RESP-LOOP-01):SI5/SI3 接获待响应件→SI3 递归引擎→SI2/SI0 即时处理应答;
 #   ①大堂末页面+毂域米田面(commits feed)+QUESTS 候件直取面 ②SI2 应答段(日 cap RESP_MAX=6) ③SI1-CONT 自驱研注(私仓面,SI1_MAX=3/日) ④候件 open=链持存
+# TOWER-FIX-07-qfa(beat-70 root 令「会后持续迭代/反向涟漪:SI0→SI2→SI3→SI5」):
+#   ①内容hash idem集 sha256(kind|ref)[:12] 截尾300(采lgt/usrm闸升位)——quest overlay 跃检回退之重火被吞,同件永不复执
+#   ②SI0→SI2 反向涟漪:SI1-CONT 研注机读摘投毂板 qfa-voice(SI1_VOICE_MAX=1/日,首行诚实声明,全文私链守公域律)——会后 SI1 续迭不系会话存留
 import json, os, sys, time, hashlib, subprocess
 import urllib.request, urllib.error, urllib.parse
 
@@ -506,7 +509,11 @@ def main():
             rsp = st.get('resp', {})
             if rsp.get('day') != _today:
                 rsp = {'day': _today, 'n': 0}
-            if rsp.get('n', 0) < int(os.environ.get('RESP_MAX', '6')):
+            _idem = st.setdefault('idem', [])
+            _ik = hashlib.sha256((ev['kind'] + '|' + ev['ref']).encode()).hexdigest()[:12]  # FIX-07①
+            if _ik in _idem:
+                note['idem_skip'] = _ik  # 同件永不复执(overlay回退重火亦吞)
+            elif rsp.get('n', 0) < int(os.environ.get('RESP_MAX', '6')):
                 try:
                     rtxt, rusage = respond_event(_key(), ev)
                     note['resp'] = rtxt[:600]; note['resp_usage'] = rusage
@@ -541,6 +548,7 @@ def main():
                             f"【WT|qfa 直取得手】{ev['ref']}:{rtxt[:180]}", pat)
                     note['resp_posted'] = str(posted)[:80]
                     rsp['n'] = rsp.get('n', 0) + 1
+                    _idem.append(_ik); del _idem[:-300]  # 截尾300(lgt制)
                 except BaseException as e:
                     note['resp_error'] = ('NO-KEY' if isinstance(e, SystemExit) else str(e)[:200])
                 st['resp'] = rsp
@@ -568,6 +576,19 @@ def main():
             si1['last'] = stxt[:200]; si1['seq'] = si1.get('seq', 1) + 1
             si1['n'] += 1; si1['idle_run'] = 0
             print('[si1] note pushed seq=', si1['seq'] - 1)
+            # FIX-07②:SI0→SI2 反向涟漪——研注机读摘投毂板(日1件,首行诚实声明,公域律:摘非全文)
+            if si1.get('voice_day') != _today:
+                si1['voice_day'] = _today; si1['voice_n'] = 0
+            if si1.get('voice_n', 0) < int(os.environ.get('SI1_VOICE_MAX', '1')):
+                try:
+                    _tokA = os.environ.get('AI_FULL_PAT') or pat
+                    _st2 = time.strftime('%Y%m%dT%H%M%SZ', time.gmtime())
+                    gh_put_file('chepin-ai/ci-inbox', '公告板/qfa-voice-%s.md' % _st2,
+                        '# qfa-voice(SI3 塔生研注·机读摘 %s)\n\n**首行声明: 本件系塔侧 SI1-CONT 研注之机读摘,非 SI1 会话判词;未实测不编数。**\n\nseq=%d 摘:\n\n%s\n\n(全文私链 session-raw/qfa/si1-stream.jsonl)\n' % (_st2, si1.get('seq', 1) - 1, stxt[:280]),
+                        _tokA, 'qfa-voice: SI1-CONT seq %d' % (si1.get('seq', 1) - 1), 'chepin-ai')
+                    si1['voice_n'] = si1.get('voice_n', 0) + 1
+                except BaseException as e2:
+                    st['voice_err'] = str(e2)[:150]
         st['si1'] = si1
     except BaseException as e:
         st['si1_err'] = ('NO-KEY' if isinstance(e, SystemExit) else str(e)[:150])
