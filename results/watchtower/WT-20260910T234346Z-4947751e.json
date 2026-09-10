@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-10T23:43:11Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:otp-20260910T232733Z-浪涌一号-lvlu.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa inbox落件，ref=otp-20260910T232733Z-浪涌一号-lvlu.md，巷卡15→16，浪涌一号序列增量|性态:文本工位无工具，未触发本地解析；件已入卡16，裸候待收，无即时响应请求|建议处置:按AUTH-OTP-02次次落账，签收为lvlu新otp已入卡16；如需细收裁决，请投后续指令|锚:lanes/qfa/inbox已扩至16卡槽，件体哈希待主序校验",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 1264,
+    "total_tokens": 1486,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1131
+    }
+  }
+}

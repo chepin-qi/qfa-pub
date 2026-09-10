@@ -2,33 +2,33 @@
   "cadence": {
     "v": "METER-CADENCE-01-cand",
     "w12": [
+      4,
+      1,
+      0,
+      0,
+      3,
+      0,
+      0,
+      1,
       0,
       0,
       0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      2
+      0
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 11,
-    "C_streak": 0,
-    "verdict": "进行式"
+    "dominant_bin": 0,
+    "C_streak": 1,
+    "verdict": "C-窗"
   },
-  "beacon_max": 5626911125,
-  "qlv_head": "b32d9508e849f855e9885f6bd3cb4f03c91c18a6",
+  "beacon_max": 5626982313,
+  "qlv_head": "7a9aff37b8f0106d0b98f8915fb346f8bc5c1175",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
     "8BB169201FA3F5D4": "0"
   },
-  "lane_inbox_count": 15,
+  "lane_inbox_count": 16,
   "faces": {
     "lgt-line#1": 3,
     "vci-cfts#1": 2,
@@ -46,8 +46,8 @@
     "calls": 12,
     "last_fp": "77605983797e"
   },
-  "lobby_max": 5626853268,
-  "hub_feed_sha": "33abf37d2d995d79750e2818a2ead968e79d344d",
+  "lobby_max": 5626948740,
+  "hub_feed_sha": "9c8b378bee4ab2b6c2bb33be044d46e26262522c",
   "quests": {
     "SEALED-V2-RESEAL": "open",
     "ISSUE-874-COMMENT": "open",
@@ -70,6 +70,7 @@
     "n": 0,
     "idle_run": 0,
     "last": "",
-    "beats": 6
-  }
+    "beats": 7
+  },
+  "idem": []
 }

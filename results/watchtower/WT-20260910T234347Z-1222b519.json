@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-10T23:43:47Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/lgt-115-orbit-def-usrm-answer-si3-engine-20260910T2342Z.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
