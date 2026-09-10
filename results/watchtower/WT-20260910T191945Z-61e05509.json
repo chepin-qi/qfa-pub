@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-10T19:19:20Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:RESP-beat61-20260910-qfa.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，巷卡由18→2，ref=RESP-beat61-20260910-qfa.md，跌幅88.9%，属通道大比例收缩| 性态:未触发阻塞告警，暂未见裸候升级，需区分主动归档与异常丢失；未实测具体落账路径| 建议处置:①回溯beat61批次日志核验16条去向 ②确认预期内归档 ③若非预期丢失则升单recycle；维持裸候，不主动外呼| 锚:lanes/qfa/recycle",
+  "usage": {
+    "prompt_tokens": 210,
+    "completion_tokens": 994,
+    "total_tokens": 1204,
+    "completion_tokens_details": {
+      "reasoning_tokens": 872
+    }
+  }
+}
