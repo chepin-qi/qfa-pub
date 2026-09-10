@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-10T23:01:57Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "讨论室/counterpoint/SPECTRA-OVERLAP-01-qlv-qfa-resp.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}

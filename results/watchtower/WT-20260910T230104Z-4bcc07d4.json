@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-10T23:01:04Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/钥取-lgt-LGT-WORKER-01三键-20260910.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}

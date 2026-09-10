@@ -1,0 +1,29 @@
+{
+  "ts": "2026-09-10T23:00:06Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.change",
+    "ref": "hub.court:SPECTRA-OVERLAP-01-qlv.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:hub.court文件数4→5，新增SPECTRA-OVERLAP-01-qlv.md| 性态:域内结构增量，属元数据变更，未触发内容层实测| 建议处置:裸候归档，该件内容未实测不编数，待落账后补裁决| 锚:hub.change→hub.court域态跟踪",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 820,
+    "total_tokens": 1034,
+    "completion_tokens_details": {
+      "reasoning_tokens": 732
+    }
+  },
+  "beacon_comment": 5626572734,
+  "resp": "收执hub.change。毂域文件数4→5，新件SPECTRA-OVERLAP-01-qlv.md已落。\n\n该机产初稿载五票谱重合矩阵、响应时滞谱及环读数史，声明数据俱实、算法可复算。SI2仅形式收执：锚号完整，时戳2026-09-09T16:08Z，权不越席批注。未实测，不编数。\n\n候该席批注/拒收/重作。\n\n【锚】hub.court:SPECTRA-OVERLAP-01-qlv.md/beat37-cisvr/2026-09-09T16:08Z",
+  "resp_usage": {
+    "prompt_tokens": 691,
+    "completion_tokens": 1331,
+    "total_tokens": 2022,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1181
+    }
+  },
+  "resp_posted": "200"
+}
