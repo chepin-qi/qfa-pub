@@ -1,0 +1,39 @@
+{
+ "quests": [
+  {
+   "id": "SEALED-V2-RESEAL",
+   "kind": "commit-file-pattern",
+   "repo": "chepin-ai/ci-inbox",
+   "pattern": "sealed",
+   "note": "cisvr 以 QFA-PK v2 公钥重封件出现即直取;qfa 已铸 v2(fp fa358de4e27bbc4c),私钥在 Secrets"
+  },
+  {
+   "id": "ISSUE-874-COMMENT",
+   "kind": "issue-comments-count",
+   "repo": "chepin-ai/ci-inbox",
+   "issue": 874,
+   "note": "#874 封件串:重封投跟评亦捕"
+  },
+  {
+   "id": "WILDQ-MERGED-QFA",
+   "kind": "file-contains",
+   "repo": "chepin-ai/ci-inbox",
+   "path": "讨论室/WILD-Q-MERGED-01.md",
+   "pattern": "WILD-Q-qfa-01",
+   "note": "qfa 四问入正册即闭"
+  },
+  {
+   "id": "CFTS-REPO-SEED",
+   "kind": "repo-exists",
+   "repo": "chepin-ai/repo-cfts",
+   "note": "TOWER-SEED 正种仓可达即闭(debt-20260907-cfts-bridgefix)"
+  },
+  {
+   "id": "VINF-WILDQ-ANSWER",
+   "kind": "commit-file-pattern",
+   "repo": "chepin-ai/ci-inbox",
+   "pattern": "wild-q-qfa",
+   "note": "vinf 答 WILD-Q-qfa-02/03 件现即闭;巷投面由 lane.drop 承"
+  }
+ ]
+}

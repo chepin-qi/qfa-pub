@@ -12,6 +12,8 @@
 # TOWER-FIX-02-qfa:拍内 state 向 origin 刷新(链拍旧 ref 之水印跃检漏件,实测逮修)——见 load 段注
 # TOWER-FIX-03-qfa:随燃护栏——低值件记档不开工(零API),qlv.beat 高频面降格(AR 不帖);昨夕 cap12/12 烧穿实测逮修
 #   ②单拍判词上限 WT_MAX_WORK=8 + backlog 记件(钱面护栏:暴量拍不烧 API)
+# TOWER-FIX-05-qfa(beat-62 root 令,RESP-LOOP-01):SI5/SI3 接获待响应件→SI3 递归引擎→SI2/SI0 即时处理应答;
+#   ①大堂末页面+毂域米田面(commits feed)+QUESTS 候件直取面 ②SI2 应答段(日 cap RESP_MAX=6) ③SI1-CONT 自驱研注(私仓面,SI1_MAX=3/日) ④候件 open=链持存
 import json, os, sys, time, hashlib, subprocess
 import urllib.request, urllib.error, urllib.parse
 
@@ -111,8 +113,15 @@ def poll(pat, st):
         prev_cnt = st.get('lane_inbox_count')
         latest = max((f['name'] for f in lane), default='')
         if prev_cnt is not None and cnt != prev_cnt:
+            _lctx = ''
+            try:
+                if latest and not latest.startswith(('RESP-', '_')):
+                    _lf = gh_get('/repos/chepin-ai/vci-inbox/contents/lanes/qfa/inbox/' + urllib.parse.quote(latest), pat)
+                    _lctx = __import__('base64').b64decode(_lf['content']).decode('utf-8', 'ignore')[:1500]
+            except Exception:
+                pass
             ev.append({'kind':'lane.drop','ref':f'lanes/qfa/inbox:{latest}',
-                       'summary':f"巷卡 {prev_cnt}→{cnt},最新 {latest}",'high_value':True})
+                       'summary':f"巷卡 {prev_cnt}→{cnt},最新 {latest}",'high_value':True,'context':_lctx})
         st['lane_inbox_count'] = cnt
     except Exception as e:
         ev.append({'kind':'lane.poll.err','ref':'lanes/qfa/inbox','summary':str(e)[:120],'high_value':False})
@@ -129,9 +138,17 @@ def poll(pat, st):
                 cnt = len(fs); prev = st.get('faces', {}).get(name)
                 latest = max((f['name'] for f in fs), default='')
                 if prev is not None and cnt != prev:
+                    _hctx = ''
+                    if name == 'hub.court' and latest:
+                        try:
+                            _hf = gh_get('/repos/chepin-ai/ci-inbox/contents/' + urllib.parse.quote('讨论室/counterpoint/' + latest), pat2)
+                            _hctx = __import__('base64').b64decode(_hf['content']).decode('utf-8', 'ignore')[:1500]
+                        except Exception:
+                            pass
                     ev.append({'kind':'hub.change','ref':f"{name}:{latest}",
                                'summary':f"毂域{name}文件数 {prev}→{cnt},最新 {latest}",
-                               'high_value':(name=='hub.court')})  # 庭卷变=高值(领题/判词);板/线目变=记件
+                               'high_value':(name=='hub.court' and not latest.endswith('-qfa-resp.md')),  # 庭卷变=高值;自署应答件滤自环
+                               'context':_hctx})
                 st.setdefault('faces', {})[name] = cnt
             except Exception as e:
                 ev.append({'kind':'hub.poll.err','ref':name,'summary':str(e)[:120],'high_value':False})
@@ -151,10 +168,98 @@ def poll(pat, st):
             n = len(cs); prev = st.get('faces',{}).get(name)
             if prev is not None and n > prev:
                 latest = cs[-1]
-                ev.append({'kind':'face.reply','ref':f"{name}:{latest['id']}",'summary':latest['body'][:600],'high_value':True})
+                ev.append({'kind':'face.reply','ref':f"{name}:{latest['id']}",'summary':latest['body'][:600],
+                           'high_value':not latest['body'].startswith('【RESP|qfa')})  # FIX-05:自署应答滤自环
             st.setdefault('faces',{})[name] = n
         except Exception as e:
             ev.append({'kind':'face.poll.err','ref':name,'summary':str(e)[:120],'high_value':False})
+    # ⑤ TOWER-FIX-05-qfa RESP-LOOP-01 增三面(beat-62 root 令:SI5/SI3 接获待响应件即驱 SI3/SI2/SI0;候件直取=米田面可直址即取)
+    patA = os.environ.get('AI_FULL_PAT') or pat
+    # ⑤a 大堂面末页水印(vci-inbox#1,各线@qfa/应答请求高发面;页1钉盲同病,末页律同 FIX-01)
+    try:
+        _n1 = gh_get('/repos/chepin-ai/vci-inbox/issues/1', patA).get('comments', 0)
+        _pg1 = (_n1 + 99) // 100 or 1
+        cm1 = gh_get(f'/repos/chepin-ai/vci-inbox/issues/1/comments?per_page=100&page={_pg1}', patA)
+        mx1 = max([c['id'] for c in cm1], default=0)
+        old1 = st.get('lobby_max', 0)
+        if old1 and mx1 > old1:
+            for c in cm1:
+                if c['id'] > old1 and not c['body'].startswith(('【WT|', '【RESP|')):
+                    ev.append({'kind':'lobby.comment','ref':f"vci-inbox#1:{c['id']}",
+                               'summary':c['body'][:600],
+                               'high_value':('qfa' in c['body'][:300])})
+        st['lobby_max'] = mx1
+    except Exception as e:
+        ev.append({'kind':'lobby.poll.err','ref':'vci-inbox#1','summary':str(e)[:120],'high_value':False})
+    # ⑤b 毂域米田面(ci-inbox commits feed→文件名直址差分;板面千件帽下文件名携 qfa 即高值)
+    try:
+        cms = gh_get('/repos/chepin-ai/ci-inbox/commits?per_page=5', patA)
+        newest = cms[0]['sha'] if cms else None
+        prev_sha = st.get('hub_feed_sha')
+        if prev_sha and newest and newest != prev_sha:
+            for cm in cms:
+                if cm['sha'] == prev_sha:
+                    break
+                try:
+                    cd = gh_get('/repos/chepin-ai/ci-inbox/commits/' + cm['sha'], patA)
+                    for f in (cd.get('files') or []):
+                        fn = f['filename']
+                        if fn.startswith(('公告板/', '讨论室/')):
+                            ev.append({'kind':'hub.feed','ref':fn,
+                                       'summary':f"毂新件 {fn} (commit {cm['sha'][:7]})",
+                                       'high_value':('qfa' in fn.lower() and not fn.endswith('-qfa-resp.md'))})
+                except Exception:
+                    pass
+        if newest:
+            st['hub_feed_sha'] = newest
+    except Exception as e:
+        ev.append({'kind':'hubfeed.poll.err','ref':'ci-inbox','summary':str(e)[:120],'high_value':False})
+    # ⑤c 候件直取 QUESTS(ci/quests.json;root 令:你候他线→SI3 驱动直取不候;boot 律:开闸前旧件不触发)
+    try:
+        qj = os.path.join(ROOT, 'ci', 'quests.json')
+        quests = (json.load(open(qj)).get('quests') if os.path.exists(qj) else []) or []
+        qst = st.setdefault('quests', {})
+        boot = st.get('quests_boot')
+        if boot is None:
+            st['quests_boot'] = boot = time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())
+        for q in quests:
+            if qst.get(q['id'], 'open') != 'open':
+                continue
+            qst.setdefault(q['id'], 'open')
+            hit = None
+            try:
+                if q['kind'] == 'repo-exists':
+                    gh_get('/repos/' + q['repo'], patA); hit = 'repo reachable'
+                elif q['kind'] == 'file-contains':
+                    fc = gh_get('/repos/%s/contents/%s' % (q['repo'], urllib.parse.quote(q['path'])), patA)
+                    txt = __import__('base64').b64decode(fc['content']).decode('utf-8', 'ignore')
+                    if q['pattern'] in txt:
+                        hit = 'pattern in file: ' + q['pattern']
+                elif q['kind'] == 'issue-comments-count':
+                    _n = gh_get('/repos/%s/issues/%s' % (q['repo'], q['issue']), patA).get('comments', 0)
+                    _k = 'qn_' + q['id']; _pn = st.get(_k)
+                    if _pn is not None and _n > _pn:
+                        hit = f'comments {_pn}→{_n}'
+                    st[_k] = _n
+                elif q['kind'] == 'commit-file-pattern':
+                    for cm in gh_get('/repos/%s/commits?per_page=5' % q['repo'], patA):
+                        if cm['commit']['committer']['date'] <= boot:
+                            continue
+                        cd = gh_get('/repos/%s/commits/%s' % (q['repo'], cm['sha']), patA)
+                        for f in (cd.get('files') or []):
+                            if q['pattern'] in f['filename'].lower():
+                                hit = f['filename']; break
+                        if hit:
+                            break
+            except Exception:
+                pass  # 直取未遂=记 open 不炸拍,下拍再取
+            if hit:
+                qst[q['id']] = 'hit:' + time.strftime('%Y%m%dT%H%M%SZ', time.gmtime())
+                ev.append({'kind':'quest.hit','ref':q['id'],
+                           'summary':f"候件直取得手 {q['id']}: {hit} | {q.get('note','')}"[:600],
+                           'high_value':True})
+    except Exception as e:
+        ev.append({'kind':'quest.poll.err','ref':'quests','summary':str(e)[:120],'high_value':False})
     return ev
 
 # ---------- API 新会话开工 ----------
@@ -173,6 +278,84 @@ def work_event(api_key, ev):
     with urllib.request.urlopen(req, timeout=90) as r:
         d = json.load(r)
     return d['choices'][0]['message'].get('content',''), d.get('usage')
+
+# ---------- TOWER-FIX-05-qfa ② SI2 即时应答段 + SI1 自驱研注段 ----------
+RESP_SYS = """你是 qfa 线 SI2 应答分身(单会话文本工位)。就收执件起草 qfa 正式应答。
+奉行:未实测说未实测,永不编数;应答必带锚(板帖/巷件/判词号);不越钱面;制式≤350字,直陈处置。
+输出=应答正文(可直帖),末行:【锚】..."""
+SI1_SYS = """你是 qfa 线 SI1 研究流分身(量子折叠自动机研究)。每会出一则研注,接续推进 SI0~SI5 课题。
+轮换域:SI0基座/SI1折叠编码/SI2跨线协议/SI3递归引擎/SI4量子准入/SI5生态接口。
+律:推演必标「推演(未实测)」;≤280字;题号 SI1-<seq>;≥1锚(册/件/拍号)。"""
+RESP_KINDS = ('lane.drop', 'lobby.comment', 'face.reply', 'hub.feed', 'quest.hit')
+
+def respond_event(api_key, ev):
+    body = {'model':'kimi-k2.6','max_completion_tokens':3600,
+            'messages':[{'role':'system','content':RESP_SYS},
+                        {'role':'user','content':f"收执件,请起草 qfa 应答。\nkind={ev['kind']}\nref={ev['ref']}\n摘要:\n{ev['summary']}\n件文:\n{ev.get('context','(无件文,据摘要应答)')[:1500]}"}]}
+    req = urllib.request.Request('https://api.moonshot.cn/v1/chat/completions',
+        data=json.dumps(body).encode(),
+        headers={'Authorization':'Bearer '+api_key,'Content-Type':'application/json'})
+    with urllib.request.urlopen(req, timeout=90) as r:
+        d = json.load(r)
+    return d['choices'][0]['message'].get('content',''), d.get('usage')
+
+def si1_event(api_key, seq, prev):
+    body = {'model':'kimi-k2.6','max_completion_tokens':3000,
+            'messages':[{'role':'system','content':SI1_SYS},
+                        {'role':'user','content':f"出 SI1-{seq:04d} 研注。上则摘要:{prev or '(首则)'}"}]}
+    req = urllib.request.Request('https://api.moonshot.cn/v1/chat/completions',
+        data=json.dumps(body).encode(),
+        headers={'Authorization':'Bearer '+api_key,'Content-Type':'application/json'})
+    with urllib.request.urlopen(req, timeout=90) as r:
+        d = json.load(r)
+    return d['choices'][0]['message'].get('content',''), d.get('usage')
+
+def gh_put_file(repo_full, path, content, token, msg, user):
+    # 单件直写(SI2 应答道:lane/庭卷;contents API;值永不入文)
+    hdr = {'Authorization':'Basic '+__import__('base64').b64encode((user+':'+token).encode()).decode(),
+           'Accept':'application/vnd.github+json','Content-Type':'application/json','User-Agent':'qfa-watchtower'}
+    url = f'{GH}/repos/{repo_full}/contents/{urllib.parse.quote(path)}'
+    sha = None
+    try:
+        req0 = urllib.request.Request(url, headers=hdr)
+        with urllib.request.urlopen(req0, timeout=25) as r:
+            sha = json.load(r).get('sha')
+    except Exception:
+        pass
+    data = {'message':msg,'content':__import__('base64').b64encode(content.encode()).decode()}
+    if sha:
+        data['sha'] = sha
+    req = urllib.request.Request(url, data=json.dumps(data).encode(), method='PUT', headers=hdr)
+    with urllib.request.urlopen(req, timeout=25) as r:
+        return r.status
+
+def gh_post_comment_tok(owner, repo, issue, body, token, user):
+    data = json.dumps({'body': body}).encode()
+    req = urllib.request.Request(f'{GH}/repos/{owner}/{repo}/issues/{issue}/comments', data=data, headers={
+        'Authorization':'Basic '+__import__('base64').b64encode((user+':'+token).encode()).decode(),
+        'Accept':'application/vnd.github+json','Content-Type':'application/json','User-Agent':'qfa-watchtower'})
+    with urllib.request.urlopen(req, timeout=25) as r:
+        return json.load(r).get('id')
+
+def gh_append_lab(path, line, pat):
+    # SI1 prose 落私仓(公仓律:pub 仅计数指针;值永不入)
+    hdr = {'Authorization':'Basic '+__import__('base64').b64encode(('chepin-qi:'+pat).encode()).decode(),
+           'Accept':'application/vnd.github+json','Content-Type':'application/json','User-Agent':'qfa-watchtower'}
+    url = f'{GH}/repos/chepin-qi/qfa-quantum-lab/contents/{urllib.parse.quote(path)}'
+    old = ''; sha = None
+    try:
+        req0 = urllib.request.Request(url, headers=hdr)
+        with urllib.request.urlopen(req0, timeout=25) as r:
+            d0 = json.load(r); sha = d0.get('sha')
+            old = __import__('base64').b64decode(d0['content']).decode('utf-8', 'ignore')
+    except Exception:
+        pass
+    data = {'message':'qfa SI1-CONT 研注','content':__import__('base64').b64encode((old + line + '\n').encode()).decode()}
+    if sha:
+        data['sha'] = sha
+    req = urllib.request.Request(url, data=json.dumps(data).encode(), method='PUT', headers=hdr)
+    with urllib.request.urlopen(req, timeout=25) as r:
+        return r.status
 
 # ---------- 主流程 ----------
 def main():
@@ -246,6 +429,70 @@ def main():
             except Exception as e:
                 note['beacon_error'] = str(e)[:150]
                 json.dump(note, open(fn,'w'), ensure_ascii=False, indent=2)
+        # TOWER-FIX-05-qfa ②b RESP-LOOP 执行段:应答类高值件→SI3 起草→SI2 道帖(日 cap RESP_MAX,钱面护栏;公仓净化:note 仅载 qfa 自署稿)
+        if ev.get('high_value') and not selftest and (ev['kind'] in RESP_KINDS or (ev['kind'] == 'hub.change' and 'hub.court' in ev['ref'])):
+            _today = time.strftime('%Y-%m-%d', time.gmtime())
+            rsp = st.get('resp', {})
+            if rsp.get('day') != _today:
+                rsp = {'day': _today, 'n': 0}
+            if rsp.get('n', 0) < int(os.environ.get('RESP_MAX', '6')):
+                try:
+                    rtxt, rusage = respond_event(_key(), ev)
+                    note['resp'] = rtxt[:600]; note['resp_usage'] = rusage
+                    tokA = os.environ.get('AI_FULL_PAT') or pat
+                    stamp = time.strftime('%Y%m%dT%H%M%SZ', time.gmtime())
+                    posted = None
+                    if ev['kind'] == 'lane.drop':
+                        posted = gh_put_file('chepin-ai/vci-inbox',
+                            f"lanes/qfa/inbox/RESP-auto-{stamp}.md",
+                            f"# qfa RESP-auto({stamp})\n\n应答 {ev['ref']}:\n\n{rtxt}\n",
+                            tokA, 'qfa RESP-auto: ' + ev['ref'][:60], 'chepin-ai')
+                    elif ev['kind'] == 'lobby.comment':
+                        posted = gh_post_comment_tok('chepin-ai', 'vci-inbox', 1,
+                            f"【RESP|qfa】应答 {ev['ref']}:{rtxt}", tokA, 'chepin-ai')
+                    elif ev['kind'] == 'face.reply':
+                        _nm = ev['ref'].split(':')[0]
+                        _repo, _iss = _nm.split('#')
+                        _own = 'chepin-qi' if _repo.startswith(('lgt', 'qi-')) else 'chepin-ai'
+                        posted = gh_post_comment_tok(_own, _repo, int(_iss),
+                            f"【RESP|qfa】应答 {ev['ref']}:{rtxt}", pat if _own == 'chepin-qi' else tokA, _own)
+                    elif ev['kind'] in ('hub.feed', 'hub.change'):
+                        _base = ev['ref'].split(':')[-1].split('/')[-1].replace('.md', '')[:60]
+                        posted = gh_put_file('chepin-ai/ci-inbox',
+                            f"讨论室/counterpoint/{_base}-qfa-resp.md",
+                            f"# qfa 应答 {ev['ref']}({stamp})\n\n{rtxt}\n",
+                            tokA, 'qfa resp: ' + _base, 'chepin-ai')
+                    elif ev['kind'] == 'quest.hit':
+                        posted = gh_post_comment('chepin-qi', 'qi-lab', 5,
+                            f"【WT|qfa 直取得手】{ev['ref']}:{rtxt[:180]}", pat)
+                    note['resp_posted'] = str(posted)[:80]
+                    rsp['n'] = rsp.get('n', 0) + 1
+                except BaseException as e:
+                    note['resp_error'] = ('NO-KEY' if isinstance(e, SystemExit) else str(e)[:200])
+                st['resp'] = rsp
+                json.dump(note, open(fn, 'w'), ensure_ascii=False, indent=2)
+            else:
+                note['resp_cap_skip'] = True
+    # TOWER-FIX-05-qfa ③ SI1-CONT-01(root beat-62:SI5/SI3 自驱 SI3/SI2/SI0 接续 SI1 进程)
+    # 空拍每 SI1_EVERY 拍起一会研注;prose 落私仓 session-raw/qfa/si1-stream.jsonl(公仓律:pub 仅计数);SI1_MAX/日 钱面护栏
+    try:
+        si1 = st.get('si1', {'seq': 1, 'day': '', 'n': 0, 'idle_run': 0, 'last': ''})
+        _today = time.strftime('%Y-%m-%d', time.gmtime())
+        if si1.get('day') != _today:
+            si1['day'] = _today; si1['n'] = 0
+        si1['idle_run'] = 0 if evs else si1.get('idle_run', 0) + 1
+        if (not evs and not selftest and si1['idle_run'] >= int(os.environ.get('SI1_EVERY', '6'))
+                and si1['n'] < int(os.environ.get('SI1_MAX', '3'))):
+            stxt, susage = si1_event(_key(), si1.get('seq', 1), si1.get('last', ''))
+            gh_append_lab('session-raw/qfa/si1-stream.jsonl',
+                          json.dumps({'seq': si1.get('seq', 1), 'ts': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()),
+                                      'note': stxt}, ensure_ascii=False), pat)
+            si1['last'] = stxt[:200]; si1['seq'] = si1.get('seq', 1) + 1
+            si1['n'] += 1; si1['idle_run'] = 0
+            print('[si1] note pushed seq=', si1['seq'] - 1)
+        st['si1'] = si1
+    except BaseException as e:
+        st['si1_err'] = ('NO-KEY' if isinstance(e, SystemExit) else str(e)[:150])
     # ---- METER-CADENCE-01 候选计(qfa 巡塔载;cfts-90 环载,制式随模) ----
     # 窗=拍;w12=本拍事件类→十二律格计数;ψ=√归一;锁=|⟨ψ_t|ψ_{t-1}⟩|²;σ=本拍处置/激发;主能格
     try:
@@ -272,6 +519,7 @@ def main():
     # ---- 自醒事件链出拍:有候件(quafu 在队等)则自唤下一拍;空转熔断 30 拍即眠,候外事 ----
     # 制式据 FREE-WILL-SOURCE-01:源=自意(self-cascade),驿=self-dispatch;骑事件律——纯事件,零 cron
     pend = ['quafu:'+tid for tid, stt in (st.get('quafu') or {}).items() if str(stt) == '0']
+    pend += ['quest:'+qid for qid, qq in (st.get('quests') or {}).items() if str(qq) == 'open']  # FIX-05④:候件在手链不眠(SI3 循环专候)
     cascade = 'rest(no-pend)'
     if pend and not selftest:
         idle2 = 0 if evs else idle + 1
