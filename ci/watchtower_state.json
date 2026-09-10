@@ -6,10 +6,10 @@
    0,
    0,
    0,
+   1,
    0,
    0,
-   0,
-   0,
+   1,
    0,
    0,
    0,
@@ -17,12 +17,12 @@
   ],
   "sigma": 1.0,
   "lock": null,
-  "dominant_bin": null,
+  "dominant_bin": 4,
   "C_streak": 0,
   "verdict": "进行式"
  },
  "beacon_max": 5616807125,
- "qlv_head": "1ef443577da0fc08b6a796b167b0175905e862ca",
+ "qlv_head": "09d2e71786fdbd60ff39ea9412c3e57156eae5b2",
  "quafu": {
   "8CAEDC103963FC6D": "0",
   "8BAFA1E022273996": "0",
@@ -43,7 +43,7 @@
  },
  "autoresp": {
   "date": "2026-09-10",
-  "calls": 10,
-  "last_fp": "5e9e8c6ddc8c"
+  "calls": 11,
+  "last_fp": "d2775feacc10"
  }
 }
