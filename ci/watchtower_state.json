@@ -5,24 +5,24 @@
       0,
       0,
       0,
-      0,
-      0,
       1,
       0,
       0,
+      5,
       0,
+      2,
       0,
       0,
       0
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 5,
+    "dominant_bin": 6,
     "C_streak": 0,
     "verdict": "进行式"
   },
-  "beacon_max": 5626014587,
-  "qlv_head": "98bd4381984f0bcd58fc85466b53a2fe655fd1ba",
+  "beacon_max": 5626091717,
+  "qlv_head": "72eb2cfc7bb2f4106acd0b6dfe0db6caaabd808a",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -47,7 +47,7 @@
     "last_fp": "77605983797e"
   },
   "lobby_max": 5626000861,
-  "hub_feed_sha": "92682af903d98134bdbbc145473ead2304e8b5fc",
+  "hub_feed_sha": "ffa800eff2df51ede0a6c9e118b632859c6bf2dd",
   "quests": {
     "SEALED-V2-RESEAL": "open",
     "ISSUE-874-COMMENT": "open",
