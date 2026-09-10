@@ -6,7 +6,7 @@
       0,
       0,
       0,
-      0,
+      1,
       0,
       0,
       0,
@@ -17,12 +17,12 @@
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": null,
+    "dominant_bin": 4,
     "C_streak": 0,
     "verdict": "进行式"
   },
   "beacon_max": 5622177882,
-  "qlv_head": "17831b77d78f3d2e7adc6b924c1b483c85a9e9e8",
+  "qlv_head": "fe8c8cf0b04f0df964f9c891c046c25be8c0d13e",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
