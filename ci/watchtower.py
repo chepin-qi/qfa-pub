@@ -116,11 +116,32 @@ def poll(pat, st):
         st['lane_inbox_count'] = cnt
     except Exception as e:
         ev.append({'kind':'lane.poll.err','ref':'lanes/qfa/inbox','summary':str(e)[:120],'high_value':False})
+    # ③.75 毂域三面(TOWER-FIX-04-qfa):伪板病株自疫——公告板/庭卷/大堂账入巡,板址指纹=锚文件存在性
+    # 道:AI_FULL_PAT(chepin-ai 全域,毂仓可读);缺则降级 QI_PAT(毂仓 404 则记 err 不炸拍)
+    try:
+        pat2 = os.environ.get('AI_FULL_PAT') or pat
+        hub = {'hub.board': '/repos/chepin-ai/ci-inbox/contents/%E5%85%AC%E5%91%8A%E6%9D%BF?per_page=100',
+               'hub.court': '/repos/chepin-ai/ci-inbox/contents/%E8%AE%A8%E8%AE%BA%E5%AE%A4/counterpoint?per_page=100',
+               'hub.threads': '/repos/chepin-ai/ci-inbox/contents/%E8%AE%A8%E8%AE%BA%E5%AE%A4/threads?per_page=100'}
+        for name, path in hub.items():
+            try:
+                fs = gh_get(path, pat2)
+                cnt = len(fs); prev = st.get('faces', {}).get(name)
+                latest = max((f['name'] for f in fs), default='')
+                if prev is not None and cnt != prev:
+                    ev.append({'kind':'hub.change','ref':f"{name}:{latest}",
+                               'summary':f"毂域{name}文件数 {prev}→{cnt},最新 {latest}",
+                               'high_value':(name=='hub.court')})  # 庭卷变=高值(领题/判词);板/线目变=记件
+                st.setdefault('faces', {})[name] = cnt
+            except Exception as e:
+                ev.append({'kind':'hub.poll.err','ref':name,'summary':str(e)[:120],'high_value':False})
+    except Exception as e:
+        ev.append({'kind':'hub.poll.err','ref':'hub','summary':str(e)[:120],'high_value':False})
     # ④ vci 六面评论数变化
     faces = {'lgt-line#1':('/repos/chepin-qi/lgt-line/issues/1/comments?per_page=100'),
              'vci-cfts#1':('/repos/chepin-ai/vci-cfts/issues/1/comments?per_page=100'),
              'vci-inbox#3':('/repos/chepin-ai/vci-inbox/issues/3/comments?per_page=100'),
-             'vci-inbox#2':('/repos/chepin-ai/vci-inbox/issues/2/comments?per_page=100'),
+             'vci-inbox#2':('/repos/chepin-ai/vci-inbox/issues/2/comments?per_page=100'),  # 伪板死面:留作指纹对照(器课第七株),毂真板=③.75 hub.board
              'vci-usrm#21':('/repos/chepin-ai/vci-usrm/issues/21/comments?per_page=100'),
              'vci-ucif2#1':('/repos/chepin-ai/vci-ucif2/issues/1/comments?per_page=100'),
              'vci-vinf#6':('/repos/chepin-ai/vci-vinf/issues/6/comments?per_page=100')}
