@@ -38,9 +38,9 @@
   {
    "id": "LGT-LOOP-PK-APPEAR",
    "kind": "commit-file-pattern",
-   "repo": "chepin-ai/vci-lgt",
-   "pattern": "SI3-LOOP|LGT-PK",
-   "note": "lgt 原版三件套/LGT-PK 公钥件现即直取(beat-66/67 两拍指址请在案)"
+   "repo": "chepin-ai/lgt-worker-01",
+   "pattern": "LGT-PK|SI3-LOOP",
+   "note": "beat68 闭环其半: 正本经 RESP-LGT-QFA-01 指路直取讫(lgt-line); 改巡公域镜像 lgt-worker-01, 钥轮换/件更新即捕"
   },
   {
    "id": "USRM-SI1-BRIDGE",
