@@ -41,6 +41,7 @@ jobs:
           KIMI_API_KEY: ${{ secrets.KIMI_API_KEY_VCI1 }}
           QI_PAT: ${{ secrets.GH_PAT }}
           QUAFU_TOKEN: ${{ secrets.QF_QUAFU_KEY }}
+          AI_FULL_PAT: ${{ secrets.AI_FULL_PAT }}
           GITHUB_TOKEN: ${{ github.token }}
           CASCADE_PAYLOAD: ${{ toJson(github.event.client_payload) }}
           CASCADE_SLEEP_S: '600'
