@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-10T23:45:56Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:otp-20260910T232733Z-浪涌一号-lvlu.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，otp-20260910T232733Z-浪涌一号-lvlu.md由巷卡15移位至16，属卡槽漂移落件| 性态:otp前缀合规，本体未拆包、无异常，判为静默到件| 建议处置:按AUTH-OTP-02次次落账，挂ref入qfa/inbox/16索引，裸候不唤| 锚:lanes/core/ledger:slot-shift-20260910",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 1280,
+    "total_tokens": 1502,
+    "cached_tokens": 222,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1169
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 222
+    }
+  }
+}

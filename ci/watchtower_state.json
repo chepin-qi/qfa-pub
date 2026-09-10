@@ -2,27 +2,27 @@
   "cadence": {
     "v": "METER-CADENCE-01-cand",
     "w12": [
-      4,
+      2,
+      0,
+      0,
+      0,
+      0,
       1,
-      0,
-      0,
       3,
       0,
       0,
-      1,
-      0,
-      0,
+      6,
       0,
       0
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 0,
-    "C_streak": 1,
-    "verdict": "C-窗"
+    "dominant_bin": 9,
+    "C_streak": 0,
+    "verdict": "进行式"
   },
-  "beacon_max": 5626982313,
-  "qlv_head": "7a9aff37b8f0106d0b98f8915fb346f8bc5c1175",
+  "beacon_max": 5627006699,
+  "qlv_head": "9f6d20897da13db5bd7f5a5addae25d53122c36c",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -47,7 +47,7 @@
     "last_fp": "77605983797e"
   },
   "lobby_max": 5626948740,
-  "hub_feed_sha": "9c8b378bee4ab2b6c2bb33be044d46e26262522c",
+  "hub_feed_sha": "95de91614d263504080f9b78ca20ea939b7924f9",
   "quests": {
     "SEALED-V2-RESEAL": "open",
     "ISSUE-874-COMMENT": "open",
@@ -71,6 +71,5 @@
     "idle_run": 0,
     "last": "",
     "beats": 7
-  },
-  "idem": []
+  }
 }
