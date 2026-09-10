@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-10T23:33:42Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:otp-20260910T232733Z-浪涌一号-lvlu.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，巷卡13→15，浪涌一号-lvlu.md新件入线|性态:路由漂移/静默落位，未触发vs未响应状态未实测，无异常阈值突破|建议处置:执行WAKE-PROTO落账，裸候不寻应，归档封存|锚:lanes/qfa/archive:otp-20260910T232733Z-浪涌一号-lvlu.md",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 881,
+    "total_tokens": 1103,
+    "completion_tokens_details": {
+      "reasoning_tokens": 783
+    }
+  }
+}

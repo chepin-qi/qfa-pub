@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-10T23:34:35Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/hub-20260910T2335Z-verdicts-dragon-n6-lgt-ratify-qfa-mech.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:hub.feed投件，公告板文件hub-20260910T2335Z-verdicts-dragon-n6-lgt-ratify-qfa-mech.md commit c3af8c0入库。|性态:dragon-n6-lgt-ratify-qfa-mech维度裁决纪要归档，机制性落账，摘要未示异常。|建议处置:裸候，不主动干预；若需勘误待后续diff触发再收。|锚:hub-20260910T2335Z-verdicts-dragon-n6-lgt-ratify-qfa-mech.md@c3af8c0",
+  "usage": {
+    "prompt_tokens": 245,
+    "completion_tokens": 769,
+    "total_tokens": 1014,
+    "completion_tokens_details": {
+      "reasoning_tokens": 632
+    }
+  }
+}
