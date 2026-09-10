@@ -359,6 +359,75 @@ def gh_append_lab(path, line, pat):
     with urllib.request.urlopen(req, timeout=25) as r:
         return r.status
 
+# TOWER-FIX-06-qfa ① 封件直取解封轨(beat-63/64 root 令:SI5 接件→SI0 即装,值永不入文零回显)
+def handle_sealed(ev, st, pat):
+    """quest.hit(SEALED-V2-RESEAL/ISSUE-874-COMMENT)→#874 串取密文→QFA_PK_V2_SK 内存解→装 lab Secrets→唯记 sha 锚。
+    诚实律:解封失败/钥缺=记件不炸拍;格式 JSON 或 KEY=VALUE 行,解析不得则整包装 QFA_OPS_PACK_V2。"""
+    import re as _re
+    sk = os.environ.get('QFA_PK_V2_SK')
+    if not sk:
+        return {'sealed_error': 'NO-KEY: QFA_PK_V2_SK 未装(候装钥,钱面不越)'}
+    tokA = os.environ.get('AI_FULL_PAT') or pat
+    blob = None
+    try:
+        cm = gh_get('/repos/chepin-ai/ci-inbox/issues/874/comments?per_page=10', tokA)
+        for c in cm:
+            m = _re.search(r'```\s*([A-Za-z0-9+/=\n]{200,})\s*```', c.get('body', ''))
+            if m:
+                blob = m.group(1)
+        if not blob:
+            ib = gh_get('/repos/chepin-ai/ci-inbox/issues/874', tokA).get('body', '')
+            m = _re.search(r'```\s*([A-Za-z0-9+/=\n]{200,})\s*```', ib)
+            blob = m.group(1) if m else None
+    except Exception as e:
+        return {'sealed_error': 'fetch: ' + str(e)[:120]}
+    if not blob:
+        return {'sealed_note': 'hit 而密文未寻得(#874 串无 b64 块),候下拍再取'}
+    try:
+        from nacl.public import PrivateKey, SealedBox
+        import nacl.encoding
+        _sk = PrivateKey(sk, encoder=nacl.encoding.Base64Encoder)
+        pt = SealedBox(_sk).decrypt(__import__('base64').b64decode(blob)).decode()
+        _sk = None
+    except Exception as e:
+        return {'sealed_error': 'decrypt: ' + str(e)[:120]}
+    sha = hashlib.sha256(pt.encode()).hexdigest()[:16]
+    kv = None
+    try:
+        d0 = json.loads(pt)
+        if isinstance(d0, dict):
+            kv = d0
+    except Exception:
+        pass
+    if kv is None:
+        kv = {}
+        for ln in pt.splitlines():
+            if '=' in ln and not ln.strip().startswith('#'):
+                k, v = ln.split('=', 1)
+                k = k.strip()
+                if _re.fullmatch(r'[A-Z][A-Z0-9_]{2,}', k):
+                    kv[k] = v.strip()
+    if not kv:
+        kv = {'QFA_OPS_PACK_V2': pt}
+    installed = []
+    for k, v in kv.items():
+        try:
+            pkd = gh_get('/repos/chepin-qi/qfa-quantum-lab/actions/secrets/public-key', pat)
+            from nacl.public import PublicKey as _PK
+            box = SealedBox(_PK(pkd['key'], encoder=nacl.encoding.Base64Encoder))
+            enc = box.encrypt(v.encode(), encoder=nacl.encoding.Base64Encoder).decode()
+            req = urllib.request.Request(GH + '/repos/chepin-qi/qfa-quantum-lab/actions/secrets/' + k,
+                data=json.dumps({'encrypted_value': enc, 'key_id': pkd['key_id']}).encode(), method='PUT',
+                headers={'Authorization': 'Basic ' + __import__('base64').b64encode(('chepin-qi:' + pat).encode()).decode(),
+                         'Accept': 'application/vnd.github+json', 'Content-Type': 'application/json'})
+            with urllib.request.urlopen(req, timeout=25) as r:
+                installed.append(k + ':' + str(r.status))
+        except Exception as e:
+            installed.append(k + ':ERR:' + str(e)[:60])
+        v = None
+    pt = None
+    return {'sealed_installed': installed, 'sealed_sha16': sha}
+
 # ---------- 主流程 ----------
 def main():
     once = '--once' in sys.argv
@@ -465,6 +534,9 @@ def main():
                             f"# qfa 应答 {ev['ref']}({stamp})\n\n{rtxt}\n",
                             tokA, 'qfa resp: ' + _base, 'chepin-ai')
                     elif ev['kind'] == 'quest.hit':
+                        if ev['ref'] in ('SEALED-V2-RESEAL', 'ISSUE-874-COMMENT'):
+                            _hs = handle_sealed(ev, st, pat)  # FIX-06①:封件到→SI0 即装,值零回显
+                            note.update(_hs)
                         posted = gh_post_comment('chepin-qi', 'qi-lab', 5,
                             f"【WT|qfa 直取得手】{ev['ref']}:{rtxt[:180]}", pat)
                     note['resp_posted'] = str(posted)[:80]
@@ -483,8 +555,12 @@ def main():
         if si1.get('day') != _today:
             si1['day'] = _today; si1['n'] = 0
         si1['idle_run'] = 0 if evs else si1.get('idle_run', 0) + 1
-        if (not evs and not selftest and si1['idle_run'] >= int(os.environ.get('SI1_EVERY', '6'))
-                and si1['n'] < int(os.environ.get('SI1_MAX', '3'))):
+        si1['beats'] = si1.get('beats', 0) + 1
+        _since = si1['beats'] - si1.get('last_fired_beat', 0)
+        if (not selftest and si1['n'] < int(os.environ.get('SI1_MAX', '3'))
+                and ((not evs and si1['idle_run'] >= int(os.environ.get('SI1_EVERY', '6')))
+                     or _since >= int(os.environ.get('SI1_FORCE_EVERY', '18')))):  # FIX-05d:饥饿护栏——事件密集拍序亦保底研注(联邦活跃期 SI1 不饿殍)
+            si1['last_fired_beat'] = si1['beats']
             stxt, susage = si1_event(_key(), si1.get('seq', 1), si1.get('last', ''))
             gh_append_lab('session-raw/qfa/si1-stream.jsonl',
                           json.dumps({'seq': si1.get('seq', 1), 'ts': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()),

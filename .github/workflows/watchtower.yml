@@ -42,11 +42,12 @@ jobs:
           QI_PAT: ${{ secrets.GH_PAT }}
           QUAFU_TOKEN: ${{ secrets.QF_QUAFU_KEY }}
           AI_FULL_PAT: ${{ secrets.AI_FULL_PAT }}
+          QFA_PK_V2_SK: ${{ secrets.QFA_PK_V2_SK }}  # FIX-06:封件解封轨(内存解→装 Secrets→零回显)
           GITHUB_TOKEN: ${{ github.token }}
           CASCADE_PAYLOAD: ${{ toJson(github.event.client_payload) }}
           CASCADE_SLEEP_S: '600'
           CASCADE_MAX_IDLE: '30'
-        run: python3 ci/watchtower.py --once ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.selftest == '1' && '--selftest' || '' }}
+        run: python3 -m pip install pynacl -q && python3 ci/watchtower.py --once ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.selftest == '1' && '--selftest' || '' }}
       - name: autoresponder(SI2 自动应答:高值事件→Kimi API 判词→本地回执+大堂互激帖)
         if: always()
         env:
