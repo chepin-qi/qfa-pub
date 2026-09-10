@@ -2,7 +2,7 @@
   "cadence": {
     "v": "METER-CADENCE-01-cand",
     "w12": [
-      1,
+      0,
       0,
       0,
       0,
@@ -17,9 +17,9 @@
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 0,
-    "C_streak": 1,
-    "verdict": "C-窗"
+    "dominant_bin": null,
+    "C_streak": 0,
+    "verdict": "进行式"
   },
   "beacon_max": 5619463037,
   "qlv_head": "a14461726ef2f5b3131d18c7cd81bd12524e1026",
