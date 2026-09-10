@@ -186,7 +186,7 @@ def poll(pat, st):
         old1 = st.get('lobby_max', 0)
         if old1 and mx1 > old1:
             for c in cm1:
-                if c['id'] > old1 and not c['body'].startswith(('【WT|', '【RESP|')):
+                if c['id'] > old1 and not (c['body'].startswith('【') and '|qfa' in c['body'][:24]):  # FIX-05e:凡自署件(【X|qfa)一律滤自环,不枚举
                     ev.append({'kind':'lobby.comment','ref':f"vci-inbox#1:{c['id']}",
                                'summary':c['body'][:600],
                                'high_value':('qfa' in c['body'][:300])})
@@ -209,7 +209,7 @@ def poll(pat, st):
                         if fn.startswith(('公告板/', '讨论室/')):
                             ev.append({'kind':'hub.feed','ref':fn,
                                        'summary':f"毂新件 {fn} (commit {cm['sha'][:7]})",
-                                       'high_value':('qfa' in fn.lower() and not fn.endswith('-qfa-resp.md'))})
+                                       'high_value':('qfa' in fn.lower() and not fn.split('/')[-1].startswith('qfa-') and not fn.endswith('-qfa-resp.md'))})  # FIX-05e:己署板帖滤自环
                 except Exception:
                     pass
         if newest:
