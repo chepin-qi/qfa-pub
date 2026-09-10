@@ -10,6 +10,7 @@
 # TOWER-FIX-01-qfa(beat-59,自发铸修,防己塔哑跑/钉盲,与 qgl/vinf 哑跑修方三行同理):
 #   ①信标面读末页定水印(页1钉盲之患:旧式直读页1,beacon_max 钉在 09-07 旧评,信标面将永盲)
 # TOWER-FIX-02-qfa:拍内 state 向 origin 刷新(链拍旧 ref 之水印跃检漏件,实测逮修)——见 load 段注
+# TOWER-FIX-03-qfa:随燃护栏——低值件记档不开工(零API),qlv.beat 高频面降格(AR 不帖);昨夕 cap12/12 烧穿实测逮修
 #   ②单拍判词上限 WT_MAX_WORK=8 + backlog 记件(钱面护栏:暴量拍不烧 API)
 import json, os, sys, time, hashlib, subprocess
 import urllib.request, urllib.error, urllib.parse
@@ -81,7 +82,7 @@ def poll(pat, st):
     # ② qlv 链头迁移(qfa↔qlv 互望配对:彼塔望我私仓头,我塔望彼 qlv-pub 头)
     head = gh_get('/repos/chepin-qi/qlv-pub/commits/main', pat)['sha']
     if st.get('qlv_head') and head != st['qlv_head']:
-        ev.append({'kind':'qlv.beat','ref':head[:8],'summary':f"qlv-pub main 头迁移 {st['qlv_head'][:8]}→{head[:8]}",'high_value':True})
+        ev.append({'kind':'qlv.beat','ref':head[:8],'summary':f"qlv-pub main 头迁移 {st['qlv_head'][:8]}→{head[:8]}",'high_value':False})  # FIX-03:高频低讯面降格(随燃护栏),互激高值件由信标/巷卡面承
     st['qlv_head'] = head
     # ③ quafu 三 job 状态迁移(0→2=Completed;qfa 在队三件)
     api_token = os.environ.get('QUAFU_TOKEN')
@@ -201,14 +202,18 @@ def main():
         if ev['kind'].endswith('.err'):
             pass  # 错件不入工位,仅记
         else:
-            try:
-                txt, usage = work_event(_key(), ev)
-                note['verdict'] = txt; note['usage'] = usage
-                fired.append(ev['kind'])
-            except BaseException as e:
-                # A2 铸修:NO-KEY(SystemExit)降级为记件——巡/巷/落账面无钥照跑,判词钱面候 root 装钥
-                note['verdict_error'] = ('NO-KEY:开工面候装钥 KIMI_API_KEY_VCI1(钱面不越)'
-                                         if isinstance(e, SystemExit) else str(e)[:200])
+            if not ev.get('high_value'):
+                # TOWER-FIX-03-qfa 随燃护栏:低值件记档不开工(昨夕 qlv.beat 频发致日 cap 12/12 烧穿,实测在案)
+                note['verdict'] = None; note['low_value_skip'] = True
+            else:
+                try:
+                    txt, usage = work_event(_key(), ev)
+                    note['verdict'] = txt; note['usage'] = usage
+                    fired.append(ev['kind'])
+                except BaseException as e:
+                    # A2 铸修:NO-KEY(SystemExit)降级为记件——巡/巷/落账面无钥照跑,判词钱面候 root 装钥
+                    note['verdict_error'] = ('NO-KEY:开工面候装钥 KIMI_API_KEY_VCI1(钱面不越)'
+                                             if isinstance(e, SystemExit) else str(e)[:200])
         fn = os.path.join(NOTES, 'WT-' + time.strftime('%Y%m%dT%H%M%SZ', time.gmtime())
                           + '-' + hashlib.sha256((ev['ref']+ev['kind']).encode()).hexdigest()[:8] + '.json')
         json.dump(note, open(fn,'w'), ensure_ascii=False, indent=2)
