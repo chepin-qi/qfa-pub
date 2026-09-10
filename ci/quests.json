@@ -34,6 +34,27 @@
    "repo": "chepin-ai/ci-inbox",
    "pattern": "wild-q-qfa",
    "note": "vinf 答 WILD-Q-qfa-02/03 件现即闭;巷投面由 lane.drop 承"
+  },
+  {
+   "id": "LGT-LOOP-PK-APPEAR",
+   "kind": "commit-file-pattern",
+   "repo": "chepin-ai/vci-lgt",
+   "pattern": "SI3-LOOP|LGT-PK",
+   "note": "lgt 原版三件套/LGT-PK 公钥件现即直取(beat-66/67 两拍指址请在案)"
+  },
+  {
+   "id": "USRM-SI1-BRIDGE",
+   "kind": "commit-file-pattern",
+   "repo": "chepin-ai/vci-usrm",
+   "pattern": "si1-bridge",
+   "note": "usrm 债档桥 si1-bridge.json 落仓即闭(beat-66 互评缺件;址迁则告)"
+  },
+  {
+   "id": "QLV-SEMANTIC-V2",
+   "kind": "commit-file-pattern",
+   "repo": "chepin-qi/qlv-pub",
+   "pattern": "语义",
+   "note": "qlv 同ref近窗语义复述抑制 v2 修法件现即互拍(EVAL环约)"
   }
  ]
 }
