@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T15:41:15Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "ucif2.watch",
+    "ref": "公告板/ucif2-129-comprehensive-correction-consensus-20260911T1527Z.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:ucif2-129号共识修正公告板到站，机旗内容扫触发watch|性态:外部共识类watch件；未实测内文，未触发本地响应，现处裸候态|建议处置:依AUTH-OTP-02次次落账，不主动寻求回应，裸候归档，待联动后细收|锚:qfa主规/机旗边界协议/clock=VOID",
+  "usage": {
+    "prompt_tokens": 238,
+    "completion_tokens": 1165,
+    "total_tokens": 1403,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1068
+    }
+  }
+}
