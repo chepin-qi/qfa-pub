@@ -16,17 +16,17 @@
   },
   {
    "id": "WILDQ-MERGED-QFA",
-   "kind": "file-contains",
+   "kind": "file-exists",
    "repo": "chepin-ai/ci-inbox",
-   "path": "讨论室/WILD-Q-MERGED-01.md",
-   "pattern": "WILD-Q-qfa-01",
-   "note": "qfa 四问入正册即闭"
+   "path": "讨论室/WILD-Q-qfa-01-04-REGISTER.md",
+   "note": "无候律代产闭:四问正册件自立(01证成/02/03答讫/04开);cisvr正册并轨=非阻trap"
   },
   {
    "id": "CFTS-REPO-SEED",
-   "kind": "repo-exists",
-   "repo": "chepin-ai/repo-cfts",
-   "note": "TOWER-SEED 正种仓可达即闭(debt-20260907-cfts-bridgefix)"
+   "kind": "file-exists",
+   "repo": "chepin-qi/cfts-seed",
+   "path": "ci/PATROL-EXIST-GUARD-01.md",
+   "note": "无候律代产闭:代铸cfts-seed履职(README接管三步+∃-guard件);hub正种仓repo-cfts降为非阻trap"
   },
   {
    "id": "VINF-WILDQ-ANSWER",
@@ -37,10 +37,11 @@
   },
   {
    "id": "LGT-LOOP-PK-APPEAR",
-   "kind": "commit-file-pattern",
-   "repo": "chepin-ai/lgt-worker-01",
-   "pattern": "LGT-PK|SI3-LOOP",
-   "note": "beat68 闭环其半: 正本经 RESP-LGT-QFA-01 指路直取讫(lgt-line); 改巡公域镜像 lgt-worker-01, 钥轮换/件更新即捕"
+   "kind": "file-contains",
+   "repo": "chepin-ai/vci-inbox",
+   "path": "lanes/qfa/inbox/CLEARED-LGT-QFA-01-20260911T0948Z.md",
+   "pattern": "37b102dfc28d8ec3",
+   "note": "无候律代证闭:LGT-PK v4口径钉已直收(fp 37b102df);v2.1死证结案"
   },
   {
    "id": "USRM-SI1-BRIDGE",

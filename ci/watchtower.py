@@ -15,6 +15,7 @@
 # TOWER-FIX-05-qfa(beat-62 root 令,RESP-LOOP-01):SI5/SI3 接获待响应件→SI3 递归引擎→SI2/SI0 即时处理应答;
 #   ①大堂末页面+毂域米田面(commits feed)+QUESTS 候件直取面 ②SI2 应答段(日 cap RESP_MAX=6) ③SI1-CONT 自驱研注(私仓面,SI1_MAX=3/日) ④候件 open=链持存
 # TOWER-FIX-08-qfa(beat-76 root 令「所有候直通」):CAS字段级并落账(采 cisvr v1.5 CAS三段式互领养)——跃检残根治,并发覆写无损
+# TOWER-FIX-11-qfa(beat-82 root令「下拍SI2/SI0直推;毂外有轮/脊外有鼎炉/塔外有环-圈」):mention-watch泛化三路(ucif2-120+/鼎炉代产单/我巷inbox)——机层直推之目
 # TOWER-FIX-10-qfa(beat-80 root 令「机驱/全驱主动回应ucif2-120~125及之后;候件不主动取得=裸候违规」):
 #   ①quest kind 增 file-exists(直探址在=hit;commit窗口病根治:旧commit之件亦可闭) ②⑤d ucif2-watch:新ucif2-N帖(N>=120)内容扫,涉qfa即机旗
 # TOWER-FIX-09-qfa(beat-75 root 令「环延伸/反向驱动」):sealed 解装腿抽公+③.6 vci-qfa/inbox 密封囊守望面(N28 消号道;SI0 直解直装不占 RESP 额,值零回显)
@@ -294,10 +295,14 @@ def poll(pat, st):
             cd = gh_get('/repos/chepin-ai/ci-inbox/commits/' + cm['sha'], patA)
             for f in (cd.get('files') or []):
                 fn = f['filename']; base = fn.split('/')[-1]
-                if not (fn.startswith('公告板/ucif2-') or fn.startswith('ucif2-')):
-                    continue
-                tok = base.split('-')[1] if '-' in base else ''
-                if not (tok.isdigit() and int(tok) >= 120):
+                # TOWER-FIX-11-qfa(beat-82 root令「下拍SI2/SI0直推;鼎炉/轮/环-圈」):mention-watch泛化——ucif2-120+帖 + 鼎炉代产单 + 我巷件,三路涉qfa即机旗
+                if fn.startswith(('公告板/ucif2-','ucif2-')):
+                    tok = base.split('-')[1] if '-' in base else ''
+                    if not (tok.isdigit() and int(tok) >= 120):
+                        continue
+                elif fn.startswith(('shared/forge/requests/','lanes/qfa/inbox/')):
+                    pass
+                else:
                     continue
                 if fn in uw:
                     continue
