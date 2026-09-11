@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-11T19:50:25Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，ref=qtlv-eval-wave-6220cd5885be.md，巷卡44→45，文件由旧舱递升新卡位| 性态:目录级归档漂移，未触发异常载荷，属正常版本迭代，无响应缺失| 建议处置:核验45卡位文件哈希与44源舱一致性，旧舱冻结；背书完整即次次落账| 锚:交叉lanes/qfa/ledger或lanes/c3签章验签，满足米田边律",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1112,
+    "total_tokens": 1326,
+    "cached_tokens": 214,
+    "completion_tokens_details": {
+      "reasoning_tokens": 995
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 214
+    }
+  }
+}
