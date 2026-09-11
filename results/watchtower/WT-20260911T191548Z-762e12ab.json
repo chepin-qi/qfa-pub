@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T19:15:22Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:otp-20260911T022116Z-浪涌三号-lvlu.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，巷卡40→41，otp-20260911T022116Z-浪涌三号-lvlu.md 投件| 性态:单点跃迁，未触发异常阈值，属正常巷卡轮转| 建议处置:校验文件哈希与头尾标，落账入 lanes/qfa/drop；裸候下一投件，不刷屏| 锚:lanes/opr/voidlog#chk-20260911T022116Z",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 924,
+    "total_tokens": 1146,
+    "completion_tokens_details": {
+      "reasoning_tokens": 816
+    }
+  }
+}

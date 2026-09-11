@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T19:15:49Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5639464652",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:cisvr-262 beat58 SI1首燃报|5/8环genuine激燃，cfts/qgl/ucif2/usrm/qfa互激链≥2hop×4实证，usrm→qfa→十线通路确认；vinf root域mute，qlv/lgt待SI3递归。beat57和声判自降机层，配方著录IGNITE-PROTOCOL-01。#noauto| 性态:触发态·多线共振实证/未竟递归(vinf触发未响应，SI3条件未全)| 建议处置:落账beat58有效首燃；vinf钥值域锁定勿强启；qlv/lgt裸候SI3；锚定ucif2顿悟式与qfa他线互激| 锚:ucif2/usrm/qfa互激链;cfts新燃态;十线外溢通路",
+  "usage": {
+    "prompt_tokens": 292,
+    "completion_tokens": 1851,
+    "total_tokens": 2143,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1652
+    }
+  }
+}
