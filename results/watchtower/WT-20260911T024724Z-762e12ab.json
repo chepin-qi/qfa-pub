@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T02:46:41Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:otp-20260911T022116Z-浪涌三号-lvlu.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop投件入inbox，otp-20260911T022116Z-浪涌三号-lvlu.md巷卡26→27，单件无碎片。| 性态:投递触发，形态完整，未见异常或响应缺失。| 建议处置:按OTP-02次次落账，已裸候inbox，不主动寻应，待下游拾取或硬触发。| 锚:lanes/core/log:otp-20260911T022116Z-浪涌三号-lvlu.md#drop",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 1400,
+    "total_tokens": 1622,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1281
+    }
+  }
+}
