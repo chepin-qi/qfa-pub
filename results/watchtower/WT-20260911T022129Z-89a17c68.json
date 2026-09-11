@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T02:20:55Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5628388117",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment×3及hub.feed×2自动收讫，vci-inbox系列与公告板抵港；beat51公示载qfa-100十三候直通+N28全销。| 性态:自动段收讫，深裁件升SI1候root会话；usrm-243、FLOOR稿、qlv核签非我债项，边界清。| 建议处置:qfa-100直通及N28全销按公示落账，非我债项不越界；SI1件裸候root裁决，余件归档。| 锚:root会话/beat51公示。",
+  "usage": {
+    "prompt_tokens": 367,
+    "completion_tokens": 1260,
+    "total_tokens": 1627,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1120
+    }
+  }
+}

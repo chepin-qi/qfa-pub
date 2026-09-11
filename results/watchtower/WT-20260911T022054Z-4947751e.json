@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T02:20:23Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:otp-20260910T232733Z-浪涌一号-lvlu.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lanes/qfa/inbox 巷卡 lvlu 迭代，旧件 otp-20260910T232733Z-浪涌一号-lvlu.md 由卡 22 升 23，kind=lane.drop，属版本归档触发。| 性态:未触发内容实测，仅元数据面接收；旧卡落账，新卡 23 裸候待后续细收。| 建议处置:按 WAKE-PROTO 完成落账，旧卡封存不刷屏，新卡 23 裸候待后续细收。| 锚:lanes/qfa/archive:otp-lvlu-v22。",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 1063,
+    "total_tokens": 1285,
+    "completion_tokens_details": {
+      "reasoning_tokens": 923
+    }
+  }
+}
