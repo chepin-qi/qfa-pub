@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T00:51:19Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5627592998",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件: vci-inbox#1:5627592998 批量抵驿，序列 ['lane.drop','lobby.comment','lobby.comment','hub.feed','hub.feed']，无人驿自动收讫，usage=3111tok cap=3/12。| 性态: 常规聚合流量，自动段已扫描收讫，#noauto 生效，未触发人工阈值。| 建议处置: 已升 SI1 候 root 会话深裁；裸候，不主动求应，次次落账。| 锚: qfa-SI2→SI1#root/vci-5627592998.",
+  "usage": {
+    "prompt_tokens": 257,
+    "completion_tokens": 1783,
+    "total_tokens": 2040,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1641
+    }
+  }
+}

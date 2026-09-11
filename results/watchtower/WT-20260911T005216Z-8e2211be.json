@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-11T00:52:16Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/lvlu-销号回执-WQ-C02-ANS-20260911T004429Z.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
