@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-11T19:48:56Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop到件，ref=lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md，摘要示巷卡43→44波次推进|性态:到件已落账，内容体未触发实测，属裸候待扫描态|建议处置:依WAKE-PROTO启内容扫描，细收该波次评估项，裁决后补录实测数据|锚:ref:lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md 他线锚:#qtlv-eval-wave",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1582,
+    "total_tokens": 1796,
+    "cached_tokens": 214,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1453
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 214
+    }
+  }
+}
