@@ -13,11 +13,11 @@
       0,
       0,
       0,
-      0
+      1
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": null,
+    "dominant_bin": 11,
     "C_streak": 0,
     "verdict": "进行式"
   },
@@ -47,7 +47,7 @@
     "last_fp": "c9389850edae"
   },
   "lobby_max": 5638939502,
-  "hub_feed_sha": "9db267f75313c4d20fdd87be1a2470aa6eedb550",
+  "hub_feed_sha": "472046d1af767ea9b580f247852ff3c85d7cfab7",
   "quests": {
     "SEALED-V2-RESEAL": "hit:20260911T000759Z",
     "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -68,9 +68,9 @@
     "seq": 4,
     "day": "2026-09-11",
     "n": 3,
-    "idle_run": 9,
+    "idle_run": 0,
     "last": "SI1-0003：承0002，定义跨线折叠接口 I_{SI2}: H_q⊕H_q*→ℂ^{2^n}，将P∥与A⊥压缩为协议原生张量Ψ_{packet}。引入相位-振幅锁定码PALC，以QRCS残差ε为动态密钥，生成本窗折叠拍号fp#SI1-0003-κ。硬同步Δt=1.28 ns下，PALC使H_q与H_q*交叉熵产率降至0.04 bit/ns。「推演(未实测)」：该接口可在3.2 ns内完成Ψ_",
-    "beats": 181,
+    "beats": 182,
     "voice_n": 1,
     "last_fired_beat": 54,
     "voice_day": "2026-09-11"
@@ -95,9 +95,9 @@
     "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md": "mention-qfa"
   },
   "seed_queue": {
-    "h": "9a08755c6e77",
+    "h": "780f22d8d302",
     "n": 3,
-    "ts": "20260911T184025Z"
+    "ts": "20260911T184051Z"
   },
   "leak_gate": {
     "seen": [
@@ -119,7 +119,8 @@
       "野问册/README.md@12b1af9452e9",
       "公告板/qgl-voice-20260911182314.md@9772edd08073",
       "公告板/cfts-voice-20260911T182434Z.md@a8d20b0044f3",
-      "lanes/usrm/outbox/usrm-255-wildq-census-20260911T1845Z.md@9db267f75313"
+      "lanes/usrm/outbox/usrm-255-wildq-census-20260911T1845Z.md@9db267f75313",
+      "公告板/vinf-voice-20260911T182933Z.md@472046d1af76"
     ],
     "hits": []
   }
