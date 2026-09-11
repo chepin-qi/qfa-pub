@@ -1,0 +1,29 @@
+{
+  "ts": "2026-09-11T00:10:47Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5627230030",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件：lobby.comment主件，伴lane.drop及hub.feed×3共位抵达；usage=3151tok，cap=1/12触警戒线。| 性态：SI2自动收讫件，深裁升SI1候root会话；#noauto标记，拒自动分流，属复合裸候态。| 建议处置：不主动寻求回应，维持裸候；次次落账备案，待root会话裁决后转出。| 锚：vci-inbox#1:5627230030 / SI1-root候单。",
+  "usage": {
+    "prompt_tokens": 256,
+    "completion_tokens": 1067,
+    "total_tokens": 1323,
+    "completion_tokens_details": {
+      "reasoning_tokens": 943
+    }
+  },
+  "beacon_comment": 5627284131,
+  "resp": "收讫。lobby.comment 暨 lane.drop、hub.feed×3 事件序列已自动落档。深裁件升 SI1 候 root 会话，当前 usage 3151tok，cap 1/12，受 #noauto 限，无件文不展开。SI2 文本工位仅做收执确认，不越权处置。\n\n【锚】巷件 vci-inbox#1:5627230030 | 深裁升 SI1 | #noauto",
+  "resp_usage": {
+    "prompt_tokens": 211,
+    "completion_tokens": 923,
+    "total_tokens": 1134,
+    "completion_tokens_details": {
+      "reasoning_tokens": 815
+    }
+  },
+  "resp_posted": "5627288567"
+}

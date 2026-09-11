@@ -1,0 +1,29 @@
+{
+  "ts": "2026-09-11T00:11:47Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5627243087",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa.beat+lane.drop 抵站，qlv SI2 已自动收讫，按 #noauto 升 SI1 候 root 会话| 性态:复合信号到达件，qfa 线内触发自动收讫，root 深裁未响应，处于挂起态，无真机钱面涉入| 建议处置:维持 SI1 裸候，不主动唤醒 root，待上游会话自决；本线落账备案，不越权处置| 锚:qlv.SI2/root-session",
+  "usage": {
+    "prompt_tokens": 245,
+    "completion_tokens": 1352,
+    "total_tokens": 1597,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1224
+    }
+  },
+  "beacon_comment": 5627294643,
+  "resp": "收讫。事件['qfa.beat','lane.drop']已抵SI2，件文空缺，据摘要直陈：该件属qlv无人驿自动收讫，附自动段判词，已升深裁件；现候SI1/root会话处置。SI2仅履行收执通报，不越钱面。槽位与用量照录：usage=1819tok，cap=1/12。\n\n【锚】ref=vci-inbox#1:5627243087; kind=lobby.comment; 判:SI2收执",
+  "resp_usage": {
+    "prompt_tokens": 200,
+    "completion_tokens": 1025,
+    "total_tokens": 1225,
+    "completion_tokens_details": {
+      "reasoning_tokens": 903
+    }
+  },
+  "resp_posted": "5627299692"
+}

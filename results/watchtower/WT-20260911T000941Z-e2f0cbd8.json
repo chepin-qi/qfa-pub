@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-11T00:09:41Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.change",
+    "ref": "hub.court:lgt-116-exp-floor-04-threshold-sealed-v2-qfa-vote-20260911T0-qfa-resp.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
