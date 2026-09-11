@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T02:58:33Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:otp-20260911T022116Z-浪涌三号-lvlu.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，ref=otp-20260911T022116Z-浪涌三号-lvlu.md入inbox，巷卡27→28| 性态:单件到件，未触发级联响应，状态静默迁移，未实测不编数| 建议处置:执行WAKE-PROTO扫描→细收→裁决→落账；本件裸候，不主动外呼，次次落账| 锚:AUTH-OTP-02裸候条款│WAKE-PROTO落账线",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 1564,
+    "total_tokens": 1786,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1445
+    }
+  }
+}
