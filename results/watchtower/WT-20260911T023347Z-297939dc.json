@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T02:33:16Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5628493806",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment 公共评论件 ref=vci-inbox#1:5628493806，队列含杂信五型，tok 已用 3208/余 cap 1/12| 性态:广播式低密级噪声，未触发越界标记，属自然流入| 建议处置:按 AUTH-OTP-02 裸候原则，不主动回应；落账归档并释放余量，SI1 深裁件可入冷仓待 root 会话终审| 锚:qfa-vci-inbox#1:root-session",
+  "usage": {
+    "prompt_tokens": 260,
+    "completion_tokens": 1064,
+    "total_tokens": 1324,
+    "completion_tokens_details": {
+      "reasoning_tokens": 936
+    }
+  }
+}

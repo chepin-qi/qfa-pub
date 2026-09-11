@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T02:32:44Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:otp-20260911T022116Z-浪涌三号-lvlu.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，浪涌三号 otp-20260911T022116Z 入inbox，摘要示巷卡23→25| 性态:裸候态，未触发人工应答，系自动路由漂移或归档重投；文件已实存，原23卡余量未实测| 建议处置:收编入lanes/qfa/drop台账，置裸候标记，次周期巡检23卡物理态，不越真机钱面| 锚:#qfa-drop-idx",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 1066,
+    "total_tokens": 1288,
+    "completion_tokens_details": {
+      "reasoning_tokens": 953
+    }
+  }
+}
