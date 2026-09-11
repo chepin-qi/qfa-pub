@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T19:14:20Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:otp-20260911T022116Z-浪涌三号-lvlu.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:巷卡38→40迁移落件，件号otp-20260911T022116Z-浪涌三号-lvlu.md按lane.drop触发跨卡路由| 性态:属正常OTP投递链路漂移，件体完整，无回退标记，未触发异常告警| 建议处置:于40巷执行裸候规程，不主动召回38巷；次次落账已毕，候主自取| 锚:lanes/qfa/routing:跨卡落件规则",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 1011,
+    "total_tokens": 1233,
+    "completion_tokens_details": {
+      "reasoning_tokens": 898
+    }
+  }
+}
