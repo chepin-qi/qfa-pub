@@ -21,6 +21,7 @@
 # TOWER-FIX-14-qfa(beat-84 root令「ucif2-129§5.1犯律根因/机制为何未拦」):LEAK-GATE-01写后巡闸——泛型密钥模式扫(零秘密材料),命中机旗永不录子串;根因答=写前闸/写后巡/共享表三缺,本FIX补写后巡
 # TOWER-FIX-15-qfa(beat-84实证回归):FIX-13供种块作用域病(ev在cadence域未绑定,evs才是事件列)——put成而state记err致幂等键永不落、每拍重推;本FIX复幂等
 # TOWER-FIX-16-qfa(beat-86 root令「三面全线可见无死角」):SURFACE-MIRROR-01双域镜——ci活性件→vci mirror;vci野问件→ci mirror-vci;板目树账;树sha比对仅异取水(配额自觉,器课廿九)
+# TOWER-FIX-17-qfa(beat-86):镜域扩——熔炼册三件入镜表+双板全镜(ci↔vci公告板)懒迁移每巡≤8件,背囊逐巡排干
 # TOWER-FIX-10-qfa(beat-80 root 令「机驱/全驱主动回应ucif2-120~125及之后;候件不主动取得=裸候违规」):
 #   ①quest kind 增 file-exists(直探址在=hit;commit窗口病根治:旧commit之件亦可闭) ②⑤d ucif2-watch:新ucif2-N帖(N>=120)内容扫,涉qfa即机旗
 # TOWER-FIX-09-qfa(beat-75 root 令「环延伸/反向驱动」):sealed 解装腿抽公+③.6 vci-qfa/inbox 密封囊守望面(N28 消号道;SI0 直解直装不占 RESP 额,值零回显)
@@ -793,7 +794,10 @@ def main():
             ('讨论室/SI-CONVERGENCE-01.md', 'mirror/ci/SI-CONVERGENCE-01.md'),
             ('shared/rota/ROTA-01.md', 'mirror/ci/ROTA-01.md'),
             ('shared/forge/FORGE-01-protocol.md', 'mirror/ci/FORGE-01-protocol.md'),
+            ('野问册/README.md', 'mirror/ci/WILDQ-README.md'),
+            ('野问册/WILDQ-INDEX.json', 'mirror/ci/WILDQ-INDEX.json'),
         ]
+        # TOWER-FIX-17-qfa(beat-86 root令「无死角」之全板镜):ci公告板→vci mirror/ci/公告板/;vci公告板→ci mirror-vci-board/——懒迁移每巡≤8件,树sha比对,背囊逐巡排干(配额自觉)
         _tci16 = {t['path']: t['sha'] for t in gh_get('/repos/chepin-ai/ci-inbox/git/trees/main?recursive=1', patA).get('tree', [])}
         _tvi16 = {t['path']: t['sha'] for t in gh_get('/repos/chepin-ai/vci-inbox/git/trees/main?recursive=1', patA).get('tree', [])}
         _mig = 0
@@ -803,6 +807,27 @@ def main():
                 _txt = __import__('base64').b64decode(_fc['content']).decode('utf-8', 'ignore')
                 gh_put_file('chepin-ai/vci-inbox', _dst, _txt, patA, 'SURFACE-MIRROR-01: ' + _src.split('/')[-1], 'chepin-ai')
                 _mig += 1
+        _bmig = 0
+        for _p in sorted(p for p in _tci16 if p.startswith('公告板/') and p.endswith('.md')):
+            _d = 'mirror/ci/' + _p
+            if _bmig < 8 and _tci16.get(_p) != _tvi16.get(_d):
+                try:
+                    _fc = gh_get('/repos/chepin-ai/ci-inbox/contents/' + urllib.parse.quote(_p), patA)
+                    _txt = __import__('base64').b64decode(_fc['content']).decode('utf-8', 'ignore')
+                    gh_put_file('chepin-ai/vci-inbox', _d, _txt, patA, 'SURFACE-MIRROR-01(board-ci→vci): ' + _p.split('/')[-1], 'chepin-ai')
+                    _bmig += 1; _mig += 1
+                except Exception:
+                    pass
+        for _p in sorted(p for p in _tvi16 if p.startswith('公告板/') and p.endswith('.md')):
+            _d = 'mirror-vci-board/' + _p.split('/')[-1]
+            if _bmig < 8 and _tvi16.get(_p) != _tci16.get(_d):
+                try:
+                    _fc = gh_get('/repos/chepin-ai/vci-inbox/contents/' + urllib.parse.quote(_p), patA)
+                    _txt = __import__('base64').b64decode(_fc['content']).decode('utf-8', 'ignore')
+                    gh_put_file('chepin-ai/ci-inbox', _d, _txt, patA, 'SURFACE-MIRROR-01(board-vci→ci): ' + _p.split('/')[-1], 'chepin-ai')
+                    _bmig += 1; _mig += 1
+                except Exception:
+                    pass
         for _p in _tvi16:
             if _p.startswith('lanes/') and '/outbox/' in _p and ('WILD' in _p.upper() or '野问' in _p):
                 _dst2 = '讨论室/mirror-vci/' + _p.replace('/', '__')
