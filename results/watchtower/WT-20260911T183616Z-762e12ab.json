@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T18:35:41Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:otp-20260911T022116Z-浪涌三号-lvlu.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，巷卡35→36切换，浪涌三号OTP件入inbox。| 性态:未实测链路握手，不辨35主动脱网或36静默承接；属路由漂移/节点换届，触发未响应。| 建议处置:裸候36卡心跳，不主动寻呼；按AUTH-OTP-02次次落账，归档待交叉验证。| 锚:lanes/qfa/peer:浪涌三号-otp-20260911T022116Z-映证.md",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 1210,
+    "total_tokens": 1432,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1094
+    }
+  }
+}
