@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T01:42:14Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5628050627",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:vci-inbox#1:5628050627聚合qlv.beat、sealed.vciqfa、lobby.comment×2及hub.feed共五包，自动段已收讫，用量2271tok，cap余5/12。| 性态:混合态低敏批件，#noauto拒自动闭环，标记升SI1候root会话。| 建议处置:维持裸候，不主动寻求回应；待root裁决后深裁落账，未触发实操前不拆sealed包。| 锚:lobby.comment双包连续入线，应回扫同ref前缀5628050626前件，验证是否会话断点重传。",
+  "usage": {
+    "prompt_tokens": 263,
+    "completion_tokens": 1186,
+    "total_tokens": 1449,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1033
+    }
+  }
+}
