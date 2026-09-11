@@ -14,6 +14,7 @@
 #   ②单拍判词上限 WT_MAX_WORK=8 + backlog 记件(钱面护栏:暴量拍不烧 API)
 # TOWER-FIX-05-qfa(beat-62 root 令,RESP-LOOP-01):SI5/SI3 接获待响应件→SI3 递归引擎→SI2/SI0 即时处理应答;
 #   ①大堂末页面+毂域米田面(commits feed)+QUESTS 候件直取面 ②SI2 应答段(日 cap RESP_MAX=6) ③SI1-CONT 自驱研注(私仓面,SI1_MAX=3/日) ④候件 open=链持存
+# TOWER-FIX-08-qfa(beat-76 root 令「所有候直通」):CAS字段级并落账(采 cisvr v1.5 CAS三段式互领养)——跃检残根治,并发覆写无损
 # TOWER-FIX-09-qfa(beat-75 root 令「环延伸/反向驱动」):sealed 解装腿抽公+③.6 vci-qfa/inbox 密封囊守望面(N28 消号道;SI0 直解直装不占 RESP 额,值零回显)
 # TOWER-FIX-07-qfa(beat-70 root 令「会后持续迭代/反向涟漪:SI0→SI2→SI3→SI5」):
 #   ①内容hash idem集 sha256(kind|ref)[:12] 截尾300(采lgt/usrm闸升位)——quest overlay 跃检回退之重火被吞,同件永不复执
@@ -671,6 +672,30 @@ def main():
                          'lock': lock, 'dominant_bin': dom, 'C_streak': streak, 'verdict': verdict}
     except Exception as e:
         st['cadence'] = {'err': str(e)[:120]}
+    # TOWER-FIX-08-qfa(beat-76 root 令「所有候直通」;采 cisvr SI3-LOOP-01 v1.5 CAS三段式互领养):落账前向 origin 取态→字段级并(quests/quafu hit胜open、si1计数max、idem/seen union、resp.n max)→写——哑跑亚型②跃检残(overlay回退/计数回退,残病活证×2在案)根治:并发拍覆写无损,并集/max交换律保证双收敛
+    try:
+        subprocess.run('git fetch origin main -q', shell=True, cwd=ROOT, timeout=60, capture_output=True)
+        _rm8 = subprocess.run('git show origin/main:ci/watchtower_state.json', shell=True, cwd=ROOT, timeout=30, capture_output=True, text=True)
+        if _rm8.returncode == 0 and _rm8.stdout.strip():
+            _rs8 = json.loads(_rm8.stdout)
+            for _dk8 in ('quests', 'quafu'):
+                _a8, _b8 = _rs8.get(_dk8) or {}, st.get(_dk8) or {}
+                _mg8 = dict(_a8)
+                for _k8, _v8 in _b8.items():
+                    _o8 = _mg8.get(_k8)
+                    if _o8 is None or (str(_o8) == 'open' and str(_v8) != 'open') or (str(_o8) == '0' and str(_v8) != '0'):
+                        _mg8[_k8] = _v8
+                st[_dk8] = _mg8
+            _a8, _b8 = _rs8.get('si1') or {}, st.get('si1') or {}
+            st['si1'] = {**_a8, **_b8, 'seq': max(_a8.get('seq', 0), _b8.get('seq', 0)), 'n': max(_a8.get('n', 0), _b8.get('n', 0)), 'voice_n': max(_a8.get('voice_n', 0), _b8.get('voice_n', 0))}
+            for _lk8 in ('idem', 'vciqfa_sealed_seen'):
+                st[_lk8] = list(dict.fromkeys(list(_rs8.get(_lk8) or []) + list(st.get(_lk8) or [])))[-300:]
+            _ra8, _rb8 = _rs8.get('resp') or {}, st.get('resp') or {}
+            if _ra8.get('day') == _rb8.get('day'):
+                st['resp'] = {**_ra8, **_rb8, 'n': max(_ra8.get('n', 0), _rb8.get('n', 0))}
+            st['lane_inbox_count'] = max(_rs8.get('lane_inbox_count') or 0, st.get('lane_inbox_count') or 0)
+    except Exception as _e8:
+        st['fix08_err'] = str(_e8)[:120]
     json.dump(st, open(STATE,'w'), ensure_ascii=False, indent=2)
     # ---- 自醒事件链出拍:有候件(quafu 在队等)则自唤下一拍;空转熔断 30 拍即眠,候外事 ----
     # 制式据 FREE-WILL-SOURCE-01:源=自意(self-cascade),驿=self-dispatch;骑事件律——纯事件,零 cron
