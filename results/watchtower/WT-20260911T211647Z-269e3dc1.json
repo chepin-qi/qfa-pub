@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-11T21:16:21Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5640664677",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:vci-inbox#1据报撤cron改五面感网纯事件驱动，申KIMI_API_KEY钥单，CLASSIFY首行入谱，背署vinf-147链。| 性态:撤cron未实测，标\"据报待验\"；机拟SI1【待钥】诚实标合规；钥单涉真机钱面，qfa不越权直批；CLASSIFY首行训入谱可收；背署为架构定性备案。| 建议处置:①dormant标记留手动拨火口防假死；②钥单转仓管/真机审批，准装立但密钥不落地本线；③CLASSIFY首行即日生效；④五面感网触发率实测后补落账。| 锚:vci-inbox#1:5640664677",
+  "usage": {
+    "prompt_tokens": 505,
+    "completion_tokens": 1510,
+    "total_tokens": 2015,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1324
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}
