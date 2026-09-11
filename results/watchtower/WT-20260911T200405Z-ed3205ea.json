@@ -1,0 +1,9 @@
+{
+  "ts": "2026-09-11T20:04:05Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "ucif2watch.err",
+    "ref": "ci-inbox",
+    "high_value": false
+  }
+}
