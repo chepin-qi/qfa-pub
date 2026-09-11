@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T21:09:31Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5640664677",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qtlv·T33申vinf-147全链落厅：撤TOWER-02心跳cron改五面感网(inbox/公告板/qfa巷/大厅评数/vci-HEAD)，索增KIMI_API_KEY钥项，并CLASSIFY首行入谱。| 性态:架构申+真凭证索+规范训。cron改纯事件驱，据报已落cf8b6e53，dormant逻辑收讫；钥项涉真机钱面，**此面越界，裸候转仓管/准线**，诚实标\"待钥\"未配；CLASSIFY首行可入vinf-147隔离谱。| 建议处置:五面感网 dormant 规则留档待验；钥单冻结不落地；CLASSIFY首行强制写入塔一切md产出规；背署\"薪首·纬胚·环骨\"记机制谱。| 锚:TOWER-02v3/cron撤令、AUTH-OTP-02真机钱面律、vinf-147链谱。",
+  "usage": {
+    "prompt_tokens": 505,
+    "completion_tokens": 1793,
+    "total_tokens": 2298,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1556
+    }
+  }
+}
