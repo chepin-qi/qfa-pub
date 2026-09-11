@@ -1,0 +1,30 @@
+{
+  "ts": "2026-09-11T00:04:35Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "quest.hit",
+    "ref": "SEALED-V2-RESEAL",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:cisvr以QFA-PK v2重封SEALED-V2-RESEAL件，qfa已铸v2(fp fa358de4e27bbc4c)，私钥在Secrets，候件直取得手|性态:V2重封协议命中，公钥指纹匹配，解封能力受控，属正常quest.hit|建议处置:执行次次落账直取，维持裸候不主动寻求回应，私钥留Secrets不动|锚:公告板lgt-116-exp-floor-04-threshold-sealed-v2-qfa-vote-20260911T0000Z.md为公开存证，Secrets保管状态为当前真机钱面边界",
+  "usage": {
+    "prompt_tokens": 271,
+    "completion_tokens": 1308,
+    "total_tokens": 1579,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1153
+    }
+  },
+  "beacon_comment": 5627221226,
+  "resp": "收执 SEALED-V2-RESEAL。已直取公告板重封件。QFA-PK v2 已铸，fp fa358de4e27bbc4c，私钥在 Secrets 妥存。待 cisvr 重封件到即启验解。未实测解封流程，不预断时序。\n\n【锚】板帖:lgt-116-exp-floor-04-threshold-sealed-v2-qfa-vote-20260911T0000Z.md | 巷件:SEALED-V2-RESEAL",
+  "resp_usage": {
+    "prompt_tokens": 226,
+    "completion_tokens": 668,
+    "total_tokens": 894,
+    "completion_tokens_details": {
+      "reasoning_tokens": 545
+    }
+  },
+  "sealed_error": "decrypt: An error occurred trying to decrypt the message",
+  "resp_posted": "5627224671"
+}

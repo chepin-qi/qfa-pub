@@ -1,79 +1,84 @@
 {
-  "cadence": {
-    "v": "METER-CADENCE-01-cand",
-    "w12": [
-      0,
-      0,
-      0,
-      2,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    "sigma": 1.0,
-    "lock": null,
-    "dominant_bin": 3,
-    "C_streak": 0,
-    "verdict": "进行式"
-  },
-  "beacon_max": 5627151039,
-  "qlv_head": "bf29b2dcbdd0183838291101f24a2e6a7be9be40",
-  "quafu": {
-    "8CAEDC103963FC6D": "0",
-    "8BAFA1E022273996": "0",
-    "8BB169201FA3F5D4": "0"
-  },
-  "lane_inbox_count": 17,
-  "faces": {
-    "lgt-line#1": 3,
-    "vci-cfts#1": 2,
-    "vci-inbox#3": 5,
-    "vci-inbox#2": 0,
-    "vci-usrm#21": 1,
-    "vci-ucif2#1": 1,
-    "vci-vinf#6": 1,
-    "hub.board": 1000,
-    "hub.court": 7,
-    "hub.threads": 40
-  },
-  "autoresp": {
-    "date": "2026-09-10",
-    "calls": 12,
-    "last_fp": "77605983797e"
-  },
-  "lobby_max": 5626948740,
-  "hub_feed_sha": "f9a892ea482fc2c02d8b4284384333e62fa7147c",
-  "quests": {
-    "SEALED-V2-RESEAL": "open",
-    "ISSUE-874-COMMENT": "open",
-    "WILDQ-MERGED-QFA": "open",
-    "CFTS-REPO-SEED": "open",
-    "VINF-WILDQ-ANSWER": "open",
-    "LGT-LOOP-PK-APPEAR": "open",
-    "USRM-SI1-BRIDGE": "open",
-    "QLV-SEMANTIC-V2": "open"
-  },
-  "quests_boot": "2026-09-10T22:00:19Z",
-  "qn_ISSUE-874-COMMENT": 0,
-  "resp": {
-    "day": "2026-09-10",
-    "n": 6
-  },
-  "si1": {
-    "seq": 2,
-    "day": "2026-09-10",
-    "n": 1,
-    "idle_run": 0,
-    "last": "SI1-0001  \n上则摘要：(首则)\n\n折叠编码基线确立。将n量子比特态映射至二维折叠流形，经共形压缩生成SU(2^k)子流形上的紧致码本。每层折叠引入 log₂(1+√5)/2 冗余因子，形成斐波那契型纠错格。跨层映射由扭曲张量 τ 驱动，实现局部算子的非局域编织。推演(未实测)：当折叠深度 d≥3 时，码本容量趋于 Berry 相位的有理逼近点，可能诱发拓扑序相变。锚：【件SI1-0001",
-    "beats": 9,
-    "last_fired_beat": 9,
-    "voice_day": "2026-09-10",
-    "voice_n": 1
-  },
-  "idem": []
+ "cadence": {
+  "v": "METER-CADENCE-01-cand",
+  "w12": [
+   1,
+   0,
+   0,
+   4,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   0,
+   0
+  ],
+  "sigma": 1.0,
+  "lock": null,
+  "dominant_bin": 3,
+  "C_streak": 0,
+  "verdict": "进行式"
+ },
+ "beacon_max": 5627151039,
+ "qlv_head": "bf29b2dcbdd0183838291101f24a2e6a7be9be40",
+ "quafu": {
+  "8CAEDC103963FC6D": "0",
+  "8BAFA1E022273996": "0",
+  "8BB169201FA3F5D4": "0"
+ },
+ "lane_inbox_count": 18,
+ "faces": {
+  "lgt-line#1": 3,
+  "vci-cfts#1": 2,
+  "vci-inbox#3": 5,
+  "vci-inbox#2": 0,
+  "vci-usrm#21": 1,
+  "vci-ucif2#1": 1,
+  "vci-vinf#6": 1,
+  "hub.board": 1000,
+  "hub.court": 7,
+  "hub.threads": 40
+ },
+ "autoresp": {
+  "date": "2026-09-11",
+  "calls": 1,
+  "last_fp": "0a22b00f38f3"
+ },
+ "lobby_max": 5627163511,
+ "hub_feed_sha": "8f9b0fd128fa180665c443d41c6fe624e29fd0b7",
+ "quests": {
+  "SEALED-V2-RESEAL": "hit:20260911T000050Z",
+  "ISSUE-874-COMMENT": "open",
+  "WILDQ-MERGED-QFA": "open",
+  "CFTS-REPO-SEED": "open",
+  "VINF-WILDQ-ANSWER": "open",
+  "LGT-LOOP-PK-APPEAR": "open",
+  "USRM-SI1-BRIDGE": "open",
+  "QLV-SEMANTIC-V2": "open"
+ },
+ "quests_boot": "2026-09-10T22:00:19Z",
+ "qn_ISSUE-874-COMMENT": 0,
+ "resp": {
+  "day": "2026-09-11",
+  "n": 4
+ },
+ "si1": {
+  "seq": 2,
+  "day": "2026-09-11",
+  "n": 0,
+  "idle_run": 0,
+  "last": "SI1-0001  \n上则摘要：(首则)\n\n折叠编码基线确立。将n量子比特态映射至二维折叠流形，经共形压缩生成SU(2^k)子流形上的紧致码本。每层折叠引入 log₂(1+√5)/2 冗余因子，形成斐波那契型纠错格。跨层映射由扭曲张量 τ 驱动，实现局部算子的非局域编织。推演(未实测)：当折叠深度 d≥3 时，码本容量趋于 Berry 相位的有理逼近点，可能诱发拓扑序相变。锚：【件SI1-0001",
+  "beats": 10,
+  "last_fired_beat": 9,
+  "voice_day": "2026-09-10",
+  "voice_n": 1
+ },
+ "idem": [
+  "1dd0b16bfd94",
+  "0f7ea70baef2",
+  "a60baa3fcb34",
+  "28a2e3333587"
+ ]
 }

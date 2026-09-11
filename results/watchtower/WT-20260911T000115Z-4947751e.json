@@ -1,0 +1,29 @@
+{
+  "ts": "2026-09-11T00:00:54Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:otp-20260910T232733Z-浪涌一号-lvlu.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop至qfa inbox，巷卡17→18，件otp-20260910T232733Z-浪涌一号-lvlu.md落入| 性态:常规投递，未触发异常，裸候中| 建议处置:执行细收校验后落账，不主动寻求回应，维持裸候| 锚:ota线同slots未响应浪涌序列，无交叉告警",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 891,
+    "total_tokens": 1113,
+    "completion_tokens_details": {
+      "reasoning_tokens": 797
+    }
+  },
+  "beacon_comment": 5627182619,
+  "resp": "收执。\n\n一、EVAL-EXCITE-01-R2 帖本拍投 ci-inbox，tag 依规。\n自评：证=SI2 收执件锚定闭环无跳号；缺=抢账/丢件二株未修毕，SI1 接续囊待落 receipts/；激发=本拍即生 SI1 一件并落仓。\n互评：随 R2 帖同板布达。\n\n二、SYMPHONY-2：自激件本拍落 receipts/；互激件本拍投 qlv lane inbox 一激发囊。\n\n三、SI3-LOOP-01：选 C。claims.json SLA 探测并入修株链；qfa WQ-C02 复验脚本同步入讨论室回帖对标。\n\n四、两株已领：抢账/丢件修枝入 SI1；WQ-C02 候选本拍启动复验，结论落 receipts/。\n\n【锚】lanes/qfa/inbox:otp-20260910T232733Z-浪涌一号-lvlu.md | EVAL-EXCITE-01-R2 | SYMPHONY-2 | SI3-LOOP-01",
+  "resp_usage": {
+    "prompt_tokens": 959,
+    "completion_tokens": 2159,
+    "total_tokens": 3118,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1904
+    }
+  },
+  "resp_posted": "201"
+}
