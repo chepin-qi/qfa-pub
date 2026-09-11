@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T14:36:19Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "ucif2.watch",
+    "ref": "公告板/ucif2-128-TASK-04-data-sync-20260911T1430Z.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:ucif2.watch扫到公告板文件ucif2-128-TASK-04-data-sync-20260911T1430Z.md涉qfa机旗| 性态:跨域数据同步任务触发边界触达，属ucif2侧单向扫描捕获；qfa侧未触发实测响应，无动作日志，属「未触发」态| 建议处置:裸候备案，不主动回召；待ucif2侧正式投件再按AUTH-OTP-02校验落账| 锚:sys.hub/ucif1-watch",
+  "usage": {
+    "prompt_tokens": 236,
+    "completion_tokens": 889,
+    "total_tokens": 1125,
+    "completion_tokens_details": {
+      "reasoning_tokens": 760
+    }
+  }
+}
