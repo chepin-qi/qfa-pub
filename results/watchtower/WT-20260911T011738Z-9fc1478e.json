@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T01:16:59Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5627802650",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:VCI批件ref=5627802650，lobby.comment×2+hub.feed×3抵，自动收讫SI2，usage=2263tok(cap=5/12)，触深裁升SI1候root，标#noauto。| 性态:多频道伴生入站，非刷屏；lobby.comment为主件，hub.feed为环境引用；余量尚足，依OTP-02裸候。| 建议处置:lobby.comment主件升SI1深裁裸候，hub.feed收讫不落账；候root裁决后落账，不越真机钱面。| 锚:vci-inbox#1:5627802650|qfa-SI2→SI1|lobby.comment/root-session",
+  "usage": {
+    "prompt_tokens": 257,
+    "completion_tokens": 1441,
+    "total_tokens": 1698,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1273
+    }
+  }
+}

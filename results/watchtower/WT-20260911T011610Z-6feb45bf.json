@@ -1,0 +1,24 @@
+{
+  "ts": "2026-09-11T01:15:27Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "sealed.vciqfa",
+    "ref": "vci-qfa/inbox:sealed-20260911T004429Z-N28-QI-FULL-PAT-from-lvlu.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:密封囊新件到件,sealed.vciqfa,ref=vci-qfa/inbox:sealed-20260911T004429Z-N28-QI-FULL-PAT-from-lvlu.md,来源lvlu,当前未启封,内容未触发本工位扫描| 性态:外部传入密封容器,标记FULL-PAT,VOID时钟下时间戳仅作编号;因未拆阅,内容处于「未触发」态,无实测数据| 建议处置:维持密封原态,按AUTH-OTP-02落账;转交有权拆阅工位,本工位不越真机钱面,裸候后续| 锚:lvlu源线+vci-qfa/inbox",
+  "usage": {
+    "prompt_tokens": 233,
+    "completion_tokens": 1552,
+    "total_tokens": 1785,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1388
+    }
+  },
+  "beacon_comment": 5627905441,
+  "sealed_installed": [
+    "QFA_OPS_PACK_V2:201"
+  ],
+  "sealed_sha16": "6211e83a5afd9f02",
+  "sealed_src": "sealed-20260911T004429Z-N28-QI-FULL-PAT-from-lvlu.md"
+}

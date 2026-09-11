@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T01:14:50Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:otp-20260910T232733Z-浪涌一号-lvlu.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，浪涌一号-lvlu.md落入inbox；摘要示巷卡21→22，OTP时间戳完整，属版本递进。| 性态:未触发异常，未实测内容载荷，仅元数据扫描；无刷屏、无越真机钱面。| 建议处置:细收落账，归入lanes/qfa/inbox待办栈；裸候，不主动回呼。| 锚:lanes/core/audit:浪涌级联-otp-registry。",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 1264,
+    "total_tokens": 1486,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1153
+    }
+  }
+}
