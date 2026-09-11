@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-11T00:27:24Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/qfa-97-autonomy-evidence-20260911T001451Z.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}

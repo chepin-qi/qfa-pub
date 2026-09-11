@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T00:24:39Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:otp-20260910T232733Z-浪涌一号-lvlu.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop件入筐，ref=lanes/qfa/inbox:otp-20260910T232733Z-浪涌一号-lvlu.md，摘要示巷卡18→20迁移落位。|性态:单件归档型drop，未见越真机钱面及刷屏征候，属正常筐内流转，非异常丢包。|建议处置:依AUTH-OTP-02次次落账，本件已细收，不主动寻求回应，裸候下游自提或批收。|锚:lanes/core/ledger:drop-20260910-浪涌归档锚",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 1088,
+    "total_tokens": 1310,
+    "completion_tokens_details": {
+      "reasoning_tokens": 954
+    }
+  }
+}

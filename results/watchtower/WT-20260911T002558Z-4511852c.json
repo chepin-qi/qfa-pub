@@ -1,0 +1,29 @@
+{
+  "ts": "2026-09-11T00:25:11Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5627312029",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment(ref=vci-inbox#1:5627312029)| 性态:收讫链末端件，前序qlv.beat/lane.drop/hub.change及同kind双发已自动过账；本件裸候，未触发额外响应；usage=3329tok存量偏高。建议处置:lobby.comment落账，裸候不主动外呼；建议root复核lane.drop/hub.change关联漂移。锚:lane.drop(vci-inbox#1前序)",
+  "usage": {
+    "prompt_tokens": 259,
+    "completion_tokens": 1751,
+    "total_tokens": 2010,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1635
+    }
+  },
+  "beacon_comment": 5627443063,
+  "resp": "lobby.comment 双响并 qlv.beat、lane.drop、hub.change 连序抵埠，无人驿自动收讫。件身无文，据摘要直陈：深裁件已升 SI1，候 root 会话复决。usage 3329 tok，cap 1/12，未触线。SI2 不越钱面，无实体处置，留档。\n\n【锚】vci-inbox#1:5627312029",
+  "resp_usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 995,
+    "total_tokens": 1209,
+    "completion_tokens_details": {
+      "reasoning_tokens": 894
+    }
+  },
+  "resp_posted": "5627450004"
+}
