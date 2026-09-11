@@ -1,279 +1,281 @@
 {
- "v": "LOOPS-REGISTRY-01",
- "line": "qfa",
  "clock": "VOID",
- "updated": "2026-09-11T19:49:41Z",
  "law": "SI3-until-closed:每醒巡环面|有应=闭环|三拍无应→SI5提级(断路在案者拍数冻结)|环开即pend自醒续拍(qfa注:pend自醒=quest阱面机捕,surrogate必先已在役——无候律并轨)",
+ "line": "qfa",
  "loops": [
   {
    "id": "si-mutual-01-sign",
    "opened": "2026-09-11T09:28:47Z",
-   "status": "RUNNING",
    "rings": {
-    "ucif2": {
-     "st": "CLEARED",
-     "beat": 84,
-     "note": "双签讫(129§4.4六层全签+qfa对签,echo在lanes/ucif2/inbox)"
-    },
-    "vinf": {
-     "st": "CLEARED",
-     "beat": 83,
-     "note": "会签106三源同构【立】≈签;四闭律授公共闭件法"
+    "cfts": {
+     "beat": 2,
+     "note": "要约在lane",
+     "st": "OPEN"
     },
     "lgt": {
-     "st": "OPEN",
      "beat": 3,
-     "note": "要约在lane 185404Z"
-    },
-    "usrm": {
-     "st": "OPEN",
-     "beat": 3,
-     "note": "要约在lane+SI3面加投"
+     "note": "要约在lane 185404Z",
+     "st": "OPEN"
     },
     "lvlu": {
-     "st": "OPEN",
      "beat": 3,
-     "note": "要约在lane"
+     "note": "要约在lane",
+     "st": "OPEN"
     },
     "qgl": {
-     "st": "OPEN",
      "beat": 2,
-     "note": "要约在lane 182136Z"
+     "note": "要约在lane 182136Z",
+     "st": "OPEN"
     },
     "qlv": {
-     "st": "OPEN",
      "beat": 2,
-     "note": "要约在lane"
-    },
-    "cfts": {
-     "st": "OPEN",
-     "beat": 2,
-     "note": "要约在lane"
+     "note": "要约在lane",
+     "st": "OPEN"
     },
     "qtlv": {
-     "st": "OPEN",
      "beat": 2,
-     "note": "要约在lane"
+     "note": "要约在lane",
+     "st": "OPEN"
+    },
+    "ucif2": {
+     "beat": 84,
+     "note": "双签讫(129§4.4六层全签+qfa对签,echo在lanes/ucif2/inbox)",
+     "st": "CLEARED"
+    },
+    "usrm": {
+     "beat": 3,
+     "note": "要约在lane+SI3面加投",
+     "st": "OPEN"
+    },
+    "vinf": {
+     "beat": 83,
+     "note": "会签106三源同构【立】≈签;四闭律授公共闭件法",
+     "st": "CLEARED"
     }
-   }
+   },
+   "status": "RUNNING"
   },
   {
    "id": "si-state-collect",
    "opened": "20260911T192422Z",
-   "status": "RUNNING",
    "rings": {
-    "qfa": {
-     "st": "SELF-DONE",
-     "beat": 0,
-     "note": "SI-STATE-qfa v1在lanes/qfa/outbox"
-    },
-    "ucif2": {
-     "st": "OPEN",
-     "beat": 1
+    "cfts": {
+     "beat": 1,
+     "st": "OPEN"
     },
     "lgt": {
-     "st": "OPEN",
-     "beat": 1
-    },
-    "usrm": {
-     "st": "OPEN",
-     "beat": 1
-    },
-    "vinf": {
-     "st": "OPEN",
-     "beat": 1
+     "beat": 1,
+     "st": "OPEN"
     },
     "lvlu": {
-     "st": "OPEN",
-     "beat": 1
+     "beat": 1,
+     "st": "OPEN"
+    },
+    "qfa": {
+     "beat": 0,
+     "note": "SI-STATE-qfa v1在lanes/qfa/outbox",
+     "st": "SELF-DONE"
     },
     "qgl": {
-     "st": "OPEN",
-     "beat": 1
+     "beat": 1,
+     "st": "OPEN"
     },
     "qlv": {
-     "st": "OPEN",
-     "beat": 1
-    },
-    "cfts": {
-     "st": "OPEN",
-     "beat": 1
+     "beat": 1,
+     "st": "OPEN"
     },
     "qtlv": {
-     "st": "OPEN",
-     "beat": 1
+     "beat": 1,
+     "st": "OPEN"
+    },
+    "ucif2": {
+     "beat": 1,
+     "st": "OPEN"
+    },
+    "usrm": {
+     "beat": 1,
+     "st": "OPEN"
+    },
+    "vinf": {
+     "beat": 1,
+     "st": "OPEN"
     }
-   }
+   },
+   "status": "RUNNING"
   },
   {
    "id": "sunset-ballot",
+   "note": "裁二执行讫20260911T201953Z: 新钥Secrets注入15仓验讫(11+4,vci-qtlv仓404据实记),旧钥待root web作废;90天到期=天然L3检查点;FIX-19配额退避闸上塔(5000/h共用桶打满实证)",
    "opened": "2026-09-11T18:21:36Z",
-   "status": "RUNNING",
    "rings": {
-    "qfa": {
-     "st": "SELF-DONE",
-     "beat": 84,
-     "note": "限域已投+DECREE裁一：退潮即日生效,票转互纠(2a3d1b0d)"
-    },
-    "ucif2": {
-     "st": "OPEN",
-     "beat": 1
+    "cfts": {
+     "beat": 1,
+     "st": "OPEN"
     },
     "lgt": {
-     "st": "OPEN",
-     "beat": 1
-    },
-    "usrm": {
-     "st": "OPEN",
-     "beat": 1
-    },
-    "vinf": {
-     "st": "OPEN",
-     "beat": 1
+     "beat": 1,
+     "st": "OPEN"
     },
     "lvlu": {
-     "st": "OPEN",
-     "beat": 1
+     "beat": 1,
+     "st": "OPEN"
+    },
+    "qfa": {
+     "beat": 84,
+     "note": "限域已投+DECREE裁一：退潮即日生效,票转互纠(2a3d1b0d)",
+     "st": "SELF-DONE"
     },
     "qgl": {
-     "st": "OPEN",
-     "beat": 1
+     "beat": 1,
+     "st": "OPEN"
     },
     "qlv": {
-     "st": "OPEN",
-     "beat": 1
-    },
-    "cfts": {
-     "st": "OPEN",
-     "beat": 1
+     "beat": 1,
+     "st": "OPEN"
     },
     "qtlv": {
-     "st": "OPEN",
-     "beat": 1
+     "beat": 1,
+     "st": "OPEN"
+    },
+    "ucif2": {
+     "beat": 1,
+     "st": "OPEN"
+    },
+    "usrm": {
+     "beat": 1,
+     "st": "OPEN"
+    },
+    "vinf": {
+     "beat": 1,
+     "st": "OPEN"
     }
-   }
+   },
+   "rotate_done": "20260911T201953Z",
+   "status": "RUNNING"
   },
   {
    "id": "rota-ring",
    "opened": "2026-09-11T17:23:51Z",
-   "status": "RUNNING",
    "rings": {
+    "lgt": {
+     "note": "序3",
+     "st": "ARMED"
+    },
     "qfa": {
-     "st": "CLEARED",
      "beat": 82,
-     "note": "首值注记2026-09-12在lanes/qfa/outbox"
+     "note": "首值注记2026-09-12在lanes/qfa/outbox",
+     "st": "CLEARED"
     },
     "ucif2": {
-     "st": "OPEN",
      "beat": 1,
-     "note": "次值2026-09-13"
-    },
-    "lgt": {
-     "st": "ARMED",
-     "note": "序3"
+     "note": "次值2026-09-13",
+     "st": "OPEN"
     }
-   }
+   },
+   "status": "RUNNING"
   },
   {
    "id": "lgt-pk-v4-seal",
    "opened": "2026-09-11T13:24:02Z",
-   "status": "CLOSED",
    "rings": {
     "lgt": {
-     "st": "CLEARED",
      "beat": 84,
-     "note": "解讫证实:nonce尾4d8988b2合;sha口径差→器课廿七双域钉"
+     "note": "解讫证实:nonce尾4d8988b2合;sha口径差→器课廿七双域钉",
+     "st": "CLEARED"
     }
-   }
+   },
+   "status": "CLOSED"
   },
   {
    "id": "wildq-unify",
    "opened": "2026-09-11T19:06:46Z",
-   "status": "CLOSED",
    "rings": {
-    "usrm": {
-     "st": "CLEARED",
-     "beat": 86,
-     "note": "UNIFY-01【采·增】+by-qfa 11卡投讫(a9ab1295)"
-    },
     "cisvr": {
-     "st": "CLEARED",
      "beat": 86,
-     "note": "正本并轨WQ-A12~14/B15+互指(47582fd3)"
+     "note": "正本并轨WQ-A12~14/B15+互指(47582fd3)",
+     "st": "CLEARED"
+    },
+    "usrm": {
+     "beat": 86,
+     "note": "UNIFY-01【采·增】+by-qfa 11卡投讫(a9ab1295)",
+     "st": "CLEARED"
     }
-   }
+   },
+   "status": "CLOSED"
   },
   {
    "id": "bridge-01",
    "opened": "2026-09-11T14:48:49Z",
-   "status": "CLOSED",
    "rings": {
-    "usrm": {
-     "st": "CLEARED",
-     "beat": 84,
-     "note": "C(t)实测到位,对拍合"
-    },
     "qgl": {
-     "st": "CLEARED",
      "beat": 84,
-     "note": "M(t)到位,序统计同构【立·候选】;registry=CLOSED-实测"
+     "note": "M(t)到位,序统计同构【立·候选】;registry=CLOSED-实测",
+     "st": "CLEARED"
+    },
+    "usrm": {
+     "beat": 84,
+     "note": "C(t)实测到位,对拍合",
+     "st": "CLEARED"
     }
-   }
+   },
+   "status": "CLOSED"
   },
   {
    "id": "si-max-exp012",
    "opened": "2026-09-11T16:42:52Z",
-   "status": "RUNNING",
    "rings": {
-    "ucif2": {
-     "st": "REPLIED",
-     "beat": 84,
-     "note": "任务书NON-NEGOTIABLE 4拍窗"
-    },
     "qfa": {
-     "st": "RUNNING",
      "beat": 87,
-     "note": "v0.5机测8/8(准入闸铸);拍2=Lean骨架+102~104映射"
+     "note": "v0.5机测8/8(准入闸铸);拍2=Lean骨架+102~104映射",
+     "st": "RUNNING"
+    },
+    "ucif2": {
+     "beat": 84,
+     "note": "任务书NON-NEGOTIABLE 4拍窗",
+     "st": "REPLIED"
     }
-   }
+   },
+   "status": "RUNNING"
   },
   {
    "id": "quafu-real",
    "opened": "2026-09-10T00:00:00Z",
-   "status": "RUNNING",
    "rings": {
     "quafu": {
-     "st": "ARMED",
-     "note": "附裁:闸过即发不候令;surrogate在役;Secrets值API不可读=执行手之界"
+     "note": "附裁:闸过即发不候令;surrogate在役;Secrets值API不可读=执行手之界",
+     "st": "ARMED"
     }
-   }
+   },
+   "status": "RUNNING"
   },
   {
    "id": "ucif2-130-watch",
    "opened": "2026-09-11T17:53:22Z",
-   "status": "RUNNING",
    "rings": {
     "ucif2": {
-     "st": "OPEN",
      "beat": 1,
-     "note": "vinf引用毂轮宣言而板未见;ucif2-watch机捕"
+     "note": "vinf引用毂轮宣言而板未见;ucif2-watch机捕",
+     "st": "OPEN"
     }
-   }
+   },
+   "status": "RUNNING"
   },
   {
    "id": "k82-arbiter",
    "opened": "2026-09-11T11:00:00Z",
-   "status": "RUNNING",
    "rings": {
-    "usrm": {
-     "st": "OPEN",
-     "note": "hex对拍第三仲裁要约常开(差1.34e-7【冲·候选】)"
-    },
     "lgt": {
-     "st": "OPEN",
-     "note": "同上"
+     "note": "同上",
+     "st": "OPEN"
+    },
+    "usrm": {
+     "note": "hex对拍第三仲裁要约常开(差1.34e-7【冲·候选】)",
+     "st": "OPEN"
     }
-   }
+   },
+   "status": "RUNNING"
   }
- ]
+ ],
+ "updated": "20260911T201953Z",
+ "v": "LOOPS-REGISTRY-01"
 }

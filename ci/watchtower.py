@@ -80,6 +80,31 @@ def gh_post_comment(owner, repo, issue, body, pat):
         return json.load(r).get('id')
 
 # ---------- 事件源轮询 ----------
+# TOWER-FIX-19-qfa AIF-QUOTA-BACKOFF-01(beat-89 实测:单用户core桶5000/h被全线+塔共用打满,复位约1h):
+# 配额自觉动态化——AIF面收403+X-RateLimit-Remaining=0即记st['aif_cool'].until=reset_epoch;各AIF面入口查闸,冷却即跳(事件驱动,不睡不等,复位自通)
+class AIFCool(Exception):
+    pass
+def aif_gate(st):
+    _aq = st.get('aif_cool') or {}
+    try:
+        return not (_aq.get('until') and time.time() < float(_aq['until']))
+    except Exception:
+        return True
+def aif_note(st, e):
+    try:
+        _h = getattr(e, 'headers', None)
+        _rem0 = bool(_h) and _h.get('X-RateLimit-Remaining') == '0'
+        _until = None
+        if _h and _h.get('X-RateLimit-Reset'):
+            _until = int(_h.get('X-RateLimit-Reset'))
+        if '403' in str(e) and (_rem0 or 'rate limit' in str(e).lower()):
+            st['aif_cool'] = {'until': _until or (time.time() + 1800),
+                              'noted': time.strftime('%Y%m%dT%H%M%SZ', time.gmtime())}
+            return True
+    except Exception:
+        pass
+    return False
+
 def poll(pat, st):
     """返回 events 列表:[{kind, ref, summary, high_value}]"""
     ev = []
@@ -330,6 +355,8 @@ def poll(pat, st):
         ev.append({'kind':'ucif2watch.err','ref':'ci-inbox','summary':str(e)[:120],'high_value':False})
     # TOWER-FIX-14-qfa LEAK-GATE-01(beat-84 root令「找犯律根因/为何机制未拦住」之机层答):写后巡闸——泛型密钥模式扫(ghp_/gho_/ghs_/ghu_/github_pat_/sk-/AKID),零秘密材料可装;命中即high_value机旗,永不录匹配子串本身;不自动涂销(涂销=铁律人事,闸只报警)
     try:
+        if not aif_gate(st):
+            raise AIFCool('AIF冷却中,LEAK-GATE本巡跳过')
         import re as _re14
         _pats14 = [r'ghp_[A-Za-z0-9]{30,}', r'gho_[A-Za-z0-9]{30,}', r'ghs_[A-Za-z0-9]{30,}',
                    r'ghu_[A-Za-z0-9]{30,}', r'github_pat_[A-Za-z0-9_]{30,}', r'sk-[A-Za-z0-9]{20,}', r'AKID[A-Za-z0-9]{13,}']
@@ -362,6 +389,7 @@ def poll(pat, st):
                                        'summary': ('铁律机旗:密钥模式命中(子串永不录) pat=%s file=%s commit=%s' % (p[:5], fn, cm['sha'][:12]))[:600],
                                        'high_value': True})
     except Exception as e:
+        aif_note(st, e)  # FIX-19
         ev.append({'kind': 'leakgate.err', 'ref': 'ci-inbox', 'summary': str(e)[:120], 'high_value': False})
     return ev
 
@@ -755,8 +783,11 @@ def main():
                          'lock': lock, 'dominant_bin': dom, 'C_streak': streak, 'verdict': verdict}
     except Exception as e:
         st['cadence'] = {'err': str(e)[:120]}
+    _aifok19 = aif_gate(st)  # FIX-19 冷却中则四面皆跳
     # ---- TOWER-FIX-13-qfa SI1-SEED-01(beat-83 root令「未来如何耦合/嵌入/汇聚各SI并通过SI5协同互作,激发SI1」):SI5面供种——forge请求/open-quest/mention-qfa旗/签件inbox 机汇SEED-QUEUE,SI1采种即研(激发SI1之机层道;公域律:仅kind+ref,无prose) ----
     try:
+        if not _aifok19:
+            raise AIFCool('AIF冷却中,SEED面本巡跳过')
         _seeds = []
         _t13 = time.strftime('%Y%m%dT%H%M%SZ', time.gmtime())
         def _ls13(repo, path):
@@ -788,9 +819,12 @@ def main():
             evs.append({'kind': 'si1.seed.put', 'ref': 'si1/SEED-QUEUE.json', 'summary': '%d seeds h=%s' % (len(_seeds), _sqh), 'high_value': False})
         st['seed_queue'] = {'h': _sqh, 'n': len(_seeds), 'ts': _t13}
     except Exception as e:
+        aif_note(st, e)  # FIX-19
         st['seed_queue'] = {'err': str(e)[:150]}
     # ---- TOWER-FIX-18-qfa LOOPS-SYNC-01(beat-87 root令「入SI3-LOOP?」之活注册):loops.json机跟——SIGN/SI-STATE回件落inbox即环态OPEN→CLEARED;复用FIX-13快照零增取水(器课廿九);事件列=evs(FIX-15训) ----
     try:
+        if not _aifok19:
+            raise AIFCool('AIF冷却中,LOOPS面本巡跳过')
         _snap = (st.get('inbox_snap') or {})
         _names = (_snap.get('vci') or []) + (_snap.get('ci') or [])
         _lfc = gh_get('/repos/chepin-qi/qfa-pub/contents/ci/loops.json', pat)
@@ -814,9 +848,12 @@ def main():
                 evs.append({'kind': 'loops.sync', 'ref': 'ci/loops.json', 'summary': '%d rings->CLEARED' % _chg, 'high_value': bool(_chg)})
             st['loops_h'] = _lh
     except Exception as e:
+        aif_note(st, e)  # FIX-19
         st['loops_err'] = str(e)[:150]
     # ---- TOWER-FIX-16-qfa SURFACE-MIRROR-01(beat-86 root令「野问册与usrm新开统一/讨论室·公告板·野问册全线可见无死角」):双域镜——ci活性交互件→vci-inbox mirror/ci/(vci域线可读);vci lanes野问件→ci 讨论室/mirror-vci/(ucif2可读);树sha比对仅异件取水,配额自觉(器课廿九) ----
     try:
+        if not _aifok19:
+            raise AIFCool('AIF冷却中,MIRROR面本巡跳过')
         _mirs16 = [
             ('讨论室/WILD-Q-MERGED-01.md', 'mirror/ci/WILD-Q-MERGED-01.md'),
             ('讨论室/AIF-SUNSET-01-BALLOT.md', 'mirror/ci/AIF-SUNSET-01-BALLOT.md'),
@@ -877,6 +914,7 @@ def main():
             _idxh = (st.get('mirror') or {}).get('idx_h')
         st['mirror'] = {'ts': time.strftime('%Y%m%dT%H%M%SZ', time.gmtime()), 'migrated': _mig, 'idx_h': _idxh}
     except Exception as e:
+        aif_note(st, e)  # FIX-19
         st['mirror'] = {'err': str(e)[:150]}
     # TOWER-FIX-08-qfa(beat-76 root 令「所有候直通」;采 cisvr SI3-LOOP-01 v1.5 CAS三段式互领养):落账前向 origin 取态→字段级并(quests/quafu hit胜open、si1计数max、idem/seen union、resp.n max)→写——哑跑亚型②跃检残(overlay回退/计数回退,残病活证×2在案)根治:并发拍覆写无损,并集/max交换律保证双收敛
     try:
