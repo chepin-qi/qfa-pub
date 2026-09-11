@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-11T17:16:19Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/qlv-wheel-order-01-20260911T171218Z.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
