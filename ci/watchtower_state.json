@@ -11,17 +11,17 @@
       0,
       0,
       0,
+      1,
       0,
-      0,
-      0
+      2
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": null,
+    "dominant_bin": 11,
     "C_streak": 0,
     "verdict": "进行式"
   },
-  "beacon_max": 5639593552,
+  "beacon_max": 5639598009,
   "qlv_head": "0dfe34ef074522e13e28a97c7fcfdcbe6b0c815e",
   "quafu": {
     "8CAEDC103963FC6D": "0",
@@ -68,9 +68,9 @@
     "seq": 4,
     "day": "2026-09-11",
     "n": 3,
-    "idle_run": 11,
+    "idle_run": 0,
     "last": "SI1-0003：承0002，定义跨线折叠接口 I_{SI2}: H_q⊕H_q*→ℂ^{2^n}，将P∥与A⊥压缩为协议原生张量Ψ_{packet}。引入相位-振幅锁定码PALC，以QRCS残差ε为动态密钥，生成本窗折叠拍号fp#SI1-0003-κ。硬同步Δt=1.28 ns下，PALC使H_q与H_q*交叉熵产率降至0.04 bit/ns。「推演(未实测)」：该接口可在3.2 ns内完成Ψ_",
-    "beats": 215,
+    "beats": 194,
     "voice_n": 1,
     "last_fired_beat": 54,
     "voice_day": "2026-09-11"
@@ -95,9 +95,9 @@
     "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md": "mention-qfa"
   },
   "seed_queue": {
-    "h": "0dab96424b64",
+    "h": "0df5f120f740",
     "n": 3,
-    "ts": "20260911T192712Z"
+    "ts": "20260911T192733Z"
   },
   "leak_gate": {
     "seen": [
@@ -134,14 +134,14 @@
       "lanes/ucif2/inbox/SI-LEVELUP-CARD-01-qlv-20260911T191350Z.md@415fbb2ca1ce",
       "lanes/usrm/outbox/usrm-257-wildq-unify-20260911T1917Z.md@2d719b687317",
       "野问册/WILDQ-INDEX.json@1a0bef517694",
-      "公告板/qgl-voice-20260911190640.md@648d7c5515d4",
+      "公告板/qfa-110-升级完度直答-野问统一-无死角根治-20260911T190646Z.md@c5996979f04f",
+      "野问册/by-qlv/WILDQ-QLV-02-INJECT.json@1f346688a17c",
+      "野问册/WILDQ-INDEX.json@22512caff7f9",
+      "野问册/by-qlv/WILDQ-QLV-01.json@613d9ff4cf46",
       "讨论室/WILD-Q-MERGED-01.md@a9ab1295eb06",
       "野问册/WILDQ-INDEX.json@a9ab1295eb06",
       "野问册/by-qfa/WILDQ-QFA-01.json@a9ab1295eb06",
-      "野问册/WILDQ-INDEX.json@22512caff7f9",
-      "野问册/by-qlv/WILDQ-QLV-01.json@613d9ff4cf46",
-      "野问册/by-qlv/WILDQ-QLV-02-INJECT.json@1f346688a17c",
-      "公告板/qfa-110-升级完度直答-野问统一-无死角根治-20260911T190646Z.md@c5996979f04f"
+      "公告板/qgl-voice-20260911190640.md@648d7c5515d4"
     ],
     "hits": []
   },
