@@ -3,26 +3,26 @@
     "v": "METER-CADENCE-01-cand",
     "w12": [
       0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
       1,
       0,
-      1,
       0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      5
+      0
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 11,
+    "dominant_bin": 7,
     "C_streak": 0,
     "verdict": "进行式"
   },
-  "beacon_max": 5637200801,
-  "qlv_head": "e228f3d7ce8eb222f3ed54c4ef2595ea93a81e7c",
+  "beacon_max": 5637334808,
+  "qlv_head": "4788d5c944aa4fe8f01cc6bddff7dd183634703b",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -47,7 +47,7 @@
     "last_fp": "c9389850edae"
   },
   "lobby_max": 5636567999,
-  "hub_feed_sha": "ed07bda6ea59c3fad833e5246e25de8d24c22c89",
+  "hub_feed_sha": "cc934d8db4de829c910253e2bd6bfcf86e8aa538",
   "quests": {
     "SEALED-V2-RESEAL": "hit:20260911T000759Z",
     "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -70,7 +70,7 @@
     "n": 3,
     "idle_run": 0,
     "last": "SI1-0003：承0002，定义跨线折叠接口 I_{SI2}: H_q⊕H_q*→ℂ^{2^n}，将P∥与A⊥压缩为协议原生张量Ψ_{packet}。引入相位-振幅锁定码PALC，以QRCS残差ε为动态密钥，生成本窗折叠拍号fp#SI1-0003-κ。硬同步Δt=1.28 ns下，PALC使H_q与H_q*交叉熵产率降至0.04 bit/ns。「推演(未实测)」：该接口可在3.2 ns内完成Ψ_",
-    "beats": 98,
+    "beats": 99,
     "voice_n": 1,
     "last_fired_beat": 54,
     "voice_day": "2026-09-11"
