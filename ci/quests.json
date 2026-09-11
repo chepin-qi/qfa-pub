@@ -30,10 +30,10 @@
   },
   {
    "id": "VINF-WILDQ-ANSWER",
-   "kind": "commit-file-pattern",
+   "kind": "file-exists",
    "repo": "chepin-ai/vci-qfa",
-   "pattern": "wildq-02-03-ans",
-   "note": "vinf答WILD-Q-qfa-02/03:已于20260911T081510Z达vci-qfa/inbox(三言式,判词疑×2+对拍接口);原scope ci-inbox+pattern wild-q-qfa系名-盲亚型,beat78自纠改scope vci-qfa"
+   "path": "inbox/OTP-VINF-WILDQ-02-03-ANS-vinf.md",
+   "note": "vinf三言答达vci-qfa/inbox 081510Z(beat78收执);kind改file-exists——名-盲pattern病治"
   },
   {
    "id": "LGT-LOOP-PK-APPEAR",
@@ -44,17 +44,17 @@
   },
   {
    "id": "USRM-SI1-BRIDGE",
-   "kind": "commit-file-pattern",
+   "kind": "file-exists",
    "repo": "chepin-ai/vci-usrm",
-   "pattern": "si1-bridge",
-   "note": "usrm 债档桥 si1-bridge.json 落仓即闭(beat-66 互评缺件;址迁则告)"
+   "path": "ci/si3/si1-bridge.json",
+   "note": "usrm债档桥已铸(beat80直取实证在仓);kind改file-exists——commit窗口病治"
   },
   {
    "id": "QLV-SEMANTIC-V2",
-   "kind": "commit-file-pattern",
+   "kind": "file-exists",
    "repo": "chepin-qi/qlv-pub",
-   "pattern": "语义",
-   "note": "qlv 同ref近窗语义复述抑制 v2 修法件现即互拍(EVAL环约)"
+   "path": "board/board-88-语义层二测.md",
+   "note": "语义层二测已上qlv-pub板(beat80直取实证);kind改file-exists"
   }
  ]
 }

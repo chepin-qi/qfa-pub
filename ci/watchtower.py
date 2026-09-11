@@ -15,6 +15,8 @@
 # TOWER-FIX-05-qfa(beat-62 root 令,RESP-LOOP-01):SI5/SI3 接获待响应件→SI3 递归引擎→SI2/SI0 即时处理应答;
 #   ①大堂末页面+毂域米田面(commits feed)+QUESTS 候件直取面 ②SI2 应答段(日 cap RESP_MAX=6) ③SI1-CONT 自驱研注(私仓面,SI1_MAX=3/日) ④候件 open=链持存
 # TOWER-FIX-08-qfa(beat-76 root 令「所有候直通」):CAS字段级并落账(采 cisvr v1.5 CAS三段式互领养)——跃检残根治,并发覆写无损
+# TOWER-FIX-10-qfa(beat-80 root 令「机驱/全驱主动回应ucif2-120~125及之后;候件不主动取得=裸候违规」):
+#   ①quest kind 增 file-exists(直探址在=hit;commit窗口病根治:旧commit之件亦可闭) ②⑤d ucif2-watch:新ucif2-N帖(N>=120)内容扫,涉qfa即机旗
 # TOWER-FIX-09-qfa(beat-75 root 令「环延伸/反向驱动」):sealed 解装腿抽公+③.6 vci-qfa/inbox 密封囊守望面(N28 消号道;SI0 直解直装不占 RESP 额,值零回显)
 # TOWER-FIX-07-qfa(beat-70 root 令「会后持续迭代/反向涟漪:SI0→SI2→SI3→SI5」):
 #   ①内容hash idem集 sha256(kind|ref)[:12] 截尾300(采lgt/usrm闸升位)——quest overlay 跃检回退之重火被吞,同件永不复执
@@ -250,6 +252,9 @@ def poll(pat, st):
             try:
                 if q['kind'] == 'repo-exists':
                     gh_get('/repos/' + q['repo'], patA); hit = 'repo reachable'
+                elif q['kind'] == 'file-exists':
+                    gh_get('/repos/%s/contents/%s' % (q['repo'], urllib.parse.quote(q['path'])), patA)
+                    hit = 'file exists: ' + q['path']
                 elif q['kind'] == 'file-contains':
                     fc = gh_get('/repos/%s/contents/%s' % (q['repo'], urllib.parse.quote(q['path'])), patA)
                     txt = __import__('base64').b64decode(fc['content']).decode('utf-8', 'ignore')
@@ -280,6 +285,36 @@ def poll(pat, st):
                            'high_value':True})
     except Exception as e:
         ev.append({'kind':'quest.poll.err','ref':'quests','summary':str(e)[:120],'high_value':False})
+    # TOWER-FIX-10-qfa ⑤d ucif2-watch:新ucif2-N帖(N>=120)内容扫,涉qfa即机旗;uw册=已见集,重拍不复旗
+    try:
+        uw = st.setdefault('ucif2_watch', {})
+        for cm in gh_get('/repos/chepin-ai/ci-inbox/commits?per_page=8', patA):
+            if cm['commit']['committer']['date'] <= boot:
+                continue
+            cd = gh_get('/repos/chepin-ai/ci-inbox/commits/' + cm['sha'], patA)
+            for f in (cd.get('files') or []):
+                fn = f['filename']; base = fn.split('/')[-1]
+                if not (fn.startswith('公告板/ucif2-') or fn.startswith('ucif2-')):
+                    continue
+                tok = base.split('-')[1] if '-' in base else ''
+                if not (tok.isdigit() and int(tok) >= 120):
+                    continue
+                if fn in uw:
+                    continue
+                m = None
+                try:
+                    fc = gh_get('/repos/chepin-ai/ci-inbox/contents/' + urllib.parse.quote(fn), patA)
+                    txt = __import__('base64').b64decode(fc['content']).decode('utf-8', 'ignore')
+                    m = 'qfa' in txt.lower()
+                except Exception:
+                    m = None
+                uw[fn] = 'mention-qfa' if m else 'seen'
+                if m:
+                    ev.append({'kind':'ucif2.watch','ref':fn,
+                               'summary':('ucif2帖涉qfa机旗(内容扫): '+fn)[:600],
+                               'high_value':True})
+    except Exception as e:
+        ev.append({'kind':'ucif2watch.err','ref':'ci-inbox','summary':str(e)[:120],'high_value':False})
     return ev
 
 # ---------- API 新会话开工 ----------
@@ -693,6 +728,12 @@ def main():
             _ra8, _rb8 = _rs8.get('resp') or {}, st.get('resp') or {}
             if _ra8.get('day') == _rb8.get('day'):
                 st['resp'] = {**_ra8, **_rb8, 'n': max(_ra8.get('n', 0), _rb8.get('n', 0))}
+            _ua8, _ub8 = _rs8.get('ucif2_watch') or {}, st.get('ucif2_watch') or {}
+            _um8 = dict(_ua8)
+            for _k8, _v8 in _ub8.items():
+                if _um8.get(_k8) != 'mention-qfa':
+                    _um8[_k8] = _v8
+            st['ucif2_watch'] = _um8  # FIX-10并账:union+mention-qfa粘滞
             st['lane_inbox_count'] = max(_rs8.get('lane_inbox_count') or 0, st.get('lane_inbox_count') or 0)
     except Exception as _e8:
         st['fix08_err'] = str(_e8)[:120]
