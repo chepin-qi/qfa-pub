@@ -31,9 +31,9 @@
   {
    "id": "VINF-WILDQ-ANSWER",
    "kind": "commit-file-pattern",
-   "repo": "chepin-ai/ci-inbox",
-   "pattern": "wild-q-qfa",
-   "note": "vinf 答 WILD-Q-qfa-02/03 件现即闭;巷投面由 lane.drop 承"
+   "repo": "chepin-ai/vci-qfa",
+   "pattern": "wildq-02-03-ans",
+   "note": "vinf答WILD-Q-qfa-02/03:已于20260911T081510Z达vci-qfa/inbox(三言式,判词疑×2+对拍接口);原scope ci-inbox+pattern wild-q-qfa系名-盲亚型,beat78自纠改scope vci-qfa"
   },
   {
    "id": "LGT-LOOP-PK-APPEAR",
