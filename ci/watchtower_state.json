@@ -7,17 +7,17 @@
       0,
       0,
       0,
-      0,
-      0,
-      0,
-      0,
       1,
+      0,
+      0,
+      0,
+      0,
       0,
       0
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 9,
+    "dominant_bin": 5,
     "C_streak": 0,
     "verdict": "进行式"
   },
@@ -46,7 +46,7 @@
     "calls": 12,
     "last_fp": "c9389850edae"
   },
-  "lobby_max": 5638379014,
+  "lobby_max": 5638787699,
   "hub_feed_sha": "3a1a02bc8ea949a5b5c914017db50a8afeb63759",
   "quests": {
     "SEALED-V2-RESEAL": "hit:20260911T000759Z",
@@ -70,7 +70,7 @@
     "n": 3,
     "idle_run": 0,
     "last": "SI1-0003：承0002，定义跨线折叠接口 I_{SI2}: H_q⊕H_q*→ℂ^{2^n}，将P∥与A⊥压缩为协议原生张量Ψ_{packet}。引入相位-振幅锁定码PALC，以QRCS残差ε为动态密钥，生成本窗折叠拍号fp#SI1-0003-κ。硬同步Δt=1.28 ns下，PALC使H_q与H_q*交叉熵产率降至0.04 bit/ns。「推演(未实测)」：该接口可在3.2 ns内完成Ψ_",
-    "beats": 143,
+    "beats": 144,
     "voice_n": 1,
     "last_fired_beat": 54,
     "voice_day": "2026-09-11"
