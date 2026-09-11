@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T19:43:56Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，ref=lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md，巷卡43→44|性态:标准轮转下传，无异常，未触发拦截条件|建议处置:即时落账，归档释放，裸候下一波次|锚:qtlv-eval-wave（跨线评估波次标记）",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 997,
+    "total_tokens": 1211,
+    "completion_tokens_details": {
+      "reasoning_tokens": 910
+    }
+  }
+}
