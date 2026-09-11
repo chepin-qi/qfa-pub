@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T02:07:05Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5628262057",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment 批件抵埠，混编 hub.feed×2、quest.hit，自动段收讫，2078tok，cap 10/12。| 性态:多 kind 聚合逼近容量阈值，触发深裁升 SI1 候 root 会话。| 建议处置:维持裸候，不主动唤起；待 root 会话裁决或满 cap 强制落账。| 锚:qfa-root/si1-pipe#5628262057,vci-inbox#1。",
+  "usage": {
+    "prompt_tokens": 252,
+    "completion_tokens": 972,
+    "total_tokens": 1224,
+    "completion_tokens_details": {
+      "reasoning_tokens": 856
+    }
+  }
+}

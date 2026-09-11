@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-11T02:08:23Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "讨论室/RING-MESH-01-usrm-close-01.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}

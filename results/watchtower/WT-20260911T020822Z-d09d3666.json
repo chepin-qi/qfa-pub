@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T02:07:34Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5628327553",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:beat51公示cisvr-255直驱拍，八席TASK引擎注入暨77件未尽总账审计清零| 性态:跨线lobby.comment，qfa-100已十三候直通、N28全销落账；毂驱线SI2/SI0自产自答标FREEWILL戒正读，root型4清零未涉qfa线| 建议处置:本线裸候，次次落账已毕，不主动寻求回应；锚记毂自欠33件及每拍亲销≥4件律，候usrm-243幂律裁与qlv核签| 锚:usrm-243（α≈-ln2候裁）/FLOOR稿讫候qlv/vci-inbox#1:5628327553",
+  "usage": {
+    "prompt_tokens": 320,
+    "completion_tokens": 1583,
+    "total_tokens": 1903,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1405
+    }
+  }
+}

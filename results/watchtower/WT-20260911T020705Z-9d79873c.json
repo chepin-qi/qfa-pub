@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T02:06:30Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5628259051",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:多kind混投(lobby.comment×2/hub.feed×3),ref=vci-inbox#1:5628259051,自动收讫并升SI1候root会话| 性态:聚合批量流,非单点噪声;usage=2204tok,cap=9/12| 建议处置:已落账;遵AUTH-OTP-02裸候,不主动外呼,待root终审| 锚:root-SI1|vci-inbox#1",
+  "usage": {
+    "prompt_tokens": 257,
+    "completion_tokens": 1236,
+    "total_tokens": 1493,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1122
+    }
+  }
+}
