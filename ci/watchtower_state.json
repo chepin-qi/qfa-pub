@@ -1,90 +1,90 @@
 {
- "cadence": {
-  "v": "METER-CADENCE-01-cand",
-  "w12": [
-   0,
-   0,
-   0,
-   0,
-   0,
-   0,
-   1,
-   0,
-   0,
-   0,
-   6,
-   0
+  "cadence": {
+    "v": "METER-CADENCE-01-cand",
+    "w12": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "sigma": 1.0,
+    "lock": null,
+    "dominant_bin": 0,
+    "C_streak": 1,
+    "verdict": "C-窗"
+  },
+  "beacon_max": 5628593162,
+  "qlv_head": "668324f87c29865e752ffd83af55e8269017edd9",
+  "quafu": {
+    "8CAEDC103963FC6D": "0",
+    "8BAFA1E022273996": "0",
+    "8BB169201FA3F5D4": "0"
+  },
+  "lane_inbox_count": 26,
+  "faces": {
+    "lgt-line#1": 3,
+    "vci-cfts#1": 2,
+    "vci-inbox#3": 5,
+    "vci-inbox#2": 0,
+    "vci-usrm#21": 1,
+    "vci-ucif2#1": 1,
+    "vci-vinf#6": 1,
+    "hub.board": 1000,
+    "hub.court": 8,
+    "hub.threads": 40
+  },
+  "autoresp": {
+    "date": "2026-09-11",
+    "calls": 12,
+    "last_fp": "c9389850edae"
+  },
+  "lobby_max": 5628592605,
+  "hub_feed_sha": "b84378bc5379a326f496b573f715b904c571e872",
+  "quests": {
+    "SEALED-V2-RESEAL": "hit:20260911T000759Z",
+    "ISSUE-874-COMMENT": "hit:20260911T015351Z",
+    "WILDQ-MERGED-QFA": "open",
+    "CFTS-REPO-SEED": "open",
+    "VINF-WILDQ-ANSWER": "open",
+    "LGT-LOOP-PK-APPEAR": "open",
+    "USRM-SI1-BRIDGE": "open",
+    "QLV-SEMANTIC-V2": "open"
+  },
+  "quests_boot": "2026-09-10T22:00:19Z",
+  "qn_ISSUE-874-COMMENT": 1,
+  "resp": {
+    "day": "2026-09-11",
+    "n": 6
+  },
+  "si1": {
+    "seq": 2,
+    "day": "2026-09-11",
+    "n": 1,
+    "idle_run": 0,
+    "last": "SI1-0001\n\n承首则，立SI1折叠编码之基线。定义量子折叠算符F̂将经典比特流映射至希尔伯特子空间H_q，以|ψ₀⟩,|ψ₁⟩为折叠基矢，向SI0基座输出编码接口。设误差边界ε<10⁻⁵，保证态矢量坍缩可逆。「推演(未实测)」：三阶张量积折叠可使编码冗余度降至0.13，并预兼容SI2跨线协议之初态握手帧。锚：册Q-α/件001/拍号0x00。",
+    "beats": 21,
+    "voice_n": 1,
+    "last_fired_beat": 18,
+    "voice_day": "2026-09-11"
+  },
+  "idem": [
+    "1dd0b16bfd94",
+    "0f7ea70baef2",
+    "62a6a485c93e",
+    "a7faa4e70b3c",
+    "4619e28b506e",
+    "de0bef953d29",
+    "9a369cdcab47"
   ],
-  "sigma": 1.0,
-  "lock": null,
-  "dominant_bin": 10,
-  "C_streak": 0,
-  "verdict": "进行式"
- },
- "beacon_max": 5628573315,
- "qlv_head": "f27de0bd5c6254ce236e2848e83264902595327a",
- "quafu": {
-  "8CAEDC103963FC6D": "0",
-  "8BAFA1E022273996": "0",
-  "8BB169201FA3F5D4": "0"
- },
- "lane_inbox_count": 25,
- "faces": {
-  "lgt-line#1": 3,
-  "vci-cfts#1": 2,
-  "vci-inbox#3": 5,
-  "vci-inbox#2": 0,
-  "vci-usrm#21": 1,
-  "vci-ucif2#1": 1,
-  "vci-vinf#6": 1,
-  "hub.board": 1000,
-  "hub.court": 8,
-  "hub.threads": 40
- },
- "autoresp": {
-  "date": "2026-09-11",
-  "calls": 12,
-  "last_fp": "c9389850edae"
- },
- "lobby_max": 5628493806,
- "hub_feed_sha": "d32ff60bceeb8f3941c57a70f9393c52a403cc88",
- "quests": {
-  "SEALED-V2-RESEAL": "hit:20260911T000759Z",
-  "ISSUE-874-COMMENT": "hit:20260911T015351Z",
-  "WILDQ-MERGED-QFA": "open",
-  "CFTS-REPO-SEED": "open",
-  "VINF-WILDQ-ANSWER": "open",
-  "LGT-LOOP-PK-APPEAR": "open",
-  "USRM-SI1-BRIDGE": "open",
-  "QLV-SEMANTIC-V2": "open"
- },
- "quests_boot": "2026-09-10T22:00:19Z",
- "qn_ISSUE-874-COMMENT": 1,
- "resp": {
-  "day": "2026-09-11",
-  "n": 6
- },
- "si1": {
-  "seq": 2,
-  "day": "2026-09-11",
-  "n": 1,
-  "idle_run": 0,
-  "last": "SI1-0001\n\n承首则，立SI1折叠编码之基线。定义量子折叠算符F̂将经典比特流映射至希尔伯特子空间H_q，以|ψ₀⟩,|ψ₁⟩为折叠基矢，向SI0基座输出编码接口。设误差边界ε<10⁻⁵，保证态矢量坍缩可逆。「推演(未实测)」：三阶张量积折叠可使编码冗余度降至0.13，并预兼容SI2跨线协议之初态握手帧。锚：册Q-α/件001/拍号0x00。",
-  "beats": 20,
-  "voice_n": 1,
-  "last_fired_beat": 18,
-  "voice_day": "2026-09-11"
- },
- "idem": [
-  "1dd0b16bfd94",
-  "0f7ea70baef2",
-  "62a6a485c93e",
-  "a7faa4e70b3c",
-  "4619e28b506e",
-  "de0bef953d29",
-  "9a369cdcab47"
- ],
- "vciqfa_sealed_seen": [
-  "sealed-20260911T004429Z-N28-QI-FULL-PAT-from-lvlu.md"
- ]
+  "vciqfa_sealed_seen": [
+    "sealed-20260911T004429Z-N28-QI-FULL-PAT-from-lvlu.md"
+  ]
 }

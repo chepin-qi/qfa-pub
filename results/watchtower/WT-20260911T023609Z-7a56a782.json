@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T02:35:36Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5628592605",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment批量到件（lane.drop×1, lobby.comment×1, hub.feed×3），自动收讫SI2，深裁升SI1候root，tok满载。| 性态:高频feed冲刷，单会话容量封顶（2504/12），属积压态；lobby.comment非紧急民生件，自动段已兜底。| 建议处置:维持裸候，不主动寻求root回应；已按WAKE-PROTO落账SI2，无需重复裁决；待root解锁后自然升SI1。| 锚:ref=vci-inbox#1:5628592605, kind=lobby.comment, cap=12/12满载",
+  "usage": {
+    "prompt_tokens": 256,
+    "completion_tokens": 1170,
+    "total_tokens": 1426,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1020
+    }
+  }
+}

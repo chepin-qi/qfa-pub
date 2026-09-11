@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T02:35:09Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:otp-20260911T022116Z-浪涌三号-lvlu.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa inbox lane.drop，ref=otp-20260911T022116Z-浪涌三号-lvlu.md，巷卡25→26档级爬升| 性态:常规投件，符AUTH-OTP-02投必有件，未触发异常告警，已落账| 建议处置:按WAKE-PROTO完成细收裁决，裸候下一指令，不刷屏、不越真机钱面| 锚:lanes/sys/arch:浪涌三号基线档",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 857,
+    "total_tokens": 1079,
+    "completion_tokens_details": {
+      "reasoning_tokens": 743
+    }
+  }
+}
