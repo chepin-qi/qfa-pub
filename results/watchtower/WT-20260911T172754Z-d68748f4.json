@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T17:27:26Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "讨论室/WILD-Q-qfa-01-04-REGISTER.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:hub.feed新件 讨论室/WILD-Q-qfa-01-04-REGISTER.md(commit e3882f7)| 性态:常规文档落库，外层扫描无异常；无工具故未实测内文，属未触发而非未响应| 建议处置:按WAKE-PROTO完成落账归档；如需内文审计，裸候有工具分身或后续节拍| 锚:hub.docs/qfa-reg-index(qfb线参照)",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1015,
+    "total_tokens": 1229,
+    "completion_tokens_details": {
+      "reasoning_tokens": 909
+    }
+  }
+}

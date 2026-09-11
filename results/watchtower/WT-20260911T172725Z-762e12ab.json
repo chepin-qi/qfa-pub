@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T17:26:43Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:otp-20260911T022116Z-浪涌三号-lvlu.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，巷卡34→35，件otp-20260911T022116Z-浪涌三号-lvlu.md跨卡迁档| 性态:单件平移，摘要未示异常，未触发冲突，属常规迁档裸候态| 建议处置:已落账35卡，34卡归档，不刷屏不唤响，裸候下游自提| 锚:本线锚 lanes/qfa/inbox:otp-20260911T022116Z-浪涌三号-lvlu.md；他线锚本工位无交叉扫描权限，未实测捕获",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 1553,
+    "total_tokens": 1775,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1416
+    }
+  }
+}
