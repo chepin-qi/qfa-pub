@@ -3,6 +3,7 @@
     "v": "METER-CADENCE-01-cand",
     "w12": [
       0,
+      4,
       0,
       0,
       0,
@@ -11,18 +12,17 @@
       0,
       0,
       0,
-      0,
-      0,
-      1
+      2,
+      0
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 11,
+    "dominant_bin": 1,
     "C_streak": 0,
     "verdict": "进行式"
   },
   "beacon_max": 5632299841,
-  "qlv_head": "19521df93fa7798a95779369d2d2a1723ceafac8",
+  "qlv_head": "aed961c5b008006aa20670309ae4a12dbd73ea37",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -46,8 +46,8 @@
     "calls": 12,
     "last_fp": "c9389850edae"
   },
-  "lobby_max": 5631725300,
-  "hub_feed_sha": "74c00d0bb7fcd1254a766657589c9636b0162061",
+  "lobby_max": 5632336604,
+  "hub_feed_sha": "25a76ec39b590c636586c644f76de0ce19509b66",
   "quests": {
     "SEALED-V2-RESEAL": "hit:20260911T000759Z",
     "ISSUE-874-COMMENT": "hit:20260911T015351Z",
