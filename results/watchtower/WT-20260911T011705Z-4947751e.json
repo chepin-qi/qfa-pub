@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-11T01:15:49Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:otp-20260910T232733Z-浪涌一号-lvlu.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:巷卡21→22版本更替，otp-20260910T232733Z-浪涌一号-lvlu.md触发lane.drop，旧件下线新件已落inbox| 性态:旧卡已弃用，新卡未触发，属更替裸候态| 建议处置:按AUTH-OTP-02次次落账，旧件弃用不越真机钱面，新件收妥不刷屏，裸候不主动求应| 锚:lanes/qfa/archive:otp-20260910T232733Z-浪涌一号-lvlu.md(旧件归仓)/ lanes/qfa/outbox:otp-20260910T232733Z-浪涌一号-lvlu.md(待同步)",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 2763,
+    "total_tokens": 2985,
+    "cached_tokens": 222,
+    "completion_tokens_details": {
+      "reasoning_tokens": 2596
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 222
+    }
+  }
+}

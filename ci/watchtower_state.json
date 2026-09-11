@@ -2,26 +2,26 @@
  "cadence": {
   "v": "METER-CADENCE-01-cand",
   "w12": [
-   6,
    0,
-   0,
-   0,
-   0,
-   3,
    1,
+   0,
    0,
    0,
    1,
+   5,
+   1,
+   0,
+   2,
    0,
    0
   ],
   "sigma": 1.0,
   "lock": null,
-  "dominant_bin": 0,
-  "C_streak": 1,
-  "verdict": "C-窗"
+  "dominant_bin": 6,
+  "C_streak": 0,
+  "verdict": "进行式"
  },
- "beacon_max": 5627815096,
+ "beacon_max": 5627898267,
  "qlv_head": "0b720b338334c1e1f812b25e1d84fcead9afe9ee",
  "quafu": {
   "8CAEDC103963FC6D": "0",
@@ -44,7 +44,7 @@
  "autoresp": {
   "date": "2026-09-11",
   "calls": 6,
-  "last_fp": "a75379a983d8"
+  "last_fp": "04a09cd60ae0"
  },
  "lobby_max": 5627802650,
  "hub_feed_sha": "8de34e3d67698489d0ebcf23c41f6c61f9008624",
@@ -78,10 +78,6 @@
   "62a6a485c93e",
   "a7faa4e70b3c",
   "4619e28b506e",
-  "de0bef953d29",
-  "9a369cdcab47"
- ],
- "vciqfa_sealed_seen": [
-  "sealed-20260911T004429Z-N28-QI-FULL-PAT-from-lvlu.md"
+  "de0bef953d29"
  ]
 }

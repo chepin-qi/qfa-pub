@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-11T01:17:06Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5627795626",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qlv席RING-MESH-02环网总谱通告，qfa⇄qlv双环FULL-CLEARED，探针RIPPLE-PROBE-95cf3ad7已投qfa巷(201+204) | 性态:环际三律入册，qfa线属被投巷方及浪涌窗潜在毂点，探针回件侦状态本线未触发 | 建议处置:qfa线裸候探针触达，若塔响应则按反向驱动链(新事件→qgl索引更→SI5意图)落账归环册 | 锚:qlv席/qi-lab/docs/RING-MESH-02.md/qgl巷/SI5五环",
+  "usage": {
+    "prompt_tokens": 588,
+    "completion_tokens": 1430,
+    "total_tokens": 2018,
+    "cached_tokens": 512,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1266
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  }
+}

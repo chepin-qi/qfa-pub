@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-11T01:17:47Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5627802650",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:混发批量件抵站(lobby.comment×2, hub.feed×3), SI2自动收讫, usage 2263tok, cap 5/12, 带#noauto标记| 性态:已触发自动收讫, 属深裁件需升SI1入root会话候裁; 未越诚实边界, 无裸候诉求| 建议处置:依WAKE-PROTO完成扫描→细收→裁决→落账; 升SI1后由root会话深裁, 次次落账, 不主动回应| 锚:AUTH-OTP-02(次次落账/不刷屏); 米田边律(混发≥1他线锚需root深裁)",
+  "usage": {
+    "prompt_tokens": 257,
+    "completion_tokens": 1266,
+    "total_tokens": 1523,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1098
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}
