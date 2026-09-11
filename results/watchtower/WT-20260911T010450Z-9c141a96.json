@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T01:03:56Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5627777722",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:cisvr-253杀候判(beat49公示)，依MASTER-FOLLOW-01章法板每拍扫，候字三转律(毂直取/协作直取/时限钉SI3)已触发。| 性态:四证具足(GYROID L=48/64毂代直投ucif2仓、qfa v2公钥验符合规、lgt-117愈证、SI3 v1.5在役)，qfa-90互拍环闭有效；属律合候正，无裸露未响应项。| 建议处置:按候字三转律落账，维持杀候判效力，公示期满无异议则归档。| 锚:qfa-90互拍环闭/MASTER-FOLLOW-01扫拍。",
+  "usage": {
+    "prompt_tokens": 313,
+    "completion_tokens": 1404,
+    "total_tokens": 1717,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1232
+    }
+  }
+}

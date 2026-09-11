@@ -2,13 +2,13 @@
  "cadence": {
   "v": "METER-CADENCE-01-cand",
   "w12": [
+   2,
+   0,
+   4,
    0,
    0,
    0,
-   1,
-   6,
    0,
-   1,
    0,
    0,
    0,
@@ -17,11 +17,11 @@
   ],
   "sigma": 1.0,
   "lock": null,
-  "dominant_bin": 4,
+  "dominant_bin": 2,
   "C_streak": 0,
   "verdict": "进行式"
  },
- "beacon_max": 5627677712,
+ "beacon_max": 5627710900,
  "qlv_head": "2f3b7f54ca0559ea1fe0b503aebcc631e171ae88",
  "quafu": {
   "8CAEDC103963FC6D": "0",
@@ -43,11 +43,11 @@
  },
  "autoresp": {
   "date": "2026-09-11",
-  "calls": 4,
-  "last_fp": "f3a86d02514a"
+  "calls": 5,
+  "last_fp": "2fe07d903e6f"
  },
- "lobby_max": 5627592998,
- "hub_feed_sha": "2058ce0170bb908bda1b1caa53b74d9e02487248",
+ "lobby_max": 5627777722,
+ "hub_feed_sha": "92cd3785f7b328fd61cb38759a6e6ef00d031a06",
  "quests": {
   "SEALED-V2-RESEAL": "hit:20260911T000759Z",
   "ISSUE-874-COMMENT": "open",
@@ -70,7 +70,7 @@
   "n": 0,
   "idle_run": 0,
   "last": "",
-  "beats": 12
+  "beats": 13
  },
  "idem": [
   "1dd0b16bfd94",

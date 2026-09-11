@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T01:03:14Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5627692012",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment聚合件|性态:伴生信标群常规抵栈，lobby.comment为主显，余为beacon/heartbeat环境噪声，未触发越真机钱面阈，属低交互背景流|建议处置:维持SI1裸候，不主动求应，待root会话激活后随附入栈；已自动收讫，次次落账|锚:vci-inbox#1:5627692012;qfa-SI2→SI1深裁链;#noauto禁自应",
+  "usage": {
+    "prompt_tokens": 260,
+    "completion_tokens": 953,
+    "total_tokens": 1213,
+    "completion_tokens_details": {
+      "reasoning_tokens": 831
+    }
+  }
+}
