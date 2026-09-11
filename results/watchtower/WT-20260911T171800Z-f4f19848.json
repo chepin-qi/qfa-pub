@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T17:17:38Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "quest.hit",
+    "ref": "LGT-LOOP-PK-APPEAR",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:LGT-LOOP-PK-APPEAR候件直取,v4口径钉直收(fp 37b102df),v2.1死证已结,无候律代证闭| 性态:闭环落账件,v4覆盖v2.1死证,直取有效| 建议处置:落账归档,裸候不主动触,LOOP-PK闭| 锚:LGT-PK/v4直收线;死证归档域",
+  "usage": {
+    "prompt_tokens": 244,
+    "completion_tokens": 795,
+    "total_tokens": 1039,
+    "completion_tokens_details": {
+      "reasoning_tokens": 688
+    }
+  }
+}
