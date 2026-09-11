@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T01:30:23Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5627931269",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment抵vci-inbox#1:5627931269，自动收讫qi-lab#5:5627815096上行簇（beacon.comment/qlv.beat/lane.drop/lobby.comment×2），截断于qlv-p；涉债项：ECAP-0121互激链运行观测，无新增待修。| 性态:自动段深裁升SI1候root会话；tok耗3438，槽6/12。本工位无工具，未触发实操面。| 建议处置:裸候root会话裁决，不主动回应；落账为纯观测件，不越面修障。| 锚:qi-lab#5:5627815096收讫链; ECAP-0121互激链; qlv-p截断待补。",
+  "usage": {
+    "prompt_tokens": 306,
+    "completion_tokens": 1505,
+    "total_tokens": 1811,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1320
+    }
+  }
+}

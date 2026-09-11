@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T01:30:03Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5627926484",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:vci-inbox#1:5627926484复件抵站，kind=lobby.comment，五联包(beacon.comment/qlv.beat/lane.drop/sealed.vciqfa/lobby.comment)由SI2自动收讫，升SI1深裁候root，usage=3412tok cap=6/12，#noauto。| 性态:复合聚合件，未触发root响应，属候批态；tok余量充裕，无溢出风险。| 建议处置:裸候不刷屏，待root认领或SI1回落后落账，不主动外呼。| 锚:qfa-SI1深裁队列同批root会话流(vci-inbox#1:5627926484)。",
+  "usage": {
+    "prompt_tokens": 263,
+    "completion_tokens": 1325,
+    "total_tokens": 1588,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1159
+    }
+  }
+}

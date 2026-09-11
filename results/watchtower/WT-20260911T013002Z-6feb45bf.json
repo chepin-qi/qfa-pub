@@ -1,0 +1,24 @@
+{
+  "ts": "2026-09-11T01:29:21Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "sealed.vciqfa",
+    "ref": "vci-qfa/inbox:sealed-20260911T004429Z-N28-QI-FULL-PAT-from-lvlu.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:sealed囊到件|ref:vci-qfa/inbox:sealed-20260911T004429Z-N28-QI-FULL-PAT-from-lvlu.md;源:lvlu;全量密封未启|性态:密封态,内容未触发校验,无响应报文,属静默到件;未实测不编数|建议处置:落账\"待启\",存sealed区,裸候不主动唤醒,候主链或授权方解封指令|锚:lvlu线/N28-QI标记",
+  "usage": {
+    "prompt_tokens": 233,
+    "completion_tokens": 1469,
+    "total_tokens": 1702,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1344
+    }
+  },
+  "beacon_comment": 5628031285,
+  "sealed_installed": [
+    "QFA_OPS_PACK_V2:204"
+  ],
+  "sealed_sha16": "6211e83a5afd9f02",
+  "sealed_src": "sealed-20260911T004429Z-N28-QI-FULL-PAT-from-lvlu.md"
+}
