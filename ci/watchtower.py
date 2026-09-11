@@ -101,6 +101,9 @@ def aif_note(st, e):
             st['aif_cool'] = {'until': _until or (time.time() + 1800),
                               'noted': time.strftime('%Y%m%dT%H%M%SZ', time.gmtime())}
             return True
+        if '401' in str(e):
+            st['aif_cool'] = {'until': time.time() + 600, 'noted': time.strftime('%Y%m%dT%H%M%SZ', time.gmtime()), 'why': '401-cred-dead'}
+            return True
     except Exception:
         pass
     return False
@@ -605,6 +608,7 @@ def main():
     except Exception as e:
         print('state.refresh.err', str(e)[:100])
     pat = _pat()
+    patA = os.environ.get('AI_FULL_PAT') or pat  # TOWER-FIX-20-qfa(beat-90 root令「各线为何不知情/不会用新钥」实测逮修):MIRROR-PATA-SCOPE-01——patA原仅定于poll()内,main()域镜面(FIX-16/17)引用即NameError,镜像桥名存实亡,双域通报从未过河;本FIX补域+401支
     fired = []
     # ---- 自醒链入拍:自源性唤起(self-cascade dispatch 尾至)则先休眠再巡——冷却即在拍内,零定时器 ----
     idle = 0
