@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-11T08:15:16Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/usrm-247-ucif2-121-cloud-verdict-20260911T0820Z.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
