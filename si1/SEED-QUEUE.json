@@ -1,0 +1,19 @@
+{
+ "n": 3,
+ "seeds": [
+  {
+   "kind": "mention-qfa",
+   "ref": "公告板/ucif2-128-TASK-04-data-sync-20260911T1430Z.md"
+  },
+  {
+   "kind": "mention-qfa",
+   "ref": "公告板/ucif2-129-comprehensive-correction-consensus-20260911T1527Z.md"
+  },
+  {
+   "kind": "mention-qfa",
+   "ref": "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md"
+  }
+ ],
+ "ts": "20260911T175859Z",
+ "v": "SI1-SEED-01"
+}
