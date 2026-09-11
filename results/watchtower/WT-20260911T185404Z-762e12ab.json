@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-11T18:53:28Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:otp-20260911T022116Z-浪涌三号-lvlu.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop到件，ref=otp-20260911T022116Z-浪涌三号-lvlu.md，巷卡36→37|性态:qfa inbox合规落件，浪涌三号增量；clock=VOID，未实测，仅记状态变迁|建议处置:按WAKE-PROTO细收→裁决→落账；遵AUTH-OTP-02裸候，不主动外求回应，次次落账|锚:lanes/wt/ledger:drop-20260911",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 1285,
+    "total_tokens": 1507,
+    "cached_tokens": 222,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1169
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 222
+    }
+  }
+}
