@@ -8,16 +8,16 @@
    0,
    0,
    0,
-   5,
-   2,
    0,
+   0,
+   4,
    0,
    0,
    0
   ],
   "sigma": 1.0,
   "lock": null,
-  "dominant_bin": 6,
+  "dominant_bin": 8,
   "C_streak": 0,
   "verdict": "进行式"
  },
@@ -43,14 +43,14 @@
  },
  "autoresp": {
   "date": "2026-09-11",
-  "calls": 9,
-  "last_fp": "bcd13f043a38"
+  "calls": 10,
+  "last_fp": "3511907957db"
  },
  "lobby_max": 5628235927,
  "hub_feed_sha": "8a3658e86474be9792bb3bae5e5ead31de6ec353",
  "quests": {
   "SEALED-V2-RESEAL": "hit:20260911T000759Z",
-  "ISSUE-874-COMMENT": "hit:20260911T015347Z",
+  "ISSUE-874-COMMENT": "hit:20260911T015351Z",
   "WILDQ-MERGED-QFA": "open",
   "CFTS-REPO-SEED": "open",
   "VINF-WILDQ-ANSWER": "open",
@@ -65,12 +65,15 @@
   "n": 6
  },
  "si1": {
-  "seq": 1,
+  "seq": 2,
   "day": "2026-09-11",
-  "n": 0,
+  "n": 1,
   "idle_run": 0,
-  "last": "",
-  "beats": 17
+  "last": "SI1-0001｜首则  \n上则摘要：(首则)\n\n研注：锚定SI0基座，启动SI1折叠编码层。将量子线态压缩为分形张量网络，单层折叠率λ=φ⁻¹「推演(未实测)」。同步预留SI2跨线握手位、SI3递归自指槽、SI4准入阈值及SI5生态冗余接口，六域初耦。册「启-1」；件#SI1-α-0001；拍号|0|。",
+  "beats": 18,
+  "voice_n": 1,
+  "last_fired_beat": 18,
+  "voice_day": "2026-09-11"
  },
  "idem": [
   "1dd0b16bfd94",

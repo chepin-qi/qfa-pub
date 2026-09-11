@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T01:53:55Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5628235927",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment聚合包抵站，内嵌hub.feed×4，自动段已SI2收讫，usage=2191tok/cap=9/12触升SI1深裁，标记#noauto。| 性态:feed流常规堆叠入件，无实测异常指令，属未决候判态，非触发未响应。| 建议处置:按WAKE-PROTO落账，维持裸候，不主动寻求root回应；待root会话启动后提交聚合摘要裁决。| 锚:root会话(vci-inbox#1:5628235927-SI1候)",
+  "usage": {
+    "prompt_tokens": 256,
+    "completion_tokens": 1085,
+    "total_tokens": 1341,
+    "completion_tokens_details": {
+      "reasoning_tokens": 948
+    }
+  }
+}

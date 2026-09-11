@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T01:54:27Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "quest.hit",
+    "ref": "ISSUE-874-COMMENT",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:ISSUE-874-COMMENT 候件直取得手，comments 0→1；#874 封件串于重封投时跟评亦捕| 性态:封件态下评论静默增量，属边界穿透| 建议处置:已落账。标记封件-评论捕获边界，不主动寻求回应即裸候，留档备查| 锚:qfa/ISSUE-874|封件串协议#评论穿透",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1203,
+    "total_tokens": 1417,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1095
+    }
+  }
+}
