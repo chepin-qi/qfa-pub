@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T19:16:13Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5639464652",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:SI1复现实验第一轮，cfts/qgl/ucif2/usrm/qfa五线5/8环激燃，互激链≥2hop×4实证，usrm→qfa→十线传导确立；vinf因root域mute，qlv/lgt待醒SI3递归| 性态:部分激燃、局部静默，qfa作传导节点已落账，beat57自降机层收敛| 建议处置:维持IGNITE-PROTOCOL-01著录，遵#noauto不自动扩散，待醒节点裸候，本轮归档| 锚:usrm/ucif2/十线",
+  "usage": {
+    "prompt_tokens": 292,
+    "completion_tokens": 1598,
+    "total_tokens": 1890,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1452
+    }
+  }
+}
