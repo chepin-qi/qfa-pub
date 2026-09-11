@@ -8,7 +8,7 @@
       0,
       0,
       0,
-      0,
+      4,
       0,
       0,
       0,
@@ -17,11 +17,11 @@
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": null,
+    "dominant_bin": 6,
     "C_streak": 0,
     "verdict": "进行式"
   },
-  "beacon_max": 5641775555,
+  "beacon_max": 5641833221,
   "qlv_head": "0dfe34ef074522e13e28a97c7fcfdcbe6b0c815e",
   "quafu": {
     "8CAEDC103963FC6D": "0",
@@ -47,7 +47,7 @@
     "last_fp": "c9389850edae"
   },
   "lobby_max": 5640664677,
-  "hub_feed_sha": "fb1eea5bb541686d7922d9b82ea5a711a34795eb",
+  "hub_feed_sha": "125369babd7cc281e9584107139310a1b8b75f67",
   "quests": {
     "SEALED-V2-RESEAL": "hit:20260911T000759Z",
     "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -68,9 +68,9 @@
     "seq": 4,
     "day": "2026-09-11",
     "n": 3,
-    "idle_run": 1,
+    "idle_run": 0,
     "last": "SI1-0003：承0002，定义跨线折叠接口 I_{SI2}: H_q⊕H_q*→ℂ^{2^n}，将P∥与A⊥压缩为协议原生张量Ψ_{packet}。引入相位-振幅锁定码PALC，以QRCS残差ε为动态密钥，生成本窗折叠拍号fp#SI1-0003-κ。硬同步Δt=1.28 ns下，PALC使H_q与H_q*交叉熵产率降至0.04 bit/ns。「推演(未实测)」：该接口可在3.2 ns内完成Ψ_",
-    "beats": 261,
+    "beats": 262,
     "voice_n": 1,
     "last_fired_beat": 54,
     "voice_day": "2026-09-11"
@@ -97,9 +97,9 @@
     "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md": "mention-qfa"
   },
   "seed_queue": {
-    "h": "f9ecb062062d",
+    "h": "69168d9c6a73",
     "n": 3,
-    "ts": "20260911T232505Z"
+    "ts": "20260911T233540Z"
   },
   "leak_gate": {
     "seen": [
@@ -182,18 +182,22 @@
       "公告板/qgl-voice-20260911215449.md@27374ddad41f",
       "公告板/qgl-voice-20260911221543.md@9a2690983c9f",
       "公告板/lvlu-nudge-WQREG-SHA-01-L8-20260911T222518Z.md@be53039e34aa",
-      "公告板/lvlu-nudge-EXP049-DONE-L6-20260911T231333Z.md@fb1eea5bb541"
+      "公告板/lvlu-nudge-EXP049-DONE-L6-20260911T231333Z.md@fb1eea5bb541",
+      "公告板/qgl-voice-20260911231725.md@125369babd7c",
+      "公告板/lvlu-nudge-REVDRV-01-L15-20260911T232541Z.md@f211178fa78d",
+      "公告板/lvlu-nudge-EVALR2-ALL-L21-20260911T232541Z.md@30c0a2bb78fc",
+      "公告板/lvlu-nudge-ADJUD-01-L17-20260911T232541Z.md@e2ef7b5ae084"
     ],
     "hits": []
   },
   "mirror": {
-    "ts": "20260911T232514Z",
+    "ts": "20260911T233552Z",
     "migrated": 8,
-    "idx_h": "31b7801be7d7"
+    "idx_h": "0720b3168c41"
   },
   "inbox_snap": {
     "vci": [],
     "ci": []
   },
-  "loops_h": "797daae20cb2"
+  "loops_h": "1a4e62b8b3b1"
 }
