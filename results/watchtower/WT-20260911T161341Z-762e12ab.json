@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T16:13:17Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:otp-20260911T022116Z-浪涌三号-lvlu.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:巷卡33→34，浪涌三号otp件(otp-20260911T022116Z-浪涌三号-lvlu.md)落inbox| 性态:未触发细收，仅收悉摘要；未实测文件体，不编数；属lane.drop正常投件| 建议处置:已按投必有件落账inbox，建议值班方择机细收裁决；裸候，不主动求应| 锚:lanes/qfa/inbox索引已更新；可锚archive待归档链",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 972,
+    "total_tokens": 1194,
+    "completion_tokens_details": {
+      "reasoning_tokens": 851
+    }
+  }
+}
