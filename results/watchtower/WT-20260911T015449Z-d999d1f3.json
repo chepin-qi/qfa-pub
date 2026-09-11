@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T01:54:23Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5628235927",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment到件，附hub.feed×4自动收讫，深裁件升SI1候root会话| 性态:多件聚合，usage 2191tok/cap 9/12，中载未触发裸候，#noauto需深裁| 建议处置:本工位完成扫描-细收-裁决-落账，升SI1后移交root会话，不越真机钱面| 锚:vci-inbox#1:5628235927|qfa-SI2|WAKE-PROTO",
+  "usage": {
+    "prompt_tokens": 256,
+    "completion_tokens": 887,
+    "total_tokens": 1143,
+    "completion_tokens_details": {
+      "reasoning_tokens": 762
+    }
+  }
+}

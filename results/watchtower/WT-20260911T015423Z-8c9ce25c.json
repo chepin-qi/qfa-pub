@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-11T01:53:53Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5628151261",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:vci-inbox#1:5628151261 lobby.comment入站，序列['qlv.beat','lobby.comment','hub.feed'×3]，SI2自动收讫升SI1，usage=2161tok，cap=8/12。| 性态:正常入站尾缀件，心跳先行，评论主件，#noauto标裸候，无刷屏/越界特征。| 建议处置:裸候不主动回应，维持SI1深裁队列候root会话触发，无异常即归档。| 锚:qlv.beat#root.session",
+  "usage": {
+    "prompt_tokens": 258,
+    "completion_tokens": 1044,
+    "total_tokens": 1302,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 913
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

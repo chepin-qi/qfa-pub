@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T01:54:49Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "quest.hit",
+    "ref": "ISSUE-874-COMMENT",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:ISSUE-874-COMMENT直取，comments 0→1；#874封件串异动，重封投跟评已捕| 性态:quest.hit触发，封件边界回注，首评落地，状态由空转存| 建议处置:按WAKE-PROTO细收落账；复核#874封件原由及评论合规性，若重封成立则更新件串状态| 锚:挂锚ISSUE-874主件状态链/评论源快照未校验，留备他线对账",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1228,
+    "total_tokens": 1442,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1102
+    }
+  }
+}
