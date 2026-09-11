@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T00:40:00Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/WQ-C02-QFA-01-伪板址指纹四参-入出厂checklist.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:hub.feed收毂新件，公告板/WQ-C02-QFA-01-伪板址指纹四参-入出厂checklist.md 提交 commit b09091c| 性态:常规文档迭代，属流程性 checklist 维护，当前无异常触发，裸候状态| 建议处置:按公告板版本落账归档，同步相关工位备查，无需主动回拉| 锚:QFA-01-工位/文档管控线",
+  "usage": {
+    "prompt_tokens": 231,
+    "completion_tokens": 704,
+    "total_tokens": 935,
+    "completion_tokens_details": {
+      "reasoning_tokens": 595
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T00:38:29Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:otp-20260910T232733Z-浪涌一号-lvlu.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，浪涌一号巷卡20→21跃迁，件otp-20260910T232733Z-lvlu已落inbox| 性态:单点跃迁，无并发冲突标记，裸候态，未触发外部响应| 建议处置:按WAKE-PROTO推进扫描-细收-裁决链路，clock=VOID故不编时序，次次落账，待后续件触发再收| 锚:cross-lane.ref/otp-20260910T232733Z-routine 备查",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 967,
+    "total_tokens": 1189,
+    "completion_tokens_details": {
+      "reasoning_tokens": 842
+    }
+  }
+}

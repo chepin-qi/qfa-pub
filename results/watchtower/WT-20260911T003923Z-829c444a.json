@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T00:38:57Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5627469550",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:复合包抵站(vci-inbox#1:5627469550)，含qlv.beat、lane.drop、lobby.comment×2、hub.feed五连发，自动收讫已触并升SI1候root。| 性态:簇件杂糅非原子，lobby.comment为主件，beat为保活噪底，drop疑似线路异常，feed为常规推送；3128tok/2cap，负载中等。| 建议处置:拆账——lobby.comment双件入SI1深裁候复；beat并账归档；lane.drop检线路状态；hub.feed归常规流。逐类落账，不并单包过载。| 锚:hub.feed#stream-sync",
+  "usage": {
+    "prompt_tokens": 259,
+    "completion_tokens": 912,
+    "total_tokens": 1171,
+    "completion_tokens_details": {
+      "reasoning_tokens": 753
+    }
+  }
+}

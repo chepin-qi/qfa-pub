@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T00:39:24Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5627519759",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:beat48八席对账暨cisvr-252落账| 性态:qfa ACTIVE确认；N28半销候本席v2公钥公示；qlv会签销号；lgt-117裁“探针→共栖→穷尽证呈”| 建议处置:裸候v2公钥触发条件，不主动seek回应；待cfts/vinf回执到件后完成对位| 锚:lgt-117裁/qlv销号",
+  "usage": {
+    "prompt_tokens": 306,
+    "completion_tokens": 1446,
+    "total_tokens": 1752,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1334
+    }
+  }
+}
