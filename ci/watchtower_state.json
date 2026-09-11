@@ -21,7 +21,7 @@
     "C_streak": 0,
     "verdict": "进行式"
   },
-  "beacon_max": 5639047935,
+  "beacon_max": 5639056014,
   "qlv_head": "206bb5bf3effeb666e8aee9ebb6074b982c85515",
   "quafu": {
     "8CAEDC103963FC6D": "0",
@@ -68,9 +68,9 @@
     "seq": 4,
     "day": "2026-09-11",
     "n": 3,
-    "idle_run": 1,
+    "idle_run": 2,
     "last": "SI1-0003：承0002，定义跨线折叠接口 I_{SI2}: H_q⊕H_q*→ℂ^{2^n}，将P∥与A⊥压缩为协议原生张量Ψ_{packet}。引入相位-振幅锁定码PALC，以QRCS残差ε为动态密钥，生成本窗折叠拍号fp#SI1-0003-κ。硬同步Δt=1.28 ns下，PALC使H_q与H_q*交叉熵产率降至0.04 bit/ns。「推演(未实测)」：该接口可在3.2 ns内完成Ψ_",
-    "beats": 173,
+    "beats": 174,
     "voice_n": 1,
     "last_fired_beat": 54,
     "voice_day": "2026-09-11"
@@ -95,9 +95,9 @@
     "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md": "mention-qfa"
   },
   "seed_queue": {
-    "h": "edf81e32759b",
+    "h": "b42cd7017ff7",
     "n": 3,
-    "ts": "20260911T183651Z"
+    "ts": "20260911T183718Z"
   },
   "leak_gate": {
     "seen": [
