@@ -22,6 +22,7 @@
 # TOWER-FIX-15-qfa(beat-84实证回归):FIX-13供种块作用域病(ev在cadence域未绑定,evs才是事件列)——put成而state记err致幂等键永不落、每拍重推;本FIX复幂等
 # TOWER-FIX-16-qfa(beat-86 root令「三面全线可见无死角」):SURFACE-MIRROR-01双域镜——ci活性件→vci mirror;vci野问件→ci mirror-vci;板目树账;树sha比对仅异取水(配额自觉,器课廿九)
 # TOWER-FIX-17-qfa(beat-86):镜域扩——熔炼册三件入镜表+双板全镜(ci↔vci公告板)懒迁移每巡≤8件,背囊逐巡排干
+# TOWER-FIX-18-qfa(beat-87 root令「入SI3-LOOP?」):LOOPS-SYNC-01活注册——SIGN/SI-STATE回件落即环态机转CLEARED,复用FIX-13快照零增取水
 # TOWER-FIX-10-qfa(beat-80 root 令「机驱/全驱主动回应ucif2-120~125及之后;候件不主动取得=裸候违规」):
 #   ①quest kind 增 file-exists(直探址在=hit;commit窗口病根治:旧commit之件亦可闭) ②⑤d ucif2-watch:新ucif2-N帖(N>=120)内容扫,涉qfa即机旗
 # TOWER-FIX-09-qfa(beat-75 root 令「环延伸/反向驱动」):sealed 解装腿抽公+③.6 vci-qfa/inbox 密封囊守望面(N28 消号道;SI0 直解直装不占 RESP 额,值零回显)
@@ -766,9 +767,12 @@ def main():
                 return []
         for _fn in _ls13('chepin-ai/ci-inbox', 'shared/forge/requests'):
             _seeds.append({'kind': 'forge-request', 'ref': 'shared/forge/requests/' + _fn})
-        for _fn in _ls13('chepin-ai/vci-inbox', 'lanes/qfa/inbox'):
+        _iv13 = _ls13('chepin-ai/vci-inbox', 'lanes/qfa/inbox')
+        _ic13 = _ls13('chepin-ai/ci-inbox', 'lanes/qfa/inbox')
+        st['inbox_snap'] = {'vci': _iv13[:60], 'ci': _ic13[:60]}
+        for _fn in _iv13:
             _seeds.append({'kind': 'lane-inbox-vci', 'ref': 'lanes/qfa/inbox/' + _fn})
-        for _fn in _ls13('chepin-ai/ci-inbox', 'lanes/qfa/inbox'):
+        for _fn in _ic13:
             _seeds.append({'kind': 'lane-inbox-ci', 'ref': 'lanes/qfa/inbox/' + _fn})
         for _qn, _qv in (st.get('quests') or {}).items():
             if str(_qv) == 'open':
@@ -785,6 +789,32 @@ def main():
         st['seed_queue'] = {'h': _sqh, 'n': len(_seeds), 'ts': _t13}
     except Exception as e:
         st['seed_queue'] = {'err': str(e)[:150]}
+    # ---- TOWER-FIX-18-qfa LOOPS-SYNC-01(beat-87 root令「入SI3-LOOP?」之活注册):loops.json机跟——SIGN/SI-STATE回件落inbox即环态OPEN→CLEARED;复用FIX-13快照零增取水(器课廿九);事件列=evs(FIX-15训) ----
+    try:
+        _snap = (st.get('inbox_snap') or {})
+        _names = (_snap.get('vci') or []) + (_snap.get('ci') or [])
+        _lfc = gh_get('/repos/chepin-qi/qfa-pub/contents/ci/loops.json', pat)
+        _lj = json.loads(__import__('base64').b64decode(_lfc['content']).decode('utf-8', 'ignore'))
+        _chg = 0
+        for _lp in _lj.get('loops', []):
+            if _lp['id'] == 'si-mutual-01-sign':
+                for _ln, _rg in _lp['rings'].items():
+                    if _rg.get('st') == 'OPEN' and any(n.startswith('SIGN-SI-MUTUAL-01-' + _ln) for n in _names):
+                        _rg['st'] = 'CLEARED'; _rg['note'] = '机跟:签件落inbox(FIX-18)'; _chg += 1
+            if _lp['id'] == 'si-state-collect':
+                for _ln, _rg in _lp['rings'].items():
+                    if _rg.get('st') == 'OPEN' and any(n.startswith('SI-STATE-' + _ln) for n in _names):
+                        _rg['st'] = 'CLEARED'; _rg['note'] = '机跟:态件落inbox(FIX-18)'; _chg += 1
+        _lj['updated'] = time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())
+        _ljs = json.dumps(_lj, ensure_ascii=False, indent=1)
+        _lh = hashlib.sha256(_ljs.encode()).hexdigest()[:12]
+        if _lh != (st.get('loops_h') or ''):
+            if _chg or not (st.get('loops_h')):
+                gh_put_file('chepin-qi/qfa-pub', 'ci/loops.json', _ljs + '\n', pat, 'LOOPS-SYNC-01: %d rings updated' % _chg, 'chepin-qi')
+                evs.append({'kind': 'loops.sync', 'ref': 'ci/loops.json', 'summary': '%d rings->CLEARED' % _chg, 'high_value': bool(_chg)})
+            st['loops_h'] = _lh
+    except Exception as e:
+        st['loops_err'] = str(e)[:150]
     # ---- TOWER-FIX-16-qfa SURFACE-MIRROR-01(beat-86 root令「野问册与usrm新开统一/讨论室·公告板·野问册全线可见无死角」):双域镜——ci活性交互件→vci-inbox mirror/ci/(vci域线可读);vci lanes野问件→ci 讨论室/mirror-vci/(ucif2可读);树sha比对仅异件取水,配额自觉(器课廿九) ----
     try:
         _mirs16 = [
