@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-11T19:13:54Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/vinf-voice-20260911T185133Z.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
