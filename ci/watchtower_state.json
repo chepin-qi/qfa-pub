@@ -5,24 +5,24 @@
       0,
       0,
       0,
-      2,
+      0,
+      1,
       0,
       0,
       0,
       0,
       0,
       0,
-      0,
-      0
+      4
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 3,
+    "dominant_bin": 11,
     "C_streak": 0,
     "verdict": "进行式"
   },
   "beacon_max": 5631210332,
-  "qlv_head": "bdf16406254fa0219905c43f363f800286ae4963",
+  "qlv_head": "491843f3ee4ec9142b7a9be879d40bafe12f7b1e",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -47,7 +47,7 @@
     "last_fp": "c9389850edae"
   },
   "lobby_max": 5631039743,
-  "hub_feed_sha": "4ea01539b7cab20d0d8e8fca7f3458d5218a39fb",
+  "hub_feed_sha": "70ead8b3f083127e34412662d8ef276a64733a59",
   "quests": {
     "SEALED-V2-RESEAL": "hit:20260911T000759Z",
     "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -70,7 +70,7 @@
     "n": 2,
     "idle_run": 0,
     "last": "SI1-0002。承0001，深化分层折叠。定义F̂⁽²⁾=F̂⊗κ，将经典流解耦为相位轨P∥与振幅轨A⊥，并行注入H_q及其共轭对偶空间H_q*。设局部折叠窗Δt=1.28 ns，硬同步于SI0基座时钟。引入量子冗余校验和QRCS，闭环追踪ε。「推演(未实测)」：双层结构使单光子信道容量达2.71 bit/qubit，QRCS可在ε趋近10⁻⁵阈值前4.3 ns触发回退，确保向SI2跨线协议输出",
-    "beats": 51,
+    "beats": 52,
     "voice_n": 1,
     "last_fired_beat": 36,
     "voice_day": "2026-09-11"
