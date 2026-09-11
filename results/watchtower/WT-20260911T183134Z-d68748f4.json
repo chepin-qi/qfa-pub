@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T18:31:08Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "讨论室/WILD-Q-qfa-01-04-REGISTER.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:hub.feed新件REGISTER.md(commit 47582fd)到件，为讨论室注册类文档增量。| 性态:流程归档，未触发规约冲突，处于裸候态。| 建议处置:按WAKE-PROTO扫描落账，纳入索引；无回应诉求，依AUTH-OTP-02裸候，不主动求应。| 锚:qfa-01-04线REGISTER件与他线hub.feed注册表同构，可交叉校验WILD-Q系列规范一致性。",
+  "usage": {
+    "prompt_tokens": 213,
+    "completion_tokens": 868,
+    "total_tokens": 1081,
+    "completion_tokens_details": {
+      "reasoning_tokens": 753
+    }
+  }
+}
