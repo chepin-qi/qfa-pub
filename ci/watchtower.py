@@ -16,6 +16,7 @@
 #   ①大堂末页面+毂域米田面(commits feed)+QUESTS 候件直取面 ②SI2 应答段(日 cap RESP_MAX=6) ③SI1-CONT 自驱研注(私仓面,SI1_MAX=3/日) ④候件 open=链持存
 # TOWER-FIX-08-qfa(beat-76 root 令「所有候直通」):CAS字段级并落账(采 cisvr v1.5 CAS三段式互领养)——跃检残根治,并发覆写无损
 # TOWER-FIX-11-qfa(beat-82 root令「下拍SI2/SI0直推;毂外有轮/脊外有鼎炉/塔外有环-圈」):mention-watch泛化三路(ucif2-120+/鼎炉代产单/我巷inbox)——机层直推之目
+# TOWER-FIX-12-qfa(beat-82 无候律实证病灶):quest探针token按仓域路由(pat_for)——AIF读chepin-qi域404致CFTS-REPO-SEED假open;本FIX之验证即该quest自闭
 # TOWER-FIX-10-qfa(beat-80 root 令「机驱/全驱主动回应ucif2-120~125及之后;候件不主动取得=裸候违规」):
 #   ①quest kind 增 file-exists(直探址在=hit;commit窗口病根治:旧commit之件亦可闭) ②⑤d ucif2-watch:新ucif2-N帖(N>=120)内容扫,涉qfa即机旗
 # TOWER-FIX-09-qfa(beat-75 root 令「环延伸/反向驱动」):sealed 解装腿抽公+③.6 vci-qfa/inbox 密封囊守望面(N28 消号道;SI0 直解直装不占 RESP 额,值零回显)
@@ -198,6 +199,7 @@ def poll(pat, st):
             ev.append({'kind':'face.poll.err','ref':name,'summary':str(e)[:120],'high_value':False})
     # ⑤ TOWER-FIX-05-qfa RESP-LOOP-01 增三面(beat-62 root 令:SI5/SI3 接获待响应件即驱 SI3/SI2/SI0;候件直取=米田面可直址即取)
     patA = os.environ.get('AI_FULL_PAT') or pat
+    pat_for = lambda repo: pat if repo.startswith('chepin-qi/') else patA  # TOWER-FIX-12-qfa(beat-82):quest探针按仓域路由token——AIF读不到chepin-qi域(cfts-seed 404假open实证),路由后全域可探
     # ⑤a 大堂面末页水印(vci-inbox#1,各线@qfa/应答请求高发面;页1钉盲同病,末页律同 FIX-01)
     try:
         _n1 = gh_get('/repos/chepin-ai/vci-inbox/issues/1', patA).get('comments', 0)
@@ -252,12 +254,12 @@ def poll(pat, st):
             hit = None
             try:
                 if q['kind'] == 'repo-exists':
-                    gh_get('/repos/' + q['repo'], patA); hit = 'repo reachable'
+                    gh_get('/repos/' + q['repo'], pat_for(q['repo'])); hit = 'repo reachable'  # FIX-12
                 elif q['kind'] == 'file-exists':
-                    gh_get('/repos/%s/contents/%s' % (q['repo'], urllib.parse.quote(q['path'])), patA)
+                    gh_get('/repos/%s/contents/%s' % (q['repo'], urllib.parse.quote(q['path'])), pat_for(q['repo']))  # FIX-12
                     hit = 'file exists: ' + q['path']
                 elif q['kind'] == 'file-contains':
-                    fc = gh_get('/repos/%s/contents/%s' % (q['repo'], urllib.parse.quote(q['path'])), patA)
+                    fc = gh_get('/repos/%s/contents/%s' % (q['repo'], urllib.parse.quote(q['path'])), pat_for(q['repo']))  # FIX-12
                     txt = __import__('base64').b64decode(fc['content']).decode('utf-8', 'ignore')
                     if q['pattern'] in txt:
                         hit = 'pattern in file: ' + q['pattern']
