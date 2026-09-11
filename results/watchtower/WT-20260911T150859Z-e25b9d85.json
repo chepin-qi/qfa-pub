@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-11T15:08:59Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/_CURSORS.json",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
