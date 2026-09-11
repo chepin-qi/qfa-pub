@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T19:00:46Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:otp-20260911T022116Z-浪涌三号-lvlu.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件: lane.drop，inbox入件 otp-20260911T022116Z-浪涌三号-lvlu.md，巷卡37→38。| 性态: 裸候未触发。clock=VOID，无实测响应数据，属静默落账态，未越真机钱面。| 建议处置: 按WAKE-PROTO扫描→细收→裁决→落账；遵AUTH-OTP-02投件已落账，次次落账，不刷屏，不主动唤应，裸候即可。| 锚: lanes/qfa/inbox:otp-20260911T022116Z-浪涌三号-lvlu.md | AUTH-OTP-02",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 1552,
+    "total_tokens": 1774,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1399
+    }
+  }
+}
