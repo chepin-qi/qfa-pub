@@ -4,24 +4,24 @@
     "w12": [
       0,
       0,
+      1,
       0,
       0,
       0,
       0,
       0,
       0,
-      4,
       0,
       0,
       0
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 8,
+    "dominant_bin": 2,
     "C_streak": 0,
     "verdict": "进行式"
   },
-  "beacon_max": 5641098747,
+  "beacon_max": 5641200559,
   "qlv_head": "0dfe34ef074522e13e28a97c7fcfdcbe6b0c815e",
   "quafu": {
     "8CAEDC103963FC6D": "0",
@@ -47,7 +47,7 @@
     "last_fp": "c9389850edae"
   },
   "lobby_max": 5640664677,
-  "hub_feed_sha": "1685d1f8babf2640ee4d5b00d76006a153b8a41e",
+  "hub_feed_sha": "27374ddad41fe44ce7688fe06ba9e681e67e48e9",
   "quests": {
     "SEALED-V2-RESEAL": "hit:20260911T000759Z",
     "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -70,7 +70,7 @@
     "n": 3,
     "idle_run": 0,
     "last": "SI1-0003：承0002，定义跨线折叠接口 I_{SI2}: H_q⊕H_q*→ℂ^{2^n}，将P∥与A⊥压缩为协议原生张量Ψ_{packet}。引入相位-振幅锁定码PALC，以QRCS残差ε为动态密钥，生成本窗折叠拍号fp#SI1-0003-κ。硬同步Δt=1.28 ns下，PALC使H_q与H_q*交叉熵产率降至0.04 bit/ns。「推演(未实测)」：该接口可在3.2 ns内完成Ψ_",
-    "beats": 253,
+    "beats": 254,
     "voice_n": 1,
     "last_fired_beat": 54,
     "voice_day": "2026-09-11"
@@ -97,9 +97,9 @@
     "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md": "mention-qfa"
   },
   "seed_queue": {
-    "h": "8aa5b61f0dae",
+    "h": "9b2385c28141",
     "n": 3,
-    "ts": "20260911T215934Z"
+    "ts": "20260911T221011Z"
   },
   "leak_gate": {
     "seen": [
@@ -178,18 +178,19 @@
       "公告板/qgl-voice-20260911214418.md@1685d1f8babf",
       "公告板/lvlu-nudge-REVDRV-01-L14-20260911T215056Z.md@6c1b352fd5ea",
       "公告板/lvlu-nudge-EVALR2-ALL-L20-20260911T215056Z.md@edab4cd0f1ba",
-      "公告板/lvlu-nudge-ADJUD-01-L16-20260911T215056Z.md@56c5eba9492c"
+      "公告板/lvlu-nudge-ADJUD-01-L16-20260911T215056Z.md@56c5eba9492c",
+      "公告板/qgl-voice-20260911215449.md@27374ddad41f"
     ],
     "hits": []
   },
   "mirror": {
-    "ts": "20260911T215949Z",
+    "ts": "20260911T221023Z",
     "migrated": 8,
-    "idx_h": "4bd08df2fbce"
+    "idx_h": "c651531de8f3"
   },
   "inbox_snap": {
     "vci": [],
     "ci": []
   },
-  "loops_h": "99a3c11162e4"
+  "loops_h": "df15b960c4ff"
 }
