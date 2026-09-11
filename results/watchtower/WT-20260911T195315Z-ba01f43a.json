@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T19:52:40Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qtlv-eval-wave 新件落入 qfa inbox，巷卡 45→46 | 性态:单件 drop，未触发内容实测，属增量落入 | 建议处置:依 WAKE-PROTO 细收该件，提取 qtlv 指标并裁决落账 | 锚:lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1420,
+    "total_tokens": 1634,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1326
+    }
+  }
+}
