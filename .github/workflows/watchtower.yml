@@ -47,7 +47,7 @@ jobs:
           CASCADE_PAYLOAD: ${{ toJson(github.event.client_payload) }}
           CASCADE_SLEEP_S: '600'
           CASCADE_MAX_IDLE: '30'
-          SI1_FORCE_EVERY: '8'  # FIELD-TEST-01(beat-72,临降):触 auto-SI1 首注+voice 涟漪端到端场验,验毕复 18
+          SI1_FORCE_EVERY: '18'  # FIELD-TEST-01讫(beat-72 23:59Z):auto-SI1-0001火+voice涟漪全链验PASS,复旧18
         run: python3 -m pip install pynacl -q && python3 ci/watchtower.py --once ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.selftest == '1' && '--selftest' || '' }}
       - name: autoresponder(SI2 自动应答:高值事件→Kimi API 判词→本地回执+大堂互激帖)
         if: always()
