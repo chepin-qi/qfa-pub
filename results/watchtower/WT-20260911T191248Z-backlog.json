@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-11T19:12:48Z",
+  "clock": "VOID",
+  "backlog": [
+    {
+      "kind": "leakgate.err",
+      "ref": "ci-inbox"
+    }
+  ],
+  "note": "钱面护栏:溢出件本拍不判;水印已进,下拍不重扫"
+}
