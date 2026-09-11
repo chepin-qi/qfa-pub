@@ -3,7 +3,7 @@
  "ignited": "beat-42",
  "day": "2026-09-11",
  "beats_today": 6,
- "empty_streak": 0,
+ "empty_streak": 1,
  "last": {
   "inbox_len": "41",
   "inbox_max": "38",
@@ -14,8 +14,8 @@
   "issue5_c": "0",
   "issue6_c": "0",
   "issue7_c": "0",
-  "qilab5_n": 740,
-  "qilab5_tail": 5632695893,
+  "qilab5_n": 742,
+  "qilab5_tail": 5632727597,
   "qlvpub_head": "6c0dc582469e",
   "quafu": "{\"8BAFA1E022273996\": \"In Queue\", \"8BB169201FA3F5D4\": \"In Queue\", \"8CAEDC103963FC6D\": \"In Queue\"}",
   "drand_day": "1114"
@@ -23,7 +23,7 @@
  "ecap_prev": "3eba5ae1ec398e3f28b8c8ae6d1b354ddce44214270ae2825df708cdde1c22e5",
  "ecap_seq": 130,
  "note": "v1.2 dampened 2026-09-07: v1.1 noise-runaway 41 beats in 2h (face-churn as events, cap leaked via state-push races) — 案在账不抹史; counter restarted 6/12",
- "last_run": "2026-09-11T09:52:59Z",
+ "last_run": "2026-09-11T09:56:27Z",
  "event_beats_today": 6,
  "fired_events": {
   "inbox_len": "41",
