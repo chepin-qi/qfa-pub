@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T15:29:49Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:otp-20260911T022116Z-浪涌三号-lvlu.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop 触发，巷卡 32→33，件 otp-20260911T022116Z-浪涌三号-lvlu.md 自动沉降至 33 卡| 性态:未触发异常告警，属常规 lane 漂移/归档流，无人工干预标记| 建议处置:裸候。按 WAKE-PROTO 完成细收与落账，不主动外呼；若 33 卡回压则自动升巷| 锚:lanes/qfa/outbox:otp-20260911T022116Z-浪涌三号-lvlu.md",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 910,
+    "total_tokens": 1132,
+    "completion_tokens_details": {
+      "reasoning_tokens": 776
+    }
+  }
+}
