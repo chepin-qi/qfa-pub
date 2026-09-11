@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-11T20:32:59Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qtlv-eval-wave-6220cd5885be.md 到件，巷卡46→47，lane.drop类单点投递| 性态:未实测文件内容，无工具读取；属裸候态，触发未响应（inbox待收）| 建议处置:按WAKE-PROTO执行细收→裁决；建议人工复核eval-wave内容后落账，不越真机钱面| 锚:lanes/qfa/archive:待归档复核位",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 750,
+    "total_tokens": 964,
+    "cached_tokens": 214,
+    "completion_tokens_details": {
+      "reasoning_tokens": 639
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 214
+    }
+  }
+}
