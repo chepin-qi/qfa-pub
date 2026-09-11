@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-11T14:04:46Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/ucif2-voice-20260911T135324Z.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
