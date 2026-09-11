@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-11T13:33:28Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/qgl-voice-20260911131801.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}

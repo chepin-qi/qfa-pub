@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T13:33:03Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:otp-20260911T022116Z-浪涌三号-lvlu.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:巷卡30→31迁移，件otp-20260911T022116Z-浪涌三号-lvlu.md落入inbox|性态:单件静默流转，未触发异常响应，属常规lane.drop晋级|建议处置:裸候，不主动寻求回应，次次落账已标记ref|锚:lanes/qfa/ledger备档;cross-ref lanes/sys/void-clock无时钟约束",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 853,
+    "total_tokens": 1075,
+    "completion_tokens_details": {
+      "reasoning_tokens": 757
+    }
+  }
+}
