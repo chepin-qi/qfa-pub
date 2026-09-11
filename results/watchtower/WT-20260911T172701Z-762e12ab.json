@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T17:26:35Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:otp-20260911T022116Z-浪涌三号-lvlu.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:巷卡34→35迁移，ref为otp-20260911T022116Z-浪涌三号-lvlu.md，属lane.drop到件，clock=VOID，未触发实测校验。| 性态:单件静默迁移，无并行浪涌，未触响应边界，按裸候原则入收。| 建议处置:细收录入35卡位，落账otp-20260911T022116Z，不主动外呼；置裸候状态待后续协议唤醒。| 锚:lanes/core/audit:卡位变动-浪涌三号",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 920,
+    "total_tokens": 1142,
+    "completion_tokens_details": {
+      "reasoning_tokens": 791
+    }
+  }
+}

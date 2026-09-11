@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T17:27:34Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "quest.hit",
+    "ref": "WILDQ-MERGED-QFA",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:WILDQ-MERGED-QFA到件，直取讨论室/WILD-Q-qfa-01-04-REGISTER.md；册载四问自立，01证成、02/03答讫、04待开，无代产闭。| 性态:quest.hit，cisvr正册并轨，判属非阻trap，件内自洽。| 建议处置:依WAKE-PROTO扫描已毕，细收确认，裁决为非阻塞并轨，次次落账；04开裸候，不主动寻求回应。| 锚:WILD-Q-REGISTER-01-04系四问正册件，锚定讨论室路径与cisvr并轨态。",
+  "usage": {
+    "prompt_tokens": 253,
+    "completion_tokens": 930,
+    "total_tokens": 1183,
+    "completion_tokens_details": {
+      "reasoning_tokens": 773
+    }
+  }
+}

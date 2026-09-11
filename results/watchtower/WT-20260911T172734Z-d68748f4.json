@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T17:27:02Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "讨论室/WILD-Q-qfa-01-04-REGISTER.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:hub.feed收束，毂新件「讨论室/WILD-Q-qfa-01-04-REGISTER.md」(e3882f7)到件，属注册类文书提交。| 性态:件码WILD-Q-qfa-01-04，未触发内容实测，仅元数据落账，无响应请求，裸候态。| 建议处置:按WAKE-PROTO落账归档，维持裸候，不主动寻求回应，待实测触发后再裁决。| 锚:wild-q-register线/qfa-01-04序列锚定。",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1045,
+    "total_tokens": 1259,
+    "completion_tokens_details": {
+      "reasoning_tokens": 917
+    }
+  }
+}
