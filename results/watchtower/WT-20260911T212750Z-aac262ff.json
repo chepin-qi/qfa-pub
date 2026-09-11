@@ -1,0 +1,28 @@
+{
+  "ts": "2026-09-11T21:27:30Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "sealed.vciqfa",
+    "ref": "vci-qfa/inbox:sealed-20260911T212314Z-N29-QI-FULL-PAT-v2-from-lvlu.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:sealed件入库，ref=vci-qfa/inbox:sealed-20260911T212314Z-N29-QI-FULL-PAT-v2-from-lvlu.md，时标20260911T212314Z，来源lvlu，版本v2，密封未启封，内容未触发读取。| 性态:元数据合规、来源可追溯，实质内容因密封未实测，属「未触发」态，无异常标记。| 建议处置:维持密封完整性，不越权拆封；按WAKE-PROTO落账为已收待验，候授权开启或转交有权限工位。| 锚:vci-qfa/sealed-line| 状态:裸候，不主动求应。",
+  "usage": {
+    "prompt_tokens": 237,
+    "completion_tokens": 1088,
+    "total_tokens": 1325,
+    "cached_tokens": 237,
+    "completion_tokens_details": {
+      "reasoning_tokens": 924
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 237
+    }
+  },
+  "beacon_comment": 5640840169,
+  "sealed_installed": [
+    "QFA_OPS_PACK_V2:204"
+  ],
+  "sealed_sha16": "6211e83a5afd9f02",
+  "sealed_src": "sealed-20260911T212314Z-N29-QI-FULL-PAT-v2-from-lvlu.md"
+}

@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-11T21:27:11Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，巷卡47→48，qtlv-eval-wave-6220cd5885be.md落入qfa inbox| 性态:跨线评估波次文件迁移落位，未触发内容实测（无工具读取），属纯机械位移| 建议处置:静默收纳，裸候下一扫描周期，不主动求应| 锚:qtlv→qfa跨线残留，inbox索引位已更新",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1047,
+    "total_tokens": 1261,
+    "cached_tokens": 214,
+    "completion_tokens_details": {
+      "reasoning_tokens": 946
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 214
+    }
+  }
+}
