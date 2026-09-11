@@ -18,6 +18,7 @@
 # TOWER-FIX-11-qfa(beat-82 root令「下拍SI2/SI0直推;毂外有轮/脊外有鼎炉/塔外有环-圈」):mention-watch泛化三路(ucif2-120+/鼎炉代产单/我巷inbox)——机层直推之目
 # TOWER-FIX-12-qfa(beat-82 无候律实证病灶):quest探针token按仓域路由(pat_for)——AIF读chepin-qi域404致CFTS-REPO-SEED假open;本FIX之验证即该quest自闭
 # TOWER-FIX-13-qfa(beat-83 root令「耦合/嵌入/汇聚各SI经SI5激发SI1」):SI1-SEED-01供种面——forge请求/open-quest/mention旗/签件inbox机汇si1/SEED-QUEUE.json,SI1采种即研
+# TOWER-FIX-14-qfa(beat-84 root令「ucif2-129§5.1犯律根因/机制为何未拦」):LEAK-GATE-01写后巡闸——泛型密钥模式扫(零秘密材料),命中机旗永不录子串;根因答=写前闸/写后巡/共享表三缺,本FIX补写后巡
 # TOWER-FIX-10-qfa(beat-80 root 令「机驱/全驱主动回应ucif2-120~125及之后;候件不主动取得=裸候违规」):
 #   ①quest kind 增 file-exists(直探址在=hit;commit窗口病根治:旧commit之件亦可闭) ②⑤d ucif2-watch:新ucif2-N帖(N>=120)内容扫,涉qfa即机旗
 # TOWER-FIX-09-qfa(beat-75 root 令「环延伸/反向驱动」):sealed 解装腿抽公+③.6 vci-qfa/inbox 密封囊守望面(N28 消号道;SI0 直解直装不占 RESP 额,值零回显)
@@ -323,6 +324,41 @@ def poll(pat, st):
                                'high_value':True})
     except Exception as e:
         ev.append({'kind':'ucif2watch.err','ref':'ci-inbox','summary':str(e)[:120],'high_value':False})
+    # TOWER-FIX-14-qfa LEAK-GATE-01(beat-84 root令「找犯律根因/为何机制未拦住」之机层答):写后巡闸——泛型密钥模式扫(ghp_/gho_/ghs_/ghu_/github_pat_/sk-/AKID),零秘密材料可装;命中即high_value机旗,永不录匹配子串本身;不自动涂销(涂销=铁律人事,闸只报警)
+    try:
+        import re as _re14
+        _pats14 = [r'ghp_[A-Za-z0-9]{30,}', r'gho_[A-Za-z0-9]{30,}', r'ghs_[A-Za-z0-9]{30,}',
+                   r'ghu_[A-Za-z0-9]{30,}', r'github_pat_[A-Za-z0-9_]{30,}', r'sk-[A-Za-z0-9]{20,}', r'AKID[A-Za-z0-9]{13,}']
+        _lg = st.setdefault('leak_gate', {'seen': [], 'hits': []})
+        for cm in gh_get('/repos/chepin-ai/ci-inbox/commits?per_page=8', patA):
+            if cm['commit']['committer']['date'] <= boot:
+                continue
+            cd = gh_get('/repos/chepin-ai/ci-inbox/commits/' + cm['sha'], patA)
+            for f in (cd.get('files') or []):
+                fn = f['filename']
+                if not fn.endswith(('.md', '.json', '.py', '.txt', '.jsonl')):
+                    continue
+                key14 = fn + '@' + cm['sha'][:12]
+                if key14 in _lg['seen']:
+                    continue
+                _lg['seen'].append(key14)
+                _lg['seen'] = _lg['seen'][-400:]
+                try:
+                    fc = gh_get('/repos/chepin-ai/ci-inbox/contents/' + urllib.parse.quote(fn), patA)
+                    txt = __import__('base64').b64decode(fc['content']).decode('utf-8', 'ignore')
+                except Exception:
+                    continue
+                for p in _pats14:
+                    if _re14.search(p, txt):
+                        hit14 = {'file': fn, 'pat': p[:5], 'commit': cm['sha'][:12]}
+                        if hit14 not in _lg['hits']:
+                            _lg['hits'].append(hit14)
+                            _lg['hits'] = _lg['hits'][-40:]
+                            ev.append({'kind': 'leak.gate.hit', 'ref': fn,
+                                       'summary': ('铁律机旗:密钥模式命中(子串永不录) pat=%s file=%s commit=%s' % (p[:5], fn, cm['sha'][:12]))[:600],
+                                       'high_value': True})
+    except Exception as e:
+        ev.append({'kind': 'leakgate.err', 'ref': 'ci-inbox', 'summary': str(e)[:120], 'high_value': False})
     return ev
 
 # ---------- API 新会话开工 ----------
