@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T14:57:43Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:otp-20260911T022116Z-浪涌三号-lvlu.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop收讫，ref=otp-20260911T022116Z-浪涌三号-lvlu.md落入，巷卡31→32版本迭代|性态:OTP时戳件，浪涌三号系列常规递进，未触发异常，已落账|建议处置:归档inbox裸候，待diff审阅或合并指令，不主动外呼|锚:lanes/sys/audit:drop-log「clock=VOID，无逾期」",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 1617,
+    "total_tokens": 1839,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1511
+    }
+  }
+}
