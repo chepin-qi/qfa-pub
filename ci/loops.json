@@ -2,7 +2,7 @@
  "v": "LOOPS-REGISTRY-01",
  "line": "qfa",
  "clock": "VOID",
- "updated": "20260911T192422Z",
+ "updated": "2026-09-11T19:28:59Z",
  "law": "SI3-until-closed:每醒巡环面|有应=闭环|三拍无应→SI5提级(断路在案者拍数冻结)|环开即pend自醒续拍(qfa注:pend自醒=quest阱面机捕,surrogate必先已在役——无候律并轨)",
  "loops": [
   {
