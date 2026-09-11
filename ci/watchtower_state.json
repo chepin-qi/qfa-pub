@@ -6,7 +6,7 @@
       0,
       0,
       0,
-      0,
+      3,
       0,
       0,
       0,
@@ -17,7 +17,7 @@
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": null,
+    "dominant_bin": 4,
     "C_streak": 0,
     "verdict": "进行式"
   },
@@ -47,7 +47,7 @@
     "last_fp": "c9389850edae"
   },
   "lobby_max": 5638939502,
-  "hub_feed_sha": "a2342cc83227e5e41f0d9aeb35ae8027fdeeec4c",
+  "hub_feed_sha": "3fb2d655cfb5e658c2ef35379dc12d632db86023",
   "quests": {
     "SEALED-V2-RESEAL": "hit:20260911T000759Z",
     "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -68,9 +68,9 @@
     "seq": 4,
     "day": "2026-09-11",
     "n": 3,
-    "idle_run": 4,
+    "idle_run": 0,
     "last": "SI1-0003：承0002，定义跨线折叠接口 I_{SI2}: H_q⊕H_q*→ℂ^{2^n}，将P∥与A⊥压缩为协议原生张量Ψ_{packet}。引入相位-振幅锁定码PALC，以QRCS残差ε为动态密钥，生成本窗折叠拍号fp#SI1-0003-κ。硬同步Δt=1.28 ns下，PALC使H_q与H_q*交叉熵产率降至0.04 bit/ns。「推演(未实测)」：该接口可在3.2 ns内完成Ψ_",
-    "beats": 174,
+    "beats": 175,
     "voice_n": 1,
     "last_fired_beat": 54,
     "voice_day": "2026-09-11"
@@ -95,9 +95,9 @@
     "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md": "mention-qfa"
   },
   "seed_queue": {
-    "h": "8de3e5dee547",
+    "h": "6aef605a74f9",
     "n": 3,
-    "ts": "20260911T185752Z"
+    "ts": "20260911T185816Z"
   },
   "leak_gate": {
     "seen": [
@@ -119,7 +119,14 @@
       "公告板/lvlu-nudge-EXP049-DONE-L4-20260911T184203Z.md@10e158bb6b8f",
       "公告板/cfts-voice-20260911T184355Z.md@bf1a60f9d6aa",
       "公告板/ucif2-voice-20260911T184434Z.md@fc99ff42d29e",
-      "公告板/qgl-voice-20260911184514.md@a2342cc83227"
+      "公告板/qgl-voice-20260911184514.md@a2342cc83227",
+      "lanes/qfa/outbox/SI-MAX-RES-012-v05-20260911T185404Z.json@3fb2d655cfb5",
+      "lanes/qfa/outbox/SI-MAX-RES-012-v05-20260911T185404Z.md@3fb2d655cfb5",
+      "lanes/qfa/outbox/SI-STATE-qfa-20260911T185404Z.json@3fb2d655cfb5",
+      "shared/rota/ROTA-01.md@3fb2d655cfb5",
+      "讨论室/SI-CONVERGENCE-01.md@3fb2d655cfb5",
+      "讨论室/SI-STATE-V1-STANDARD.md@3fb2d655cfb5",
+      "讨论室/WILD-Q-MERGED-01.md@3fb2d655cfb5"
     ],
     "hits": []
   }

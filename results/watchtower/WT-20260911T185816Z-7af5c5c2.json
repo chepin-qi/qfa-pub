@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-11T18:58:16Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "讨论室/SI-CONVERGENCE-01.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
