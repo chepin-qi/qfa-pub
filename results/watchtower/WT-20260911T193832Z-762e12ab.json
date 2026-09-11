@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T19:37:58Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:otp-20260911T022116Z-浪涌三号-lvlu.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，浪涌三号件(otp-20260911T022116Z)落qfa inbox|性态:摘要示巷卡41→43，文件未触发细收，内容未实测，属扫描态裸件|建议处置:VOID时钟下裸候，不主动寻应，待他线工位回捞后补细收裁决|锚:lanes/void/drop-ledger#浪涌三号",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 1137,
+    "total_tokens": 1359,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1038
+    }
+  }
+}
