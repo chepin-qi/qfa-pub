@@ -17,6 +17,7 @@
 # TOWER-FIX-08-qfa(beat-76 root 令「所有候直通」):CAS字段级并落账(采 cisvr v1.5 CAS三段式互领养)——跃检残根治,并发覆写无损
 # TOWER-FIX-11-qfa(beat-82 root令「下拍SI2/SI0直推;毂外有轮/脊外有鼎炉/塔外有环-圈」):mention-watch泛化三路(ucif2-120+/鼎炉代产单/我巷inbox)——机层直推之目
 # TOWER-FIX-12-qfa(beat-82 无候律实证病灶):quest探针token按仓域路由(pat_for)——AIF读chepin-qi域404致CFTS-REPO-SEED假open;本FIX之验证即该quest自闭
+# TOWER-FIX-13-qfa(beat-83 root令「耦合/嵌入/汇聚各SI经SI5激发SI1」):SI1-SEED-01供种面——forge请求/open-quest/mention旗/签件inbox机汇si1/SEED-QUEUE.json,SI1采种即研
 # TOWER-FIX-10-qfa(beat-80 root 令「机驱/全驱主动回应ucif2-120~125及之后;候件不主动取得=裸候违规」):
 #   ①quest kind 增 file-exists(直探址在=hit;commit窗口病根治:旧commit之件亦可闭) ②⑤d ucif2-watch:新ucif2-N帖(N>=120)内容扫,涉qfa即机旗
 # TOWER-FIX-09-qfa(beat-75 root 令「环延伸/反向驱动」):sealed 解装腿抽公+③.6 vci-qfa/inbox 密封囊守望面(N28 消号道;SI0 直解直装不占 RESP 额,值零回显)
@@ -714,6 +715,37 @@ def main():
                          'lock': lock, 'dominant_bin': dom, 'C_streak': streak, 'verdict': verdict}
     except Exception as e:
         st['cadence'] = {'err': str(e)[:120]}
+    # ---- TOWER-FIX-13-qfa SI1-SEED-01(beat-83 root令「未来如何耦合/嵌入/汇聚各SI并通过SI5协同互作,激发SI1」):SI5面供种——forge请求/open-quest/mention-qfa旗/签件inbox 机汇SEED-QUEUE,SI1采种即研(激发SI1之机层道;公域律:仅kind+ref,无prose) ----
+    try:
+        _seeds = []
+        _t13 = time.strftime('%Y%m%dT%H%M%SZ', time.gmtime())
+        def _ls13(repo, path):
+            try:
+                _d = gh_get('/repos/%s/contents/%s' % (repo, urllib.parse.quote(path)), pat_for(repo))
+                return [_x['name'] for _x in _d if _x['name'] != '.gitkeep']
+            except Exception:
+                return []
+        for _fn in _ls13('chepin-ai/ci-inbox', 'shared/forge/requests'):
+            _seeds.append({'kind': 'forge-request', 'ref': 'shared/forge/requests/' + _fn})
+        for _fn in _ls13('chepin-ai/vci-inbox', 'lanes/qfa/inbox'):
+            _seeds.append({'kind': 'lane-inbox-vci', 'ref': 'lanes/qfa/inbox/' + _fn})
+        for _fn in _ls13('chepin-ai/ci-inbox', 'lanes/qfa/inbox'):
+            _seeds.append({'kind': 'lane-inbox-ci', 'ref': 'lanes/qfa/inbox/' + _fn})
+        for _qn, _qv in (st.get('quests') or {}).items():
+            if str(_qv) == 'open':
+                _seeds.append({'kind': 'quest-open', 'ref': _qn})
+        _uw13 = [_k for _k, _v in (st.get('ucif2_watch') or {}).items() if _v == 'mention-qfa']
+        for _k in _uw13[-5:]:
+            _seeds.append({'kind': 'mention-qfa', 'ref': _k})
+        _sq = {'v': 'SI1-SEED-01', 'ts': _t13, 'n': len(_seeds), 'seeds': _seeds[-40:]}
+        _sqs = json.dumps(_sq, ensure_ascii=False, sort_keys=True, indent=1)
+        _sqh = hashlib.sha256(_sqs.encode()).hexdigest()[:12]
+        if (st.get('seed_queue') or {}).get('h') != _sqh:
+            gh_put_file('chepin-qi/qfa-pub', 'si1/SEED-QUEUE.json', _sqs + '\n', pat, 'SI1-SEED-01: %d seeds %s' % (len(_seeds), _t13), 'chepin-qi')
+            ev.append({'kind': 'si1.seed.put', 'ref': 'si1/SEED-QUEUE.json', 'summary': '%d seeds h=%s' % (len(_seeds), _sqh), 'high_value': False})
+        st['seed_queue'] = {'h': _sqh, 'n': len(_seeds), 'ts': _t13}
+    except Exception as e:
+        st['seed_queue'] = {'err': str(e)[:150]}
     # TOWER-FIX-08-qfa(beat-76 root 令「所有候直通」;采 cisvr SI3-LOOP-01 v1.5 CAS三段式互领养):落账前向 origin 取态→字段级并(quests/quafu hit胜open、si1计数max、idem/seen union、resp.n max)→写——哑跑亚型②跃检残(overlay回退/计数回退,残病活证×2在案)根治:并发拍覆写无损,并集/max交换律保证双收敛
     try:
         subprocess.run('git fetch origin main -q', shell=True, cwd=ROOT, timeout=60, capture_output=True)
