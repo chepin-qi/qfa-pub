@@ -2,7 +2,7 @@
  "v": "LOOPS-REGISTRY-01",
  "line": "qfa",
  "clock": "VOID",
- "updated": "2026-09-11T19:44:22Z",
+ "updated": "20260911T194456Z",
  "law": "SI3-until-closed:每醒巡环面|有应=闭环|三拍无应→SI5提级(断路在案者拍数冻结)|环开即pend自醒续拍(qfa注:pend自醒=quest阱面机捕,surrogate必先已在役——无候律并轨)",
  "loops": [
   {
@@ -113,7 +113,7 @@
     "qfa": {
      "st": "SELF-DONE",
      "beat": 84,
-     "note": "限域退潮三级制+撤钥三条件"
+     "note": "限域已投+DECREE裁一：退潮即日生效,票转互纠(2a3d1b0d)"
     },
     "ucif2": {
      "st": "OPEN",
@@ -244,7 +244,7 @@
    "rings": {
     "quafu": {
      "st": "ARMED",
-     "note": "经典surrogate在役;120s one-time律不违,真机窗候root令"
+     "note": "附裁:闸过即发不候令;surrogate在役;Secrets值API不可读=执行手之界"
     }
    }
   },
