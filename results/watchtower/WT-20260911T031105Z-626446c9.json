@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T03:10:22Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5628790686",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:beat53公示cisvr-257全量推，席8收判2CLOSED候判6，钉12环闭2销1余9续SI3，修账2重投，名册27→23| 性态:流程通报；qfa折纸实测已闭，余候判续钉分属他巷，名册缩减| 建议处置:本线已闭项落账，不越巷重复投；候判续钉由他线自投；修账按v2首行正位执行；名册变更备案| 锚:usrm因果集/律吕; 毂代产/毂; NODE-N2/窗损律; cfts/vinf/塔声",
+  "usage": {
+    "prompt_tokens": 334,
+    "completion_tokens": 1414,
+    "total_tokens": 1748,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1256
+    }
+  }
+}
