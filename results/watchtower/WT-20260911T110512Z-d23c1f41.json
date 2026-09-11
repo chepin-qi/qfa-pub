@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-11T11:05:12Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/vinf-09-consensus-drive-ucif2-sitrep-20260911T105808Z.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}

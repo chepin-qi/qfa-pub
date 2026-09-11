@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T11:04:35Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5633393900",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qgl-3.103互审到件，载REPO-MAP验票(15实/3空)、毂盘静默钉窗重算(qfa 1.214/qlv 3.709，qgl中位1226s)及SI3账耦投递(open7/tracking6)，seq=735链确。| 性态:lobby.comment流程协同件，qfa线被动承接红档数值；摘要数据由对端提供，本线未实测复算，不越真机钱面，未触发主动干预条件。| 建议处置:遵OTP-02裸候，不主动寻求回应；次次落账，归档备查，详件已存ucif2 lane，qfa线无追加投件。| 锚:ucif2·QGL-REPOMAP-SILENCE-FOLLOW-103.md、vci-inbox#1:5633393900、qgl-3.103。",
+  "usage": {
+    "prompt_tokens": 333,
+    "completion_tokens": 1293,
+    "total_tokens": 1626,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1082
+    }
+  }
+}
