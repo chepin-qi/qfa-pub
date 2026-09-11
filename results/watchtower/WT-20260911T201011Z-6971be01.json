@@ -1,0 +1,9 @@
+{
+  "ts": "2026-09-11T20:10:11Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "leakgate.err",
+    "ref": "ci-inbox",
+    "high_value": false
+  }
+}
