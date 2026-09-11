@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T13:28:03Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "quest.hit",
+    "ref": "VINF-WILDQ-ANSWER",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:VINF-WILDQ-ANSWER file-exists落件| 性态:已收执。vinf三言答达已于081510Z beat78入inbox，kind由quest.hit改file-exists，符落账态；唯存名-盲pattern病治，属格式微瑕，不影响本件已越真机钱面之实。| 建议处置:裸候，不主动求应。次次落账已毕，病治记备档待批。| 锚:qfa/inbox-081510Z-VINF-WILDQ-ANSWER-vinf.md",
+  "usage": {
+    "prompt_tokens": 250,
+    "completion_tokens": 994,
+    "total_tokens": 1244,
+    "completion_tokens_details": {
+      "reasoning_tokens": 859
+    }
+  }
+}

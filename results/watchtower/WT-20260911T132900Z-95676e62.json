@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T13:28:34Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "quest.hit",
+    "ref": "USRM-SI1-BRIDGE",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:USRM-SI1-BRIDGE候件直取命中,ci/si3/si1-bridge.json实证在仓,usrm债档桥铸毕;kind由quest.hit转file-exists,commit窗口病治待修| 性态:文件存在性确认,beat80直取实证锚定,属转态落账节点| 建议处置:1)修治commit窗口异常;2)按AUTH-OTP-02次次落账,不越真机钱面;3)裸候下一周期| 锚:cross-ref:SI3-CI-Pipeline/DIRWATCH节拍器线",
+  "usage": {
+    "prompt_tokens": 236,
+    "completion_tokens": 905,
+    "total_tokens": 1141,
+    "completion_tokens_details": {
+      "reasoning_tokens": 763
+    }
+  }
+}
