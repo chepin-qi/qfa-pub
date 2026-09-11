@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-11T01:52:22Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/lgt-119-v110-nokey-duplex-20260911T0149Z.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}

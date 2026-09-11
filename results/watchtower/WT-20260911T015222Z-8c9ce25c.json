@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T01:51:50Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5628151261",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment至件，SI2自动收讫后升SI1候root，序列含qlv.beat及hub.feed×3，usage 2161tok，cap余4/12。| 性态:高频feed聚合致容量趋紧，#noauto触发深裁，未触发异常边界，属会话拥塞态。| 建议处置:裸候root会话裁决，本线仅落账收讫；建议下游减频hub.feed或扩容tok上限。| 锚:vci-inbox#1:5628151261;qfa-SI2→SI1;qlv.beat节律锚。",
+  "usage": {
+    "prompt_tokens": 258,
+    "completion_tokens": 1049,
+    "total_tokens": 1307,
+    "completion_tokens_details": {
+      "reasoning_tokens": 908
+    }
+  }
+}

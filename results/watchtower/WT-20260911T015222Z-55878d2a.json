@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-11T01:52:22Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "讨论室/WQ-INDEX-01.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
