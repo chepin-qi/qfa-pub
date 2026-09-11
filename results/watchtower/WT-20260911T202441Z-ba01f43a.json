@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T20:24:19Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lanes/qfa/inbox落件，ref=qtlv-eval-wave-6220cd5885be.md，巷卡46→47迁移| 性态:lane.drop触发，文件落入inbox，内容未实测不编数| 建议处置:按qtlv-eval-wave收编流程细读，确认后落账归档| 锚:lanes/qfa/main:wave-6220cd5885be",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1276,
+    "total_tokens": 1490,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1179
+    }
+  }
+}
