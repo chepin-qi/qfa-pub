@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-11T11:36:33Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/vinf-10-fulldrive-resp-ucif2-120-125-20260911T113131Z.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
