@@ -14,6 +14,7 @@
 #   ②单拍判词上限 WT_MAX_WORK=8 + backlog 记件(钱面护栏:暴量拍不烧 API)
 # TOWER-FIX-05-qfa(beat-62 root 令,RESP-LOOP-01):SI5/SI3 接获待响应件→SI3 递归引擎→SI2/SI0 即时处理应答;
 #   ①大堂末页面+毂域米田面(commits feed)+QUESTS 候件直取面 ②SI2 应答段(日 cap RESP_MAX=6) ③SI1-CONT 自驱研注(私仓面,SI1_MAX=3/日) ④候件 open=链持存
+# TOWER-FIX-09-qfa(beat-75 root 令「环延伸/反向驱动」):sealed 解装腿抽公+③.6 vci-qfa/inbox 密封囊守望面(N28 消号道;SI0 直解直装不占 RESP 额,值零回显)
 # TOWER-FIX-07-qfa(beat-70 root 令「会后持续迭代/反向涟漪:SI0→SI2→SI3→SI5」):
 #   ①内容hash idem集 sha256(kind|ref)[:12] 截尾300(采lgt/usrm闸升位)——quest overlay 跃检回退之重火被吞,同件永不复执
 #   ②SI0→SI2 反向涟漪:SI1-CONT 研注机读摘投毂板 qfa-voice(SI1_VOICE_MAX=1/日,首行诚实声明,全文私链守公域律)——会后 SI1 续迭不系会话存留
@@ -130,6 +131,19 @@ def poll(pat, st):
         st['lane_inbox_count'] = cnt
     except Exception as e:
         ev.append({'kind':'lane.poll.err','ref':'lanes/qfa/inbox','summary':str(e)[:120],'high_value':False})
+    # ③.6 vci-qfa/inbox 密封囊守望(TOWER-FIX-09-qfa beat-75:N28 消号道;差集即火,AI_FULL_PAT 面,零额度常开)
+    try:
+        _vq = gh_get('/repos/chepin-ai/vci-qfa/contents/inbox?per_page=100', os.environ.get('AI_FULL_PAT') or pat)
+        if isinstance(_vq, list):
+            _seen9 = st.setdefault('vciqfa_sealed_seen', [])
+            for _f9 in _vq:
+                _fn9 = _f9.get('name', '')
+                if _fn9.startswith('sealed-') and _fn9.endswith('.md') and _fn9 not in _seen9:
+                    ev.append({'kind':'sealed.vciqfa','ref':'vci-qfa/inbox:' + _fn9,'summary':'密封囊新件 ' + _fn9,'high_value':True})
+                    _seen9.append(_fn9)
+            del _seen9[:-50]
+    except Exception as e:
+        ev.append({'kind':'sealed.vciqfa.err','ref':'vci-qfa/inbox','summary':str(e)[:120],'high_value':False})
     # ③.75 毂域三面(TOWER-FIX-04-qfa):伪板病株自疫——公告板/庭卷/大堂账入巡,板址指纹=锚文件存在性
     # 道:AI_FULL_PAT(chepin-ai 全域,毂仓可读);缺则降级 QI_PAT(毂仓 404 则记 err 不炸拍)
     try:
@@ -386,6 +400,12 @@ def handle_sealed(ev, st, pat):
         return {'sealed_error': 'fetch: ' + str(e)[:120]}
     if not blob:
         return {'sealed_note': 'hit 而密文未寻得(#874 串无 b64 块),候下拍再取'}
+    return sealed_decode_install(blob, sk, pat)
+
+# TOWER-FIX-09-qfa(beat-75 root 令「环延伸/反向驱动」·N28 消号道):解装腿抽公 sealed_decode_install;③.6 vci-qfa/inbox 密封囊守望面(lvlu SealedBox 囊到→SI0 即解即装→唯记 sha16 锚)。律同 FIX-06:值永不入文零回显;败则记件不炸拍
+def sealed_decode_install(blob, sk, pat):
+    """b64 密文→QFA_PK_V2_SK 内存解→JSON/KEY=VALUE 解析→逐键装 lab Secrets→唯记 sha16 锚。"""
+    import re as _re
     try:
         from nacl.public import PrivateKey, SealedBox
         import nacl.encoding
@@ -430,6 +450,33 @@ def handle_sealed(ev, st, pat):
         v = None
     pt = None
     return {'sealed_installed': installed, 'sealed_sha16': sha}
+
+
+def handle_sealed_vciqfa(ev, st, pat):
+    """FIX-09:vci-qfa/inbox/sealed-*.md→b64 块(```围或裸长串)→sealed_decode_install。"""
+    import re as _re
+    sk = os.environ.get('QFA_PK_V2_SK')
+    if not sk:
+        return {'sealed_error': 'NO-KEY: QFA_PK_V2_SK 未装(候装钥,钱面不越)'}
+    tokA = os.environ.get('AI_FULL_PAT') or pat
+    fn = ev['ref'].split(':', 1)[1]
+    try:
+        fd = gh_get('/repos/chepin-ai/vci-qfa/contents/inbox/' + urllib.parse.quote(fn), tokA)
+        body = __import__('base64').b64decode(fd['content']).decode('utf-8', 'ignore')
+    except Exception as e:
+        return {'sealed_error': 'fetch: ' + str(e)[:120]}
+    m = _re.search(r'```\s*([A-Za-z0-9+/=\n]{80,})\s*```', body)
+    if m:
+        blob = m.group(1)
+    else:
+        m2 = _re.search(r'([A-Za-z0-9+/=]{80,})', body)
+        blob = m2.group(1) if m2 else None
+    if not blob:
+        return {'sealed_note': 'hit 而密文未寻得(' + fn + ' 无 b64 块),候下拍再取'}
+    r = sealed_decode_install(blob, sk, pat)
+    r['sealed_src'] = fn
+    return r
+
 
 # ---------- 主流程 ----------
 def main():
@@ -503,6 +550,16 @@ def main():
             except Exception as e:
                 note['beacon_error'] = str(e)[:150]
                 json.dump(note, open(fn,'w'), ensure_ascii=False, indent=2)
+        # TOWER-FIX-09-qfa:密封囊件 SI0 直解直装(机械件不占 RESP 额;idem 吞重火;值零回显)
+        if ev.get('kind') == 'sealed.vciqfa' and not selftest:
+            _idem9 = st.setdefault('idem', [])
+            _ik9 = hashlib.sha256((ev['kind'] + '|' + ev['ref']).encode()).hexdigest()[:12]
+            if _ik9 in _idem9:
+                note['idem_skip'] = _ik9
+            else:
+                note.update(handle_sealed_vciqfa(ev, st, pat))
+                _idem9.append(_ik9); del _idem9[:-300]
+            json.dump(note, open(fn, 'w'), ensure_ascii=False, indent=2)
         # TOWER-FIX-05-qfa ②b RESP-LOOP 执行段:应答类高值件→SI3 起草→SI2 道帖(日 cap RESP_MAX,钱面护栏;公仓净化:note 仅载 qfa 自署稿)
         if ev.get('high_value') and not selftest and (ev['kind'] in RESP_KINDS or (ev['kind'] == 'hub.change' and 'hub.court' in ev['ref'])):
             _today = time.strftime('%Y-%m-%d', time.gmtime())
