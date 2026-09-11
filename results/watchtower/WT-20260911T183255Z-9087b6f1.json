@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-11T18:32:55Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/qfa-108-leak-RCA-AIF-SUNSET-01-签覆盖补全-20260911T182136Z.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
