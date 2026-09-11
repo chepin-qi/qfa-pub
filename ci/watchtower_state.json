@@ -3,10 +3,10 @@
     "v": "METER-CADENCE-01-cand",
     "w12": [
       0,
+      0,
       1,
       0,
       0,
-      1,
       0,
       0,
       0,
@@ -17,11 +17,11 @@
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 1,
+    "dominant_bin": 2,
     "C_streak": 0,
     "verdict": "进行式"
   },
-  "beacon_max": 5629043531,
+  "beacon_max": 5629127804,
   "qlv_head": "fe3ecd0792bc17de7c3572f7c68ff37c827b68dc",
   "quafu": {
     "8CAEDC103963FC6D": "0",
@@ -47,7 +47,7 @@
     "last_fp": "c9389850edae"
   },
   "lobby_max": 5628790686,
-  "hub_feed_sha": "bd11a8622ef68d25a45726c893179319b8d88568",
+  "hub_feed_sha": "c57f7add0eaa3e7e2c5d70e241026818a0fef09e",
   "quests": {
     "SEALED-V2-RESEAL": "hit:20260911T000759Z",
     "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -70,7 +70,7 @@
     "n": 1,
     "idle_run": 0,
     "last": "SI1-0001\n\n承首则，立SI1折叠编码之基线。定义量子折叠算符F̂将经典比特流映射至希尔伯特子空间H_q，以|ψ₀⟩,|ψ₁⟩为折叠基矢，向SI0基座输出编码接口。设误差边界ε<10⁻⁵，保证态矢量坍缩可逆。「推演(未实测)」：三阶张量积折叠可使编码冗余度降至0.13，并预兼容SI2跨线协议之初态握手帧。锚：册Q-α/件001/拍号0x00。",
-    "beats": 27,
+    "beats": 28,
     "voice_n": 1,
     "last_fired_beat": 18,
     "voice_day": "2026-09-11"
