@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T09:50:40Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:otp-20260911T022116Z-浪涌三号-lvlu.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:巷卡29→30，otp-20260911T022116Z-浪涌三号-lvlu.md落inbox| 性态:常规lane.drop，投必有件，裸候态，未触发异常亦未实测内容| 建议处置:已落账，裸候不唤应，待他线拉取或次轮otp| 锚:lanes/qfa/seq:浪涌三号-30位（接29号线锚）",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 1157,
+    "total_tokens": 1379,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1052
+    }
+  }
+}
