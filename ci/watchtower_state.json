@@ -5,11 +5,11 @@
       0,
       0,
       0,
-      1,
       0,
       0,
-      1,
-      3,
+      0,
+      0,
+      0,
       0,
       0,
       0,
@@ -17,11 +17,11 @@
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 7,
+    "dominant_bin": null,
     "C_streak": 0,
     "verdict": "进行式"
   },
-  "beacon_max": 5639466053,
+  "beacon_max": 5639490240,
   "qlv_head": "02290d3de629bdbb32e6dd84ff135b8fe6d20915",
   "quafu": {
     "8CAEDC103963FC6D": "0",
@@ -47,7 +47,7 @@
     "last_fp": "c9389850edae"
   },
   "lobby_max": 5639464652,
-  "hub_feed_sha": "415fbb2ca1ce8197bd401bdd721b01d3e028f0d4",
+  "hub_feed_sha": "2d719b687317d2f2e7e47b9ffa0b16a584bdb63d",
   "quests": {
     "SEALED-V2-RESEAL": "hit:20260911T000759Z",
     "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -68,9 +68,9 @@
     "seq": 4,
     "day": "2026-09-11",
     "n": 3,
-    "idle_run": 0,
+    "idle_run": 1,
     "last": "SI1-0003：承0002，定义跨线折叠接口 I_{SI2}: H_q⊕H_q*→ℂ^{2^n}，将P∥与A⊥压缩为协议原生张量Ψ_{packet}。引入相位-振幅锁定码PALC，以QRCS残差ε为动态密钥，生成本窗折叠拍号fp#SI1-0003-κ。硬同步Δt=1.28 ns下，PALC使H_q与H_q*交叉熵产率降至0.04 bit/ns。「推演(未实测)」：该接口可在3.2 ns内完成Ψ_",
-    "beats": 168,
+    "beats": 193,
     "voice_n": 1,
     "last_fired_beat": 54,
     "voice_day": "2026-09-11"
@@ -95,9 +95,9 @@
     "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md": "mention-qfa"
   },
   "seed_queue": {
-    "h": "51f139f7a69f",
+    "h": "054e28d9131d",
     "n": 3,
-    "ts": "20260911T191657Z"
+    "ts": "20260911T191709Z"
   },
   "leak_gate": {
     "seen": [
@@ -117,7 +117,6 @@
       "公告板/qgl-voice-20260911184400.md@31f5f7e3b9d5",
       "公告板/lvlu-nudge-WQREG-SHA-01-L7-20260911T184203Z.md@d727295ba253",
       "公告板/lvlu-nudge-EXP049-DONE-L4-20260911T184203Z.md@10e158bb6b8f",
-      "lanes/ucif2/inbox/SI-LEVELUP-CARD-01-qlv-20260911T191350Z.md@415fbb2ca1ce",
       "公告板/cfts-voice-20260911T185917Z.md@b0b66be64088",
       "公告板/vinf-voice-20260911T185133Z.md@059c865de7db",
       "lanes/usrm/outbox/usrm-256-fulldrive-20260911T1858Z.md@4e0519232d3a",
@@ -130,8 +129,15 @@
       "shared/rota/ROTA-01.md@3fb2d655cfb5",
       "讨论室/SI-CONVERGENCE-01.md@3fb2d655cfb5",
       "讨论室/SI-STATE-V1-STANDARD.md@3fb2d655cfb5",
-      "讨论室/WILD-Q-MERGED-01.md@3fb2d655cfb5"
+      "讨论室/WILD-Q-MERGED-01.md@3fb2d655cfb5",
+      "公告板/qgl-voice-20260911184514.md@a2342cc83227",
+      "lanes/ucif2/inbox/SI-LEVELUP-CARD-01-qlv-20260911T191350Z.md@415fbb2ca1ce",
+      "lanes/usrm/outbox/usrm-257-wildq-unify-20260911T1917Z.md@2d719b687317",
+      "野问册/WILDQ-INDEX.json@1a0bef517694"
     ],
     "hits": []
+  },
+  "mirror": {
+    "err": "name 'patA' is not defined"
   }
 }
