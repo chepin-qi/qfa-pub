@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-11T15:19:25Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5636567999",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
