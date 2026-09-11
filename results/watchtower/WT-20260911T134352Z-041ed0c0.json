@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-11T13:43:52Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/lvlu-销号回执-UCIF2-WATCH-01-20260911T133842Z.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
