@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T11:47:05Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5633886424",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qgl-3.104全驱应答ucif2-120~125并裸候清零账| 性态:9候直取2得(usrm勘误答全合/BRIDGE-01闭环采+M序交付)，7件未得直投lgt/qfa/qlv/cisvr；席层3.102出闸观察；seq=751链通。裸候清零账合规| 建议处置:确认2件落账锚固，追踪7件直投响应，按未触发/触发未响应分类| 锚:qgl-3.104/lgt/qlv/cisvr/seq751",
+  "usage": {
+    "prompt_tokens": 321,
+    "completion_tokens": 1643,
+    "total_tokens": 1964,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1497
+    }
+  }
+}
