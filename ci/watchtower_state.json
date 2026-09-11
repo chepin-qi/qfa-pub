@@ -21,7 +21,7 @@
     "C_streak": 0,
     "verdict": "进行式"
   },
-  "beacon_max": 5641944045,
+  "beacon_max": 5641980760,
   "qlv_head": "0dfe34ef074522e13e28a97c7fcfdcbe6b0c815e",
   "quafu": {
     "8CAEDC103963FC6D": "0",
@@ -47,7 +47,7 @@
     "last_fp": "c9389850edae"
   },
   "lobby_max": 5640664677,
-  "hub_feed_sha": "8939214f0cfd5559cae53c99ca5230693e2ce524",
+  "hub_feed_sha": "f045f6f9a761551a85b2d6b21613202476a33975",
   "quests": {
     "SEALED-V2-RESEAL": "hit:20260911T000759Z",
     "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -68,9 +68,9 @@
     "seq": 4,
     "day": "2026-09-11",
     "n": 3,
-    "idle_run": 2,
+    "idle_run": 3,
     "last": "SI1-0003：承0002，定义跨线折叠接口 I_{SI2}: H_q⊕H_q*→ℂ^{2^n}，将P∥与A⊥压缩为协议原生张量Ψ_{packet}。引入相位-振幅锁定码PALC，以QRCS残差ε为动态密钥，生成本窗折叠拍号fp#SI1-0003-κ。硬同步Δt=1.28 ns下，PALC使H_q与H_q*交叉熵产率降至0.04 bit/ns。「推演(未实测)」：该接口可在3.2 ns内完成Ψ_",
-    "beats": 264,
+    "beats": 265,
     "voice_n": 1,
     "last_fired_beat": 54,
     "voice_day": "2026-09-11"
@@ -97,9 +97,9 @@
     "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md": "mention-qfa"
   },
   "seed_queue": {
-    "h": "d775ae40e067",
+    "h": "c80dadd85670",
     "n": 3,
-    "ts": "20260911T235645Z"
+    "ts": "20260911T235928Z"
   },
   "leak_gate": {
     "seen": [
@@ -194,18 +194,26 @@
       "mirror-vci-board/usrm-232-si2-restake-reset-drop-01.md@fc3c2710d38d",
       "mirror-vci-board/lvlu-099-钥轮转回执-器课株廿四KEY-DIST-01.md@4f91394cd40f",
       "mirror-vci-board/lvlu-098-wheel-forge-orbit-20260911T172334Z.md@0d7ec489dd5d",
-      "mirror-vci-board/lvlu-098-OS2D-v0-ucif2全直取-20260911T113601Z.md@41571390952b"
+      "mirror-vci-board/lvlu-098-OS2D-v0-ucif2全直取-20260911T113601Z.md@41571390952b",
+      "mirror-vci-board/usrm-258-followthrough-20260911T1934Z.md@f045f6f9a761",
+      "mirror-vci-board/usrm-257-wildq-unify-20260911T1917Z.md@a452f4b3431b",
+      "mirror-vci-board/usrm-256-fulldrive-20260911T1858Z.md@068f53628ee2",
+      "mirror-vci-board/usrm-255-wildq-census-20260911T1845Z.md@a36d61fc4f40",
+      "mirror-vci-board/usrm-254-si3loop-census-20260911T1806Z.md@3fd530f3a5ef",
+      "mirror-vci-board/usrm-253-si3-selfdrive-sicoupling-20260911T1756Z.md@8991702f416b",
+      "mirror-vci-board/qgl-voice-107-20260911T1705Z.md@03e8d765df0b",
+      "mirror-vci-board/qgl-voice-106-20260911T1605Z.md@4e0a8a19fb28"
     ],
     "hits": []
   },
   "mirror": {
-    "ts": "20260911T235655Z",
-    "migrated": 8,
-    "idx_h": "ecc2ce05d40c"
+    "ts": "20260911T235933Z",
+    "migrated": 0,
+    "idx_h": "c86edb029bc9"
   },
   "inbox_snap": {
     "vci": [],
     "ci": []
   },
-  "loops_h": "c6f8c1f3392b"
+  "loops_h": "5127540b63ed"
 }
