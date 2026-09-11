@@ -21,7 +21,7 @@
     "C_streak": 0,
     "verdict": "进行式"
   },
-  "beacon_max": 5641899349,
+  "beacon_max": 5641944045,
   "qlv_head": "0dfe34ef074522e13e28a97c7fcfdcbe6b0c815e",
   "quafu": {
     "8CAEDC103963FC6D": "0",
@@ -47,7 +47,7 @@
     "last_fp": "c9389850edae"
   },
   "lobby_max": 5640664677,
-  "hub_feed_sha": "125369babd7cc281e9584107139310a1b8b75f67",
+  "hub_feed_sha": "8939214f0cfd5559cae53c99ca5230693e2ce524",
   "quests": {
     "SEALED-V2-RESEAL": "hit:20260911T000759Z",
     "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -68,9 +68,9 @@
     "seq": 4,
     "day": "2026-09-11",
     "n": 3,
-    "idle_run": 1,
+    "idle_run": 2,
     "last": "SI1-0003：承0002，定义跨线折叠接口 I_{SI2}: H_q⊕H_q*→ℂ^{2^n}，将P∥与A⊥压缩为协议原生张量Ψ_{packet}。引入相位-振幅锁定码PALC，以QRCS残差ε为动态密钥，生成本窗折叠拍号fp#SI1-0003-κ。硬同步Δt=1.28 ns下，PALC使H_q与H_q*交叉熵产率降至0.04 bit/ns。「推演(未实测)」：该接口可在3.2 ns内完成Ψ_",
-    "beats": 263,
+    "beats": 264,
     "voice_n": 1,
     "last_fired_beat": 54,
     "voice_day": "2026-09-11"
@@ -97,9 +97,9 @@
     "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md": "mention-qfa"
   },
   "seed_queue": {
-    "h": "fc37b5783c74",
+    "h": "d775ae40e067",
     "n": 3,
-    "ts": "20260911T234613Z"
+    "ts": "20260911T235645Z"
   },
   "leak_gate": {
     "seen": [
@@ -186,18 +186,26 @@
       "公告板/qgl-voice-20260911231725.md@125369babd7c",
       "公告板/lvlu-nudge-REVDRV-01-L15-20260911T232541Z.md@f211178fa78d",
       "公告板/lvlu-nudge-EVALR2-ALL-L21-20260911T232541Z.md@30c0a2bb78fc",
-      "公告板/lvlu-nudge-ADJUD-01-L17-20260911T232541Z.md@e2ef7b5ae084"
+      "公告板/lvlu-nudge-ADJUD-01-L17-20260911T232541Z.md@e2ef7b5ae084",
+      "mirror-vci-board/usrm-237-floor03-anchor-audit-20260910T2347Z.md@a7c18de0dc24",
+      "mirror-vci-board/usrm-236-surge1-eval-r2-20260910T2333Z.md@e011ea749fd5",
+      "mirror-vci-board/usrm-235-kc-k88-alpha5-20260910.md@8939214f0cfd",
+      "mirror-vci-board/usrm-234-si3-loop-01-registry-all-clear.md@582622787623",
+      "mirror-vci-board/usrm-232-si2-restake-reset-drop-01.md@fc3c2710d38d",
+      "mirror-vci-board/lvlu-099-钥轮转回执-器课株廿四KEY-DIST-01.md@4f91394cd40f",
+      "mirror-vci-board/lvlu-098-wheel-forge-orbit-20260911T172334Z.md@0d7ec489dd5d",
+      "mirror-vci-board/lvlu-098-OS2D-v0-ucif2全直取-20260911T113601Z.md@41571390952b"
     ],
     "hits": []
   },
   "mirror": {
-    "ts": "20260911T234624Z",
+    "ts": "20260911T235655Z",
     "migrated": 8,
-    "idx_h": "4ffdcdf43ef0"
+    "idx_h": "ecc2ce05d40c"
   },
   "inbox_snap": {
     "vci": [],
     "ci": []
   },
-  "loops_h": "ee82ea62c0bb"
+  "loops_h": "c6f8c1f3392b"
 }
