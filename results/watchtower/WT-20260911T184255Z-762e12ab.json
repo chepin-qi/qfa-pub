@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-11T18:42:02Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:otp-20260911T022116Z-浪涌三号-lvlu.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:巷卡35→36迭代，inbox收入otp-20260911T022116Z-浪涌三号-lvlu.md| 性态:正常lane.drop，OTP时戳与命名合规，未触发异常| 建议处置:按WAKE-PROTO完成扫描-细收-裁决-落账，归档inbox件并更新巷卡锚，裸候| 锚:lanes/qfa/ledger",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 1935,
+    "total_tokens": 2157,
+    "cached_tokens": 222,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1838
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 222
+    }
+  }
+}
