@@ -20,6 +20,7 @@
 # TOWER-FIX-13-qfa(beat-83 root令「耦合/嵌入/汇聚各SI经SI5激发SI1」):SI1-SEED-01供种面——forge请求/open-quest/mention旗/签件inbox机汇si1/SEED-QUEUE.json,SI1采种即研
 # TOWER-FIX-14-qfa(beat-84 root令「ucif2-129§5.1犯律根因/机制为何未拦」):LEAK-GATE-01写后巡闸——泛型密钥模式扫(零秘密材料),命中机旗永不录子串;根因答=写前闸/写后巡/共享表三缺,本FIX补写后巡
 # TOWER-FIX-15-qfa(beat-84实证回归):FIX-13供种块作用域病(ev在cadence域未绑定,evs才是事件列)——put成而state记err致幂等键永不落、每拍重推;本FIX复幂等
+# TOWER-FIX-16-qfa(beat-86 root令「三面全线可见无死角」):SURFACE-MIRROR-01双域镜——ci活性件→vci mirror;vci野问件→ci mirror-vci;板目树账;树sha比对仅异取水(配额自觉,器课廿九)
 # TOWER-FIX-10-qfa(beat-80 root 令「机驱/全驱主动回应ucif2-120~125及之后;候件不主动取得=裸候违规」):
 #   ①quest kind 增 file-exists(直探址在=hit;commit窗口病根治:旧commit之件亦可闭) ②⑤d ucif2-watch:新ucif2-N帖(N>=120)内容扫,涉qfa即机旗
 # TOWER-FIX-09-qfa(beat-75 root 令「环延伸/反向驱动」):sealed 解装腿抽公+③.6 vci-qfa/inbox 密封囊守望面(N28 消号道;SI0 直解直装不占 RESP 额,值零回显)
@@ -783,6 +784,45 @@ def main():
         st['seed_queue'] = {'h': _sqh, 'n': len(_seeds), 'ts': _t13}
     except Exception as e:
         st['seed_queue'] = {'err': str(e)[:150]}
+    # ---- TOWER-FIX-16-qfa SURFACE-MIRROR-01(beat-86 root令「野问册与usrm新开统一/讨论室·公告板·野问册全线可见无死角」):双域镜——ci活性交互件→vci-inbox mirror/ci/(vci域线可读);vci lanes野问件→ci 讨论室/mirror-vci/(ucif2可读);树sha比对仅异件取水,配额自觉(器课廿九) ----
+    try:
+        _mirs16 = [
+            ('讨论室/WILD-Q-MERGED-01.md', 'mirror/ci/WILD-Q-MERGED-01.md'),
+            ('讨论室/AIF-SUNSET-01-BALLOT.md', 'mirror/ci/AIF-SUNSET-01-BALLOT.md'),
+            ('讨论室/SI-STATE-V1-STANDARD.md', 'mirror/ci/SI-STATE-V1-STANDARD.md'),
+            ('讨论室/SI-CONVERGENCE-01.md', 'mirror/ci/SI-CONVERGENCE-01.md'),
+            ('shared/rota/ROTA-01.md', 'mirror/ci/ROTA-01.md'),
+            ('shared/forge/FORGE-01-protocol.md', 'mirror/ci/FORGE-01-protocol.md'),
+        ]
+        _tci16 = {t['path']: t['sha'] for t in gh_get('/repos/chepin-ai/ci-inbox/git/trees/main?recursive=1', patA).get('tree', [])}
+        _tvi16 = {t['path']: t['sha'] for t in gh_get('/repos/chepin-ai/vci-inbox/git/trees/main?recursive=1', patA).get('tree', [])}
+        _mig = 0
+        for _src, _dst in _mirs16:
+            if _src in _tci16 and _tci16.get(_src) != _tvi16.get(_dst):
+                _fc = gh_get('/repos/chepin-ai/ci-inbox/contents/' + urllib.parse.quote(_src), patA)
+                _txt = __import__('base64').b64decode(_fc['content']).decode('utf-8', 'ignore')
+                gh_put_file('chepin-ai/vci-inbox', _dst, _txt, patA, 'SURFACE-MIRROR-01: ' + _src.split('/')[-1], 'chepin-ai')
+                _mig += 1
+        for _p in _tvi16:
+            if _p.startswith('lanes/') and '/outbox/' in _p and ('WILD' in _p.upper() or '野问' in _p):
+                _dst2 = '讨论室/mirror-vci/' + _p.replace('/', '__')
+                if _tvi16.get(_p) != _tci16.get(_dst2):
+                    _fc = gh_get('/repos/chepin-ai/vci-inbox/contents/' + urllib.parse.quote(_p), patA)
+                    _txt = __import__('base64').b64decode(_fc['content']).decode('utf-8', 'ignore')
+                    gh_put_file('chepin-ai/ci-inbox', _dst2, _txt, patA, 'SURFACE-MIRROR-01(vci→ci): ' + _p.split('/')[-1], 'chepin-ai')
+                    _mig += 1
+        _bi16 = ['# 公告板镜目(ci-inbox→vci域,树即账零内容取水) ' + time.strftime('%Y%m%dT%H%M%SZ', time.gmtime()), '']
+        for _p in sorted(p for p in _tci16 if p.startswith('公告板/')):
+            _bi16.append('- ' + _p + ' @' + _tci16[_p][:12])
+        _bis = '\n'.join(_bi16) + '\n'
+        if hashlib.sha256(_bis.encode()).hexdigest()[:12] != (st.get('mirror') or {}).get('idx_h'):
+            gh_put_file('chepin-ai/vci-inbox', 'mirror/ci/BOARD-INDEX.md', _bis, patA, 'SURFACE-MIRROR-01: BOARD-INDEX', 'chepin-ai')
+            _idxh = hashlib.sha256(_bis.encode()).hexdigest()[:12]
+        else:
+            _idxh = (st.get('mirror') or {}).get('idx_h')
+        st['mirror'] = {'ts': time.strftime('%Y%m%dT%H%M%SZ', time.gmtime()), 'migrated': _mig, 'idx_h': _idxh}
+    except Exception as e:
+        st['mirror'] = {'err': str(e)[:150]}
     # TOWER-FIX-08-qfa(beat-76 root 令「所有候直通」;采 cisvr SI3-LOOP-01 v1.5 CAS三段式互领养):落账前向 origin 取态→字段级并(quests/quafu hit胜open、si1计数max、idem/seen union、resp.n max)→写——哑跑亚型②跃检残(overlay回退/计数回退,残病活证×2在案)根治:并发拍覆写无损,并集/max交换律保证双收敛
     try:
         subprocess.run('git fetch origin main -q', shell=True, cwd=ROOT, timeout=60, capture_output=True)
