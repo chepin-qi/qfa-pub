@@ -19,6 +19,7 @@
 # TOWER-FIX-12-qfa(beat-82 无候律实证病灶):quest探针token按仓域路由(pat_for)——AIF读chepin-qi域404致CFTS-REPO-SEED假open;本FIX之验证即该quest自闭
 # TOWER-FIX-13-qfa(beat-83 root令「耦合/嵌入/汇聚各SI经SI5激发SI1」):SI1-SEED-01供种面——forge请求/open-quest/mention旗/签件inbox机汇si1/SEED-QUEUE.json,SI1采种即研
 # TOWER-FIX-14-qfa(beat-84 root令「ucif2-129§5.1犯律根因/机制为何未拦」):LEAK-GATE-01写后巡闸——泛型密钥模式扫(零秘密材料),命中机旗永不录子串;根因答=写前闸/写后巡/共享表三缺,本FIX补写后巡
+# TOWER-FIX-15-qfa(beat-84实证回归):FIX-13供种块作用域病(ev在cadence域未绑定,evs才是事件列)——put成而state记err致幂等键永不落、每拍重推;本FIX复幂等
 # TOWER-FIX-10-qfa(beat-80 root 令「机驱/全驱主动回应ucif2-120~125及之后;候件不主动取得=裸候违规」):
 #   ①quest kind 增 file-exists(直探址在=hit;commit窗口病根治:旧commit之件亦可闭) ②⑤d ucif2-watch:新ucif2-N帖(N>=120)内容扫,涉qfa即机旗
 # TOWER-FIX-09-qfa(beat-75 root 令「环延伸/反向驱动」):sealed 解装腿抽公+③.6 vci-qfa/inbox 密封囊守望面(N28 消号道;SI0 直解直装不占 RESP 额,值零回显)
@@ -778,7 +779,7 @@ def main():
         _sqh = hashlib.sha256(_sqs.encode()).hexdigest()[:12]
         if (st.get('seed_queue') or {}).get('h') != _sqh:
             gh_put_file('chepin-qi/qfa-pub', 'si1/SEED-QUEUE.json', _sqs + '\n', pat, 'SI1-SEED-01: %d seeds %s' % (len(_seeds), _t13), 'chepin-qi')
-            ev.append({'kind': 'si1.seed.put', 'ref': 'si1/SEED-QUEUE.json', 'summary': '%d seeds h=%s' % (len(_seeds), _sqh), 'high_value': False})
+            evs.append({'kind': 'si1.seed.put', 'ref': 'si1/SEED-QUEUE.json', 'summary': '%d seeds h=%s' % (len(_seeds), _sqh), 'high_value': False})
         st['seed_queue'] = {'h': _sqh, 'n': len(_seeds), 'ts': _t13}
     except Exception as e:
         st['seed_queue'] = {'err': str(e)[:150]}
