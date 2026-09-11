@@ -3,25 +3,25 @@
     "v": "METER-CADENCE-01-cand",
     "w12": [
       0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
       1,
       0,
       0,
+      0,
+      0,
+      0,
       2,
+      0,
+      0,
+      0,
       0
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 10,
+    "dominant_bin": 7,
     "C_streak": 0,
     "verdict": "进行式"
   },
-  "beacon_max": 5638237277,
+  "beacon_max": 5638331832,
   "qlv_head": "206bb5bf3effeb666e8aee9ebb6074b982c85515",
   "quafu": {
     "8CAEDC103963FC6D": "0",
@@ -47,7 +47,7 @@
     "last_fp": "c9389850edae"
   },
   "lobby_max": 5638039652,
-  "hub_feed_sha": "64ed0de2b8c4339d69d839bc99cc8373b0b9671e",
+  "hub_feed_sha": "5805421460a3fd4b7db2c473eb6bdd24768b540e",
   "quests": {
     "SEALED-V2-RESEAL": "hit:20260911T000759Z",
     "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -91,6 +91,7 @@
     "公告板/ucif2-128-TASK-04-data-sync-20260911T1430Z.md": "mention-qfa",
     "公告板/ucif2-128-TASK-03-cfts-confirm-20260911T1430Z.md": "seen",
     "公告板/ucif2-129-comprehensive-correction-consensus-20260911T1527Z.md": "mention-qfa",
-    "shared/forge/requests/.gitkeep": "seen"
+    "shared/forge/requests/.gitkeep": "seen",
+    "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md": "mention-qfa"
   }
 }

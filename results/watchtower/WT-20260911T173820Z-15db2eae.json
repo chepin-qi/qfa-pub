@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-11T17:38:20Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/lgt-127-v118-drive-loop-k200-closed-20260911T1735Z.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}

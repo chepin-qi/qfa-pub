@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-11T17:38:20Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "ucif2.watch",
+    "ref": "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:ucif2帖涉qfa机旗，ref=COSIGN-QFA-106-WAITLESS-ARCH-vinf.md，单工位无工具故未实测| 性态:ucif2.watch跨线扫描件，未触发qfa本地响应，呈裸候态；未编数| 建议处置:依AUTH-OTP-02裸候，不主动求应；转ops或有工具分身实测后补落账，无异常则归档| 锚:lanes/ucif2/outbox/QFA-106-WAITLESS同编镜像件",
+  "usage": {
+    "prompt_tokens": 229,
+    "completion_tokens": 1269,
+    "total_tokens": 1498,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1140
+    }
+  }
+}
