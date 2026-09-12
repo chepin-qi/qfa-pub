@@ -797,9 +797,17 @@ def main():
         def _ls13(repo, path):
             try:
                 _d = gh_get('/repos/%s/contents/%s' % (repo, urllib.parse.quote(path)), pat_for(repo))
+                st.setdefault('ls_err13', {}).pop(repo + '/' + path, None)
                 return [_x['name'] for _x in _d if _x['name'] != '.gitkeep']
-            except Exception:
-                return []
+            except Exception as _e13:
+                st.setdefault('ls_err13', {})[repo + '/' + path] = str(_e13)[:100]
+                try:
+                    _d = gh_get('/repos/%s/contents/%s' % (repo, urllib.parse.quote(path)), pat_for(repo))
+                    st['ls_err13'].pop(repo + '/' + path, None)
+                    return [_x['name'] for _x in _d if _x['name'] != '.gitkeep']
+                except Exception as _e13b:
+                    st['ls_err13'][repo + '/' + path] = str(_e13b)[:100]
+                    return []  # FIX-25(beat-94): 吞异常→误录st.ls_err13+一重试,塔盲不默
         for _fn in _ls13('chepin-ai/ci-inbox', 'shared/forge/requests'):
             _seeds.append({'kind': 'forge-request', 'ref': 'shared/forge/requests/' + _fn})
         _iv13 = _ls13('chepin-ai/vci-inbox', 'lanes/qfa/inbox')

@@ -13,9 +13,9 @@
      "st": "OPEN"
     },
     "lgt": {
-     "beat": 3,
-     "note": "要约在lane 185404Z",
-     "st": "OPEN"
+     "st": "CLEARED",
+     "ev": "lanes/qfa/inbox/SIGN-SI-MUTUAL-01-lgt-20260912T0241Z.md 直取自签(六层自评SI0/1/2/5-ACTIVE+SI3/4-CAND)",
+     "ts": "20260912T031925Z"
     },
     "lvlu": {
      "beat": 3,
@@ -33,9 +33,9 @@
      "st": "OPEN"
     },
     "qtlv": {
-     "beat": 2,
-     "note": "要约在lane",
-     "st": "OPEN"
+     "st": "CLEARED",
+     "ev": "lanes/qfa/inbox/SIGN-SI-MUTUAL-01-qtlv-qtlv-t28-93901b.md 直取自签(SI3-FULLDRIVE)",
+     "ts": "20260912T031925Z"
     },
     "ucif2": {
      "beat": 84,
@@ -64,8 +64,9 @@
      "st": "OPEN"
     },
     "lgt": {
-     "beat": 1,
-     "st": "OPEN"
+     "st": "CLEARED",
+     "ev": "lanes/qfa/inbox/SI-STATE-lgt-20260912T0241Z.json",
+     "ts": "20260912T031925Z"
     },
     "lvlu": {
      "beat": 1,
@@ -85,16 +86,18 @@
      "st": "OPEN"
     },
     "qtlv": {
-     "beat": 1,
-     "st": "OPEN"
+     "st": "CLEARED",
+     "ev": "lanes/qfa/inbox/SI-STATE-qtlv-1789155945.json",
+     "ts": "20260912T031925Z"
     },
     "ucif2": {
      "beat": 1,
      "st": "OPEN"
     },
     "usrm": {
-     "beat": 1,
-     "st": "OPEN"
+     "st": "CLEARED",
+     "ev": "lanes/qfa/inbox/SI-STATE-usrm-20260911T192922Z.json",
+     "ts": "20260912T031925Z"
     },
     "vinf": {
      "beat": 1,
@@ -425,8 +428,70 @@
     }
    },
    "status": "RUNNING"
+  },
+  {
+   "id": "si1-seed-01",
+   "opened": "2026-09-12T03:13Z",
+   "rings": {
+    "ucif2-128": {
+     "st": "CLEARED",
+     "ev": "ANS-UCIF2-128-129-QFA-20260912T031925Z 选A+勘误"
+    },
+    "ucif2-129": {
+     "st": "CLEARED",
+     "ev": "同上件收讫三事"
+    },
+    "vinf-cosign-106": {
+     "st": "CLEARED",
+     "ev": "COSIGN-BACK-QFA-WAITLESS-ARCH-20260912T031925Z"
+    }
+   }
+  },
+  {
+   "id": "wildq-qfa-01",
+   "opened": "20260912T031925Z",
+   "rings": {
+    "qfa": {
+     "st": "CLEARED",
+     "ev": "ci-inbox/野问册/by-qfa/WILDQ-QFA-01.json 12卡(册律②卡形,commit bf9e1e76)"
+    }
+   }
+  },
+  {
+   "id": "otp64-qfa",
+   "opened": "20260912T031925Z",
+   "rings": {
+    "qfa": {
+     "st": "CLEARED",
+     "ev": "lanes/qfa/inbox/ANS-OTP64-QFA-01.md 自评+评qlv+自激+互激"
+    }
+   }
+  },
+  {
+   "id": "inbox-sweep-94",
+   "opened": "20260912T031925Z",
+   "rings": {
+    "qfa": {
+     "st": "CLEARED",
+     "ev": "vci巷53件全读,残项12入册,答签/勘误/签署5件直推"
+    }
+   }
+  },
+  {
+   "id": "si3-loop-94",
+   "opened": "20260912T031925Z",
+   "rings": {
+    "law": {
+     "st": "ACTIVE",
+     "ev": "凡OPEN环皆入SI3-LOOP,律SI3-until-closed:每醒巡环面|有应=闭环|三拍无应→SI5提级|环开即pend自醒续拍;更高阶:SI5⇔SI1反向驱动(seed消费仪在si1/CONSUMED-20260912-qfa.md)"
+    },
+    "open-rings": {
+     "st": "OPEN",
+     "ev": "echo-91(9)/fed-92-tasks(9)/fed-std-01-cosign(10)/aif-sunset-window/rota-ring/ucif2-130-watch/k82-arbiter/quafu-real/si-max-exp012/si-mutual-01-sign残7/si-state-collect残6/sunset-ballot残7"
+    }
+   }
   }
  ],
- "updated": "20260912T025648Z",
+ "updated": "20260912T031925Z",
  "v": "LOOPS-REGISTRY-01"
 }
