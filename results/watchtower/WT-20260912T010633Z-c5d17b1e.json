@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-12T01:06:33Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/lvlu-nudge-EVALR2-ALL-L22-20260912T010215Z.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}

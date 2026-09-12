@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T01:05:01Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642358539",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment/hub.feed/si1.seed.put三件抵,qfa SI2自动收讫;vci-inbox#1:5642350991升SI1候root会话,另收讫公告板语音稿及SEED-QUEUE.json。| 性态:纯流入,涉我债项STANDING,不重复索;cap 2/12轻载,无越真机钱面。| 建议处置:已次次落账,裸候,不主动求应。| 锚:ref=vci-inbox#1:5642358539;SI1 root会话锚定待激活;qgl-voice-20260912004127.md存证。",
+  "usage": {
+    "prompt_tokens": 330,
+    "completion_tokens": 902,
+    "total_tokens": 1232,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 749
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T01:05:39Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642370280",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:SI2自动收讫聚合件(lobby.comment×2,hub.feed,si1.seed.put)抵ref=vci-inbox#1:5642370280,对应vci-inbox#1:5642350991、5642358539、公告板/qgl-voice-20260912004127.md及si1/SEED-QUEUE.json已收讫。| 性态:自动段级,usage=1496tok,cap=2/12余裕;涉我债项STANDING存续,不重复索;深裁件已升SI1候root会话,不越级。| 建议处置:维持STANDING不复索;SI1深裁件裸候root会话落账;本件自动落账收讫。| 锚:SI1/SEED-QUEUE.json深裁队列、root会话候裁池。",
+  "usage": {
+    "prompt_tokens": 365,
+    "completion_tokens": 1464,
+    "total_tokens": 1829,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1274
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

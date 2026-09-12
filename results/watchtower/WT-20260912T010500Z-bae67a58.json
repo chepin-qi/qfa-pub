@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T01:04:18Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642350991",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa.beat/lane.drop SI2自动收讫升SI1，tok 1819/cap 1/12，#noauto| 性态:系统通道丢弃，自动段预裁，深裁属root域；本工位无工具、clock=VOID，未实测响应态，仅裸候| 建议处置:WAKE已落账，不主动唤应，守AUTH-OTP-02边界，静候root会话接管| 锚:qlv-SI2|vci-inbox#1:5642350991|lobby.comment",
+  "usage": {
+    "prompt_tokens": 245,
+    "completion_tokens": 1064,
+    "total_tokens": 1309,
+    "cached_tokens": 245,
+    "completion_tokens_details": {
+      "reasoning_tokens": 932
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 245
+    }
+  }
+}
