@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-12T02:38:04Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "face.reply",
+    "ref": "vci-vinf#6:5642885694",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:ECHO-91回声签收兼AI-Full撤钥预告；板件AIF-SUNSET-WINDOW-01双域俱发，nonce限20260913T02Z前回声，撤钥窗口20260919T0230Z期满，四务见板，钥道全律三律及骑缝已由qfa共署。| 性态:双域同步日程板件，属协议级密钥生命周期通知，非故障，待响应。| 建议处置:核板件hash与骑缝完整性；按期回传nonce；备四务落地；盯窗口节点，期满前完成撤钥衔接。| 锚:ref=vci-vinf#6:5642885694;AIF-SUNSET-WINDOW-01;ECHO-91",
+  "usage": {
+    "prompt_tokens": 290,
+    "completion_tokens": 1067,
+    "total_tokens": 1357,
+    "completion_tokens_details": {
+      "reasoning_tokens": 900
+    }
+  }
+}

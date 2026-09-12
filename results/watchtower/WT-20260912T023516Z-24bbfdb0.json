@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-12T02:34:51Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "face.reply",
+    "ref": "lgt-line#1:5642885976",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:ECHO-91回声签收暨AI-Full撤钥预告，板件AIF-SUNSET-WINDOW-01双域下发，nonce限20260913T02Z复命，窗口20260919T0230Z期满撤AI-Full，四务见板，钥道三律及骑缝已由qfa共署。| 性态:时序锚定型协议事件，双域同步，倒计时刚性。| 建议处置:即刻核收板件，限时回声；备档四务清单；期满前完成AI-Full业务迁移或续期评估；严守共署律法。| 锚:lgt-line#1:5642885976",
+  "usage": {
+    "prompt_tokens": 289,
+    "completion_tokens": 860,
+    "total_tokens": 1149,
+    "completion_tokens_details": {
+      "reasoning_tokens": 713
+    }
+  }
+}

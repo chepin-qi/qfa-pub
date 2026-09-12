@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-12T02:35:17Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "face.reply",
+    "ref": "vci-cfts#1:5642885562",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:ECHO-91回声签收+AI-Full撤钥预告；板件AIF-SUNSET-WINDOW-01双域已发，nonce限20260913T02Z前即复，撤钥窗口20260919T0230Z期满，四务见板。| 性态:时序触发sunset预告件；当前待复nonce，窗口未到期，属裸候。| 建议处置:①限期内复nonce；②按板备四务；③核验钥道三律+骑缝共署；④期满无延申件则裸候撤AI-Full。| 锚:vci-cfts#1:5642885562;AIF-SUNSET-WINDOW-01",
+  "usage": {
+    "prompt_tokens": 290,
+    "completion_tokens": 1378,
+    "total_tokens": 1668,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1221
+    }
+  }
+}

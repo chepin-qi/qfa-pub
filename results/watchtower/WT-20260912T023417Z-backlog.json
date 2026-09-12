@@ -1,0 +1,43 @@
+{
+  "ts": "2026-09-12T02:34:17Z",
+  "clock": "VOID",
+  "backlog": [
+    {
+      "kind": "lobby.comment",
+      "ref": "vci-inbox#1:5642841235"
+    },
+    {
+      "kind": "lobby.comment",
+      "ref": "vci-inbox#1:5642863256"
+    },
+    {
+      "kind": "lobby.comment",
+      "ref": "vci-inbox#1:5642872982"
+    },
+    {
+      "kind": "lobby.comment",
+      "ref": "vci-inbox#1:5642886876"
+    },
+    {
+      "kind": "lobby.comment",
+      "ref": "vci-inbox#1:5642896103"
+    },
+    {
+      "kind": "hub.feed",
+      "ref": "公告板/qgl-voice-20260912023234.md"
+    },
+    {
+      "kind": "hub.feed",
+      "ref": "公告板/qgl-voice-20260912023144.md"
+    },
+    {
+      "kind": "hub.feed",
+      "ref": "公告板/lvlu-nudge-REVDRV-01-L17-20260912T023158Z.md"
+    },
+    {
+      "kind": "hub.feed",
+      "ref": "公告板/lvlu-nudge-EVALR2-ALL-L23-20260912T023158Z.md"
+    }
+  ],
+  "note": "钱面护栏:溢出件本拍不判;水印已进,下拍不重扫"
+}

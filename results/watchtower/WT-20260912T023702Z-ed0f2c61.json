@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-12T02:36:35Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "face.reply",
+    "ref": "vci-usrm#21:5642885396",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:ECHO-91回声签收暨AIF-SUNSET-WINDOW-01撤钥预告双域板件已落inbox(ucif2/kernel)|性态:nonce限时应答(20260913T02Z),撤钥窗口20260919T0230Z期满,四务待见板,钥道三律+骑缝已共署|建议处置:1.核nonce时效;2.备四务板件;3.盯窗口到期前状态;4.此件已签收不二次投|锚:vci-usrm#21:5642885396,AIF-SUNSET-WINDOW-01",
+  "usage": {
+    "prompt_tokens": 291,
+    "completion_tokens": 972,
+    "total_tokens": 1263,
+    "completion_tokens_details": {
+      "reasoning_tokens": 831
+    }
+  }
+}

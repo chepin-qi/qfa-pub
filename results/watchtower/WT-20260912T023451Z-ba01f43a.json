@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T02:34:17Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，qfa inbox巷卡48→50，新增qtlv-eval-wave-6220cd5885be.md| 性态:qtlv线评估波次流件入库，未触发内容裁决，属正常增量| 建议处置:即刻细收该件；若含钱面数据按AUTH-OTP-02二次验真后落账| 锚:qtlv线/波次-6220cd5885be",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1185,
+    "total_tokens": 1399,
+    "cached_tokens": 214,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1080
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 214
+    }
+  }
+}
