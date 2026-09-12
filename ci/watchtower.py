@@ -861,8 +861,33 @@ def main():
                     if _rg.get('st') == 'OPEN' and _rg.get('echo'):
                         _want = 'ECHO-91-' + _ln + '-' + _rg['echo']
                         _hit = any(n.startswith(_want) for n in _names) or (_ln == 'ucif2' and any(n.startswith(_want) for n in _kn))
+                        if not _hit:  # TOWER-FIX-27-qfa(beat-95 RCA-ECHO-01地闸修):机答器零跨仓凭证唯写己仓outbox——环检兼巡己仓outbox(ucif2兼巡kernel outbox)
+                            try:
+                                _ro = gh_get('/repos/chepin-ai/vci-%s/contents/outbox?per_page=100' % _ln, patA)
+                                _hit = isinstance(_ro, list) and any(f['name'].startswith(_want) for f in _ro)
+                                if not _hit and _ln == 'ucif2':
+                                    _ro2 = gh_get('/repos/chepin-ai/ucif2-formalization-kernel/contents/outbox?per_page=100', patA)
+                                    _hit = isinstance(_ro2, list) and any(f['name'].startswith(_want) for f in _ro2)
+                            except Exception as _e27:
+                                st.setdefault('fix27_err', {})[_ln] = str(_e27)[:80]
                         if _hit:
                             _rg['st'] = 'CLEARED'; _rg['note'] = '机跟:回声件名echo全等(FIX-21)'; _chg += 1
+            if _lp['id'] == 'fed-92-tasks':  # TOWER-FIX-27b-qfa(beat-95):FED-92应件机检——席层RESP件落qfa巷 或 机层ACK件落己仓outbox 皆销
+                for _ln, _rg in _lp['rings'].items():
+                    if _rg.get('st') == 'OPEN':
+                        _hitb = any(n.startswith('FED-92-RESP-' + _ln) for n in _names)
+                        if not _hitb:
+                            try:
+                                _ra = gh_get('/repos/chepin-ai/vci-%s/contents/outbox?per_page=100' % _ln, patA)
+                                _hitb = isinstance(_ra, list) and any(f['name'].startswith('ANS-FED-92-ACK-' + _ln) for f in _ra)
+                            except Exception as _e27b:
+                                st.setdefault('fix27_err', {})[_ln + ':fed92'] = str(_e27b)[:80]
+                        if _hitb:
+                            _rg['st'] = 'CLEARED'; _rg['note'] = '机跟:RESP落巷或ACK落己仓(FIX-27b)'; _chg += 1
+            if _lp['id'] == 'fed-std-01-cosign':  # TOWER-FIX-27c-qfa(beat-95):共署环机检——署件落qfa巷(COSIGN-FED-STD-01-<线>)
+                for _ln, _rg in _lp['rings'].items():
+                    if _rg.get('st') == 'OPEN' and any(n.startswith('COSIGN-FED-STD-01-' + _ln) for n in _names):
+                        _rg['st'] = 'CLEARED'; _rg['note'] = '机跟:署件落inbox(FIX-27c)'; _chg += 1
         _lj['updated'] = time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())
         _ljs = json.dumps(_lj, ensure_ascii=False, indent=1)
         _lh = hashlib.sha256(_ljs.encode()).hexdigest()[:12]
