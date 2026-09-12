@@ -24,8 +24,8 @@ permissions:
 # 链拍(repository_dispatch,含600s拍内眠)独占串行组,防落账竞态;
 # push/issue 触发=轻拍,独立组,新到顶旧(板面差分幂等,旧拍收执由新拍承继,空cancelled无碍)
 concurrency:
-  group: watchtower-${{ github.event_name == 'repository_dispatch' && 'chain' || 'edge' }}
-  cancel-in-progress: ${{ github.event_name != 'repository_dispatch' }}
+  group: watchtower-cascade  # TOWER-FIX-23-qfa(beat-93):外部4min周期dispatch风暴×edge取消=活锁28min(02:39-03:07Z无拍成,实测在案)——单组排队不取消,拍态FIX-08字段并天然耐并发,宁迟勿空
+  cancel-in-progress: false
 
 jobs:
   patrol:
