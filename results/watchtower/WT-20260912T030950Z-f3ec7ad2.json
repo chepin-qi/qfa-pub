@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-12T03:09:11Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5643058522",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件: vci-inbox#1:5643058522，簇发 1×hub.change+4×lobby.comment 抵驿，自动收讫已触发并深裁升 SI1 候 root 会话，usage=2333tok cap=9/12，#noauto 标未闭环。| 性态: lobby 高频评论涌入，属簇发流量触顶容量水位；自动段已裁量升级，裸候中，未越真机钱面。| 建议处置: 次次落账，维持裸候不主动求应；待 root 会话或下环触发后再决，当前不复刷不扩权。| 锚: qfa-SI2 自动收讫升 SI1 机制; lobby.comment 簇发流量模型。",
+  "usage": {
+    "prompt_tokens": 259,
+    "completion_tokens": 1330,
+    "total_tokens": 1589,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1155
+    }
+  }
+}

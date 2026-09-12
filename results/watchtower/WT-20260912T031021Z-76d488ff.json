@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-12T03:09:50Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5643061339",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment×4+hub.change×1抵站,自动收讫升SI1候root| 性态:公共区评论聚合流,摘要未示关键词触发,属低敏噪声;hub.change或为状态同步| 建议处置:root候裁时审查上下文,区分有效互动与灌水;若无意义则降噪归档,不越真机钱面| 锚:feed#vci-inbox#1:5643061339|lobby.comm聚合候裁",
+  "usage": {
+    "prompt_tokens": 259,
+    "completion_tokens": 1013,
+    "total_tokens": 1272,
+    "completion_tokens_details": {
+      "reasoning_tokens": 902
+    }
+  }
+}

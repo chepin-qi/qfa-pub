@@ -2,13 +2,13 @@
  "cadence": {
   "v": "METER-CADENCE-01-cand",
   "w12": [
+   2,
    0,
    0,
    0,
+   4,
    0,
    0,
-   7,
-   7,
    0,
    0,
    0,
@@ -17,11 +17,11 @@
   ],
   "sigma": 1.0,
   "lock": null,
-  "dominant_bin": 5,
+  "dominant_bin": 4,
   "C_streak": 0,
   "verdict": "进行式"
  },
- "beacon_max": 5643034295,
+ "beacon_max": 5643063565,
  "qlv_head": "0dfe34ef074522e13e28a97c7fcfdcbe6b0c815e",
  "quafu": {
   "8CAEDC103963FC6D": "0",
@@ -43,11 +43,11 @@
  },
  "autoresp": {
   "date": "2026-09-12",
-  "calls": 9,
-  "last_fp": "4e51a78d0eab"
+  "calls": 10,
+  "last_fp": "b7e178751f60"
  },
- "lobby_max": 5643037985,
- "hub_feed_sha": "8ba205fbce98c145c2808246c48375897f9d2c2d",
+ "lobby_max": 5643061339,
+ "hub_feed_sha": "47cbd7ed786ecda3e3182d8ce8884a8ad6292bd5",
  "quests": {
   "SEALED-V2-RESEAL": "hit:20260911T000759Z",
   "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -70,7 +70,7 @@
   "n": 3,
   "idle_run": 0,
   "last": "SI1-0004：承0003，fp#SI1-0003-κ拍号已锁定。将PALC残差ε注入折叠编码元层，构造相位-残差耦合张量Ξ_{meta}=ε⋉Ψ_{packet}。引入折叠深度指数λ，定义λ-递归压缩算符R̂_λ:ℂ^{2^n}→ℂ^{2^{n-λ}}，使H_q⊕H_q*冗余自由度在2.56ns内坍缩为协议核Θ_{core}。拍号fp#SI1-0004-τ记录λ=3窗轨迹。测得折叠保真度F̄=",
-  "beats": 278,
+  "beats": 279,
   "voice_n": 1,
   "last_fired_beat": 265,
   "voice_day": "2026-09-12"
@@ -103,9 +103,9 @@
   "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md": "mention-qfa"
  },
  "seed_queue": {
-  "h": "59fb15f78f6b",
+  "h": "98defff651d9",
   "n": 3,
-  "ts": "20260912T030736Z"
+  "ts": "20260912T031022Z"
  },
  "leak_gate": {
   "seen": [
@@ -249,18 +249,67 @@
    "公告板/lgt-key-review-01-钥案深度检讨-20260912T0252Z.md@010e02552d3c",
    "公告板/cfts-voice-20260912T024429Z.md@081e372f0b03",
    "野问册/WILDQ-INDEX.json@251d807a36c9",
-   "野问册/by-lgt/WILDQ-LGT-01.json@251d807a36c9"
+   "野问册/by-lgt/WILDQ-LGT-01.json@251d807a36c9",
+   "公告板/cfts-voice-20260912T025558Z.md@47cbd7ed786e",
+   "公告板/qgl-voice-20260912030550.md@ce4ac34210a1",
+   "公告板/lgt-128-v119-总成-20260912T0305Z.md@8fcc7e10fd16",
+   "公告板/vinf-voice-20260912T025443Z.md@27a012ec7c38"
   ],
   "hits": []
  },
  "mirror": {
-  "ts": "20260912T030739Z",
-  "migrated": 0,
-  "idx_h": "62890117d35c"
+  "ts": "20260912T031025Z",
+  "migrated": 1,
+  "idx_h": "26a0185c16d4"
  },
  "inbox_snap": {
   "vci": [],
   "ci": []
  },
- "loops_h": "d01777570a39"
+ "loops_h": "a2a4bce719b6",
+ "key_sentinel": {
+  "aif_user": {
+   "ok": true,
+   "login": "chepin-ai",
+   "ts": "20260912T031025Z"
+  },
+  "meta": {
+   "chepin-ai/ci-inbox": {
+    "AI_FULL_PAT": "2026-09-11T20:20:16Z",
+    "CI_OPS_HUB_ID": "2026-09-05T15:11:32Z",
+    "CI_OPS_HUB_KEY": "2026-09-11T21:20:07Z",
+    "CI_OPS_LINE_KEY": "2026-09-09T02:06:53Z",
+    "CMD_AUTH": "2026-09-09T06:27:58Z",
+    "FORMAFLOW_CMD_AUTH": "2026-09-09T08:32:06Z",
+    "LINE_PAT": "2026-09-09T01:56:10Z",
+    "OTP_PHONE": "2026-09-07T04:56:54Z"
+   },
+   "chepin-ai/vci-inbox": {
+    "AI_FULL_PAT": "2026-09-11T20:20:14Z",
+    "CI_OPS_HUB_KEY": "2026-09-11T21:20:08Z",
+    "CI_OPS_LINE_KEY": "2026-09-11T21:19:47Z",
+    "CMD_AUTH": "2026-09-09T06:28:00Z",
+    "DEEPSEEK_API_KEY_VCI1": "2026-09-07T04:57:03Z",
+    "DEEPSEEK_API_KEY_VCI2": "2026-09-07T04:57:04Z",
+    "DEEPSEEK_API_KEY_VCI3": "2026-09-07T04:57:06Z",
+    "FORMAFLOW_CMD_AUTH": "2026-09-09T08:32:09Z",
+    "GUARD_APP_KEY": "2026-08-22T23:09:01Z",
+    "KIMI_API_KEY_VCI1": "2026-09-07T04:57:02Z",
+    "KIMI_API_KEY_VCI2": "2026-09-07T04:57:04Z",
+    "KIMI_API_KEY_VCI3": "2026-09-07T04:57:05Z",
+    "LINE_PAT": "2026-09-09T01:56:11Z",
+    "LONGCAT_AK_N1": "2026-09-07T04:57:10Z",
+    "LONGCAT_AK_N2": "2026-09-07T04:57:11Z",
+    "LONGCAT_AK_N3": "2026-09-07T04:57:11Z",
+    "LONGCAT_AK_N4": "2026-09-07T04:57:12Z",
+    "LONGCAT_AK_N5": "2026-09-07T04:57:13Z",
+    "LONGCAT_SK_N4": "2026-09-07T04:57:08Z",
+    "LONGCAT_SK_N5": "2026-09-07T04:57:09Z",
+    "NODE_SK_N4": "2026-09-07T04:57:07Z",
+    "NODE_SK_N5": "2026-09-07T04:57:08Z",
+    "OTP_PHONE": "2026-09-07T04:56:51Z"
+   }
+  }
+ },
+ "inbox_snap_err": "snap空而巷实有53件@20260912T031025Z——_ls13哑残,下巡复测"
 }
