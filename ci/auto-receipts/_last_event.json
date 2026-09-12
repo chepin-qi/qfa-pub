@@ -1,1 +1,1 @@
-{"ts": "2026-09-12T02:09:57Z", "evs": [{"kind": "si1.seed.put", "ref": "si1/SEED-QUEUE.json", "summary": "3 seeds h=428aefddd579", "high_value": false}], "pend": ["quafu:8CAEDC103963FC6D", "quafu:8BAFA1E022273996", "quafu:8BB169201FA3F5D4"]}
+{"ts": "2026-09-12T02:12:23Z", "evs": [{"kind": "si1.seed.put", "ref": "si1/SEED-QUEUE.json", "summary": "3 seeds h=c32ddb3b92eb", "high_value": false}], "pend": ["quafu:8CAEDC103963FC6D", "quafu:8BAFA1E022273996", "quafu:8BB169201FA3F5D4"]}
