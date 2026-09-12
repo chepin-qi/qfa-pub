@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-12T04:10:46Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5643327158",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qtlv线依FED-92§投INSTALL-TOWER-03，迁tower.py与workflow入chepin-ai/vci-qtlv，env引双secret，after_install定首巡机答正巷并relay至lanes/qfa/inbox及回流canon，兼报ECHO-91| 性态:建设性跨线件，件码完整，env为secrets符号引用未涉真机钱面，属合规投件| 建议处置:工部细收映射与链路，核验ECHO-91回执后裁决落账；首巡前裸候，不刷屏| 锚:qtlv/vci-qtlv#tower(ECHO-91); canon/docs回流槽",
+  "usage": {
+    "prompt_tokens": 413,
+    "completion_tokens": 1147,
+    "total_tokens": 1560,
+    "completion_tokens_details": {
+      "reasoning_tokens": 988
+    }
+  }
+}

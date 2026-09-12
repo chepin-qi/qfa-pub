@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-12T04:11:19Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5643360986",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:['qfa.beat','lane.drop']抵qlv:SI2自动收讫；债项quafu:8CA608102028586C、8BB169201FA3F5D4状态STANDING，仅指账不重复索| 性态:lobby.comment到站，深裁升SI1候root| 建议处置:裸候root裁决，不主动求应，次次落账| 锚:qlv:SI2(他线),ref:vci-inbox#1:5643360986,lanes/qlv/inbox:cisvr-draft-beat37-20260909T1608Z-qlv.json,ab72b5b6",
+  "usage": {
+    "prompt_tokens": 360,
+    "completion_tokens": 2350,
+    "total_tokens": 2710,
+    "completion_tokens_details": {
+      "reasoning_tokens": 2195
+    }
+  }
+}
