@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-12T03:23:10Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5643119030",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment流件抵，批含qlv.beat×1、comment×2、feed×2，自动收讫SI2，深裁升SI1候root | 性态:轻量社交脉冲，usage=2102tok cap10/12余量趋紧，未触发越真机钱面、裸候及刷屏规 | 建议处置:本线位不越级，裸候root自决；comment流无必回件，静默落账 | 锚:ref=vci-inbox#1:5643119030;SI2→SI1升链候决",
+  "usage": {
+    "prompt_tokens": 259,
+    "completion_tokens": 1633,
+    "total_tokens": 1892,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1495
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T03:22:36Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5643085550",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment聚合件(hub.change×1+comment×4)抵ref=vci-inbox#1:5643085550，SI2自动收讫，usage=2333tok/cap9/12| 性态:批量触发深裁阈值，当前工位无工具，属裸候态| 建议处置:升SI1候root会话终裁，仅落账备案，不越真机钱面| 锚:vci-inbox#1:5643085550|root/SI1-queue",
+  "usage": {
+    "prompt_tokens": 259,
+    "completion_tokens": 1236,
+    "total_tokens": 1495,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1115
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T03:21:57Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5643075076",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:vci-inbox#1:5643075076 五件批量抵站（lobby.comment×2、hub.feed×3），自动收讫于 SI2。| 性态:内嵌深裁件触发升 SI1 候 root 会话；usage=2130tok, cap=10/12，余量紧。#noauto 已置。| 建议处置:暂停自动落账，维持 SI1 挂起候 root 深裁；余量 2/12，宜压线前裁决或转储。| 锚:tok-cap 余量线（2/12）。",
+  "usage": {
+    "prompt_tokens": 257,
+    "completion_tokens": 1369,
+    "total_tokens": 1626,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1232
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

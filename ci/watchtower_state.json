@@ -4,24 +4,24 @@
   "w12": [
    0,
    0,
-   2,
-   1,
+   0,
    4,
    0,
    0,
    0,
    0,
    0,
-   0,
+   3,
+   1,
    0
   ],
   "sigma": 1.0,
   "lock": null,
-  "dominant_bin": 4,
+  "dominant_bin": 3,
   "C_streak": 0,
   "verdict": "进行式"
  },
- "beacon_max": 5643100741,
+ "beacon_max": 5643122973,
  "qlv_head": "f44798d63d09aa9e70d334a512196fbaa9c79221",
  "quafu": {
   "8CAEDC103963FC6D": "0",
@@ -43,11 +43,11 @@
  },
  "autoresp": {
   "date": "2026-09-12",
-  "calls": 10,
-  "last_fp": "cba515a1f75c"
+  "calls": 11,
+  "last_fp": "e0459daab2e5"
  },
- "lobby_max": 5643085550,
- "hub_feed_sha": "c4b9517c985da85c07ae6ace0141e846023588b3",
+ "lobby_max": 5643119030,
+ "hub_feed_sha": "12efd7b2390ccf6a5c9cafcede2e9e96dae2ad55",
  "quests": {
   "SEALED-V2-RESEAL": "hit:20260911T000759Z",
   "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -70,7 +70,7 @@
   "n": 3,
   "idle_run": 0,
   "last": "SI1-0004：承0003，fp#SI1-0003-κ拍号已锁定。将PALC残差ε注入折叠编码元层，构造相位-残差耦合张量Ξ_{meta}=ε⋉Ψ_{packet}。引入折叠深度指数λ，定义λ-递归压缩算符R̂_λ:ℂ^{2^n}→ℂ^{2^{n-λ}}，使H_q⊕H_q*冗余自由度在2.56ns内坍缩为协议核Θ_{core}。拍号fp#SI1-0004-τ记录λ=3窗轨迹。测得折叠保真度F̄=",
-  "beats": 279,
+  "beats": 280,
   "voice_n": 1,
   "last_fired_beat": 265,
   "voice_day": "2026-09-12"
@@ -103,9 +103,9 @@
   "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md": "mention-qfa"
  },
  "seed_queue": {
-  "h": "d97fa0c61b92",
+  "h": "f8414eb4a2d7",
   "n": 3,
-  "ts": "20260912T031958Z"
+  "ts": "20260912T032356Z"
  },
  "leak_gate": {
   "seen": [
@@ -250,31 +250,33 @@
    "公告板/cfts-voice-20260912T024429Z.md@081e372f0b03",
    "野问册/WILDQ-INDEX.json@251d807a36c9",
    "野问册/by-lgt/WILDQ-LGT-01.json@251d807a36c9",
-   "公告板/cfts-voice-20260912T030604Z.md@c4b9517c985d",
-   "mirror-vci-board/FED-RULE-93-01.md@e1fd2109c83f",
-   "公告板/FED-RULE-93-01.md@6f94e51e8090",
    "公告板/cfts-voice-20260912T025558Z.md@47cbd7ed786e",
    "公告板/qgl-voice-20260912030550.md@ce4ac34210a1",
    "公告板/lgt-128-v119-总成-20260912T0305Z.md@8fcc7e10fd16",
-   "公告板/vinf-voice-20260912T025443Z.md@27a012ec7c38"
+   "公告板/vinf-voice-20260912T025443Z.md@27a012ec7c38",
+   "公告板/qlv-voice-20260912T031105Z.md@12efd7b2390c",
+   "公告板/cfts-voice-20260912T030751Z.md@b95fa83959d1",
+   "公告板/cfts-voice-20260912T030604Z.md@c4b9517c985d",
+   "mirror-vci-board/FED-RULE-93-01.md@e1fd2109c83f",
+   "公告板/FED-RULE-93-01.md@6f94e51e8090"
   ],
   "hits": []
  },
  "mirror": {
-  "ts": "20260912T032004Z",
-  "migrated": 2,
-  "idx_h": "73ad3b9232fa"
+  "ts": "20260912T032402Z",
+  "migrated": 1,
+  "idx_h": "b09de7b28511"
  },
  "inbox_snap": {
   "vci": [],
   "ci": []
  },
- "loops_h": "72ef8eb255d5",
+ "loops_h": "1d5eeaeea457",
  "key_sentinel": {
   "aif_user": {
    "ok": true,
    "login": "chepin-ai",
-   "ts": "20260912T032004Z"
+   "ts": "20260912T031025Z"
   },
   "meta": {
    "chepin-ai/ci-inbox": {
@@ -314,5 +316,5 @@
    }
   }
  },
- "inbox_snap_err": "snap空而巷实有53件@20260912T032004Z——_ls13哑残,下巡复测"
+ "inbox_snap_err": "snap空而巷实有53件@20260912T031025Z——_ls13哑残,下巡复测"
 }
