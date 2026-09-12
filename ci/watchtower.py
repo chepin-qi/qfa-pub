@@ -940,6 +940,44 @@ def main():
     except Exception as e:
         aif_note(st, e)  # FIX-19
         st['mirror'] = {'err': str(e)[:150]}
+    # ---- TOWER-FIX-22b-qfa KEY-SENTINEL-01(beat-92 root令「换钥震动根因彻底根除/举一反三」):钥道哨兵——①patA /user体检,401=钥亡警(lvlu株廿四律3毂面形,警帖走GH_PAT道——钥亡时AIF道已断) ②毂双仓secrets元数据守望:updated_at突变=高值事件(名+时戳,值永不可取) ③_ls13哑残修:snap空而巷实有=录err不哑[] ----
+    try:
+        if not _aifok19:
+            raise AIFCool('AIF冷却中,KEYSENT面本巡跳过')
+        _t22 = time.strftime('%Y%m%dT%H%M%SZ', time.gmtime())
+        _ks = st.setdefault('key_sentinel', {})
+        try:
+            _u22 = gh_get('/user', patA)
+            if _ks.get('aif_user', {}).get('ok') is False:
+                evs.append({'kind': 'key.revived', 'ref': 'AI_FULL_PAT', 'summary': '钥复明: /user 200 ' + str(_u22.get('login')), 'high_value': True})
+            _ks['aif_user'] = {'ok': True, 'login': _u22.get('login'), 'ts': _t22}
+        except Exception as _e22:
+            _ks['aif_user'] = {'ok': False, 'err': str(_e22)[:80], 'ts': _t22}
+            if '401' in str(_e22):
+                evs.append({'kind': 'key.death', 'ref': 'AI_FULL_PAT', 'summary': '钥亡警: patA /user 401——全线AIF道将断,各线切自钥环', 'high_value': True})
+                try:
+                    gh_put_file('chepin-ai/ci-inbox', '公告板/KEY-DEATH-ALERT-' + _t22 + '.md',
+                                '# KEY-DEATH-ALERT 钥亡警\n\n' + _t22 + ' qfa塔哨兵实测: AI_FULL_PAT /user 401。全线AIF道将断,各线切自钥环(SUNSET-WINDOW四务)。本警走GH_PAT道投。\n',
+                                pat, 'KEY-DEATH-ALERT ' + _t22, 'chepin-ai')
+                except Exception:
+                    pass
+        for _hr22 in ['chepin-ai/ci-inbox', 'chepin-ai/vci-inbox']:
+            _sl22 = gh_get('/repos/%s/actions/secrets' % _hr22, patA)
+            _meta22 = {_s['name']: _s['updated_at'] for _s in _sl22.get('secrets', [])}
+            _prev22 = (_ks.get('meta') or {}).get(_hr22) or {}
+            _diff22 = {k: v for k, v in _meta22.items() if _prev22.get(k) != v}
+            if _prev22 and _diff22:
+                evs.append({'kind': 'secret.meta.change', 'ref': _hr22,
+                            'summary': 'secrets元数据变: ' + ','.join('%s@%s' % (k, v[5:16]) for k, v in sorted(_diff22.items())), 'high_value': True})
+            _ks.setdefault('meta', {})[_hr22] = _meta22
+        # ③snap哑残检:空快照而巷非空=录err(FIX-21机跟赖以不盲)
+        if not (st.get('inbox_snap') or {}).get('vci'):
+            _ck = gh_get('/repos/chepin-ai/vci-inbox/contents/lanes/qfa/inbox?per_page=5', patA)
+            if isinstance(_ck, list) and _ck:
+                st['inbox_snap_err'] = 'snap空而巷实有%d件@%s——_ls13哑残,下巡复测' % (len(_ck), _t22)
+    except Exception as e:
+        aif_note(st, e)
+        st['key_sentinel_err'] = str(e)[:150]
     # TOWER-FIX-08-qfa(beat-76 root 令「所有候直通」;采 cisvr SI3-LOOP-01 v1.5 CAS三段式互领养):落账前向 origin 取态→字段级并(quests/quafu hit胜open、si1计数max、idem/seen union、resp.n max)→写——哑跑亚型②跃检残(overlay回退/计数回退,残病活证×2在案)根治:并发拍覆写无损,并集/max交换律保证双收敛
     try:
         subprocess.run('git fetch origin main -q', shell=True, cwd=ROOT, timeout=60, capture_output=True)
