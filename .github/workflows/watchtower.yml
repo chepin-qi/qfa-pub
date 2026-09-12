@@ -61,7 +61,7 @@ jobs:
           git config user.email 'wt@void'
           git add ci/watchtower_state.json ci/auto-receipts/ results/watchtower/ 2>/dev/null || true
           if git diff --cached --quiet; then exit 0; fi
-          git commit -m "watchtower: ${{ github.event_name }} 事件巡收"
+          git commit -m "watchtower: ${{ github.event_name }} 事件巡收 [skip ci]"  # TOWER-FIX-22a-qfa(beat-92):自触发活锁断源——塔拍落账推送不再自触新拍(02:39Z后全拍互消空转13min实测)
           # 落账三段式(qlv 模 run#34043608315 rebase 冲突败在案,制式随模):
           # ①直推 ②败则 rebase ③state 件冲突则取本拍新算值(--theirs=本拍提交)续 rebase 再推
           git push origin main && exit 0
