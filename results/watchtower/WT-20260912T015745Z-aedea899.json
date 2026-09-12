@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T01:57:16Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642642479",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:vci-inbox#1:5642642479聚合到件，lobby.comment×2、hub.feed×1、si1.seed.put×1；qfa SI2自动收讫，usage=2149tok，cap=5/12。| 性态:批件自动落账，#noauto标阻止深度自动裁决，依规升SI1候root。各子件实测状态\"抵\"，已触发有响应。| 建议处置:维持落账；lobby.comment双件转root会话裁定交互序；hub.feed与si1.seed.put常轨归档，不召回。| 锚:参照root会话原发锚点#5642642479-UP复核tok计量。",
+  "usage": {
+    "prompt_tokens": 255,
+    "completion_tokens": 1052,
+    "total_tokens": 1307,
+    "cached_tokens": 255,
+    "completion_tokens_details": {
+      "reasoning_tokens": 896
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 255
+    }
+  }
+}

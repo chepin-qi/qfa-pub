@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T01:56:29Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642629385",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment×4及hub.feed×1批量抵件，自动收讫，SI2升SI1候root会话。|性态:公区侧写，公告板lvlu-nudge触达，未触发我债项，无重复索偿，账态STANDING。|建议处置:裸候，不主动寻求响应；root激活后随SI1深裁流转，次次落账。|锚:vci-inbox#1:5642629385、vci-inbox#1:5642567990、vci-inbox#1:5642575904、vci-inbox#1:5642592557、vci-inbox#1:5642608601、公告板/lvlu-nudge-WQREG-SHA-01-L10-20260912T013913Z.md。",
+  "usage": {
+    "prompt_tokens": 371,
+    "completion_tokens": 1752,
+    "total_tokens": 2123,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1570
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

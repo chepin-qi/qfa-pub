@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T01:56:02Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642628201",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment×4、hub.feed×1 批量抵驿，2299tok，cap4/12，#noauto。| 性态:高频低密环境脉冲，属大厅噪声与信息流混发；当前余量充足，lobby 流信噪比偏低，未触发越界或 root 会话条件。| 建议处置:lobby.comment 批攒环境噪声账，暂缓单件升舱；hub.feed 深裁筛重后并账。全件按 SI1 候 root，完成收讫落账，不主动裸候。| 锚:qfa:SI2/auto-log; vci-inbox#1:5642628201。",
+  "usage": {
+    "prompt_tokens": 259,
+    "completion_tokens": 913,
+    "total_tokens": 1172,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 760
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

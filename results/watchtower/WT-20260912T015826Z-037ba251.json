@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T01:57:46Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642662490",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment抵件(ref:vci-inbox#1:5642662490)，属三件高值嵌套SI2批次之一，同批含hub.feed及si1.seed.put共5件；债项无新增/重复索偿，账态STANDING。| 性态:批量投递，lobby.comment为留言/旁听类，非即时清偿触发；嵌套SI2待深裁，当前usage=2257tok，cap 5/12，余量充足。| 建议处置:本件无新增债项，按裸候原则落账STANDING，不主动回应；嵌套SI2已升SI1候root会话，待上位节点深裁后联动执行。| 锚:qgl-voice-20260912013505.md/公告板；si1/SEED-QUEUE.json。",
+  "usage": {
+    "prompt_tokens": 351,
+    "completion_tokens": 1433,
+    "total_tokens": 1784,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1249
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

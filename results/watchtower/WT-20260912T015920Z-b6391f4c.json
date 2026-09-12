@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-12T01:58:58Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642681283",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa.beat+lane.drop 抵无人驿，自动收讫流触发，深裁件已升 SI1 候 root 会话，usage=1819tok/cap=1/12。| 性态:常规通道心跳/丢弃事件，#noauto 标记，非自动落账，需 root 会话深裁。| 建议处置:维持 SI1 裸候，不主动回应；tok 余量充足，续收待机，待 root 裁决后执行落账。| 锚:qlv SI2 自动收讫流/vci-inbox#1:5642681283。",
+  "usage": {
+    "prompt_tokens": 245,
+    "completion_tokens": 784,
+    "total_tokens": 1029,
+    "completion_tokens_details": {
+      "reasoning_tokens": 643
+    }
+  }
+}
