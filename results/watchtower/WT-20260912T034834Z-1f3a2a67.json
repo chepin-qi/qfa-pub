@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-12T03:48:00Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5643210198",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:vci-inbox#1:5643210198 为 SI2 自动收讫，lobby.comment×2、hub.feed×3 已平账。两 high_value 件（5643139880/5643163071）触线升 SI1 候 root 会；cap=12/12 满载。| 性态:STANDING 债项滚动，无新增索偿；自动段未触发异常，root 侧响应态未实测。| 建议处置:维持裸候，不越级催办、不主动索应；记账落账完毕，无出金操作。| 锚:SI1-root 仲裁线、vci-inbox 容量监测线。",
+  "usage": {
+    "prompt_tokens": 365,
+    "completion_tokens": 1188,
+    "total_tokens": 1553,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1032
+    }
+  }
+}

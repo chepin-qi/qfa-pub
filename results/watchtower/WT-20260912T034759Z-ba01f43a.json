@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-12T03:47:28Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop|ref=qtlv-eval-wave-6220cd5885be.md;摘要示巷卡53→54,波次文件递进|性态:流程性卡位迁移,非异常掉件;文件本体未实测,内容未触发校验|建议处置:裸候,纳入qtlv-eval常规波次台账,无需回拨|锚:lanes/core/audit:卡位迁移日志",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1089,
+    "total_tokens": 1303,
+    "completion_tokens_details": {
+      "reasoning_tokens": 994
+    }
+  }
+}
