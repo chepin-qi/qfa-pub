@@ -341,8 +341,92 @@
     }
    },
    "status": "RUNNING"
+  },
+  {
+   "id": "fed-92-tasks",
+   "law": "发起即跟进:任务卡落即OPEN;跟进即闭环:线应件落inbox/板即CLEARED;限20260914T02Z逾限SI5提级",
+   "note": "beat-92全院整改:各线未尽清单+三公共务;应件机检名首 FED-92-RESP-<line>",
+   "opened": "20260912T025648Z",
+   "rings": {
+    "cfts": {
+     "card": "lanes/cfts/inbox/FED-92-TASKS-cfts.md",
+     "st": "OPEN"
+    },
+    "lgt": {
+     "card": "lanes/lgt/inbox/FED-92-TASKS-lgt.md",
+     "st": "OPEN"
+    },
+    "lvlu": {
+     "card": "lanes/lvlu/inbox/FED-92-TASKS-lvlu.md",
+     "st": "OPEN"
+    },
+    "qgl": {
+     "card": "lanes/qgl/inbox/FED-92-TASKS-qgl.md",
+     "st": "OPEN"
+    },
+    "qlv": {
+     "card": "lanes/qlv/inbox/FED-92-TASKS-qlv.md",
+     "st": "OPEN"
+    },
+    "qtlv": {
+     "card": "lanes/qtlv/inbox/FED-92-TASKS-qtlv.md",
+     "st": "OPEN"
+    },
+    "ucif2": {
+     "card": "lanes/ucif2/inbox/FED-92-TASKS-ucif2.md",
+     "st": "OPEN"
+    },
+    "usrm": {
+     "card": "lanes/usrm/inbox/FED-92-TASKS-usrm.md",
+     "st": "OPEN"
+    },
+    "vinf": {
+     "card": "lanes/vinf/inbox/FED-92-TASKS-vinf.md",
+     "st": "OPEN"
+    }
+   },
+   "status": "RUNNING"
+  },
+  {
+   "id": "fed-std-01-cosign",
+   "law": "共署制:讨论室/FED-STANDARD-01候各线署;署件=COSIGN-FED-STD-01-<line>落inbox/讨论室",
+   "note": "全院制度v1共署环;转正条件:九线+cisvr署讫",
+   "opened": "20260912T025648Z",
+   "rings": {
+    "cfts": {
+     "st": "OPEN"
+    },
+    "cisvr": {
+     "st": "OPEN"
+    },
+    "lgt": {
+     "st": "OPEN"
+    },
+    "lvlu": {
+     "st": "OPEN"
+    },
+    "qgl": {
+     "st": "OPEN"
+    },
+    "qlv": {
+     "st": "OPEN"
+    },
+    "qtlv": {
+     "st": "OPEN"
+    },
+    "ucif2": {
+     "st": "OPEN"
+    },
+    "usrm": {
+     "st": "OPEN"
+    },
+    "vinf": {
+     "st": "OPEN"
+    }
+   },
+   "status": "RUNNING"
   }
  ],
- "updated": "20260912T022941Z",
+ "updated": "20260912T025648Z",
  "v": "LOOPS-REGISTRY-01"
 }
