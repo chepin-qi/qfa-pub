@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T00:39:02Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642203724",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment×3+si1.seed.put批次抵件,ref=vci-inbox#1:5642203724,usage=2069tok,cap=2/12,#noauto| 性态:混合载荷杂糅,comment与seed投送同批抵站;自动收讫已触发但被抑制,单件tok偏高疑含长文本或编码团| 建议处置:升SI1深裁,候root会话释明#noauto意图;本线不落账,待root核查seed载荷及comment关联后转对应工位| 锚:vci-inbox#1:5642203724;si1.seed.put规;#noauto抑制协议",
+  "usage": {
+    "prompt_tokens": 256,
+    "completion_tokens": 1251,
+    "total_tokens": 1507,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1096
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

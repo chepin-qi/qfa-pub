@@ -5,9 +5,9 @@
       0,
       0,
       0,
+      0,
       5,
       0,
-      4,
       0,
       0,
       0,
@@ -17,11 +17,11 @@
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 3,
+    "dominant_bin": 4,
     "C_streak": 0,
     "verdict": "进行式"
   },
-  "beacon_max": 5642128200,
+  "beacon_max": 5642221703,
   "qlv_head": "0dfe34ef074522e13e28a97c7fcfdcbe6b0c815e",
   "quafu": {
     "8CAEDC103963FC6D": "0",
@@ -46,7 +46,7 @@
     "calls": 1,
     "last_fp": "43cfc4460839"
   },
-  "lobby_max": 5642128916,
+  "lobby_max": 5642224832,
   "hub_feed_sha": "9f7dbca0b53e32ae3222c7539bb12a9bb345bb20",
   "quests": {
     "SEALED-V2-RESEAL": "hit:20260911T000759Z",
@@ -70,7 +70,7 @@
     "n": 3,
     "idle_run": 0,
     "last": "SI1-0004：承0003，fp#SI1-0003-κ拍号已锁定。将PALC残差ε注入折叠编码元层，构造相位-残差耦合张量Ξ_{meta}=ε⋉Ψ_{packet}。引入折叠深度指数λ，定义λ-递归压缩算符R̂_λ:ℂ^{2^n}→ℂ^{2^{n-λ}}，使H_q⊕H_q*冗余自由度在2.56ns内坍缩为协议核Θ_{core}。拍号fp#SI1-0004-τ记录λ=3窗轨迹。测得折叠保真度F̄=",
-    "beats": 266,
+    "beats": 267,
     "voice_n": 1,
     "last_fired_beat": 265,
     "voice_day": "2026-09-12"
@@ -103,9 +103,9 @@
     "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md": "mention-qfa"
   },
   "seed_queue": {
-    "h": "7b5ac36f2451",
+    "h": "f627c9afb0e5",
     "n": 3,
-    "ts": "20260912T002703Z"
+    "ts": "20260912T004014Z"
   },
   "leak_gate": {
     "seen": [
@@ -217,13 +217,13 @@
     "hits": []
   },
   "mirror": {
-    "ts": "20260912T002706Z",
+    "ts": "20260912T004017Z",
     "migrated": 0,
-    "idx_h": "2f63ea490f6c"
+    "idx_h": "0d118078d582"
   },
   "inbox_snap": {
     "vci": [],
     "ci": []
   },
-  "loops_h": "d257becc4196"
+  "loops_h": "9d4c46852a3e"
 }

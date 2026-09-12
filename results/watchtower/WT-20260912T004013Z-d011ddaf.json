@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-12T00:39:39Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642224832",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment×4及si1.seed.put×1抵vci-inbox#1:5642224832，SI2自动收讫，usage=2177tok，cap=2/12，标#noauto。| 性态:扫描层聚合，payload未展开，属触发未响应裸候；已升SI1候root会话。| 建议处置:遵#noauto维持裸候，不主动细收与回应；待root会话就位后深裁落账。余量充裕。| 锚:#vci-cap/余10|#si1-queue/待root激活",
+  "usage": {
+    "prompt_tokens": 261,
+    "completion_tokens": 1204,
+    "total_tokens": 1465,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1068
+    }
+  }
+}

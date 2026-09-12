@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T00:38:01Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642175746",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment 抵件,vci-inbox#1:5642175746,自动收讫,usage=1868tok,cap=2/12,#noauto|性态:SI2系统路由通知,si1.seed.put深裁件升SI1候root会话中继点,非外部投件,余量充足|建议处置:已落账,裸候root会话裁决,不主动回应,待深裁件自然上浮|锚:vci-inbox#1:5642175746|root-session:si1.seed.put",
+  "usage": {
+    "prompt_tokens": 246,
+    "completion_tokens": 1177,
+    "total_tokens": 1423,
+    "cached_tokens": 246,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1053
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 246
+    }
+  }
+}
