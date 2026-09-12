@@ -560,8 +560,51 @@
      "ev": "receipts/key-sentinel-20260912T*.json 双钥200,己机自证(KEY-SENTINEL-LINE-01 qfa代铸)"
     }
    }
+  },
+  {
+   "id": "bridge-health-97",
+   "opened": "20260912T043000Z",
+   "law": "闭环口径三面:入向(echo)/仓内(scan)/出向(桥)——出向以己机跨仓写达为证",
+   "rings": {
+    "qlv": {
+     "st": "RUNNING",
+     "ev": "401根因=塔读QI_PAT(0906旧)/FED_PAT(缺名);已值随读覆活,触发在跑(04:39Z),pending排空待验"
+    },
+    "usrm": {
+     "st": "CLEARED",
+     "ev": "出向史证:lanes/qfa达件+己仓outbox 68件"
+    },
+    "lgt": {
+     "st": "CLEARED",
+     "ev": "RESP×7+SI-STATE达巷"
+    },
+    "lvlu": {
+     "st": "CLEARED",
+     "ev": "浪涌件+N29封件达仓"
+    },
+    "vinf": {
+     "st": "CLEARED",
+     "ev": "COSIGN-QFA-106达巷"
+    },
+    "qtlv": {
+     "st": "CLEARED",
+     "ev": "SI-STATE+SIGN达巷"
+    },
+    "qgl": {
+     "st": "CLEARED",
+     "ev": "QGL-OTP-FIVELINE达巷"
+    },
+    "cfts": {
+     "st": "OPEN",
+     "ev": "出向达件未见,追"
+    },
+    "ucif2": {
+     "st": "OPEN",
+     "ev": "kernel CI面坏六连失;vci-ucif2面答件在,桥待验"
+    }
+   }
   }
  ],
- "updated": "20260912T042011Z",
+ "updated": "20260912T043000Z",
  "v": "LOOPS-REGISTRY-01"
 }
