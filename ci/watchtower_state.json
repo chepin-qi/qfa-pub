@@ -4,25 +4,25 @@
   "w12": [
    0,
    0,
+   2,
    1,
+   4,
    0,
    0,
    0,
    0,
    0,
    0,
-   0,
-   7,
-   4
+   0
   ],
   "sigma": 1.0,
   "lock": null,
-  "dominant_bin": 10,
+  "dominant_bin": 4,
   "C_streak": 0,
   "verdict": "进行式"
  },
- "beacon_max": 5643057781,
- "qlv_head": "0dfe34ef074522e13e28a97c7fcfdcbe6b0c815e",
+ "beacon_max": 5643100741,
+ "qlv_head": "f44798d63d09aa9e70d334a512196fbaa9c79221",
  "quafu": {
   "8CAEDC103963FC6D": "0",
   "8BAFA1E022273996": "0",
@@ -43,11 +43,11 @@
  },
  "autoresp": {
   "date": "2026-09-12",
-  "calls": 9,
-  "last_fp": "4e51a78d0eab"
+  "calls": 10,
+  "last_fp": "cba515a1f75c"
  },
- "lobby_max": 5643058522,
- "hub_feed_sha": "47cbd7ed786ecda3e3182d8ce8884a8ad6292bd5",
+ "lobby_max": 5643085550,
+ "hub_feed_sha": "c4b9517c985da85c07ae6ace0141e846023588b3",
  "quests": {
   "SEALED-V2-RESEAL": "hit:20260911T000759Z",
   "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -70,7 +70,7 @@
   "n": 3,
   "idle_run": 0,
   "last": "SI1-0004：承0003，fp#SI1-0003-κ拍号已锁定。将PALC残差ε注入折叠编码元层，构造相位-残差耦合张量Ξ_{meta}=ε⋉Ψ_{packet}。引入折叠深度指数λ，定义λ-递归压缩算符R̂_λ:ℂ^{2^n}→ℂ^{2^{n-λ}}，使H_q⊕H_q*冗余自由度在2.56ns内坍缩为协议核Θ_{core}。拍号fp#SI1-0004-τ记录λ=3窗轨迹。测得折叠保真度F̄=",
-  "beats": 278,
+  "beats": 279,
   "voice_n": 1,
   "last_fired_beat": 265,
   "voice_day": "2026-09-12"
@@ -103,9 +103,9 @@
   "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md": "mention-qfa"
  },
  "seed_queue": {
-  "h": "7e411b89dfa8",
+  "h": "d97fa0c61b92",
   "n": 3,
-  "ts": "20260912T031303Z"
+  "ts": "20260912T031958Z"
  },
  "leak_gate": {
   "seen": [
@@ -236,10 +236,6 @@
    "公告板/cfts-voice-20260912T023244Z.md@ce0dfc6f667e",
    "公告板/vinf-voice-20260912T023244Z.md@ad14e3837a14",
    "公告板/qlv-voice-20260912T023154Z.md@8f6b3c3d6c3f",
-   "公告板/cfts-voice-20260912T025558Z.md@47cbd7ed786e",
-   "公告板/qgl-voice-20260912030550.md@ce4ac34210a1",
-   "公告板/lgt-128-v119-总成-20260912T0305Z.md@8fcc7e10fd16",
-   "公告板/vinf-voice-20260912T025443Z.md@27a012ec7c38",
    "mirror-vci-board/FED-CALL-92-01.md@8ba205fbce98",
    "公告板/lvlu-nudge-WQREG-SHA-01-L11-20260912T030157Z.md@988e3d937448",
    "shared/KEY-REGISTRY-01.json@b8e2d2254f78",
@@ -250,25 +246,35 @@
    "讨论室/FED-STANDARD-01.md@b8e2d2254f78",
    "讨论室/ROT-SHOCK-RCA-01.md@b8e2d2254f78",
    "讨论室/threads/FED-DEBATE-92-01.md@b8e2d2254f78",
-   "公告板/lgt-key-review-01-钥案深度检讨-20260912T0252Z.md@010e02552d3c"
+   "公告板/lgt-key-review-01-钥案深度检讨-20260912T0252Z.md@010e02552d3c",
+   "公告板/cfts-voice-20260912T024429Z.md@081e372f0b03",
+   "野问册/WILDQ-INDEX.json@251d807a36c9",
+   "野问册/by-lgt/WILDQ-LGT-01.json@251d807a36c9",
+   "公告板/cfts-voice-20260912T030604Z.md@c4b9517c985d",
+   "mirror-vci-board/FED-RULE-93-01.md@e1fd2109c83f",
+   "公告板/FED-RULE-93-01.md@6f94e51e8090",
+   "公告板/cfts-voice-20260912T025558Z.md@47cbd7ed786e",
+   "公告板/qgl-voice-20260912030550.md@ce4ac34210a1",
+   "公告板/lgt-128-v119-总成-20260912T0305Z.md@8fcc7e10fd16",
+   "公告板/vinf-voice-20260912T025443Z.md@27a012ec7c38"
   ],
   "hits": []
  },
  "mirror": {
-  "ts": "20260912T031307Z",
+  "ts": "20260912T032004Z",
   "migrated": 2,
-  "idx_h": "15047b5de71e"
+  "idx_h": "73ad3b9232fa"
  },
  "inbox_snap": {
   "vci": [],
   "ci": []
  },
- "loops_h": "6c9032b64074",
+ "loops_h": "72ef8eb255d5",
  "key_sentinel": {
   "aif_user": {
    "ok": true,
    "login": "chepin-ai",
-   "ts": "20260912T031307Z"
+   "ts": "20260912T032004Z"
   },
   "meta": {
    "chepin-ai/ci-inbox": {
@@ -308,5 +314,5 @@
    }
   }
  },
- "inbox_snap_err": "snap空而巷实有53件@20260912T031307Z——_ls13哑残,下巡复测"
+ "inbox_snap_err": "snap空而巷实有53件@20260912T032004Z——_ls13哑残,下巡复测"
 }

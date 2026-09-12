@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-12T03:18:53Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5643075076",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment批次混hub.feed×3，自动收讫升SI1候root，usage=2130tok cap=10/12，#noauto| 性态:高负载混类件，lobby为主型，hub.feed为伴生噪声，会话余量低，属触发未响应态| 建议处置:裸候，不主动拉取；待root会话触发深裁或归档，余量紧张建议清级释放tok| 锚:vci-inbox#1:5643075076,si1-root-queue#pend",
+  "usage": {
+    "prompt_tokens": 257,
+    "completion_tokens": 1268,
+    "total_tokens": 1525,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1142
+    }
+  }
+}

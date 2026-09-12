@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-12T03:19:29Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5643085550",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:vci-inbox#1:5643085550 聚合1 hub.change+4 lobby.comment，SI2自动收讫因批量触发升SI1候root会话。| 性态:聚合噪音态，未见实测有害载荷，属「触发未响应」候审，cap 9/12余量充足。| 建议处置:已自动落账；按深裁件升单规则裸候root会话复核，不主动寻求回应。| 锚:qfa SI2自动收讫链路/vci-inbox路由锚定。",
+  "usage": {
+    "prompt_tokens": 259,
+    "completion_tokens": 991,
+    "total_tokens": 1250,
+    "completion_tokens_details": {
+      "reasoning_tokens": 868
+    }
+  }
+}
