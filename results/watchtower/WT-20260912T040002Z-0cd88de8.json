@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-12T03:59:03Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5643267675",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa.beat+lane.drop到件,ref=vci-inbox#1:5643267675,自动收讫,SI2升SI1候root,usage=1819tok/cap=1/12,#noauto.| 性态:lane.drop属线路剥离,自动收讫已触发,root级未响应,候深裁;资源充裕.| 建议处置:已落账,裸候root裁决,不主动外呼,维持lane监听.| 锚:vci-inbox#1|sys.root.queue.",
+  "usage": {
+    "prompt_tokens": 245,
+    "completion_tokens": 1939,
+    "total_tokens": 2184,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1815
+    }
+  }
+}
