@@ -1,0 +1,31 @@
+{
+  "ts": "2026-09-12T03:03:51Z",
+  "clock": "VOID",
+  "backlog": [
+    {
+      "kind": "hub.feed",
+      "ref": "公告板/FED-CALL-92-01.md"
+    },
+    {
+      "kind": "hub.feed",
+      "ref": "讨论室/FED-STANDARD-01.md"
+    },
+    {
+      "kind": "hub.feed",
+      "ref": "讨论室/ROT-SHOCK-RCA-01.md"
+    },
+    {
+      "kind": "hub.feed",
+      "ref": "讨论室/threads/FED-DEBATE-92-01.md"
+    },
+    {
+      "kind": "hub.feed",
+      "ref": "公告板/lgt-key-review-01-钥案深度检讨-20260912T0252Z.md"
+    },
+    {
+      "kind": "hub.feed",
+      "ref": "公告板/cfts-voice-20260912T024429Z.md"
+    }
+  ],
+  "note": "钱面护栏:溢出件本拍不判;水印已进,下拍不重扫"
+}

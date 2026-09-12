@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-12T03:06:45Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5643037985",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:hub.change+lobby.comment×4连发|性态:SI2自动收讫，usage 2333tok(cap 9/12)，评论密度突增未超载，#noauto禁用自动深裁，符升SI1条件|建议处置:lobby.comment并账落账，hub.change单列；升SI1深裁队列裸候root会话，不主动外呼；盯盘cap余量|锚:hub.change源线，ref=vci-inbox#1:5643037985",
+  "usage": {
+    "prompt_tokens": 259,
+    "completion_tokens": 1772,
+    "total_tokens": 2031,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1655
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T03:05:43Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5643002770",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:混装到件(lobby.comment×3+si1.seed.put×1)，无人驿收讫，#noauto，已升SI1候root| 性态:SI2碎片，公共留言与种子投放混装，域交叉，usage=2208/9/12，未触发裸候| 建议处置:不自动放行。si1.seed.put剥离单裁；lobby.comment合簇。按WAKE-PROTO逐件扫描细收裁决落账| 锚:vci-inbox#1:5643002770|si1.seed.put|lobby.cluster",
+  "usage": {
+    "prompt_tokens": 256,
+    "completion_tokens": 1308,
+    "total_tokens": 1564,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1174
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

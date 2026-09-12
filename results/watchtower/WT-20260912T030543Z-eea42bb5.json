@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T03:05:07Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642986457",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:vci-inbox#1:5642986457自动收讫聚合包(lane.drop+lobby.comment×3+hub.feed),tok=2515,cap=8/12,已升SI1候root| 性态:队列正常消费,属自动段深裁前置,未触发异常边界| 建议处置:裸候归档,循SI1流程候root会话,不主动seek回应| 锚:vci-inbox#1:5642986457",
+  "usage": {
+    "prompt_tokens": 258,
+    "completion_tokens": 1278,
+    "total_tokens": 1536,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1168
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

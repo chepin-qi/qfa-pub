@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T03:03:51Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642978286",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment 到件，qlv SI2 自动收讫 qfa.beat 与 lane.drop（beat37-20260909T1608Z），涉我债，升 SI1 候 root。| 性态:自动段判词，裸候态，深裁候拨。| 建议处置:落账 SI2，挂 SI1 深裁队列，候 root 会话终裁，不主动外联。| 锚:vci-inbox#1:5642978286;root#si1-queue.",
+  "usage": {
+    "prompt_tokens": 299,
+    "completion_tokens": 1476,
+    "total_tokens": 1775,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1353
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}
