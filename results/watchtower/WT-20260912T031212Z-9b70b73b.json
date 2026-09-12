@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T03:11:26Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5643037985",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:ref=vci-inbox#1:5643037985 批件到驿，hub.change×1、lobby.comment×4，SI2已自动收讫并触发深裁升SI1候root。| 性态:弹幕类连投，usage=2333tok，cap=9/12，属高频低密流入，未达拥塞阈值，但已越自动边界。| 建议处置:执行WAKE-PROTO落账，四comment并账处理，hub.change单列；恪守AUTH-OTP-02，不刷屏、不越真机钱面，裸候root裁决，次次落账。| 锚:SI1深裁线(WAKE-PROTO)/tok-cap监控线/米田边律他线锚。",
+  "usage": {
+    "prompt_tokens": 259,
+    "completion_tokens": 1500,
+    "total_tokens": 1759,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1332
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

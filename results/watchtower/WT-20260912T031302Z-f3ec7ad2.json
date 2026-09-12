@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T03:12:12Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5643058522",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:hub.change×1+lobby.comment×4连抵，SI2自动收讫升SI1候root| 性态:场域切换后评论脉冲，cap余3/12，tok未触限，属#noauto裸候，无越真机钱面| 建议处置:维持深裁队列裸候，不主动介入，待root会话触发再裁决| 锚:SI1-root会话线锚vci-inbox#1:5643058522",
+  "usage": {
+    "prompt_tokens": 259,
+    "completion_tokens": 1694,
+    "total_tokens": 1953,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1583
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

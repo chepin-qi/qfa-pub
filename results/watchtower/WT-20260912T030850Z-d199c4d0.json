@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T03:08:06Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642978286",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa.beat与lane.drop抵qlv SI2，自动收讫心跳及草稿件(beat37-20260909T1608Z-qlv.json)，qlv涉qfa债。| 性态:跨线自动收讫，SI2级确认，未触发异常响应。| 建议处置:已落账，依裸候不主动求应；若需债项裁决升SI1候root会话。| 锚:root#vci-inbox#1:5642978286",
+  "usage": {
+    "prompt_tokens": 299,
+    "completion_tokens": 1624,
+    "total_tokens": 1923,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1507
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

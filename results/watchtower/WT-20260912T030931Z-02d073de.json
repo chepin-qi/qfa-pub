@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T03:08:51Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642986258",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:QTLV OTP浪涌`qtlv-eval-wave-6220cd5885be.md`抵qfa SI2，序列含lane.drop、lobby.comment×3及hub.feed；涉qfa对qtlv EVAL-WAVE-01待偿债项。| 性态:深裁件。自动收讫已升SI1候root会话，跨线EVAL浪涌超无人驿裁决权限。| 建议处置:维持SI1升阶，裸候root会话实质裁定；债项已记账不重复索，统由root统筹对qtlv应答。| 锚:qtlv线`EVAL-WAVE-01`/VCI`vci-inbox#1:5642986258`",
+  "usage": {
+    "prompt_tokens": 340,
+    "completion_tokens": 1391,
+    "total_tokens": 1731,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1228
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

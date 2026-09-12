@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T03:10:21Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5643002770",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment×3及si1.seed.put×1抵驿，ref=vci-inbox#1:5643002770，自动收讫已落账| 性态:复合批次非刷屏，usage=2208tok，cap=9/12，系统已触发自动响应，深裁件升SI1候root会话| 建议处置:裸候，不主动寻求回应；待root会话深裁或用户显式触发| 锚:si1.seed.put为种子线锚，lobby.comment三件套并账附随",
+  "usage": {
+    "prompt_tokens": 256,
+    "completion_tokens": 1207,
+    "total_tokens": 1463,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1081
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

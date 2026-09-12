@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T03:09:31Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642986457",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment批束到站，序列含lane.drop×1、lobby.comment×3、hub.feed×1，usage=2515tok，cap=8/12，原SI2自动收讫升SI1候root。| 性态:评论流堆积伴单次链路抖动，属常规噪点复压，余量充足，会话未僵。| 建议处置:遵裸候原则，三comment并账为单条流，lane.drop记网噪核销，hub.feed留底，维持SI1暂不升root，即时落账归档。| 锚:vci-inbox#1:5642986457→root会话池候。",
+  "usage": {
+    "prompt_tokens": 258,
+    "completion_tokens": 1680,
+    "total_tokens": 1938,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1533
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

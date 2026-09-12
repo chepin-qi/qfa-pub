@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T03:10:56Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5643019421",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment×4+hub.feed聚合抵站，SI2自动收讫，深裁件升SI1候root会话，usage=2335tok，cap=9/12| 性态:高频低密流批抵，自动段已扫收；token负荷偏高，属饱和边缘聚合件，非越级干预域| 建议处置:维持SI1候拨状态，按#noauto不主动裸候，待root会话深裁落账；本线不做刷屏应答，仅完成收讫登记| 锚:root-session:SI1-pending/vci-inbox#1:5643019421",
+  "usage": {
+    "prompt_tokens": 259,
+    "completion_tokens": 1045,
+    "total_tokens": 1304,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 902
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}
