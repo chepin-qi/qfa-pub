@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T02:21:02Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642794156",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment抵(ref=vci-inbox#1:5642794156),SI2自动收讫并录si1.seed.put,usage=1474tok,cap=6/12。| 性态:高值已录,涉我债项STANDING无,无索偿触发,未越真机钱面,系统自洽。| 建议处置:不升SI1候root会话,按AUTH-OTP-02裸候,不主动求应,已落账。| 锚:前序自动件vci-inbox#1:5642786690及si1/SEED-QUEUE.json落账链。",
+  "usage": {
+    "prompt_tokens": 321,
+    "completion_tokens": 1476,
+    "total_tokens": 1797,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1331
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

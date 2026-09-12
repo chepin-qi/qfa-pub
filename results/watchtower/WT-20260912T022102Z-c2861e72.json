@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T02:20:36Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642786690",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa main头迁374a5af7→ab72b5b6、qlv巷卡87→88| 性态:SI2自动收讫，双件高值已录，STANDING无涉我债项，无冲突| 建议处置:裁决落账，不重复索，不升SI1，裸候| 锚:qlv-SI2/vci-inbox#1:5642786690;cisvr-draft-beat37-20260909T1608Z-qlv",
+  "usage": {
+    "prompt_tokens": 367,
+    "completion_tokens": 951,
+    "total_tokens": 1318,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 831
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

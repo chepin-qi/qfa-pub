@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T02:21:47Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642805950",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:vci-inbox#1:5642805950，lobby.comment双件及si1.seed.put复式抵驿，SI2自动收讫升SI1候root| 性态:usage=2159tok/cap 6/12，#noauto标记抑自动外呼，未触发主动响应，属深裁堆叠裸候态| 建议处置:依AUTH-OTP-02诚实边界，不刷屏、不越真机钱面，维持裸候；次次落账已毕，待root会话回拨或SI1深裁条件达成| 锚:qfa-SI1-root#noauto",
+  "usage": {
+    "prompt_tokens": 251,
+    "completion_tokens": 1655,
+    "total_tokens": 1906,
+    "cached_tokens": 251,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1511
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 251
+    }
+  }
+}
