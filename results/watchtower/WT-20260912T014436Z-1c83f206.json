@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T01:43:51Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642592557",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件: lobby.comment×2 及 si1.seed.put 批量抵站，自动段已收讫，因 #noauto 与高 tok 占用(2047)升 SI1 候 root 深裁 | 性态: 三件套聚合触容量警戒(cap=4/12)；lobby.comment 涉裸候/刷屏风险待核，si1.seed.put 需确认有 root 会话承接 | 建议处置: 按 AUTH-OTP-02 逐件裁量：lobby.comment 若裸候或无实质投件则退件；seed.put 确认可归后落账；超 tok 建议拆会话释上下文 | 锚: he.line=SI1.root; ref=vci-inbox#1:5642592557",
+  "usage": {
+    "prompt_tokens": 251,
+    "completion_tokens": 1797,
+    "total_tokens": 2048,
+    "cached_tokens": 251,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1628
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 251
+    }
+  }
+}

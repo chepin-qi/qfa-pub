@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T01:42:58Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642567990",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qlv SI2自动收讫qfa.beat及lane.drop(draft-beat37)，高处值落件升SI1候root会话| 性态:无新增债项/无重复索偿，账态STANDING；无人驿已完成扫描落账，深裁件待root裁决| 建议处置:裸候root会话接管SI1深裁，本线严守诚实边界、不越真机钱面，次次落账毕| 锚:vci-inbox#1:5642567990→qlv-draft-beat37-SI1",
+  "usage": {
+    "prompt_tokens": 340,
+    "completion_tokens": 865,
+    "total_tokens": 1205,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 735
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

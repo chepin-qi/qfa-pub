@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T01:43:22Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642575904",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment/si1.seed.put 抵件，自动收讫并升 SI1 候 root 会话，usage=1947tok(cap=4/12)，带 #noauto 标记| 性态:系统内种子流转件，属自动段判词触发深裁，非外部裸候，资源余量充足| 建议处置:按 WAKE-PROTO 维持裸候，不主动推进，待 root 会话裁决后落账；记录 #noauto 约束| 锚:vci-inbox#1:5642575904|WAKE-PROTO:SI1|米田边律",
+  "usage": {
+    "prompt_tokens": 246,
+    "completion_tokens": 994,
+    "total_tokens": 1240,
+    "cached_tokens": 246,
+    "completion_tokens_details": {
+      "reasoning_tokens": 853
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 246
+    }
+  }
+}

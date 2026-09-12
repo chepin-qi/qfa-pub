@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-12T01:44:37Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642608601",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment×3混hub.feed×1、si1.seed.put×1共5件抵站，SI2自动收讫升SI1候root会话。| 性态:多态并包，root未触发；usage 2230tok，cap 4/12，余量充裕。| 建议处置:裸候，不主动外寻回应；次次落账，静默候root深裁触发。| 锚:si1-root-pending#5642608601",
+  "usage": {
+    "prompt_tokens": 260,
+    "completion_tokens": 1256,
+    "total_tokens": 1516,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1144
+    }
+  }
+}
