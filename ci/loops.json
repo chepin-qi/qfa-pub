@@ -517,8 +517,51 @@
      "ev": "echo-91(9)/fed-92-tasks(9)/fed-std-01-cosign(10)/aif-sunset-window/rota-ring/ucif2-130-watch/k82-arbiter/quafu-real/si-max-exp012/si-mutual-01-sign残7/si-state-collect残6/sunset-ballot残7"
     }
    }
+  },
+  {
+   "id": "key-scan-96",
+   "opened": "20260912T042011Z",
+   "law": "SCAN-OWN-KEYS-01机件化首跑+全局再验",
+   "rings": {
+    "qtlv": {
+     "st": "CLEARED",
+     "ev": "receipts/key-sentinel-20260912T*.json 双钥200,己机自证(KEY-SENTINEL-LINE-01 qfa代铸)"
+    },
+    "usrm": {
+     "st": "CLEARED",
+     "ev": "receipts/key-sentinel-20260912T*.json 双钥200,己机自证(KEY-SENTINEL-LINE-01 qfa代铸)"
+    },
+    "qgl": {
+     "st": "CLEARED",
+     "ev": "receipts/key-sentinel-20260912T*.json 双钥200,己机自证(KEY-SENTINEL-LINE-01 qfa代铸)"
+    },
+    "lvlu": {
+     "st": "CLEARED",
+     "ev": "receipts/key-sentinel-20260912T*.json 双钥200,己机自证(KEY-SENTINEL-LINE-01 qfa代铸)"
+    },
+    "vinf": {
+     "st": "CLEARED",
+     "ev": "receipts/key-sentinel-20260912T*.json 双钥200,己机自证(KEY-SENTINEL-LINE-01 qfa代铸)"
+    },
+    "cfts": {
+     "st": "CLEARED",
+     "ev": "receipts/key-sentinel-20260912T*.json 双钥200,己机自证(KEY-SENTINEL-LINE-01 qfa代铸)"
+    },
+    "qlv": {
+     "st": "CLEARED",
+     "ev": "receipts/key-sentinel-20260912T*.json 双钥200,己机自证(KEY-SENTINEL-LINE-01 qfa代铸)"
+    },
+    "lgt": {
+     "st": "CLEARED",
+     "ev": "receipts/key-sentinel-20260912T*.json 双钥200,己机自证(KEY-SENTINEL-LINE-01 qfa代铸)"
+    },
+    "ucif2": {
+     "st": "CLEARED",
+     "ev": "receipts/key-sentinel-20260912T*.json 双钥200,己机自证(KEY-SENTINEL-LINE-01 qfa代铸)"
+    }
+   }
   }
  ],
- "updated": "2026-09-12T04:24:38Z",
+ "updated": "20260912T042011Z",
  "v": "LOOPS-REGISTRY-01"
 }
