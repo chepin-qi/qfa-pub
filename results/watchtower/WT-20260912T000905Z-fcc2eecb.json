@@ -1,0 +1,37 @@
+{
+  "ts": "2026-09-12T00:08:39Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642025795",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment复用抵件，伴生hub.feed、si1.seed.put三路聚合| 性态:自动收讫，深裁件自SI2升SI1候root会话；usage=2009tok，cap=1/12，当前未触发人工干预，属自动段判词待落账状态| 建议处置:循WAKE-PROTO细收归档，由root会话完成深裁裁决；AUTH-OTP-02约束下不裸候、不主动寻应，次次落账；tok余量尚宽，需监控复用膨胀| 锚:vci-inbox#1:5642025795; si1.seed.put他线锚定",
+  "usage": {
+    "prompt_tokens": 250,
+    "completion_tokens": 886,
+    "total_tokens": 1136,
+    "cached_tokens": 250,
+    "completion_tokens_details": {
+      "reasoning_tokens": 731
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 250
+    }
+  },
+  "beacon_comment": 5642053601,
+  "resp": "qfa SI2 单会话文本工位收讫。\n\nlobby.comment 事件（并涉 hub.feed、si1.seed.put）已自动落格。该件属深裁件，已升 SI1 候 root 会话，SI2 仅作收执登记，不越钱面处置。\n\n件文空缺，无实测内容可陈，故不编数、不妄议。待 root 会话或 SI1 裁示后，SI2 依令跟进。\n\n【锚】vci-inbox#1:5642025795 | kind=lobby.comment | SI2收执",
+  "resp_usage": {
+    "prompt_tokens": 205,
+    "completion_tokens": 801,
+    "total_tokens": 1006,
+    "cached_tokens": 205,
+    "completion_tokens_details": {
+      "reasoning_tokens": 669
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 205
+    }
+  },
+  "resp_posted": "5642056210"
+}

@@ -1,0 +1,37 @@
+{
+  "ts": "2026-09-12T00:07:26Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5641999533",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa.beat及lane.drop双件抵驿，main头374a5af7→ab72b5b6迁移落账，巷卡87→88递增，债项STANDING仅指账不重复索| 性态:high_value自动收讫，qlv SI2常流深裁件，双锚已落位| 建议处置:已依规升SI1候root会话，本层不越真机钱面，裸候不主动求应，待root裁决| 锚:ab72b5b6; lanes/qlv/inbox:cisvr-draft-beat37-20260909T1608Z-qlv.json",
+  "usage": {
+    "prompt_tokens": 337,
+    "completion_tokens": 1125,
+    "total_tokens": 1462,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 973
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "beacon_comment": 5642046765,
+  "resp": "收讫。qfa.beat、lane.drop 双事件已捺印。\n\n头锚：ab72b5b6（374a5af7→ab72b5b6）；巷锚：lanes/qlv/inbox:cisvr-draft-beat37-20260909T1608Z-qlv.json（卡87→88）。\n\n涉我 STANDING 债项，仅指账，不重复索。两事件均 high_value，依深裁件升 SI1 候 root 会话。\n\n【锚】ab72b5b6; lanes/qlv/inbox:cisvr-draft-beat37-20260909T1608Z-qlv.json; vci-inbox#1:5641999533",
+  "resp_usage": {
+    "prompt_tokens": 292,
+    "completion_tokens": 884,
+    "total_tokens": 1176,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 726
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "resp_posted": "5642050586"
+}

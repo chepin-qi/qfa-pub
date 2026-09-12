@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-12T00:09:31Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/qfa-voice-20260912T000114Z.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
