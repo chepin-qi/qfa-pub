@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T02:29:04Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642841235",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:批件抵 vci-inbox#1:5642841235，lobby.comment×4 并 si1.seed.put×1，SI2 自动收讫，升 SI1 候 root。| 性态:混类批件，tok 2482，槽 6/12 趋紧；#noauto 禁自裁，si1.seed.put 属种子线需 root 级确权。| 建议处置:全件冻结裸候，lobby.comment 暂挂不响应；si1.seed.put 待 root 会话裁决后落账，禁止自动分流。| 锚:SI1-seed/root 会话。",
+  "usage": {
+    "prompt_tokens": 261,
+    "completion_tokens": 911,
+    "total_tokens": 1172,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 766
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

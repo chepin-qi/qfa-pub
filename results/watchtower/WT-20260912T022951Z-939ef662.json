@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-12T02:29:31Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642863256",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment×2及si1.seed.put抵SI2自动收讫，ref=vci-inbox#1:5642863256；涉我债项STANDING无，不重复索。| 性态:浅层广播与种子队列入站，未触发涉我裁决阈值，属自动段。| 建议处置:次次落账已毕，不升SI1，裸候root会话如需深裁。| 锚:SI2-AUTO@5642863256↔si1/SEED-QUEUE.json",
+  "usage": {
+    "prompt_tokens": 328,
+    "completion_tokens": 1005,
+    "total_tokens": 1333,
+    "completion_tokens_details": {
+      "reasoning_tokens": 884
+    }
+  }
+}

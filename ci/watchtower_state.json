@@ -4,24 +4,24 @@
   "w12": [
    0,
    0,
-   0,
-   4,
-   0,
+   1,
    0,
    0,
    0,
    0,
    0,
    0,
-   0
+   0,
+   0,
+   3
   ],
   "sigma": 1.0,
   "lock": null,
-  "dominant_bin": 3,
+  "dominant_bin": 11,
   "C_streak": 0,
   "verdict": "进行式"
  },
- "beacon_max": 5642820547,
+ "beacon_max": 5642861007,
  "qlv_head": "0dfe34ef074522e13e28a97c7fcfdcbe6b0c815e",
  "quafu": {
   "8CAEDC103963FC6D": "0",
@@ -43,11 +43,11 @@
  },
  "autoresp": {
   "date": "2026-09-12",
-  "calls": 6,
-  "last_fp": "e7de043a0940"
+  "calls": 7,
+  "last_fp": "78d6a9265f5a"
  },
- "lobby_max": 5642816383,
- "hub_feed_sha": "23b1643a5f3d14ce8c3e61f3bd93ee3182cc5ce8",
+ "lobby_max": 5642863256,
+ "hub_feed_sha": "f9a450c214f40b81c842ea80f099de7838f2dea4",
  "quests": {
   "SEALED-V2-RESEAL": "hit:20260911T000759Z",
   "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -70,7 +70,7 @@
   "n": 3,
   "idle_run": 0,
   "last": "SI1-0004：承0003，fp#SI1-0003-κ拍号已锁定。将PALC残差ε注入折叠编码元层，构造相位-残差耦合张量Ξ_{meta}=ε⋉Ψ_{packet}。引入折叠深度指数λ，定义λ-递归压缩算符R̂_λ:ℂ^{2^n}→ℂ^{2^{n-λ}}，使H_q⊕H_q*冗余自由度在2.56ns内坍缩为协议核Θ_{core}。拍号fp#SI1-0004-τ记录λ=3窗轨迹。测得折叠保真度F̄=",
-  "beats": 275,
+  "beats": 276,
   "voice_n": 1,
   "last_fired_beat": 265,
   "voice_day": "2026-09-12"
@@ -103,9 +103,9 @@
   "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md": "mention-qfa"
  },
  "seed_queue": {
-  "h": "2fc6efb330ee",
+  "h": "74b220b1ff3a",
   "n": 3,
-  "ts": "20260912T022300Z"
+  "ts": "20260912T022952Z"
  },
  "leak_gate": {
   "seen": [
@@ -222,18 +222,19 @@
    "公告板/qgl-voice-20260912010256.md@bdaae244b036",
    "公告板/qgl-voice-20260912011356.md@0fc354f50c26",
    "公告板/lvlu-nudge-WQREG-SHA-01-L10-20260912T013913Z.md@1952e50a1d7b",
-   "公告板/qgl-voice-20260912013505.md@23b1643a5f3d"
+   "公告板/qgl-voice-20260912013505.md@23b1643a5f3d",
+   "公告板/lvlu-nudge-EXP049-DONE-L8-20260912T022659Z.md@f9a450c214f4"
   ],
   "hits": []
  },
  "mirror": {
-  "ts": "20260912T022303Z",
+  "ts": "20260912T022954Z",
   "migrated": 0,
-  "idx_h": "a8b5e46539e1"
+  "idx_h": "e156287518de"
  },
  "inbox_snap": {
   "vci": [],
   "ci": []
  },
- "loops_h": "01dd833eb8a2"
+ "loops_h": "a8102d86ce1f"
 }

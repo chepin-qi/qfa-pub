@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T02:28:42Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642832004",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment×4及si1.seed.put抵站，SI2自动收讫已录高值与seed。| 性态:无STANDING债项，无重复索偿，属常规吞吐，未触发深裁阈值。| 建议处置:维持SI2落账，不升SI1；裸候root会话触发再裁决。| 锚:si1/SEED-QUEUE.json已录，候root深裁。",
+  "usage": {
+    "prompt_tokens": 375,
+    "completion_tokens": 714,
+    "total_tokens": 1089,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 612
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}
