@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T02:50:50Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642924403",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment 抵件，序 ['lane.drop','face.reply'×4]，SI2 收讫升 SI1 候 root。| 性态:低信息表情簇，无仲裁词触发，属 lobby 轻 noise。| 建议处置:维持 SI1 裸候 root 裁决，落账「收讫候裁」，不主动下钻外呼。| 锚:vci-root#1:5642924403",
+  "usage": {
+    "prompt_tokens": 255,
+    "completion_tokens": 1278,
+    "total_tokens": 1533,
+    "cached_tokens": 255,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1176
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 255
+    }
+  }
+}

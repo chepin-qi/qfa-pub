@@ -4,31 +4,31 @@
   "w12": [
    0,
    0,
-   6,
-   0,
-   6,
-   0,
-   4,
    0,
    0,
    0,
    1,
+   3,
+   0,
+   0,
+   0,
+   4,
    0
   ],
   "sigma": 1.0,
   "lock": null,
-  "dominant_bin": 2,
+  "dominant_bin": 10,
   "C_streak": 0,
   "verdict": "进行式"
  },
- "beacon_max": 5642896738,
+ "beacon_max": 5642964782,
  "qlv_head": "0dfe34ef074522e13e28a97c7fcfdcbe6b0c815e",
  "quafu": {
   "8CAEDC103963FC6D": "0",
   "8BAFA1E022273996": "0",
   "8BB169201FA3F5D4": "0"
  },
- "lane_inbox_count": 50,
+ "lane_inbox_count": 53,
  "faces": {
   "lgt-line#1": 4,
   "vci-cfts#1": 3,
@@ -43,11 +43,11 @@
  },
  "autoresp": {
   "date": "2026-09-12",
-  "calls": 7,
-  "last_fp": "e055e0a00adb"
+  "calls": 8,
+  "last_fp": "7a2b1b6c6c6d"
  },
- "lobby_max": 5642896103,
- "hub_feed_sha": "883c9ded112174dbbe1135a358a346d22a346ac1",
+ "lobby_max": 5642968492,
+ "hub_feed_sha": "ed73cb194ca57460677de300ce43eae82b5e9e75",
  "quests": {
   "SEALED-V2-RESEAL": "hit:20260911T000759Z",
   "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -70,7 +70,7 @@
   "n": 3,
   "idle_run": 0,
   "last": "SI1-0004：承0003，fp#SI1-0003-κ拍号已锁定。将PALC残差ε注入折叠编码元层，构造相位-残差耦合张量Ξ_{meta}=ε⋉Ψ_{packet}。引入折叠深度指数λ，定义λ-递归压缩算符R̂_λ:ℂ^{2^n}→ℂ^{2^{n-λ}}，使H_q⊕H_q*冗余自由度在2.56ns内坍缩为协议核Θ_{core}。拍号fp#SI1-0004-τ记录λ=3窗轨迹。测得折叠保真度F̄=",
-  "beats": 276,
+  "beats": 277,
   "voice_n": 1,
   "last_fired_beat": 265,
   "voice_day": "2026-09-12"
@@ -103,9 +103,9 @@
   "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md": "mention-qfa"
  },
  "seed_queue": {
-  "h": "87638a51d697",
+  "h": "74974a1a6ab5",
   "n": 3,
-  "ts": "20260912T023859Z"
+  "ts": "20260912T025232Z"
  },
  "leak_gate": {
   "seen": [
@@ -231,18 +231,22 @@
    "公告板/lvlu-nudge-ADJUD-01-L19-20260912T023158Z.md@c1c822f79c34",
    "公告板/AIF-SUNSET-WINDOW-01.md@5c2ffeda2228",
    "讨论室/KEY-DIST-01-qfa-cosign.md@5c2ffeda2228",
-   "公告板/lvlu-nudge-EXP049-DONE-L8-20260912T022659Z.md@f9a450c214f4"
+   "公告板/lvlu-nudge-EXP049-DONE-L8-20260912T022659Z.md@f9a450c214f4",
+   "公告板/qgl-voice-20260912023657.md@ed73cb194ca5",
+   "公告板/cfts-voice-20260912T023244Z.md@ce0dfc6f667e",
+   "公告板/vinf-voice-20260912T023244Z.md@ad14e3837a14",
+   "公告板/qlv-voice-20260912T023154Z.md@8f6b3c3d6c3f"
   ],
   "hits": []
  },
  "mirror": {
-  "ts": "20260912T023902Z",
-  "migrated": 1,
-  "idx_h": "e76e95bee27d"
+  "ts": "20260912T025235Z",
+  "migrated": 0,
+  "idx_h": "b462e731de16"
  },
  "inbox_snap": {
   "vci": [],
   "ci": []
  },
- "loops_h": "b85b9e055462"
+ "loops_h": "f20ca612050c"
 }

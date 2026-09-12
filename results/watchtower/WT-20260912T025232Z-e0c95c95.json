@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-12T02:51:58Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642968492",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment批量到件，含lane.drop×1、lobby.comment×2、hub.feed×2，已由SI2自动收讫。| 性态:常规信息流聚合，usage=2473tok，cap 8/12，未见异常触发或风险标识；#noauto标记需人工落账确认，不涉真机钱面。| 建议处置:按聚合流归账，lobby.comment正常入序；深裁条件未足，不升SI1 root，裸候下批到件或cap≥10再触发细收。| 锚:ref=vci-inbox#1:5642968492",
+  "usage": {
+    "prompt_tokens": 257,
+    "completion_tokens": 1146,
+    "total_tokens": 1403,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1002
+    }
+  }
+}

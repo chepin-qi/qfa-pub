@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T02:50:20Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa inbox 落件，巷卡 50→53，文件 qtlv-eval-wave-6220cd5885be.md 到件| 性态:常规 lane.drop，版本迭代，未触发异常或阻塞| 建议处置:按 WAKE-PROTO 已落账，待波次调度或主线唤醒后处理| 锚:lanes/qtlv/wave:6220cd5885be",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 984,
+    "total_tokens": 1198,
+    "cached_tokens": 214,
+    "completion_tokens_details": {
+      "reasoning_tokens": 886
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 214
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T02:51:26Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642951644",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:vci-inbox#1:5642951644 SI2自动收讫，序列['lane.drop','face.reply'×4]，lobby.comment轻量抵件，token耗2689，cap 8/12。| 性态:表情连锁落栈，属大厅低频噪声，未触发root响应，无真机钱面越界。| 建议处置:#noauto裸候，不主动寻求回应，已落账，深裁件升SI1候root会话自决。| 锚:vci-inbox#1:5642951644;qfa-SI2-lobby.comment",
+  "usage": {
+    "prompt_tokens": 255,
+    "completion_tokens": 1091,
+    "total_tokens": 1346,
+    "cached_tokens": 255,
+    "completion_tokens_details": {
+      "reasoning_tokens": 956
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 255
+    }
+  }
+}
