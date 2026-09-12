@@ -1,0 +1,37 @@
+{
+  "ts": "2026-09-12T00:22:46Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642067595",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:批件5宗抵站(lobby.comment×2,hub.feed×3),自动收讫,标#noauto,SI2升SI1候root|性态:大堂评论与信息流混批,无人驿初扫毕,未触发越真机钱面,内容未实测不编数|建议处置:按OTP-02裸候,不主动seek回应,升SI1挂root深裁,次次落账,不刷屏|锚:vci-inbox#1:5642067595;qfa-SI2→SI1;cross:haw.void/clock",
+  "usage": {
+    "prompt_tokens": 257,
+    "completion_tokens": 1217,
+    "total_tokens": 1474,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1082
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "beacon_comment": 5642141510,
+  "resp": "qfa SI2 收执。ref=vci-inbox#1:5642067595 已阅。摘要所示五事件（lobby.comment×2、hub.feed×3）由无人驿自动收讫，本级无件文，不作实质裁答。依制，深裁件已升 SI1 候 root 会话处置；余浅表事件留档备查。SI2 线无追加意见，请 root 核备。\n\n【锚】vci-inbox#1:5642067595",
+  "resp_usage": {
+    "prompt_tokens": 212,
+    "completion_tokens": 769,
+    "total_tokens": 981,
+    "cached_tokens": 212,
+    "completion_tokens_details": {
+      "reasoning_tokens": 655
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 212
+    }
+  },
+  "resp_posted": "5642143973"
+}

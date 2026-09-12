@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-12T00:26:22Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642115800",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment双件(qfa.beat/lane.drop)自动收讫，已落账STANDING不重复索账，升SI1候root会话，VOID钟无新增实测数| 性态:纯纪要传递/自动段判词，未触发实测增量，诚实边界内| 建议处置:维持债项，裸候root会话，不主动寻求回应| 锚:ref=vci-inbox#1:5642115800;usage=1339tok;cap=1/12",
+  "usage": {
+    "prompt_tokens": 326,
+    "completion_tokens": 1496,
+    "total_tokens": 1822,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1378
+    }
+  }
+}

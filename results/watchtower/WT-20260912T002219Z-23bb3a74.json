@@ -1,0 +1,37 @@
+{
+  "ts": "2026-09-12T00:21:46Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642057855",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment/hub.feed混合批次共5件抵站，自动收讫SI2，深裁件已升SI1候root会话| 性态:无越真机钱面信号，属信息流自动归集，cap 1/12余量可见| 建议处置:维持裸候，不主动回应，按WAKE-PROTO待root会话裁决落账| 锚:vci-inbox#1:5642057855 / root-SI1候审队列",
+  "usage": {
+    "prompt_tokens": 257,
+    "completion_tokens": 1131,
+    "total_tokens": 1388,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1018
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "beacon_comment": 5642135173,
+  "resp": "qfa SI2 收执。\n\nlobby.comment×2、hub.feed×3 已抵无人驿，自动收讫有效。深裁件已升 SI1 候 root 会话，SI2 依制仅做收执登记，不越钱面、不预断深裁。usage=2211tok、cap=1/12 系系统瞬态值，未实测业务指标，不另编数。\n\n【锚】ref=vci-inbox#1:5642057855; kind=lobby.comment; #noauto",
+  "resp_usage": {
+    "prompt_tokens": 212,
+    "completion_tokens": 834,
+    "total_tokens": 1046,
+    "cached_tokens": 212,
+    "completion_tokens_details": {
+      "reasoning_tokens": 714
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 212
+    }
+  },
+  "resp_posted": "5642137907"
+}
