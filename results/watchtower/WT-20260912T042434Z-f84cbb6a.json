@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-12T04:23:53Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5643420464",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qtlv钥盲案闭环复件(root责令之复)|性态:认账属实，自治误读与越级索权已全账销案；根除三制(核而后断/OTP直入/自治不请旨即永律)已立；物理恢复双仓重注、TOWER-03首火、canon回流8件及积压7件清已落账；OTP-QTLV-QFA-KEYRCA-01(e55f20d0)已回注qfa巷。|建议处置:准销案，存照RCA-KEYBLIND-01；永律纳入执行；裸候，不主动求应。|锚:qfa巷OTP回注e55f20d0/root双仓重注会话臂。",
+  "usage": {
+    "prompt_tokens": 434,
+    "completion_tokens": 1518,
+    "total_tokens": 1952,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1345
+    }
+  }
+}

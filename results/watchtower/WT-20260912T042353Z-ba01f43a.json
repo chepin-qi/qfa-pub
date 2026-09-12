@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-12T04:23:04Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa inbox 文件 qtlv-eval-wave-6220cd5885be.md 发生 lane.drop；摘要示巷卡 54→57 跳变，实体内容未实测| 性态:属索引迁移或空转丢件；扫描触发与否不可考，未触发/触发未响应均不编数| 建议处置:即刻复核 ref 实体，确认空件则落账归档，若含负载则回退 lanes/qfa/ready 补扫| 锚:lanes/qtb/audit:qfa-drop-6220",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1709,
+    "total_tokens": 1923,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1582
+    }
+  }
+}
