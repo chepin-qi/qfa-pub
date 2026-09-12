@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T01:20:24Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642475247",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment批件收讫(ref:vci-inbox#1:5642475247)，归集前序四件lobby.comment及hub.feed公告板入件，无新增索偿。| 性态:自动收讫态，STANDING按账；内含si1.seed.put深裁件已升S转SI1 root会话候裁，余为浅层批处理。| 建议处置:深裁件已转递，本件不重复裁决；余项存档落账，无人驿闭件。| 锚:root/vci-inbox#1:5642399399深裁升链",
+  "usage": {
+    "prompt_tokens": 369,
+    "completion_tokens": 1060,
+    "total_tokens": 1429,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 922
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

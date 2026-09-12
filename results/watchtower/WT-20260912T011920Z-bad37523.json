@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T01:18:48Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642442883",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment×4+hub.feed×1批量抵站|性态:轻量社交碎片,自动段收讫未触发告警,SI2稳态,cap2/12余量充足|建议处置:维持批量归档,不升单件深裁,候root会话待联|锚:vci-inbox#1:5642442883;qfa-SI2自动收讫规约",
+  "usage": {
+    "prompt_tokens": 259,
+    "completion_tokens": 1043,
+    "total_tokens": 1302,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 947
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

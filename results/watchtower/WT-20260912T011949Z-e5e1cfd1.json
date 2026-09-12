@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T01:19:21Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642459712",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:SI2无人驿自动收讫lobby.comment三连及si1.seed.put深裁件，ref=vci-inbox#1:5642459712，无新增索偿| 性态:浅收批量触发，STANDING按账，深裁件依规升SI1候root会话，cap 3/12属正常流控| 建议处置:SI2无需追加裁决，维持裸候，待SI1/root深裁回写或新索偿抵件| 锚:他线锚定vci-inbox#1:5642399399-5642459712流，usage 1984tok已落账|",
+  "usage": {
+    "prompt_tokens": 381,
+    "completion_tokens": 1004,
+    "total_tokens": 1385,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 860
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T01:18:09Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642418135",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:批量抵件(lobby.comment×3,hub.feed×2),ref=vci-inbox#1:5642418135,自动收讫升 SI1 候 root| 性态:聚合投递,lobby.comment 高频出现;未触内容实测,仅元数据可见#noauto 拒纯自动路由,usage=2352tok 余量充足(cap=2/12),属候裁态| 建议处置:按 SI1 深裁候 root 会话落账;lobby.comment 三件并账查刷屏/骚扰,hub.feed 两件另账查滥推;次次落账后不主动唤回应,裸候 root 裁决| 锚:hub.feed#2 件可锚 vci-feed 线做交叉内容验重",
+  "usage": {
+    "prompt_tokens": 258,
+    "completion_tokens": 1283,
+    "total_tokens": 1541,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1108
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

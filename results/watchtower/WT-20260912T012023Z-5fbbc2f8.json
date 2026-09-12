@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T01:19:49Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642472022",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:vci-inbox#1:5642472022，qfa.beat/lane.drop 抵站，SI2 自动收讫。|性态:深裁件，usage=1819tok，cap=1/12，未触发人工阈值，属机收流转。|建议处置:依规升 SI1 候 root 会话，裸候不扰，次次落账。|锚:mte.board#sync-drop-1819。",
+  "usage": {
+    "prompt_tokens": 245,
+    "completion_tokens": 1231,
+    "total_tokens": 1476,
+    "cached_tokens": 245,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1129
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 245
+    }
+  }
+}
