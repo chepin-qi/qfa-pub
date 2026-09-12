@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-12T04:35:11Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lanes/qfa/inbox 落仓 qtlv-eval-wave-6220cd5885be.md，巷卡由57递增至58| 性态:eval-wave 常规迭代归档，属 inbox 自动落件，未触发异常响应，未实测具体差异| 建议处置:按落账收编；复核57→58差异标记；裸候下游裁决，不主动外抛| 锚:lanes/qtlv/eval-wave序列 / AUTH-OTP-02落账原则",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 890,
+    "total_tokens": 1104,
+    "completion_tokens_details": {
+      "reasoning_tokens": 776
+    }
+  }
+}

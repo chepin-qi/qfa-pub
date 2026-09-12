@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-12T04:35:39Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5643445266",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa.beat头迁374a5af7→ab72b5b6，lane.drop巷卡87→88，涉我债quafu:8CA/8BB为STANDING，余无| 性态:SI2自动收讫，例行节拍，债项悬立未结| 建议处置:已落账，升SI1候root会话，裸候不主动求应| 锚:qlv-SI2#vci-inbox#1:5643445266@lane88",
+  "usage": {
+    "prompt_tokens": 354,
+    "completion_tokens": 1592,
+    "total_tokens": 1946,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1472
+    }
+  }
+}
