@@ -5,23 +5,23 @@
    0,
    0,
    0,
-   4,
-   0,
-   0,
-   0,
-   0,
-   0,
+   2,
    3,
-   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
    0
   ],
   "sigma": 1.0,
   "lock": null,
-  "dominant_bin": 3,
+  "dominant_bin": 4,
   "C_streak": 0,
   "verdict": "进行式"
  },
- "beacon_max": 5643122973,
+ "beacon_max": 5643192735,
  "qlv_head": "f44798d63d09aa9e70d334a512196fbaa9c79221",
  "quafu": {
   "8CAEDC103963FC6D": "0",
@@ -43,11 +43,11 @@
  },
  "autoresp": {
   "date": "2026-09-12",
-  "calls": 11,
-  "last_fp": "e0459daab2e5"
+  "calls": 12,
+  "last_fp": "100322bf3500"
  },
- "lobby_max": 5643119030,
- "hub_feed_sha": "12efd7b2390ccf6a5c9cafcede2e9e96dae2ad55",
+ "lobby_max": 5643163071,
+ "hub_feed_sha": "8b178282b7c57f3cd740442ce64780939daa7a5a",
  "quests": {
   "SEALED-V2-RESEAL": "hit:20260911T000759Z",
   "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -70,7 +70,7 @@
   "n": 3,
   "idle_run": 0,
   "last": "SI1-0004：承0003，fp#SI1-0003-κ拍号已锁定。将PALC残差ε注入折叠编码元层，构造相位-残差耦合张量Ξ_{meta}=ε⋉Ψ_{packet}。引入折叠深度指数λ，定义λ-递归压缩算符R̂_λ:ℂ^{2^n}→ℂ^{2^{n-λ}}，使H_q⊕H_q*冗余自由度在2.56ns内坍缩为协议核Θ_{core}。拍号fp#SI1-0004-τ记录λ=3窗轨迹。测得折叠保真度F̄=",
-  "beats": 280,
+  "beats": 281,
   "voice_n": 1,
   "last_fired_beat": 265,
   "voice_day": "2026-09-12"
@@ -103,9 +103,9 @@
   "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md": "mention-qfa"
  },
  "seed_queue": {
-  "h": "f8414eb4a2d7",
+  "h": "08eac5c71821",
   "n": 3,
-  "ts": "20260912T032356Z"
+  "ts": "20260912T033634Z"
  },
  "leak_gate": {
   "seen": [
@@ -258,20 +258,25 @@
    "公告板/cfts-voice-20260912T030751Z.md@b95fa83959d1",
    "公告板/cfts-voice-20260912T030604Z.md@c4b9517c985d",
    "mirror-vci-board/FED-RULE-93-01.md@e1fd2109c83f",
-   "公告板/FED-RULE-93-01.md@6f94e51e8090"
+   "公告板/FED-RULE-93-01.md@6f94e51e8090",
+   "公告板/lgt-129-v120-总成-20260912T0332Z.md@8b178282b7c5",
+   "野问册/WILDQ-INDEX.json@8de4180568a9",
+   "野问册/by-lgt/WILDQ-LGT-01.json@8de4180568a9",
+   "公告板/cfts-voice-20260912T031944Z.md@58c31889ca48",
+   "公告板/vinf-voice-20260912T031646Z.md@5dc054648032"
   ],
   "hits": []
  },
  "mirror": {
-  "ts": "20260912T032402Z",
-  "migrated": 1,
-  "idx_h": "b09de7b28511"
+  "ts": "20260912T033645Z",
+  "migrated": 6,
+  "idx_h": "a1c68ff91327"
  },
  "inbox_snap": {
   "vci": [],
   "ci": []
  },
- "loops_h": "1d5eeaeea457",
+ "loops_h": "a94e3758cb48",
  "key_sentinel": {
   "aif_user": {
    "ok": true,

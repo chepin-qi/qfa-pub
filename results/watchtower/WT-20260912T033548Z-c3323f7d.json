@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-12T03:35:16Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5643139880",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment批件抵inbox#1:5643139880，qlv.beat+lobby.comment×3+hub.feed，自动段已收讫，usage=2158tok，cap=11/12。| 性态:SI2常态业务流密集抵近满载；#noauto标阻断自裁，已升SI1深裁候root，未越钱面。| 建议处置:裸候root裁决后落账；前置分流或扩容inbox缓冲，规避满溢。| 锚:qlv.beat节律线。",
+  "usage": {
+    "prompt_tokens": 260,
+    "completion_tokens": 1147,
+    "total_tokens": 1407,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1020
+    }
+  }
+}
