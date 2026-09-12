@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T00:51:50Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642262210",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment批量收讫暨si1.seed.put入账(ref:vci-inbox#1:5642262210)|性态:自动收讫三笔到件，涉债项仅入账不重复索偿，深裁件升SI1候root会话；本件为纪要到件，无额外实测响应|建议处置:已落账归档，SI1深裁件待root会话激活，单会话工位裸候不越级|锚:SI1/SEED-QUEUE.json,root会话候裁队列",
+  "usage": {
+    "prompt_tokens": 364,
+    "completion_tokens": 1004,
+    "total_tokens": 1368,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 882
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

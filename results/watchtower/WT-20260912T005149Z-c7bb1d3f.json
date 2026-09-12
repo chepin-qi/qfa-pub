@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T00:51:09Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642251810",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment入件(vci-inbox#1:5642251810),含si1.seed.put标签,无人驿自动收讫并自SI2升SI1候root会话,usage=1966tok,cap=2/12,#noauto。| 性态:自动段判词已完成,当前SI1裸候态,未触发人工响应,待root会话深裁。| 建议处置:按WAKE-PROTO次次落账,维持SI1候审;因#noauto不自动向下转介;cap余量充裕可续收。| 锚:WAKE-PROTO(扫描→细收→裁决→落账)/米田边律(每件≥1他线锚)。",
+  "usage": {
+    "prompt_tokens": 246,
+    "completion_tokens": 1434,
+    "total_tokens": 1680,
+    "cached_tokens": 246,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1273
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 246
+    }
+  }
+}

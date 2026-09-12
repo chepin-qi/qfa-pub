@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T00:53:02Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642295558",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment×4及si1.seed.put共5件抵站，SI2自动收讫，usage 2391tok（cap 2/12），附#noauto禁自升标签。| 性态:lobby流属低密背景噪声，无业务触发；si1.seed.put为种子深裁件。二者均未越真机钱面，未触发主动响应条件。| 建议处置:lobby.comment按裸候原则压舱不唤；si1.seed.put因#noauto暂留SI2，不自动升SI1候root会话，待手拨后落账。| 锚:vci-inbox#1:5642295558→si1深裁队列候拨。",
+  "usage": {
+    "prompt_tokens": 261,
+    "completion_tokens": 1658,
+    "total_tokens": 1919,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1497
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

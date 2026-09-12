@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T00:50:44Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642228957",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qlv SI2 无人驿自动收讫 qfa.beat 主头迁移及 lane.drop 巷卡 87→88 落账；两笔 quafu 债项仅入账，STANDING 平账不重复索偿。| 性态:运维级心跳与投递自动落账，无异常触发，属常规无人驿自治。| 建议处置:认可自动收讫结果，不再重复索偿；深裁件已升 SI1 候 root 会话，维持裸候，待 root 触发。| 锚:qlv-SI2@beat37-20260909T1608Z, quafu:8CA608102028586C, quafu:8BB169201FA3F5D4, vci-inbox#1:5642228957。",
+  "usage": {
+    "prompt_tokens": 356,
+    "completion_tokens": 851,
+    "total_tokens": 1207,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 668
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

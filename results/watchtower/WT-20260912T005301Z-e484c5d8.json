@@ -1,0 +1,22 @@
+{
+  "ts": "2026-09-12T00:52:19Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5642275997",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:vci-inbox#1:5642275997，lobby.comment×3 夹带 si1.seed.put，自动收讫升 SI1 候 root。| 性态:聚合杂件，评论序列与种子投放混装；usage=2283tok 轻载，cap=2/12 余量充裕；#noauto 标记拒自动裁决。| 建议处置:依 SI1 深裁候 root 会话；lobby.comment 三连需勘刷屏/序列操作边界，si1.seed.put 异类建议拆票；裸候不主动唤出。| 锚:工单聚合分票律（混装件拆票原则）、水线余量警戒阈值（cap≤2 属黄区候裁）。",
+  "usage": {
+    "prompt_tokens": 256,
+    "completion_tokens": 1530,
+    "total_tokens": 1786,
+    "cached_tokens": 256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1363
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}
