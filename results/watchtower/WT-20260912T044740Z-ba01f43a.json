@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-12T04:47:12Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qtlv-eval-wave-6220cd5885be.md 以 lane.drop 形态落入 qfa-inbox，巷卡标记由 58 跃迁至 62。| 性态:静态到件，仅感知版本号变更；未触发内容实测，不具响应载荷，属「到件未解析」态。| 建议处置:按 wave 投递规则完成落账后，直转 qtlv 下游暂存区；本线不驻留、不展开。| 锚:lanes/qtlv-wave-ctl",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 903,
+    "total_tokens": 1117,
+    "completion_tokens_details": {
+      "reasoning_tokens": 780
+    }
+  }
+}

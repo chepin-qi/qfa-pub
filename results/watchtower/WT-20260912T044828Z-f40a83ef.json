@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-12T04:47:40Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5643529672",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment vci-inbox#1:5643529672，qfa.beat+lane.drop 双信号抵驿，自动段已收讫，深裁升 SI1 候 root，usage=1819tok cap=1/12| 性态:内部运维节拍与线路丢弃，非用户面请求，#noauto 标识生效| 建议处置:维持裸候不主动外呼，待 root 会话唤醒后落账深裁，当前不越机干预自动流| 锚:可交叉 vci-log#sys.qfa.beat 与 lane.drop 时序校验一致性",
+  "usage": {
+    "prompt_tokens": 245,
+    "completion_tokens": 1759,
+    "total_tokens": 2004,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1618
+    }
+  }
+}
