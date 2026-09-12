@@ -287,47 +287,65 @@
     "cfts": {
      "echo": "36369cb9bc04bdbf",
      "nonce": "8cdc81f1",
-     "st": "OPEN"
+     "st": "CLEARED",
+     "note": "机读重发+API直燃后回声至:vci-cfts/outbox/ECHO-91件名全等(beat-95四闸案修讫)",
+     "ts": "20260912T034751Z"
     },
     "lgt": {
      "echo": "3f34479572eb8396",
      "nonce": "035d8a73",
-     "st": "OPEN"
+     "st": "CLEARED",
+     "note": "机读重发+API直燃后回声至:vci-lgt/outbox/ECHO-91件名全等(beat-95四闸案修讫)",
+     "ts": "20260912T034751Z"
     },
     "lvlu": {
      "echo": "4c4265cacbebafd4",
      "nonce": "65ced015",
-     "st": "OPEN"
+     "st": "CLEARED",
+     "note": "机读重发+API直燃后回声至:vci-lvlu/outbox/ECHO-91件名全等(beat-95四闸案修讫)",
+     "ts": "20260912T034751Z"
     },
     "qgl": {
      "echo": "884399b127e7e6c6",
      "nonce": "8d331ab6",
-     "st": "OPEN"
+     "st": "CLEARED",
+     "note": "机读重发+API直燃后回声至:vci-qgl/outbox/ECHO-91件名全等(beat-95四闸案修讫)",
+     "ts": "20260912T034751Z"
     },
     "qlv": {
      "echo": "6933ae8b6aa2118e",
      "nonce": "37cf3d76",
-     "st": "OPEN"
+     "st": "CLEARED",
+     "note": "机读重发+API直燃后回声至:vci-qlv/outbox/ECHO-91件名全等(beat-95四闸案修讫)",
+     "ts": "20260912T034751Z"
     },
     "qtlv": {
      "echo": "90880bd5d55881a2",
      "nonce": "80f5ca19",
-     "st": "OPEN"
+     "st": "CLEARED",
+     "note": "机读重发+API直燃后回声至:vci-qtlv/outbox/ECHO-91件名全等(beat-95四闸案修讫)",
+     "ts": "20260912T034751Z"
     },
     "ucif2": {
      "echo": "60a9a20adaf01e9b",
      "nonce": "4e697264",
-     "st": "OPEN"
+     "st": "CLEARED",
+     "note": "机读重发+API直燃后回声至:vci-ucif2/outbox/ECHO-91件名全等(beat-95四闸案修讫)",
+     "ts": "20260912T034751Z"
     },
     "usrm": {
      "echo": "afaceb3d35437b9c",
      "nonce": "39702f35",
-     "st": "OPEN"
+     "st": "CLEARED",
+     "note": "机读重发+API直燃后回声至:vci-usrm/outbox/ECHO-91件名全等(beat-95四闸案修讫)",
+     "ts": "20260912T034751Z"
     },
     "vinf": {
      "echo": "1de95b95be4ee919",
      "nonce": "68af5df8",
-     "st": "OPEN"
+     "st": "CLEARED",
+     "note": "机读重发+API直燃后回声至:vci-vinf/outbox/ECHO-91件名全等(beat-95四闸案修讫)",
+     "ts": "20260912T034751Z"
     }
    },
    "status": "RUNNING"
@@ -353,7 +371,9 @@
    "rings": {
     "cfts": {
      "card": "lanes/cfts/inbox/FED-92-TASKS-cfts.md",
-     "st": "OPEN"
+     "st": "CLEARED",
+     "note": "机层ACK落己仓outbox(ANS-FED-92-ACK-cfts);席层语义应件仍候,转si3-loop监",
+     "ts": "20260912T034751Z"
     },
     "lgt": {
      "card": "lanes/lgt/inbox/FED-92-TASKS-lgt.md",
@@ -365,7 +385,9 @@
     },
     "qgl": {
      "card": "lanes/qgl/inbox/FED-92-TASKS-qgl.md",
-     "st": "OPEN"
+     "st": "CLEARED",
+     "note": "机层ACK落己仓outbox(ANS-FED-92-ACK-qgl);席层语义应件仍候,转si3-loop监",
+     "ts": "20260912T034751Z"
     },
     "qlv": {
      "card": "lanes/qlv/inbox/FED-92-TASKS-qlv.md",
@@ -377,7 +399,9 @@
     },
     "ucif2": {
      "card": "lanes/ucif2/inbox/FED-92-TASKS-ucif2.md",
-     "st": "OPEN"
+     "st": "CLEARED",
+     "note": "机层ACK落己仓outbox(ANS-FED-92-ACK-ucif2);席层语义应件仍候,转si3-loop监",
+     "ts": "20260912T034751Z"
     },
     "usrm": {
      "card": "lanes/usrm/inbox/FED-92-TASKS-usrm.md",
@@ -385,7 +409,9 @@
     },
     "vinf": {
      "card": "lanes/vinf/inbox/FED-92-TASKS-vinf.md",
-     "st": "OPEN"
+     "st": "CLEARED",
+     "note": "机层ACK落己仓outbox(ANS-FED-92-ACK-vinf);席层语义应件仍候,转si3-loop监",
+     "ts": "20260912T034751Z"
     }
    },
    "status": "RUNNING"
@@ -492,6 +518,6 @@
    }
   }
  ],
- "updated": "20260912T031925Z",
+ "updated": "20260912T034751Z",
  "v": "LOOPS-REGISTRY-01"
 }
