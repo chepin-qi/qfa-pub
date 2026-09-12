@@ -274,8 +274,75 @@
     }
    },
    "status": "RUNNING"
+  },
+  {
+   "id": "echo-91",
+   "law": "SI3-until-closed:回声件落即CLEARED|限20260913T02Z逾限SI5提级",
+   "note": "beat-91兜底直通知:nonce巷卡+API唤醒+issue面三通道;回声=塔活自证",
+   "opened": "20260912T022941Z",
+   "rings": {
+    "cfts": {
+     "echo": "36369cb9bc04bdbf",
+     "nonce": "8cdc81f1",
+     "st": "OPEN"
+    },
+    "lgt": {
+     "echo": "3f34479572eb8396",
+     "nonce": "035d8a73",
+     "st": "OPEN"
+    },
+    "lvlu": {
+     "echo": "4c4265cacbebafd4",
+     "nonce": "65ced015",
+     "st": "OPEN"
+    },
+    "qgl": {
+     "echo": "884399b127e7e6c6",
+     "nonce": "8d331ab6",
+     "st": "OPEN"
+    },
+    "qlv": {
+     "echo": "6933ae8b6aa2118e",
+     "nonce": "37cf3d76",
+     "st": "OPEN"
+    },
+    "qtlv": {
+     "echo": "90880bd5d55881a2",
+     "nonce": "80f5ca19",
+     "st": "OPEN"
+    },
+    "ucif2": {
+     "echo": "60a9a20adaf01e9b",
+     "nonce": "4e697264",
+     "st": "OPEN"
+    },
+    "usrm": {
+     "echo": "afaceb3d35437b9c",
+     "nonce": "39702f35",
+     "st": "OPEN"
+    },
+    "vinf": {
+     "echo": "1de95b95be4ee919",
+     "nonce": "68af5df8",
+     "st": "OPEN"
+    }
+   },
+   "status": "RUNNING"
+  },
+  {
+   "id": "aif-sunset-window",
+   "note": "AI-Full过渡窗口20260919T0230Z期满撤销(裁三L3);各线四务见AIF-SUNSET-WINDOW-01",
+   "opened": "20260912T022941Z",
+   "rings": {
+    "window": {
+     "cond": "撤钥三条件机判:自塔巡目14拍无断/SCAN-OWN-KEYS-01装讫/跨域直取归零",
+     "deadline": "20260919T0230Z",
+     "st": "OPEN"
+    }
+   },
+   "status": "RUNNING"
   }
  ],
- "updated": "20260911T201953Z",
+ "updated": "20260912T022941Z",
  "v": "LOOPS-REGISTRY-01"
 }

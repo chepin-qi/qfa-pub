@@ -843,6 +843,18 @@ def main():
                 for _ln, _rg in _lp['rings'].items():
                     if _rg.get('st') == 'OPEN' and any(n.startswith('SI-STATE-' + _ln) for n in _names):
                         _rg['st'] = 'CLEARED'; _rg['note'] = '机跟:态件落inbox(FIX-18)'; _chg += 1
+            if _lp['id'] == 'echo-91':  # TOWER-FIX-21-qfa(beat-91 root令「兜底直通知并取得即时回复」之机跟):ECHO-91回声环——回声件名载echo16,须与环内期望值全等(防伪)
+                try:
+                    _ku = gh_get('/repos/chepin-ai/ucif2-formalization-kernel/contents/inbox?per_page=100', patA)
+                    _kn = [f['name'] for f in _ku] if isinstance(_ku, list) else []
+                except Exception:
+                    _kn = []
+                for _ln, _rg in _lp['rings'].items():
+                    if _rg.get('st') == 'OPEN' and _rg.get('echo'):
+                        _want = 'ECHO-91-' + _ln + '-' + _rg['echo']
+                        _hit = any(n.startswith(_want) for n in _names) or (_ln == 'ucif2' and any(n.startswith(_want) for n in _kn))
+                        if _hit:
+                            _rg['st'] = 'CLEARED'; _rg['note'] = '机跟:回声件名echo全等(FIX-21)'; _chg += 1
         _lj['updated'] = time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())
         _ljs = json.dumps(_lj, ensure_ascii=False, indent=1)
         _lh = hashlib.sha256(_ljs.encode()).hexdigest()[:12]
