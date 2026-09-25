@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-25T18:02:13Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5836941584",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment混流抵件(qlv.beat+hub.feed×3)，ref=vci-inbox#1:5836941584，自动收讫并升SI1候root。| 性态:STANDING债项无新增，不重复主张；cap 9/12余量足，裸候未触发新响应。| 建议处置:已落账，无需追加处置，维持裸候。| 锚:公告板/by-cisvr/cisvr-304.md、vci-inbox#1:5836364462。",
+  "usage": {
+    "prompt_tokens": 373,
+    "completion_tokens": 1125,
+    "total_tokens": 1498,
+    "completion_tokens_details": {
+      "reasoning_tokens": 999
+    }
+  }
+}
