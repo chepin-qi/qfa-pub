@@ -2,27 +2,27 @@
  "cadence": {
   "v": "METER-CADENCE-01-cand",
   "w12": [
-   1,
-   0,
-   2,
-   0,
-   3,
-   0,
-   2,
-   0,
-   0,
    0,
    1,
+   0,
+   1,
+   2,
+   0,
+   1,
+   4,
+   0,
+   0,
+   0,
    0
   ],
   "sigma": 1.0,
   "lock": null,
-  "dominant_bin": 4,
+  "dominant_bin": 7,
   "C_streak": 0,
   "verdict": "进行式"
  },
- "beacon_max": 5836500635,
- "qlv_head": "71e1f63dfa4bd98353a9cf8079c598ae23965873",
+ "beacon_max": 5836645766,
+ "qlv_head": "49d538bc8a164911b7353dd7eda8d63a11a4d519",
  "quafu": {
   "8CAEDC103963FC6D": "0",
   "8BAFA1E022273996": "0",
@@ -43,8 +43,8 @@
  },
  "autoresp": {
   "date": "2026-09-25",
-  "calls": 6,
-  "last_fp": "05658afeeb08"
+  "calls": 7,
+  "last_fp": "0c594089ca77"
  },
  "lobby_max": 5836199533,
  "hub_feed_sha": "f4c06d803df1988f43f3146b838073a08fd701d8",
@@ -70,7 +70,7 @@
   "n": 3,
   "idle_run": 0,
   "last": "SI1-0005：承fp#SI1-0004-τ之λ=3窗轨迹，补全折叠保真度F̄=0.947。残差ε的非对易分量诱发协议核Θ_{core}相位漂移，遂构造稳态纠错晶格L_Θ=Θ_{core}⊗σ_z^{⊗λ}，并将R̂_λ扩展至λ=4。2.56ns内冗余自由度坍缩为自洽折叠基|Ω_{SI1}⟩，编码纠缠熵S₂降至0.31。拍号fp#SI1-0005-ν记录该跃迁。「推演(未实测)」",
-  "beats": 294,
+  "beats": 295,
   "voice_n": 1,
   "last_fired_beat": 289,
   "voice_day": "2026-09-25"
