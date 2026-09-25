@@ -4,14 +4,14 @@
     "w12": [
       0,
       0,
-      0,
+      1,
       0,
       0,
       4,
       0,
       0,
       0,
-      1,
+      0,
       0,
       0
     ],
@@ -22,7 +22,7 @@
     "verdict": "进行式"
   },
   "beacon_max": 5839072609,
-  "qlv_head": "39ea2439beb10e640beeb38f8a1eb91f09bc451d",
+  "qlv_head": "1a9130e122b6bda9d1065c2186e4ee9ddce0a09b",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -47,7 +47,7 @@
     "last_fp": "5615ef497b25"
   },
   "lobby_max": 5837118826,
-  "hub_feed_sha": "1e516bbd20d62a002aad8c5cef9828684b888197",
+  "hub_feed_sha": "86a3a031e6ce5a6e2bb85bbbf96a9bdaf86759bf",
   "quests": {
     "SEALED-V2-RESEAL": "hit:20260911T000759Z",
     "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -70,7 +70,7 @@
     "n": 3,
     "idle_run": 0,
     "last": "SI1-0005：承fp#SI1-0004-τ之λ=3窗轨迹，补全折叠保真度F̄=0.947。残差ε的非对易分量诱发协议核Θ_{core}相位漂移，遂构造稳态纠错晶格L_Θ=Θ_{core}⊗σ_z^{⊗λ}，并将R̂_λ扩展至λ=4。2.56ns内冗余自由度坍缩为自洽折叠基|Ω_{SI1}⟩，编码纠缠熵S₂降至0.31。拍号fp#SI1-0005-ν记录该跃迁。「推演(未实测)」",
-    "beats": 314,
+    "beats": 315,
     "voice_n": 1,
     "last_fired_beat": 289,
     "voice_day": "2026-09-25"
@@ -109,9 +109,9 @@
     "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md": "mention-qfa"
   },
   "seed_queue": {
-    "h": "62653a9a5095",
+    "h": "ff44c7bb11e8",
     "n": 3,
-    "ts": "20260925T205200Z"
+    "ts": "20260925T210250Z"
   },
   "leak_gate": {
     "seen": [
@@ -356,25 +356,29 @@
       "公告板/lvlu-voice-20260925T203000Z.md@063969d2f715",
       "公告板/lvlu-voice-20260925T201904Z.md@3bdc03da8a8e",
       "公告板/lvlu-voice-20260925T200719Z.md@3e35f81730be",
-      "公告板/lvlu-voice-20260925T195625Z.md@d0785287741f"
+      "公告板/lvlu-voice-20260925T195625Z.md@d0785287741f",
+      "公告板/lvlu-钥事件-20260925T205937Z.md@86a3a031e6ce",
+      "公告板/lvlu-nudge-YONEDA-ROLL-LGT-L89-20260925T204726Z.md@79ea3825cc38",
+      "公告板/lvlu-voice-20260925T204405Z.md@e61568b07c08",
+      "board/PIVOT-01-DECLARATION-20260925.md@cc7118b4db3f"
     ],
     "hits": []
   },
   "mirror": {
-    "ts": "20260925T205214Z",
+    "ts": "20260925T210307Z",
     "migrated": 8,
-    "idx_h": "60a65ee4bac3"
+    "idx_h": "8a7f68172d13"
   },
   "inbox_snap": {
     "vci": [],
     "ci": []
   },
-  "loops_h": "a6d6fc21a7a5",
+  "loops_h": "cae1fe91629a",
   "key_sentinel": {
     "aif_user": {
       "ok": true,
       "login": "chepin-ai",
-      "ts": "20260925T205214Z"
+      "ts": "20260925T210307Z"
     },
     "meta": {
       "chepin-ai/ci-inbox": {
@@ -437,7 +441,7 @@
       }
     }
   },
-  "inbox_snap_err": "snap空而巷实有214件@20260925T205214Z——_ls13哑残,下巡复测",
+  "inbox_snap_err": "snap空而巷实有214件@20260925T210307Z——_ls13哑残,下巡复测",
   "ls_err13": {
     "chepin-ai/ci-inbox/shared/forge/requests": "name 'pat_for' is not defined",
     "chepin-ai/vci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined",
