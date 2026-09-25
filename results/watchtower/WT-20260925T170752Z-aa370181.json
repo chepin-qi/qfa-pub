@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-25T17:07:18Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5836199533",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:ref=vci-inbox#1:5836199533 聚合五连件(qlv.beat×1,hub.change×1,lobby.comment×3)，已由SI2自动收讫并升SI1候root会话。|性态:大堂言论类低频聚合，无异常触发标记，属正常消息堆叠。#noauto表免自动深裁。|建议处置:维持收讫落账，本线不主动唤醒，裸候root会话裁决。|锚:vci-hub#主控线/lobby-audit#言论审计",
+  "usage": {
+    "prompt_tokens": 260,
+    "completion_tokens": 874,
+    "total_tokens": 1134,
+    "completion_tokens_details": {
+      "reasoning_tokens": 748
+    }
+  }
+}
