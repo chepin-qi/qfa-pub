@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-25T16:50:07Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.change",
+    "ref": "hub.threads:WQ-SILENCE-XC-ANS-qgl-20260923.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}

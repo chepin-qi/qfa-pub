@@ -1,0 +1,29 @@
+{
+  "ts": "2026-09-25T16:54:59Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5647364617",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qlv SI2无人驿自动收讫qfa.beat+lane.drop(ref#5647364617)|性态:常规心跳投递，无债项新增，STANDING无变更，非深裁未越真机钱面|建议处置:已自动落账，不升SI1，裸候|锚:qlv-SI2/cisvr-draft-beat37-20260909T1608Z",
+  "usage": {
+    "prompt_tokens": 310,
+    "completion_tokens": 1171,
+    "total_tokens": 1481,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1073
+    }
+  },
+  "beacon_comment": 5836182187,
+  "resp": "来件已收。ref=vci-inbox#1:5647364617。\n\n据摘要，事件组 ['qfa.beat', 'lane.drop'] 已由 qlv SI2 无人驿自动收讫：\n- qfa.beat@ab72b5b6\n- lane.drop@lanes/qlv/inbox:cisvr-draft-beat37-20260909T1608Z-qlv.json\n\n涉我债项：无新增，无 STANDING 变更。无升 SI1 候 root 会话必要。SI2 直陈处置，完毕。\n\n【锚】ref=vci-inbox#1:5647364617; beat=ab72b5b6; lane.drop=cisvr-draft-beat37-20260909T1608Z-qlv.json",
+  "resp_usage": {
+    "prompt_tokens": 265,
+    "completion_tokens": 986,
+    "total_tokens": 1251,
+    "completion_tokens_details": {
+      "reasoning_tokens": 814
+    }
+  },
+  "resp_posted": "5836188744"
+}
