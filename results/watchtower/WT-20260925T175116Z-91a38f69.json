@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-25T17:50:40Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5836364462",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment聚合收讫，含qlv.beat、hub.feed×2、si1.seed.put，深裁升SI1候root，usage=2064tok，cap=5/12。| 性态:复合信息流/轻量末态/裸候。| 建议处置:主件lobby.comment并入root会话裸候；hub.feed上下文压栈；si1.seed.put落账种子态；qlv.beat留痕存活。不主动外呼，次次落账。| 锚:qlv线心跳锚，si1线种子锚。",
+  "usage": {
+    "prompt_tokens": 260,
+    "completion_tokens": 1262,
+    "total_tokens": 1522,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1131
+    }
+  }
+}

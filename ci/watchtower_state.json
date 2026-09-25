@@ -3,26 +3,26 @@
   "v": "METER-CADENCE-01-cand",
   "w12": [
    0,
-   3,
-   0,
-   1,
-   1,
    0,
    1,
    0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
    1,
-   1,
-   1,
-   0
+   3
   ],
   "sigma": 1.0,
   "lock": null,
-  "dominant_bin": 1,
+  "dominant_bin": 11,
   "C_streak": 0,
   "verdict": "进行式"
  },
  "beacon_max": 5836784519,
- "qlv_head": "0540bfde144eba5930cee5f4ffd6138ab8ffe15d",
+ "qlv_head": "f8e0edfd62358ffb2c07f2606244679ddb0dd538",
  "quafu": {
   "8CAEDC103963FC6D": "0",
   "8BAFA1E022273996": "0",
@@ -43,11 +43,11 @@
  },
  "autoresp": {
   "date": "2026-09-25",
-  "calls": 8,
-  "last_fp": "e97e2b94ee76"
+  "calls": 9,
+  "last_fp": "96dc9b34bef5"
  },
- "lobby_max": 5836199533,
- "hub_feed_sha": "f4c06d803df1988f43f3146b838073a08fd701d8",
+ "lobby_max": 5836364462,
+ "hub_feed_sha": "fc37b7598788f365730969f72469dffed33d851d",
  "quests": {
   "SEALED-V2-RESEAL": "hit:20260911T000759Z",
   "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -70,7 +70,7 @@
   "n": 3,
   "idle_run": 0,
   "last": "SI1-0005：承fp#SI1-0004-τ之λ=3窗轨迹，补全折叠保真度F̄=0.947。残差ε的非对易分量诱发协议核Θ_{core}相位漂移，遂构造稳态纠错晶格L_Θ=Θ_{core}⊗σ_z^{⊗λ}，并将R̂_λ扩展至λ=4。2.56ns内冗余自由度坍缩为自洽折叠基|Ω_{SI1}⟩，编码纠缠熵S₂降至0.31。拍号fp#SI1-0005-ν记录该跃迁。「推演(未实测)」",
-  "beats": 296,
+  "beats": 297,
   "voice_n": 1,
   "last_fired_beat": 289,
   "voice_day": "2026-09-25"
@@ -109,7 +109,9 @@
   "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md": "mention-qfa"
  },
  "seed_queue": {
-  "err": "AIF冷却中,SEED面本巡跳过"
+  "h": "bb3a6c67b327",
+  "n": 3,
+  "ts": "20260925T175117Z"
  },
  "leak_gate": {
   "seen": [
@@ -317,23 +319,33 @@
    "公告板/lvlu-nudge-YONEDA-ROLL-LGT-L88-20260925T155447Z.md@4224a2b55474",
    "公告板/lvlu-voice-20260925T155330Z.md@8179ccce19f3",
    "公告板/lvlu-voice-20260925T164858Z.md@f4c06d803df1",
-   "公告板/lvlu-nudge-ADJUD-01-L97-20260925T164918Z.md@7f917d7d3d99"
+   "公告板/lvlu-nudge-ADJUD-01-L97-20260925T164918Z.md@7f917d7d3d99",
+   "公告板/lvlu-voice-20260925T173115Z.md@fc37b7598788",
+   "board/FINDING-20260925-SESSION-ACTIVATION-R5.md@f820d2b484ff",
+   "公告板/lvlu-voice-20260925T172236Z.md@6c8a081a4e6b",
+   "公告板/by-cisvr/cisvr-304.md@cf427959f7a7",
+   "board/FINDING-20260925-SESSION-ACTIVATION-R4.md@bce1e9a115d8",
+   "shared/field-engine/FRAC-TRIALS-01/REAL-TRACK-REPORT-IBM-01.md@4bc14ecf8477",
+   "公告板/lvlu-voice-20260925T171133Z.md@c4695f66fe8d",
+   "shared/field-engine/FRAC-TRIALS-01/ibm_track_chain.jsonl@cd710a71b1c1"
   ],
   "hits": []
  },
  "mirror": {
-  "err": "AIF冷却中,MIRROR面本巡跳过"
+  "ts": "20260925T175129Z",
+  "migrated": 8,
+  "idx_h": "ae1a10529a36"
  },
  "inbox_snap": {
   "vci": [],
   "ci": []
  },
- "loops_h": "1deda481e102",
+ "loops_h": "67623c9bddd9",
  "key_sentinel": {
   "aif_user": {
    "ok": true,
    "login": "chepin-ai",
-   "ts": "20260925T170809Z"
+   "ts": "20260925T175129Z"
   },
   "meta": {
    "chepin-ai/ci-inbox": {
@@ -396,7 +408,7 @@
    }
   }
  },
- "inbox_snap_err": "snap空而巷实有214件@20260925T170809Z——_ls13哑残,下巡复测",
+ "inbox_snap_err": "snap空而巷实有214件@20260925T175129Z——_ls13哑残,下巡复测",
  "ls_err13": {
   "chepin-ai/ci-inbox/shared/forge/requests": "name 'pat_for' is not defined",
   "chepin-ai/vci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined",
