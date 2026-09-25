@@ -377,11 +377,13 @@
     },
     "lgt": {
      "card": "lanes/lgt/inbox/FED-92-TASKS-lgt.md",
-     "st": "OPEN"
+     "st": "CLEARED",
+     "note": "机跟:RESP落巷或ACK落己仓(FIX-27b)"
     },
     "lvlu": {
      "card": "lanes/lvlu/inbox/FED-92-TASKS-lvlu.md",
-     "st": "OPEN"
+     "st": "CLEARED",
+     "note": "机跟:RESP落巷或ACK落己仓(FIX-27b)"
     },
     "qgl": {
      "card": "lanes/qgl/inbox/FED-92-TASKS-qgl.md",
@@ -391,7 +393,8 @@
     },
     "qlv": {
      "card": "lanes/qlv/inbox/FED-92-TASKS-qlv.md",
-     "st": "OPEN"
+     "st": "CLEARED",
+     "note": "机跟:RESP落巷或ACK落己仓(FIX-27b)"
     },
     "qtlv": {
      "card": "lanes/qtlv/inbox/FED-92-TASKS-qtlv.md",
@@ -406,7 +409,8 @@
     },
     "usrm": {
      "card": "lanes/usrm/inbox/FED-92-TASKS-usrm.md",
-     "st": "OPEN"
+     "st": "CLEARED",
+     "note": "机跟:RESP落巷或ACK落己仓(FIX-27b)"
     },
     "vinf": {
      "card": "lanes/vinf/inbox/FED-92-TASKS-vinf.md",
@@ -605,6 +609,6 @@
    }
   }
  ],
- "updated": "20260912T043000Z",
+ "updated": "2026-09-25T16:56:07Z",
  "v": "LOOPS-REGISTRY-01"
 }
