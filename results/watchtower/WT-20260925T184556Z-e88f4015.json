@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-25T18:45:18Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5837118826",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment四路汇聚件（qlv.beat/hub.feed/si1.seed.put/lobby.comment）抵vci-inbox#1:5837118826，SI2自动收讫后深裁升SI1候root；usage=2100tok，cap=10/12。| 性态:多源ingress并发致SI2阈值承压，自动段未决，#noauto悬停。| 建议处置:裸候，不主动追加tok，待root按WAKE-PROTO裁决落账；超时则封候账件。| 锚:hub.feed同ref分帧静默；qlv.beat心跳帧未越真机钱面。",
+  "usage": {
+    "prompt_tokens": 256,
+    "completion_tokens": 1503,
+    "total_tokens": 1759,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1350
+    }
+  }
+}
