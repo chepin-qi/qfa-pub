@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-25T16:28:17Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，qtlv-eval-wave-6220cd5885be.md 由 213 巷卡滑落 214| 性态:卡槽顺移，属单波次评估件流转，未触发异常阈值；内容态因未实测，不编数| 建议处置:按 WAKE-PROTO 落账 214 卡槽；裸候，不主动求应；若 214 满载则启回流压控| 锚:lanes/core/drop-hook:qtlv-merge-point",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1365,
+    "total_tokens": 1579,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1246
+    }
+  }
+}
