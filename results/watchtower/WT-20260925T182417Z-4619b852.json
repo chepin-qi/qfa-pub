@@ -1,0 +1,9 @@
+{
+  "ts": "2026-09-25T18:24:17Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.poll.err",
+    "ref": "hub.threads",
+    "high_value": false
+  }
+}
