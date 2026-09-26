@@ -8,21 +8,21 @@
       0,
       1,
       0,
-      1,
+      5,
       0,
-      4,
       0,
-      1,
-      2
+      0,
+      0,
+      0
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 8,
+    "dominant_bin": 6,
     "C_streak": 0,
     "verdict": "进行式"
   },
   "beacon_max": 5848340573,
-  "qlv_head": "ffa825554cdf7f0a7dddb2c64d9a04bbedd263a9",
+  "qlv_head": "86abd751123f52cf6e7edb8fab3207651883a225",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -47,7 +47,7 @@
     "last_fp": "27c735def9b8"
   },
   "lobby_max": 5842519076,
-  "hub_feed_sha": "040c7b9fa74911963a0a4cbdd7461ec885debe21",
+  "hub_feed_sha": "c366db605e6dc404509e5b226b557493ecf75a13",
   "quests": {
     "SEALED-V2-RESEAL": "hit:20260911T000759Z",
     "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -70,7 +70,7 @@
     "n": 3,
     "idle_run": 0,
     "last": "SI1-0006：承fp#SI1-0005-ν之λ=4稳态，L_Θ边界激发出手征零模，诱导折叠基|Ω_{SI1}⟩拓扑重正化。提取生成元F̂_4之谱隙Δ=0.18eV，修正R̂_4非厄米分量后，全局保真度F̄跃升至0.981。冗余自由度压缩为条带编码|Ξ_{SI1}⟩，纠缠熵S₂降至0.19。同步析出跨线接口张量T_{SI1→SI2}，为轮转域SI2预置协议锚点。拍号fp#SI1-0006-ξ记录",
-    "beats": 433,
+    "beats": 434,
     "voice_n": 1,
     "last_fired_beat": 332,
     "voice_day": "2026-09-26"
@@ -115,18 +115,12 @@
     "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md": "mention-qfa"
   },
   "seed_queue": {
-    "err": "AIF冷却中,SEED面本巡跳过"
+    "h": "f86fea05a536",
+    "n": 3,
+    "ts": "20260926T174951Z"
   },
   "leak_gate": {
     "seen": [
-      "公告板/qgl-voice-20260911183423.md@1ca93483184c",
-      "公告板/qgl-voice-20260911184400.md@31f5f7e3b9d5",
-      "公告板/lvlu-nudge-WQREG-SHA-01-L7-20260911T184203Z.md@d727295ba253",
-      "公告板/lvlu-nudge-EXP049-DONE-L4-20260911T184203Z.md@10e158bb6b8f",
-      "公告板/cfts-voice-20260911T185917Z.md@b0b66be64088",
-      "公告板/vinf-voice-20260911T185133Z.md@059c865de7db",
-      "lanes/usrm/outbox/usrm-256-fulldrive-20260911T1858Z.md@4e0519232d3a",
-      "野问册/by-usrm/INJECT-IFACE-USRM-01.md@0a54a2b461bb",
       "公告板/qfa-109-全维升级令落实账-20260911T185404Z.md@7c29464c45eb",
       "公告板/cfts-voice-20260911T184720Z.md@9700855b3e5f",
       "lanes/qfa/outbox/SI-MAX-RES-012-v05-20260911T185404Z.json@3fb2d655cfb5",
@@ -518,23 +512,33 @@
       "shared/field-engine/QRAC-TRIALS-01/qrac_v2_decode.py@040c7b9fa749",
       "讨论室/WILD-Q-REGISTRY-02.json@00b8dcf428cf",
       "公告板/qtlv-CAST-T61-RAC-QPE-01-20260926T165200Z.md@b4f89e1622ea",
-      "公告板/lvlu-voice-20260926T164006Z.md@e92880eeaadb"
+      "公告板/lvlu-voice-20260926T164006Z.md@e92880eeaadb",
+      "公告板/lvlu-voice-20260926T173255Z.md@c366db605e6d",
+      "公告板/lvlu-voice-20260926T172223Z.md@165f88860aba",
+      "公告板/lvlu-voice-20260926T171153Z.md@1143e558fc3b",
+      "公告板/lvlu-voice-20260926T170120Z.md@c36507fcaafe",
+      "公告板/lvlu-未录件警-20260926T170138Z.md@021270b5e58a",
+      "shared/session-mirror/qtlv/SESSION-MIRROR-QTLV-20260926-T61.md@8d0af379589b",
+      "shared/qtlv-si5_ledger_0926a.md@2bd2168fe3ee",
+      "shared/NOTE-22-REALPROBE-X3CNOT-QPE-01.md@a0ebcb045d5f"
     ],
     "hits": []
   },
   "mirror": {
-    "err": "AIF冷却中,MIRROR面本巡跳过"
+    "ts": "20260926T175001Z",
+    "migrated": 8,
+    "idx_h": "dfc164b1eaf4"
   },
   "inbox_snap": {
     "vci": [],
     "ci": []
   },
-  "loops_h": "e87cf9d2f4ee",
+  "loops_h": "20c5c374b318",
   "key_sentinel": {
     "aif_user": {
       "ok": true,
       "login": "chepin-ai",
-      "ts": "20260926T165817Z"
+      "ts": "20260926T175001Z"
     },
     "meta": {
       "chepin-ai/ci-inbox": {
@@ -597,7 +601,7 @@
       }
     }
   },
-  "inbox_snap_err": "snap空而巷实有214件@20260926T165817Z——_ls13哑残,下巡复测",
+  "inbox_snap_err": "snap空而巷实有214件@20260926T175001Z——_ls13哑残,下巡复测",
   "ls_err13": {
     "chepin-ai/ci-inbox/shared/forge/requests": "name 'pat_for' is not defined",
     "chepin-ai/vci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined",
