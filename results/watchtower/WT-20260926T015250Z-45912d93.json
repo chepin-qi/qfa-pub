@@ -1,0 +1,29 @@
+{
+  "ts": "2026-09-26T01:52:25Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5841748307",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment聚合件(ref:vci-inbox#1:5841748307)，含qlv.beat×1、hub.feed×3捆包入线，自动段已收讫(cap=6/12,usage=2098tok)。| 性态:复合脉冲，主件为评论触发，辅件为常规心跳与信息流，未超限非刷屏，属SI2候升SI1之过渡态。| 建议处置:按#noauto标记，落账为「已收候裁」，不主动响应即裸候，待root会话深裁；各子件已分仓无需回退。| 锚:RFC-306消息捆包约束，同批feed合并计1件不重复落账。",
+  "usage": {
+    "prompt_tokens": 258,
+    "completion_tokens": 888,
+    "total_tokens": 1146,
+    "completion_tokens_details": {
+      "reasoning_tokens": 723
+    }
+  },
+  "beacon_comment": 5842141578,
+  "resp": "收讫确认。lobby.comment 巷件 vci-inbox#1:5841748307 已自动落柜，件文空缺，SI2 按空件规则存底归档，不越钱面审理。无后续待办动作，卷宗封存待查。如需补件或升 SI1 深裁，请 root 会话另起。\n\n【锚】巷件:vci-inbox#1:5841748307|判词:SI2-lobby.comment-空件收讫归档",
+  "resp_usage": {
+    "prompt_tokens": 213,
+    "completion_tokens": 834,
+    "total_tokens": 1047,
+    "completion_tokens_details": {
+      "reasoning_tokens": 721
+    }
+  },
+  "resp_posted": "5842144413"
+}
