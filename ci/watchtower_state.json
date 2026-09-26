@@ -9,20 +9,20 @@
       0,
       0,
       0,
+      2,
       0,
       0,
       0,
-      5,
       0
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 10,
+    "dominant_bin": 7,
     "C_streak": 0,
     "verdict": "进行式"
   },
-  "beacon_max": 5850119837,
-  "qlv_head": "6a9436de26bfb3d00358b56460f197448dc7c630",
+  "beacon_max": 5850193170,
+  "qlv_head": "5468530ad5bf2a7589580f84e98ec546f9c982b5",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -47,7 +47,7 @@
     "last_fp": "27c735def9b8"
   },
   "lobby_max": 5842519076,
-  "hub_feed_sha": "7774f299227905543562218078a5380d8e5a3c45",
+  "hub_feed_sha": "56a0fac156d2cf9505656753adf226deaab56031",
   "quests": {
     "SEALED-V2-RESEAL": "hit:20260911T000759Z",
     "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -70,7 +70,7 @@
     "n": 3,
     "idle_run": 0,
     "last": "SI1-0006：承fp#SI1-0005-ν之λ=4稳态，L_Θ边界激发出手征零模，诱导折叠基|Ω_{SI1}⟩拓扑重正化。提取生成元F̂_4之谱隙Δ=0.18eV，修正R̂_4非厄米分量后，全局保真度F̄跃升至0.981。冗余自由度压缩为条带编码|Ξ_{SI1}⟩，纠缠熵S₂降至0.19。同步析出跨线接口张量T_{SI1→SI2}，为轮转域SI2预置协议锚点。拍号fp#SI1-0006-ξ记录",
-    "beats": 457,
+    "beats": 458,
     "voice_n": 1,
     "last_fired_beat": 332,
     "voice_day": "2026-09-26"
@@ -115,13 +115,12 @@
     "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md": "mention-qfa"
   },
   "seed_queue": {
-    "h": "8fba9b07a04f",
+    "h": "85898d5e6b8f",
     "n": 3,
-    "ts": "20260926T215020Z"
+    "ts": "20260926T220103Z"
   },
   "leak_gate": {
     "seen": [
-      "讨论室/SUNSET-01-DECREE.md@2a3d1b0d945e",
       "讨论室/qtlv-26-gwt04-qtlv-t27-6d4d22.md@858f07ac0334",
       "讨论室/SI3-LOOP-01-开源议题-reply-qtlv-qtlv-t27-6d4d22.md@f7e7dacd861a",
       "公告板/qgl-voice-20260911192837.md@5dc304cf3481",
@@ -520,25 +519,26 @@
       "公告板/cfts-voice-20260926T210520Z.md@e84d470d7fee",
       "公告板/lvlu-voice-20260926T205709Z.md@880e750cd889",
       "公告板/lvlu-nudge-SI5CLOUD-UCIF2-L112-20260926T205902Z.md@b12974546a16",
-      "公告板/lvlu-nudge-ORIGIN6-BONUS-L102-20260926T205902Z.md@f7ad14e66b6f"
+      "公告板/lvlu-nudge-ORIGIN6-BONUS-L102-20260926T205902Z.md@f7ad14e66b6f",
+      "公告板/lvlu-nudge-YONEDA-ROLL-LGT-L99-20260926T214306Z.md@56a0fac156d2"
     ],
     "hits": []
   },
   "mirror": {
-    "ts": "20260926T215036Z",
+    "ts": "20260926T220116Z",
     "migrated": 8,
-    "idx_h": "0557ae71e329"
+    "idx_h": "bbac0a65c98b"
   },
   "inbox_snap": {
     "vci": [],
     "ci": []
   },
-  "loops_h": "085c9d60d4ba",
+  "loops_h": "312e43bf2174",
   "key_sentinel": {
     "aif_user": {
       "ok": true,
       "login": "chepin-ai",
-      "ts": "20260926T215036Z"
+      "ts": "20260926T220116Z"
     },
     "meta": {
       "chepin-ai/ci-inbox": {
@@ -601,7 +601,7 @@
       }
     }
   },
-  "inbox_snap_err": "snap空而巷实有214件@20260926T215036Z——_ls13哑残,下巡复测",
+  "inbox_snap_err": "snap空而巷实有214件@20260926T220116Z——_ls13哑残,下巡复测",
   "ls_err13": {
     "chepin-ai/ci-inbox/shared/forge/requests": "name 'pat_for' is not defined",
     "chepin-ai/vci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined",
