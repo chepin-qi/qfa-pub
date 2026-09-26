@@ -3,26 +3,26 @@
     "v": "METER-CADENCE-01-cand",
     "w12": [
       0,
+      0,
+      2,
+      0,
+      0,
       1,
-      0,
-      5,
-      0,
-      0,
+      1,
+      3,
       0,
       0,
-      0,
-      0,
-      0,
+      2,
       0
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 3,
+    "dominant_bin": 7,
     "C_streak": 0,
     "verdict": "进行式"
   },
   "beacon_max": 5845983222,
-  "qlv_head": "be9144b739a7d1980bb1f13d43f86fe8488a0c04",
+  "qlv_head": "56c17e915d1a2d9384c4f8343ada00fa6d9e5a45",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -70,7 +70,7 @@
     "n": 3,
     "idle_run": 0,
     "last": "SI1-0006：承fp#SI1-0005-ν之λ=4稳态，L_Θ边界激发出手征零模，诱导折叠基|Ω_{SI1}⟩拓扑重正化。提取生成元F̂_4之谱隙Δ=0.18eV，修正R̂_4非厄米分量后，全局保真度F̄跃升至0.981。冗余自由度压缩为条带编码|Ξ_{SI1}⟩，纠缠熵S₂降至0.19。同步析出跨线接口张量T_{SI1→SI2}，为轮转域SI2预置协议锚点。拍号fp#SI1-0006-ξ记录",
-    "beats": 401,
+    "beats": 402,
     "voice_n": 1,
     "last_fired_beat": 332,
     "voice_day": "2026-09-26"
@@ -115,9 +115,7 @@
     "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md": "mention-qfa"
   },
   "seed_queue": {
-    "h": "74e74abf5871",
-    "n": 3,
-    "ts": "20260926T120431Z"
+    "err": "AIF冷却中,SEED面本巡跳过"
   },
   "leak_gate": {
     "seen": [
@@ -500,9 +498,7 @@
     "hits": []
   },
   "mirror": {
-    "ts": "20260926T120441Z",
-    "migrated": 8,
-    "idx_h": "eda76945705b"
+    "err": "AIF冷却中,MIRROR面本巡跳过"
   },
   "inbox_snap": {
     "vci": [],
@@ -583,8 +579,8 @@
     "chepin-ai/ci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined"
   },
   "aif_cool": {
-    "until": 1790422946,
-    "noted": "20260926T111200Z"
+    "until": 1790426547,
+    "noted": "20260926T121503Z"
   },
   "loops_err": "AIF冷却中,LOOPS面本巡跳过",
   "key_sentinel_err": "AIF冷却中,KEYSENT面本巡跳过"
