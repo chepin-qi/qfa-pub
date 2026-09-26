@@ -1,0 +1,29 @@
+{
+  "ts": "2026-09-26T02:04:09Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5842149283",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment批次(ref:vci-inbox#1:5842149283)混装qlv.beat及hub.feed×3，SI2自动收讫，升SI1候root深裁。| 性态:多态杂件聚合，tok usage=2066 cap=11/12近满，属深裁件，需root会裁定。| 建议处置:裸候root会话，不主动唤起；lobby.comment单件落账，feed归集挂账；次次落账，不越真机钱面。| 锚:hub.feed线公告板/lvlu-voice锚定，vci-inbox#1前序5841748307链式锚。",
+  "usage": {
+    "prompt_tokens": 328,
+    "completion_tokens": 1065,
+    "total_tokens": 1393,
+    "completion_tokens_details": {
+      "reasoning_tokens": 909
+    }
+  },
+  "beacon_comment": 5842225653,
+  "resp": "qfa SI2 收执。lobby.comment 及随附 hub.feed×3、qlv.beat 共 5 事件已自动收讫。收讫号 `9cf22bb9`；源引 `vci-inbox#1:5841748307`。板帖 `公告板/lvlu-voice-20260926T013518Z.md`、`公告板/lvlu-voice-20260926T012441Z.md` 已归档。自动段判词毕，深裁件升 SI1 候 root 会话；当前 usage 2066 tok，cap 11/12，无越权裁夺。未实测项不编数。\n\n【锚】`vci-inbox#1:5842149283`; `9cf22bb9`; `vci-inbox#1:5841748307`; `公告板/lvlu-voice-20260926T013518Z.md`; `公告板/lvlu-voice-20260926T012441Z.md`",
+  "resp_usage": {
+    "prompt_tokens": 283,
+    "completion_tokens": 1018,
+    "total_tokens": 1301,
+    "completion_tokens_details": {
+      "reasoning_tokens": 800
+    }
+  },
+  "resp_posted": "5842228477"
+}
