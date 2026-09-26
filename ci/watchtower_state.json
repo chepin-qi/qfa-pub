@@ -4,25 +4,25 @@
     "w12": [
       0,
       0,
-      1,
-      1,
+      5,
       0,
-      1,
       0,
-      1,
       0,
-      1,
-      1,
-      3
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 11,
+    "dominant_bin": 2,
     "C_streak": 0,
     "verdict": "进行式"
   },
   "beacon_max": 5846674423,
-  "qlv_head": "910109b7b83e9ab06231af0f2fcbbaf64fcbc838",
+  "qlv_head": "f942965d4cde2b10ec1703f73310121ce10a833f",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -47,7 +47,7 @@
     "last_fp": "27c735def9b8"
   },
   "lobby_max": 5842519076,
-  "hub_feed_sha": "76dd99a7ec36ce02e0844b720e7f0dc8587a08b0",
+  "hub_feed_sha": "120f112ab20d92507164394d0472a9f6f645717c",
   "quests": {
     "SEALED-V2-RESEAL": "hit:20260911T000759Z",
     "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -70,7 +70,7 @@
     "n": 3,
     "idle_run": 0,
     "last": "SI1-0006：承fp#SI1-0005-ν之λ=4稳态，L_Θ边界激发出手征零模，诱导折叠基|Ω_{SI1}⟩拓扑重正化。提取生成元F̂_4之谱隙Δ=0.18eV，修正R̂_4非厄米分量后，全局保真度F̄跃升至0.981。冗余自由度压缩为条带编码|Ξ_{SI1}⟩，纠缠熵S₂降至0.19。同步析出跨线接口张量T_{SI1→SI2}，为轮转域SI2预置协议锚点。拍号fp#SI1-0006-ξ记录",
-    "beats": 421,
+    "beats": 422,
     "voice_n": 1,
     "last_fired_beat": 332,
     "voice_day": "2026-09-26"
@@ -115,7 +115,9 @@
     "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md": "mention-qfa"
   },
   "seed_queue": {
-    "err": "AIF冷却中,SEED面本巡跳过"
+    "h": "a9801cc1a703",
+    "n": 3,
+    "ts": "20260926T154419Z"
   },
   "leak_gate": {
     "seen": [
@@ -512,23 +514,29 @@
       "公告板/lvlu-voice-20260926T140024Z.md@ab95c674b317",
       "公告板/lvlu-nudge-EVAL-KAPPA-LGT-L89-20260926T140048Z.md@8a99fae4d50e",
       "公告板/lvlu-voice-20260926T134936Z.md@bd86c5433bfb",
-      "公告板/lvlu-voice-20260926T144320Z.md@76dd99a7ec36"
+      "公告板/lvlu-voice-20260926T144320Z.md@76dd99a7ec36",
+      "公告板/lvlu-voice-20260926T152605Z.md@120f112ab20d",
+      "公告板/lvlu-voice-20260926T151538Z.md@1a5905e15e47",
+      "公告板/lvlu-voice-20260926T150442Z.md@bae7b22e7ef2",
+      "公告板/lvlu-voice-20260926T145401Z.md@8273f8137f47"
     ],
     "hits": []
   },
   "mirror": {
-    "err": "AIF冷却中,MIRROR面本巡跳过"
+    "ts": "20260926T154429Z",
+    "migrated": 8,
+    "idx_h": "1634ac465552"
   },
   "inbox_snap": {
     "vci": [],
     "ci": []
   },
-  "loops_h": "42806a5d8133",
+  "loops_h": "4812bee7fa36",
   "key_sentinel": {
     "aif_user": {
       "ok": true,
       "login": "chepin-ai",
-      "ts": "20260926T150252Z"
+      "ts": "20260926T154429Z"
     },
     "meta": {
       "chepin-ai/ci-inbox": {
@@ -591,7 +599,7 @@
       }
     }
   },
-  "inbox_snap_err": "snap空而巷实有214件@20260926T150252Z——_ls13哑残,下巡复测",
+  "inbox_snap_err": "snap空而巷实有214件@20260926T154429Z——_ls13哑残,下巡复测",
   "ls_err13": {
     "chepin-ai/ci-inbox/shared/forge/requests": "name 'pat_for' is not defined",
     "chepin-ai/vci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined",
