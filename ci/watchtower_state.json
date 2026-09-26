@@ -2,27 +2,27 @@
  "cadence": {
   "v": "METER-CADENCE-01-cand",
   "w12": [
+   1,
    0,
    0,
+   3,
    0,
-   0,
-   0,
-   5,
    0,
    1,
    0,
    0,
+   1,
    0,
-   1
+   3
   ],
   "sigma": 1.0,
   "lock": null,
-  "dominant_bin": 5,
+  "dominant_bin": 3,
   "C_streak": 0,
   "verdict": "进行式"
  },
- "beacon_max": 5841657487,
- "qlv_head": "ba63bbecf559f6c804288ab71ce7a2d26f1b8fa1",
+ "beacon_max": 5841742629,
+ "qlv_head": "055f486a1a08997064713b14b9b910766d90ade3",
  "quafu": {
   "8CAEDC103963FC6D": "0",
   "8BAFA1E022273996": "0",
@@ -43,8 +43,8 @@
  },
  "autoresp": {
   "date": "2026-09-26",
-  "calls": 6,
-  "last_fp": "f29bc1b7ea91"
+  "calls": 7,
+  "last_fp": "03145c43c0ac"
  },
  "lobby_max": 5841663794,
  "hub_feed_sha": "d6464466163ae652c116f1cb5bf25c13f7367991",
@@ -70,7 +70,7 @@
   "n": 3,
   "idle_run": 0,
   "last": "SI1-0006：承fp#SI1-0005-ν之λ=4稳态，L_Θ边界激发出手征零模，诱导折叠基|Ω_{SI1}⟩拓扑重正化。提取生成元F̂_4之谱隙Δ=0.18eV，修正R̂_4非厄米分量后，全局保真度F̄跃升至0.981。冗余自由度压缩为条带编码|Ξ_{SI1}⟩，纠缠熵S₂降至0.19。同步析出跨线接口张量T_{SI1→SI2}，为轮转域SI2预置协议锚点。拍号fp#SI1-0006-ξ记录",
-  "beats": 337,
+  "beats": 338,
   "voice_n": 1,
   "last_fired_beat": 332,
   "voice_day": "2026-09-26"
@@ -112,9 +112,7 @@
   "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md": "mention-qfa"
  },
  "seed_queue": {
-  "h": "42cdbf158cea",
-  "n": 3,
-  "ts": "20260926T005854Z"
+  "err": "AIF冷却中,SEED面本巡跳过"
  },
  "leak_gate": {
   "seen": [
@@ -402,9 +400,7 @@
   "hits": []
  },
  "mirror": {
-  "ts": "20260926T005910Z",
-  "migrated": 8,
-  "idx_h": "359244c49e8f"
+  "err": "AIF冷却中,MIRROR面本巡跳过"
  },
  "inbox_snap": {
   "vci": [],
@@ -485,8 +481,8 @@
   "chepin-ai/ci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined"
  },
  "aif_cool": {
-  "until": 1790383319,
-  "noted": "20260926T001406Z"
+  "until": 1790386920,
+  "noted": "20260926T010947Z"
  },
  "loops_err": "AIF冷却中,LOOPS面本巡跳过",
  "key_sentinel_err": "AIF冷却中,KEYSENT面本巡跳过"
