@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-26T05:57:41Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/lvlu-nudge-ORIGIN6-BONUS-L93-20260926T054816Z.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
