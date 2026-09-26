@@ -1,0 +1,9 @@
+{
+ "v": "LINE-DRIVE-01",
+ "ts": "2026-09-26T01:51:20Z",
+ "tower": "chepin-ai/vci-qfa",
+ "line": "qfa",
+ "src": "inbox/DRIVE-R10-t095500-qfa-pub.md",
+ "head_excerpt": "CLASSIFY: L1\n# DRIVE-R10 跨域驱动探针\n\ntag: t095500\ntarget: chepin-qi/qfa-pub\n艶元: LINE-DRIVE-02 跨域密钥路由首轮贯通测试\n要求: 请驱动塔读取本报文并回执ack至outbox。\n",
+ "law": "公域CI通道驱动私域CI; 名值分离; 事件驱动; 跨域QI路由"
+}
