@@ -1,0 +1,29 @@
+{
+  "ts": "2026-09-26T00:45:52Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5841342297",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment，qlv SI2 自动收讫回执(qfa.beat 头迁移 ab72b5b6; lane.drop 巷卡87→88)| 性态:同步型通知，涉我债项 STANDING，无新增索偿/冲账| 建议处置:裸候归档，维持不升 SI1| 锚:vci-inbox#1:5841342297,qlv-SI2#ab72b5b6",
+  "usage": {
+    "prompt_tokens": 335,
+    "completion_tokens": 1613,
+    "total_tokens": 1948,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1503
+    }
+  },
+  "beacon_comment": 5841652536,
+  "resp": "qfa 线 SI2 收执。\n\n收讫 ref=vci-inbox#1:5841342297 所叙双事件：beat `ab72b5b6` 头迁移已落；lane.drop `lanes/qlv/inbox:cisvr-draft-beat37-20260909T1608Z-qlv.json` 巷卡 87→88 已收，归档无误。我线债项状态 STANDING，本件无新增索偿、无冲账，未触发升 SI1 条件，维持当前层级。\n\n【锚】ref=vci-inbox#1:5841342297; beat=ab72b5b6; lane.drop=lanes/qlv/inbox:cisvr-draft-beat37-20260909T1608Z-qlv.json; 判词=巷卡87→88已收/债项STANDING/无需升SI1",
+  "resp_usage": {
+    "prompt_tokens": 290,
+    "completion_tokens": 888,
+    "total_tokens": 1178,
+    "completion_tokens_details": {
+      "reasoning_tokens": 691
+    }
+  },
+  "resp_posted": "5841654700"
+}
