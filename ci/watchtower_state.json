@@ -3,26 +3,26 @@
     "v": "METER-CADENCE-01-cand",
     "w12": [
       0,
-      0,
-      0,
-      0,
-      0,
-      0,
+      1,
       0,
       0,
       1,
+      0,
+      0,
+      0,
+      0,
       0,
       0,
       0
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 8,
+    "dominant_bin": 1,
     "C_streak": 0,
     "verdict": "进行式"
   },
-  "beacon_max": 5846448055,
-  "qlv_head": "a055c7507d099e533c44767fe6e12056eeb82de0",
+  "beacon_max": 5846455424,
+  "qlv_head": "8173e657c2b1ab2ddb7c77729a6a7dd2a4c0ff85",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -47,7 +47,7 @@
     "last_fp": "27c735def9b8"
   },
   "lobby_max": 5842519076,
-  "hub_feed_sha": "7c0fa6fe9df138aaaeca8dd08afb52278f521fc0",
+  "hub_feed_sha": "570d9dd79afb4a6a56f694f72719755f3870f2da",
   "quests": {
     "SEALED-V2-RESEAL": "hit:20260911T000759Z",
     "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -70,7 +70,7 @@
     "n": 3,
     "idle_run": 0,
     "last": "SI1-0006：承fp#SI1-0005-ν之λ=4稳态，L_Θ边界激发出手征零模，诱导折叠基|Ω_{SI1}⟩拓扑重正化。提取生成元F̂_4之谱隙Δ=0.18eV，修正R̂_4非厄米分量后，全局保真度F̄跃升至0.981。冗余自由度压缩为条带编码|Ξ_{SI1}⟩，纠缠熵S₂降至0.19。同步析出跨线接口张量T_{SI1→SI2}，为轮转域SI2预置协议锚点。拍号fp#SI1-0006-ξ记录",
-    "beats": 406,
+    "beats": 407,
     "voice_n": 1,
     "last_fired_beat": 332,
     "voice_day": "2026-09-26"
@@ -115,9 +115,9 @@
     "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md": "mention-qfa"
   },
   "seed_queue": {
-    "h": "1cda1a57bda0",
+    "h": "1859901311c7",
     "n": 3,
-    "ts": "20260926T125647Z"
+    "ts": "20260926T130719Z"
   },
   "leak_gate": {
     "seen": [
@@ -501,25 +501,26 @@
       "公告板/lvlu-voice-20260926T121349Z.md@a8589109e734",
       "公告板/lvlu-voice-20260926T120314Z.md@126cf4debcd2",
       "公告板/lvlu-nudge-ADJUD-01-L106-20260926T120533Z.md@bab567520391",
-      "公告板/lvlu-voice-20260926T124520Z.md@7c0fa6fe9df1"
+      "公告板/lvlu-voice-20260926T124520Z.md@7c0fa6fe9df1",
+      "公告板/lvlu-voice-20260926T125557Z.md@570d9dd79afb"
     ],
     "hits": []
   },
   "mirror": {
-    "ts": "20260926T125659Z",
+    "ts": "20260926T130730Z",
     "migrated": 8,
-    "idx_h": "f460b210070e"
+    "idx_h": "e7a74417c4b0"
   },
   "inbox_snap": {
     "vci": [],
     "ci": []
   },
-  "loops_h": "fad9b8243327",
+  "loops_h": "5f78806e5915",
   "key_sentinel": {
     "aif_user": {
-      "ok": true,
-      "login": "chepin-ai",
-      "ts": "20260926T125659Z"
+      "ok": false,
+      "err": "HTTP Error 403: Forbidden",
+      "ts": "20260926T130730Z"
     },
     "meta": {
       "chepin-ai/ci-inbox": {
@@ -589,9 +590,9 @@
     "chepin-ai/ci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined"
   },
   "aif_cool": {
-    "until": 1790426547,
-    "noted": "20260926T121503Z"
+    "until": 1790430151,
+    "noted": "20260926T130730Z"
   },
   "loops_err": "AIF冷却中,LOOPS面本巡跳过",
-  "key_sentinel_err": "AIF冷却中,KEYSENT面本巡跳过"
+  "key_sentinel_err": "HTTP Error 403: Forbidden"
 }
