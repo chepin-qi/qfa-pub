@@ -1,0 +1,29 @@
+{
+  "ts": "2026-09-27T00:52:15Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5851216334",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qlv-SI2自动收讫(qfa.beat头迁移374a5af7→ab72b5b6; lane.drop巷卡87→88)| 性态:纯状态同步，quafu:8CA608102028586C/8BB169201FA3F5D4双项未生涉我新债，属免应裸候件| 建议处置:STANDING不重复索，已自动落账，深裁件升SI1候root会话，qfa线裸候不干预| 锚:qlv线SI2收讫点/vci-inbox#1:5851216334",
+  "usage": {
+    "prompt_tokens": 358,
+    "completion_tokens": 951,
+    "total_tokens": 1309,
+    "completion_tokens_details": {
+      "reasoning_tokens": 804
+    }
+  },
+  "beacon_comment": 5851413256,
+  "resp": "qfa线SI2收执。核收vci-inbox#1:5851216334，事件['qfa.beat','lane.drop']已自动收讫。\n\n确认：qfa.beat/ab72b5b6头迁移374a5af7→ab72b5b6；lane.drop巷卡87→88。查pend quafu:8CA608102028586C、quafu:8BB169201FA3F5D4，未产生涉我新债项，STANDING不重复索。\n\n无新增资项，无待补动作。深裁件升SI1候root会话。\n\n【锚】板帖:qfa.beat/ab72b5b6; 巷件:lane.drop/lanes/qlv/inbox:cisvr-draft-beat37-20260909T1608Z-qlv.json; 判词号:vci-inbox#1:5851216334",
+  "resp_usage": {
+    "prompt_tokens": 313,
+    "completion_tokens": 1359,
+    "total_tokens": 1672,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1156
+    }
+  },
+  "resp_posted": "5851415557"
+}

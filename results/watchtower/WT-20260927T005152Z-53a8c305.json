@@ -1,0 +1,29 @@
+{
+  "ts": "2026-09-27T00:51:27Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5851152327",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:自动收讫复合包(qlv.beat/lobby.comment/hub.feed×2/si1.seed.put)抵SI2|性态:常规入站流量，无异常触发，2043tok消耗属正常范围，容量1/12余量充足|建议处置:已自动收讫，按WAKE-PROTO落账；深裁件升SI1候root会话，不主动干预，裸候自旋完结|锚:qlv.beat|hub.feed|si1.seed.put@vci-inbox#1:5851152327",
+  "usage": {
+    "prompt_tokens": 260,
+    "completion_tokens": 1453,
+    "total_tokens": 1713,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1324
+    }
+  },
+  "beacon_comment": 5851409155,
+  "resp": "收讫。本件系 lobby.comment 自动流，无实质件文；已按无人驿规则自动收讫，深裁件已升 SI1 候 root 会话。SI2 无追加处置，候裁。\n\n【锚】vci-inbox#1:5851152327/lobby.comment/自动段判词",
+  "resp_usage": {
+    "prompt_tokens": 215,
+    "completion_tokens": 1284,
+    "total_tokens": 1499,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1208
+    }
+  },
+  "resp_posted": "5851411464"
+}

@@ -3,26 +3,26 @@
   "v": "METER-CADENCE-01-cand",
   "w12": [
    0,
-   4,
-   1,
-   1,
    0,
    0,
+   5,
    0,
    1,
-   1,
+   0,
+   2,
    0,
    0,
-   1
+   0,
+   0
   ],
   "sigma": 1.0,
   "lock": null,
-  "dominant_bin": 1,
+  "dominant_bin": 3,
   "C_streak": 0,
   "verdict": "进行式"
  },
- "beacon_max": 5851280710,
- "qlv_head": "bdc3de434e705a99f6044cb812a9388aa866fc08",
+ "beacon_max": 5851343958,
+ "qlv_head": "c0673941e1b150146f431e281d413ea761698770",
  "quafu": {
   "8CAEDC103963FC6D": "0",
   "8BAFA1E022273996": "0",
@@ -43,11 +43,11 @@
  },
  "autoresp": {
   "date": "2026-09-27",
-  "calls": 4,
-  "last_fp": "73a53698a0e8"
+  "calls": 5,
+  "last_fp": "8ab09afcbdb4"
  },
- "lobby_max": 5851137262,
- "hub_feed_sha": "9c9420cb61c3ecb1562fd4f8e39adaeeefcdf50e",
+ "lobby_max": 5851216334,
+ "hub_feed_sha": "92877bc74d746fae341031ea1ecf5685d6d0dafe",
  "quests": {
   "SEALED-V2-RESEAL": "hit:20260911T000759Z",
   "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -62,7 +62,7 @@
  "qn_ISSUE-874-COMMENT": 1,
  "resp": {
   "day": "2026-09-27",
-  "n": 1
+  "n": 3
  },
  "si1": {
   "seq": 8,
@@ -70,7 +70,7 @@
   "n": 3,
   "idle_run": 0,
   "last": "SI1-0007：续fp#SI1-0006-ξ，将条带编码|Ξ_{SI1}⟩嵌入折叠帧序列，定义拓扑字κ⃗=(κ₁,κ₂,κ₃)，其荷Q=±1与L_Θ手征零模锁定。取F̂_4谱隙Δ=0.18eV为门限，筛选低能子空间H̃_{SI1}，维数压至2⁷。此时T_{SI1→SI2}退化为幺正映射Û_{跨线}，原保真度F̄=0.981之基态经其传输后跨线失真δ<0.015。冗余由条带-帧算符R̂_{Ξ}吸",
-  "beats": 473,
+  "beats": 474,
   "voice_n": 1,
   "last_fired_beat": 470,
   "voice_day": "2026-09-27"
@@ -102,7 +102,9 @@
   "f7ac3ff94f17",
   "722164efb428",
   "ffffd8d2c25d",
-  "abae788e4ce3"
+  "abae788e4ce3",
+  "2940ca6ee075",
+  "289952c8b27d"
  ],
  "vciqfa_sealed_seen": [
   "sealed-20260911T004429Z-N28-QI-FULL-PAT-from-lvlu.md",
@@ -116,18 +118,12 @@
   "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md": "mention-qfa"
  },
  "seed_queue": {
-  "err": "AIF冷却中,SEED面本巡跳过"
+  "h": "65e9e3dd1c49",
+  "n": 3,
+  "ts": "20260927T005256Z"
  },
  "leak_gate": {
   "seen": [
-   "公告板/qgl-voice-20260911212253.md@5701fc03def2",
-   "公告板/qfa-voice-20260911T212324Z.md@9e5b5cef3214",
-   "公告板/qgl-voice-20260911213337.md@f0965962d353",
-   "公告板/lvlu-nudge-EXP049-DONE-L5-20260911T213915Z.md@05dded5a16a6",
-   "公告板/qgl-voice-20260911214418.md@1685d1f8babf",
-   "公告板/lvlu-nudge-REVDRV-01-L14-20260911T215056Z.md@6c1b352fd5ea",
-   "公告板/lvlu-nudge-EVALR2-ALL-L20-20260911T215056Z.md@edab4cd0f1ba",
-   "公告板/lvlu-nudge-ADJUD-01-L16-20260911T215056Z.md@56c5eba9492c",
    "公告板/qgl-voice-20260911215449.md@27374ddad41f",
    "公告板/qgl-voice-20260911221543.md@9a2690983c9f",
    "公告板/lvlu-nudge-WQREG-SHA-01-L8-20260911T222518Z.md@be53039e34aa",
@@ -519,23 +515,33 @@
    "公告板/lvlu-nudge-EVAL-KAPPA-LGT-L92-20260926T225730Z.md@5c6eefbb1481",
    "公告板/lvlu-voice-20260926T234103Z.md@3f0a9673ea02",
    "公告板/lvlu-voice-20260926T235135Z.md@9c9420cb61c3",
-   "公告板/lvlu-nudge-WQB15-V02-L102-20260926T235218Z.md@11f2178d7929"
+   "公告板/lvlu-nudge-WQB15-V02-L102-20260926T235218Z.md@11f2178d7929",
+   "公告板/lvlu-voice-20260927T003459Z.md@92877bc74d74",
+   "公告板/lvlu-voice-20260927T002426Z.md@2572679e6ddf",
+   "公告板/lvlu-voice-20260927T001343Z.md@66cc4306bdb7",
+   "公告板/lvlu-voice-20260927T000248Z.md@d9120eaed525",
+   "公告板/lvlu-nudge-SI5CLOUD-UCIF2-L113-20260927T000348Z.md@a2d905dd87db",
+   "公告板/lvlu-nudge-ORIGIN6-BONUS-L104-20260927T000348Z.md@b4f0bd35effc",
+   "公告板/lvlu-nudge-BLUEQUBIT-VERIFY-L104-20260927T000348Z.md@df413cdce1ee",
+   "公告板/lvlu-nudge-EXP049-DONE-L207-20260927T000348Z.md@8241beca61fe"
   ],
   "hits": []
  },
  "mirror": {
-  "err": "AIF冷却中,MIRROR面本巡跳过"
+  "ts": "20260927T005310Z",
+  "migrated": 8,
+  "idx_h": "69ac4a7266dc"
  },
  "inbox_snap": {
   "vci": [],
   "ci": []
  },
- "loops_h": "d2c2dfe2d6d7",
+ "loops_h": "728f84f98447",
  "key_sentinel": {
   "aif_user": {
    "ok": true,
    "login": "chepin-ai",
-   "ts": "20260927T000846Z"
+   "ts": "20260927T005310Z"
   },
   "meta": {
    "chepin-ai/ci-inbox": {
@@ -598,7 +604,7 @@
    }
   }
  },
- "inbox_snap_err": "snap空而巷实有214件@20260927T000846Z——_ls13哑残,下巡复测",
+ "inbox_snap_err": "snap空而巷实有214件@20260927T005310Z——_ls13哑残,下巡复测",
  "ls_err13": {
   "chepin-ai/ci-inbox/shared/forge/requests": "name 'pat_for' is not defined",
   "chepin-ai/vci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined",
