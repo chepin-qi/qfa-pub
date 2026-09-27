@@ -3,26 +3,26 @@
     "v": "METER-CADENCE-01-cand",
     "w12": [
       0,
+      1,
+      3,
       0,
-      0,
+      2,
       0,
       1,
       0,
-      1,
-      0,
-      0,
+      2,
       0,
       0,
       0
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 4,
+    "dominant_bin": 2,
     "C_streak": 0,
     "verdict": "进行式"
   },
   "beacon_max": 5854938144,
-  "qlv_head": "78e5e817ff89d05895dd8df8ab1c7a4a3065fa08",
+  "qlv_head": "c171e020b6ec77458c9f0ec845205577793c946a",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -70,7 +70,7 @@
     "n": 3,
     "idle_run": 0,
     "last": "SI1-0007：续fp#SI1-0006-ξ，将条带编码|Ξ_{SI1}⟩嵌入折叠帧序列，定义拓扑字κ⃗=(κ₁,κ₂,κ₃)，其荷Q=±1与L_Θ手征零模锁定。取F̂_4谱隙Δ=0.18eV为门限，筛选低能子空间H̃_{SI1}，维数压至2⁷。此时T_{SI1→SI2}退化为幺正映射Û_{跨线}，原保真度F̄=0.981之基态经其传输后跨线失真δ<0.015。冗余由条带-帧算符R̂_{Ξ}吸",
-    "beats": 531,
+    "beats": 532,
     "voice_n": 1,
     "last_fired_beat": 470,
     "voice_day": "2026-09-27"
@@ -121,9 +121,7 @@
     "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md": "mention-qfa"
   },
   "seed_queue": {
-    "h": "c3f12a333047",
-    "n": 3,
-    "ts": "20260927T105551Z"
+    "err": "AIF冷却中,SEED面本巡跳过"
   },
   "leak_gate": {
     "seen": [
@@ -531,9 +529,7 @@
     "hits": []
   },
   "mirror": {
-    "ts": "20260927T105604Z",
-    "migrated": 8,
-    "idx_h": "9649b39ed17d"
+    "err": "AIF冷却中,MIRROR面本巡跳过"
   },
   "inbox_snap": {
     "vci": [],
@@ -614,8 +610,8 @@
     "chepin-ai/ci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined"
   },
   "aif_cool": {
-    "until": 1790505796,
-    "noted": "20260927T101355Z"
+    "until": 1790509397,
+    "noted": "20260927T110626Z"
   },
   "loops_err": "AIF冷却中,LOOPS面本巡跳过",
   "key_sentinel_err": "AIF冷却中,KEYSENT面本巡跳过"
