@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-27T20:22:00Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop 巷卡 217→218 迭代| 性态:常规波次滚动，旧 eval-wave 已落账，新件上卡| 建议处置:校验 218 文件头完整性，确认摘要哈希一致；217 归档冻结，不追回| 锚:lanes/qtlv/arch:wave-6220cd5885be",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 854,
+    "total_tokens": 1068,
+    "completion_tokens_details": {
+      "reasoning_tokens": 769
+    }
+  }
+}
