@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-27T04:28:04Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop 到件，qtlv-eval-wave-6220cd5885be.md 入 inbox，巷卡 214→216 递进| 性态:eval-wave 常规增量投递，号段连续无断档，未触发异常告警| 建议处置:细收核对 214→216 间 diff 完整性，未实测字段不编数；按 WAKE-PROTO 裁决后落账归档| 锚:lanes/qfa/history 同期 log 或上游 qtlv-gen 出线做交叉锚定",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 878,
+    "total_tokens": 1092,
+    "completion_tokens_details": {
+      "reasoning_tokens": 754
+    }
+  }
+}
