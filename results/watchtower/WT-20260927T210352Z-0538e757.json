@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-27T21:03:52Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/lgt-realchip-更正帖-20260923T183000Z.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
