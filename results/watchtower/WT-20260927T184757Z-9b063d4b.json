@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-27T18:47:43Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "ucif2.watch",
+    "ref": "lanes/qfa/inbox/CHARTER-SIGN-NUDGE-USRM-02.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:ucif2.watch机旗扫qfa/inbox/CHARTER-SIGN-NUDGE-USRM-02.md，系章程签署提醒文件内容扫描| 性态:例行监控到件，摘要仅呈路径与扫描动作，未实测异常载荷或越权读写，判为「触发未响应」态| 建议处置:次次落账，入lanes/qfa/log册页备查；本件属USRM-02裸候区间，不主动寻求回应| 锚:ucif2主控/CHARTER-SIGN主流程",
+  "usage": {
+    "prompt_tokens": 227,
+    "completion_tokens": 1016,
+    "total_tokens": 1243,
+    "completion_tokens_details": {
+      "reasoning_tokens": 887
+    }
+  }
+}

@@ -2,27 +2,27 @@
   "cadence": {
     "v": "METER-CADENCE-01-cand",
     "w12": [
-      1,
-      1,
-      1,
+      0,
+      0,
       0,
       0,
       1,
       0,
       0,
-      5,
+      1,
       0,
       0,
+      1,
       0
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 8,
+    "dominant_bin": 4,
     "C_streak": 0,
     "verdict": "进行式"
   },
   "beacon_max": 5858189477,
-  "qlv_head": "9f037316b49a309e42892d8376af2c0bff6d4dc1",
+  "qlv_head": "049798e2f7b37b5723f87fa34176cdd5eb3096ef",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -47,7 +47,7 @@
     "last_fp": "63390b781712"
   },
   "lobby_max": 5851813623,
-  "hub_feed_sha": "a9ddb6fc8c279d2d5096d8d456fdfa4c52f785f7",
+  "hub_feed_sha": "c626d46bc53d8d3a665b931982a5063eb35b4fd3",
   "quests": {
     "SEALED-V2-RESEAL": "hit:20260911T000759Z",
     "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -70,7 +70,7 @@
     "n": 3,
     "idle_run": 0,
     "last": "SI1-0007：续fp#SI1-0006-ξ，将条带编码|Ξ_{SI1}⟩嵌入折叠帧序列，定义拓扑字κ⃗=(κ₁,κ₂,κ₃)，其荷Q=±1与L_Θ手征零模锁定。取F̂_4谱隙Δ=0.18eV为门限，筛选低能子空间H̃_{SI1}，维数压至2⁷。此时T_{SI1→SI2}退化为幺正映射Û_{跨线}，原保真度F̄=0.981之基态经其传输后跨线失真δ<0.015。冗余由条带-帧算符R̂_{Ξ}吸",
-    "beats": 575,
+    "beats": 576,
     "voice_n": 1,
     "last_fired_beat": 470,
     "voice_day": "2026-09-27"
@@ -118,21 +118,16 @@
     "公告板/ucif2-128-TASK-03-cfts-confirm-20260911T1430Z.md": "seen",
     "公告板/ucif2-129-comprehensive-correction-consensus-20260911T1527Z.md": "mention-qfa",
     "shared/forge/requests/.gitkeep": "seen",
-    "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md": "mention-qfa"
+    "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md": "mention-qfa",
+    "lanes/qfa/inbox/CHARTER-SIGN-NUDGE-USRM-02.md": "mention-qfa"
   },
   "seed_queue": {
-    "err": "AIF冷却中,SEED面本巡跳过"
+    "h": "9a9ede98bd05",
+    "n": 4,
+    "ts": "20260927T184757Z"
   },
   "leak_gate": {
     "seen": [
-      "公告板/vinf-voice-20260925T190650Z.md@b8f76fa1e4a2",
-      "公告板/lvlu-voice-20260925T190138Z.md@75a2ad49ebed",
-      "公告板/cfts-voice-20260925T185649Z.md@60cf37da3d64",
-      "公告板/lvlu-voice-20260925T194512Z.md@e676f6df5c96",
-      "公告板/lvlu-nudge-WQB15-V02-L85-20260925T194608Z.md@f369176b6822",
-      "shared/QRAC-HD-01-JOB4-20260925T194937Z.md@154ddf301347",
-      "公告板/lvlu-voice-20260925T204104Z.md@8791f3b18949",
-      "公告板/lvlu-钥事件-20260925T204726Z.md@1e516bbd20d6",
       "公告板/lvlu-voice-20260925T203000Z.md@063969d2f715",
       "公告板/lvlu-voice-20260925T201904Z.md@3bdc03da8a8e",
       "公告板/lvlu-voice-20260925T200719Z.md@3e35f81730be",
@@ -524,23 +519,33 @@
       "公告板/lvlu-nudge-SI5CLOUD-UCIF2-L121-20260927T174458Z.md@987ade5cf164",
       "公告板/lvlu-nudge-ORIGIN6-BONUS-L116-20260927T174458Z.md@638ae786a665",
       "公告板/lvlu-nudge-BLUEQUBIT-VERIFY-L116-20260927T174458Z.md@cad073c2f26f",
-      "公告板/lvlu-nudge-EXP049-DONE-L219-20260927T174458Z.md@0bccf5967e33"
+      "公告板/lvlu-nudge-EXP049-DONE-L219-20260927T174458Z.md@0bccf5967e33",
+      "公告板/usrm-statex-digest-gen184.md@c626d46bc53d",
+      "shared/FIELD-USRM-01.json@cf5b47af3bb3",
+      "wake/qgl.json@6bc62f326a11",
+      "wake/qgl.json@22dd290b4f3e",
+      "wake/qgl.json@b2f7a6363061",
+      "公告板/usrm-307.md@e9564d91c4ae",
+      "lanes/qfa/inbox/CHARTER-SIGN-NUDGE-USRM-02.md@c9fefdee3e09",
+      "lanes/cisvr/inbox/CHARTER-SIGN-NUDGE-USRM-02.md@fb1cea5c2f16"
     ],
     "hits": []
   },
   "mirror": {
-    "err": "AIF冷却中,MIRROR面本巡跳过"
+    "ts": "20260927T184812Z",
+    "migrated": 8,
+    "idx_h": "79e309423bad"
   },
   "inbox_snap": {
     "vci": [],
     "ci": []
   },
-  "loops_h": "8f75ea395b43",
+  "loops_h": "51cf1081f32c",
   "key_sentinel": {
     "aif_user": {
       "ok": true,
       "login": "chepin-ai",
-      "ts": "20260927T180611Z"
+      "ts": "20260927T184812Z"
     },
     "meta": {
       "chepin-ai/ci-inbox": {
@@ -603,7 +608,7 @@
       }
     }
   },
-  "inbox_snap_err": "snap空而巷实有217件@20260927T180611Z——_ls13哑残,下巡复测",
+  "inbox_snap_err": "snap空而巷实有217件@20260927T184812Z——_ls13哑残,下巡复测",
   "ls_err13": {
     "chepin-ai/ci-inbox/shared/forge/requests": "name 'pat_for' is not defined",
     "chepin-ai/vci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined",
