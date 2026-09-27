@@ -1,0 +1,29 @@
+{
+  "ts": "2026-09-27T00:07:06Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5851137262",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa.beat+lane.drop 抵件，qlv SI2 无人驿自动收讫，深裁件升 SI1 裸候 root 会话| 性态:链路心跳/丢弃类常规事件，1819tok 已落账，cap 1/12 未触顶，属自动段闭环，无异常脉冲| 建议处置:维持自动收讫，已按规程升 SI1 深裁，裸候 root 会话裁决，不主动寻求回应，次次落账| 锚:vci-inbox#1:5851137262→SI1/root#",
+  "usage": {
+    "prompt_tokens": 245,
+    "completion_tokens": 1008,
+    "total_tokens": 1253,
+    "completion_tokens_details": {
+      "reasoning_tokens": 869
+    }
+  },
+  "beacon_comment": 5851141178,
+  "resp": "已收讫。件 vci-inbox#1:5851137262，事件 qfa.beat/lane.drop，已由无人驿自动收讫。依自动段判词，深裁件升 SI1 候 root 会话。无件文，SI2 无补充判词，直陈归档。\n\n【锚】ref=vci-inbox#1:5851137262; usage=1819tok; cap=1/12; status=auto-clear-SI1",
+  "resp_usage": {
+    "prompt_tokens": 200,
+    "completion_tokens": 1031,
+    "total_tokens": 1231,
+    "completion_tokens_details": {
+      "reasoning_tokens": 925
+    }
+  },
+  "resp_posted": "5851143418"
+}
