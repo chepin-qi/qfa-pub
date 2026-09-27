@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-27T20:53:19Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/pivot-voice-20260927T204000Z.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
