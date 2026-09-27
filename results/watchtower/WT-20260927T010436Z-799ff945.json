@@ -1,0 +1,29 @@
+{
+  "ts": "2026-09-27T01:04:05Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5851419358",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment混批抵站(qlv.beat+lobby.comment×2+hub.feed×2)，自动收讫毕，深裁件升SI1候root会话| 性态:非单一触发，cap 5/12余量尚足，usage 2206tok中载，#noauto生效| 建议处置:lobby.comment入SI1深裁裸候root复核；伴随心跳/feed已落账勿重复触发| 锚:qfa-SI1/root深裁队列;qfa-WAKE-PROTO自动收讫段",
+  "usage": {
+    "prompt_tokens": 259,
+    "completion_tokens": 1304,
+    "total_tokens": 1563,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1173
+    }
+  },
+  "beacon_comment": 5851484701,
+  "resp": "已收。lobby.comment 自动收讫，序列含 qlv.beat、lobby.comment×2、hub.feed×2 共五事件，已触发深裁升 SI1 候 root 会话。当前段判词完成，cap 5/12，tok 2206。无额外件文，SI2 仅作收执备案，不越权处置。待 root 会话或 SI1 裁示。\n\n【锚】vci-inbox#1:5851419358",
+  "resp_usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 547,
+    "total_tokens": 761,
+    "completion_tokens_details": {
+      "reasoning_tokens": 437
+    }
+  },
+  "resp_posted": "5851486271"
+}

@@ -5,24 +5,24 @@
    0,
    0,
    0,
-   5,
-   0,
    1,
-   0,
-   2,
-   0,
+   3,
    0,
    0,
-   0
+   0,
+   0,
+   0,
+   0,
+   1
   ],
   "sigma": 1.0,
   "lock": null,
-  "dominant_bin": 3,
+  "dominant_bin": 4,
   "C_streak": 0,
   "verdict": "进行式"
  },
- "beacon_max": 5851343958,
- "qlv_head": "c0673941e1b150146f431e281d413ea761698770",
+ "beacon_max": 5851413256,
+ "qlv_head": "79c123dc5338afd1232fba5f876cecb4d14b2c18",
  "quafu": {
   "8CAEDC103963FC6D": "0",
   "8BAFA1E022273996": "0",
@@ -43,11 +43,11 @@
  },
  "autoresp": {
   "date": "2026-09-27",
-  "calls": 5,
-  "last_fp": "8ab09afcbdb4"
+  "calls": 6,
+  "last_fp": "c3de1b71a9d3"
  },
- "lobby_max": 5851216334,
- "hub_feed_sha": "92877bc74d746fae341031ea1ecf5685d6d0dafe",
+ "lobby_max": 5851419358,
+ "hub_feed_sha": "cb0cb7ff05c827efcabade9d0f23e4e829f2d159",
  "quests": {
   "SEALED-V2-RESEAL": "hit:20260911T000759Z",
   "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -62,7 +62,7 @@
  "qn_ISSUE-874-COMMENT": 1,
  "resp": {
   "day": "2026-09-27",
-  "n": 3
+  "n": 4
  },
  "si1": {
   "seq": 8,
@@ -70,7 +70,7 @@
   "n": 3,
   "idle_run": 0,
   "last": "SI1-0007：续fp#SI1-0006-ξ，将条带编码|Ξ_{SI1}⟩嵌入折叠帧序列，定义拓扑字κ⃗=(κ₁,κ₂,κ₃)，其荷Q=±1与L_Θ手征零模锁定。取F̂_4谱隙Δ=0.18eV为门限，筛选低能子空间H̃_{SI1}，维数压至2⁷。此时T_{SI1→SI2}退化为幺正映射Û_{跨线}，原保真度F̄=0.981之基态经其传输后跨线失真δ<0.015。冗余由条带-帧算符R̂_{Ξ}吸",
-  "beats": 474,
+  "beats": 475,
   "voice_n": 1,
   "last_fired_beat": 470,
   "voice_day": "2026-09-27"
@@ -104,7 +104,8 @@
   "ffffd8d2c25d",
   "abae788e4ce3",
   "2940ca6ee075",
-  "289952c8b27d"
+  "289952c8b27d",
+  "f6207f48f0fd"
  ],
  "vciqfa_sealed_seen": [
   "sealed-20260911T004429Z-N28-QI-FULL-PAT-from-lvlu.md",
@@ -118,15 +119,12 @@
   "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md": "mention-qfa"
  },
  "seed_queue": {
-  "h": "65e9e3dd1c49",
+  "h": "cb012c88df8b",
   "n": 3,
-  "ts": "20260927T005256Z"
+  "ts": "20260927T010453Z"
  },
  "leak_gate": {
   "seen": [
-   "公告板/qgl-voice-20260911215449.md@27374ddad41f",
-   "公告板/qgl-voice-20260911221543.md@9a2690983c9f",
-   "公告板/lvlu-nudge-WQREG-SHA-01-L8-20260911T222518Z.md@be53039e34aa",
    "公告板/lvlu-nudge-EXP049-DONE-L6-20260911T231333Z.md@fb1eea5bb541",
    "公告板/qgl-voice-20260911231725.md@125369babd7c",
    "公告板/lvlu-nudge-REVDRV-01-L15-20260911T232541Z.md@f211178fa78d",
@@ -523,25 +521,28 @@
    "公告板/lvlu-nudge-SI5CLOUD-UCIF2-L113-20260927T000348Z.md@a2d905dd87db",
    "公告板/lvlu-nudge-ORIGIN6-BONUS-L104-20260927T000348Z.md@b4f0bd35effc",
    "公告板/lvlu-nudge-BLUEQUBIT-VERIFY-L104-20260927T000348Z.md@df413cdce1ee",
-   "公告板/lvlu-nudge-EXP049-DONE-L207-20260927T000348Z.md@8241beca61fe"
+   "公告板/lvlu-nudge-EXP049-DONE-L207-20260927T000348Z.md@8241beca61fe",
+   "公告板/lvlu-voice-20260927T004532Z.md@cb0cb7ff05c8",
+   "公告板/cfts-voice-20260927T004408Z.md@e8bb4a227e17",
+   "公告板/vinf-voice-20260927T004336Z.md@aaff26e2467e"
   ],
   "hits": []
  },
  "mirror": {
-  "ts": "20260927T005310Z",
+  "ts": "20260927T010510Z",
   "migrated": 8,
-  "idx_h": "69ac4a7266dc"
+  "idx_h": "0beb07df0e2d"
  },
  "inbox_snap": {
   "vci": [],
   "ci": []
  },
- "loops_h": "728f84f98447",
+ "loops_h": "dd67b60d908a",
  "key_sentinel": {
   "aif_user": {
    "ok": true,
    "login": "chepin-ai",
-   "ts": "20260927T005310Z"
+   "ts": "20260927T010510Z"
   },
   "meta": {
    "chepin-ai/ci-inbox": {
@@ -604,7 +605,7 @@
    }
   }
  },
- "inbox_snap_err": "snap空而巷实有214件@20260927T005310Z——_ls13哑残,下巡复测",
+ "inbox_snap_err": "snap空而巷实有214件@20260927T010510Z——_ls13哑残,下巡复测",
  "ls_err13": {
   "chepin-ai/ci-inbox/shared/forge/requests": "name 'pat_for' is not defined",
   "chepin-ai/vci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined",
