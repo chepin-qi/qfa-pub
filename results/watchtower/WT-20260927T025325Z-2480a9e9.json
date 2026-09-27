@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-27T02:52:59Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5851813623",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment 到件，qfa SI2 自动收讫五联包：qlv.beat 头迁移、SI2 自收讫(vci-inbox#1:5851745480，高值)、两公告板(lvlu-nudge/lvlu-voice)、si1/SEED-QUEUE.json(3 seeds)。涉 quafu 三单 pend st。| 性态:广播汇注型馈流，全件自动收讫无异常；我债未消，属 pend 候裁态。| 建议处置:lobby.comment 已收讫落账，不刷屏。quafu 三单仍 st，裸候 root/SI1 深裁，不越真机钱面。| 锚:qlv.beat 头迁移锚 qlv 线公告迁移态;si1.seed.put 锚 si1 种子队列增量。",
+  "usage": {
+    "prompt_tokens": 368,
+    "completion_tokens": 1549,
+    "total_tokens": 1917,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1348
+    }
+  }
+}
