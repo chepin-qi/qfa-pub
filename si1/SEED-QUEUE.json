@@ -1,5 +1,5 @@
 {
- "n": 3,
+ "n": 4,
  "seeds": [
   {
    "kind": "mention-qfa",
@@ -12,8 +12,12 @@
   {
    "kind": "mention-qfa",
    "ref": "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md"
+  },
+  {
+   "kind": "mention-qfa",
+   "ref": "lanes/qfa/inbox/CHARTER-SIGN-NUDGE-USRM-02.md"
   }
  ],
- "ts": "20260927T180557Z",
+ "ts": "20260927T184757Z",
  "v": "SI1-SEED-01"
 }
