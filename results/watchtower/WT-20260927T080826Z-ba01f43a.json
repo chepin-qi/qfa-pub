@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-27T08:08:10Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:巷卡216→217，件qtlv-eval-wave-6220cd5885be.md迁入217卡|性态:lane.drop纯流转，未触发异常，无响应缺失|建议处置:执行WAKE-PROTO落账，217卡裸候下游指令|锚:lanes/qfa/eval:qtlv-eval-wave-6220cd5885be.md他线归档",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 722,
+    "total_tokens": 936,
+    "completion_tokens_details": {
+      "reasoning_tokens": 631
+    }
+  }
+}
