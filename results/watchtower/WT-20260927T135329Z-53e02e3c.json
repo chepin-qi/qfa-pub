@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-27T13:53:29Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/lvlu-nudge-WQB15-V02-L111-20260927T130023Z.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
