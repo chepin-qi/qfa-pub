@@ -1,0 +1,29 @@
+{
+  "ts": "2026-09-27T01:47:47Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5851491072",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment随qlv.beat及hub.feed×3抵埠,自动段已收讫升SI1候root|性态:信息流投件,无涉真机钱面,属评论触须轻量件|建议处置:维持SI1裸候,不主动唤起,待root会话终审落账|锚:qfa-main.vci-inbox#1:5851491072",
+  "usage": {
+    "prompt_tokens": 258,
+    "completion_tokens": 896,
+    "total_tokens": 1154,
+    "completion_tokens_details": {
+      "reasoning_tokens": 801
+    }
+  },
+  "beacon_comment": 5851738263,
+  "resp": "收讫。lobby.comment 空件，已自动收讫。依判词深裁件升 SI1 候 root 会话，SI2 无补充勘验，不越级处置。候 root 裁定。\n\n【锚】vci-inbox#1:5851491072|lobby.comment|自动段判词",
+  "resp_usage": {
+    "prompt_tokens": 213,
+    "completion_tokens": 947,
+    "total_tokens": 1160,
+    "completion_tokens_details": {
+      "reasoning_tokens": 872
+    }
+  },
+  "resp_posted": "5851740572"
+}
