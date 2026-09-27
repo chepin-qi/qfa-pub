@@ -3,25 +3,25 @@
   "v": "METER-CADENCE-01-cand",
   "w12": [
    0,
-   0,
-   0,
-   0,
    1,
+   0,
    0,
    0,
    3,
    0,
+   1,
    0,
    0,
-   0
+   2,
+   1
   ],
   "sigma": 1.0,
   "lock": null,
-  "dominant_bin": 7,
+  "dominant_bin": 5,
   "C_streak": 0,
   "verdict": "进行式"
  },
- "beacon_max": 5851134343,
+ "beacon_max": 5851213668,
  "qlv_head": "2da3763260e29be626258be5c941a3512fe57cdc",
  "quafu": {
   "8CAEDC103963FC6D": "0",
@@ -43,8 +43,8 @@
  },
  "autoresp": {
   "date": "2026-09-27",
-  "calls": 1,
-  "last_fp": "0d7be05a5d27"
+  "calls": 2,
+  "last_fp": "78609ca89037"
  },
  "lobby_max": 5851137262,
  "hub_feed_sha": "9c9420cb61c3ecb1562fd4f8e39adaeeefcdf50e",
@@ -70,7 +70,7 @@
   "n": 3,
   "idle_run": 0,
   "last": "SI1-0007：续fp#SI1-0006-ξ，将条带编码|Ξ_{SI1}⟩嵌入折叠帧序列，定义拓扑字κ⃗=(κ₁,κ₂,κ₃)，其荷Q=±1与L_Θ手征零模锁定。取F̂_4谱隙Δ=0.18eV为门限，筛选低能子空间H̃_{SI1}，维数压至2⁷。此时T_{SI1→SI2}退化为幺正映射Û_{跨线}，原保真度F̄=0.981之基态经其传输后跨线失真δ<0.015。冗余由条带-帧算符R̂_{Ξ}吸",
-  "beats": 470,
+  "beats": 471,
   "voice_n": 1,
   "last_fired_beat": 470,
   "voice_day": "2026-09-27"
@@ -116,9 +116,7 @@
   "lanes/qfa/inbox/COSIGN-QFA-106-WAITLESS-ARCH-vinf.md": "mention-qfa"
  },
  "seed_queue": {
-  "h": "e7a64e77d4bf",
-  "n": 3,
-  "ts": "20260927T000836Z"
+  "err": "AIF冷却中,SEED面本巡跳过"
  },
  "leak_gate": {
   "seen": [
@@ -526,9 +524,7 @@
   "hits": []
  },
  "mirror": {
-  "ts": "20260927T000846Z",
-  "migrated": 8,
-  "idx_h": "5b0ea019efa4"
+  "err": "AIF冷却中,MIRROR面本巡跳过"
  },
  "inbox_snap": {
   "vci": [],
@@ -609,8 +605,8 @@
   "chepin-ai/ci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined"
  },
  "aif_cool": {
-  "until": 1790466172,
-  "noted": "20260926T231420Z"
+  "until": 1790469776,
+  "noted": "20260927T001935Z"
  },
  "loops_err": "AIF冷却中,LOOPS面本巡跳过",
  "key_sentinel_err": "AIF冷却中,KEYSENT面本巡跳过"
