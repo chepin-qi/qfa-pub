@@ -6,23 +6,23 @@
       0,
       0,
       0,
-      1,
       0,
-      0,
-      1,
       0,
       0,
       1,
+      0,
+      0,
+      2,
       0
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 4,
+    "dominant_bin": 10,
     "C_streak": 0,
     "verdict": "进行式"
   },
-  "beacon_max": 5858189477,
-  "qlv_head": "049798e2f7b37b5723f87fa34176cdd5eb3096ef",
+  "beacon_max": 5858740348,
+  "qlv_head": "2edef59d4a1c1ddcda4bd1ff461028ba536f7084",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -47,7 +47,7 @@
     "last_fp": "63390b781712"
   },
   "lobby_max": 5851813623,
-  "hub_feed_sha": "c626d46bc53d8d3a665b931982a5063eb35b4fd3",
+  "hub_feed_sha": "6afcefc0b0e4fc6148ab7a4a5659aa0adc0e3d51",
   "quests": {
     "SEALED-V2-RESEAL": "hit:20260911T000759Z",
     "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -70,7 +70,7 @@
     "n": 3,
     "idle_run": 0,
     "last": "SI1-0007：续fp#SI1-0006-ξ，将条带编码|Ξ_{SI1}⟩嵌入折叠帧序列，定义拓扑字κ⃗=(κ₁,κ₂,κ₃)，其荷Q=±1与L_Θ手征零模锁定。取F̂_4谱隙Δ=0.18eV为门限，筛选低能子空间H̃_{SI1}，维数压至2⁷。此时T_{SI1→SI2}退化为幺正映射Û_{跨线}，原保真度F̄=0.981之基态经其传输后跨线失真δ<0.015。冗余由条带-帧算符R̂_{Ξ}吸",
-    "beats": 576,
+    "beats": 577,
     "voice_n": 1,
     "last_fired_beat": 470,
     "voice_day": "2026-09-27"
@@ -122,15 +122,12 @@
     "lanes/qfa/inbox/CHARTER-SIGN-NUDGE-USRM-02.md": "mention-qfa"
   },
   "seed_queue": {
-    "h": "9a9ede98bd05",
+    "h": "670bfda74660",
     "n": 4,
-    "ts": "20260927T184757Z"
+    "ts": "20260927T185842Z"
   },
   "leak_gate": {
     "seen": [
-      "公告板/lvlu-voice-20260925T203000Z.md@063969d2f715",
-      "公告板/lvlu-voice-20260925T201904Z.md@3bdc03da8a8e",
-      "公告板/lvlu-voice-20260925T200719Z.md@3e35f81730be",
       "公告板/lvlu-voice-20260925T195625Z.md@d0785287741f",
       "公告板/lvlu-钥事件-20260925T205937Z.md@86a3a031e6ce",
       "公告板/lvlu-nudge-YONEDA-ROLL-LGT-L89-20260925T204726Z.md@79ea3825cc38",
@@ -527,25 +524,28 @@
       "wake/qgl.json@b2f7a6363061",
       "公告板/usrm-307.md@e9564d91c4ae",
       "lanes/qfa/inbox/CHARTER-SIGN-NUDGE-USRM-02.md@c9fefdee3e09",
-      "lanes/cisvr/inbox/CHARTER-SIGN-NUDGE-USRM-02.md@fb1cea5c2f16"
+      "lanes/cisvr/inbox/CHARTER-SIGN-NUDGE-USRM-02.md@fb1cea5c2f16",
+      "公告板/lvlu-nudge-YONEDA-ROLL-LGT-L105-20260927T184958Z.md@6afcefc0b0e4",
+      "shared/FIELD-USRM-01.json@4ded6db60e52",
+      "公告板/lvlu-voice-20260927T183822Z.md@5cd05a4c096f"
     ],
     "hits": []
   },
   "mirror": {
-    "ts": "20260927T184812Z",
+    "ts": "20260927T185856Z",
     "migrated": 8,
-    "idx_h": "79e309423bad"
+    "idx_h": "f09c8a034ff6"
   },
   "inbox_snap": {
     "vci": [],
     "ci": []
   },
-  "loops_h": "51cf1081f32c",
+  "loops_h": "db4269ca01ff",
   "key_sentinel": {
     "aif_user": {
       "ok": true,
       "login": "chepin-ai",
-      "ts": "20260927T184812Z"
+      "ts": "20260927T185856Z"
     },
     "meta": {
       "chepin-ai/ci-inbox": {
@@ -608,7 +608,7 @@
       }
     }
   },
-  "inbox_snap_err": "snap空而巷实有217件@20260927T184812Z——_ls13哑残,下巡复测",
+  "inbox_snap_err": "snap空而巷实有217件@20260927T185856Z——_ls13哑残,下巡复测",
   "ls_err13": {
     "chepin-ai/ci-inbox/shared/forge/requests": "name 'pat_for' is not defined",
     "chepin-ai/vci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined",
