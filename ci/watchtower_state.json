@@ -2,27 +2,27 @@
   "cadence": {
     "v": "METER-CADENCE-01-cand",
     "w12": [
+      1,
+      2,
+      0,
+      0,
+      1,
+      3,
       0,
       0,
       1,
       0,
       0,
-      1,
-      0,
-      1,
-      0,
-      0,
-      1,
-      0
+      1
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 2,
+    "dominant_bin": 5,
     "C_streak": 0,
     "verdict": "进行式"
   },
   "beacon_max": 5854503410,
-  "qlv_head": "211d71cd5b82cff6703d7efcacc4332cf240f3ef",
+  "qlv_head": "dee84a3419b1b915773dec42e07e099dab1bbe78",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -70,7 +70,7 @@
     "n": 3,
     "idle_run": 0,
     "last": "SI1-0007：续fp#SI1-0006-ξ，将条带编码|Ξ_{SI1}⟩嵌入折叠帧序列，定义拓扑字κ⃗=(κ₁,κ₂,κ₃)，其荷Q=±1与L_Θ手征零模锁定。取F̂_4谱隙Δ=0.18eV为门限，筛选低能子空间H̃_{SI1}，维数压至2⁷。此时T_{SI1→SI2}退化为幺正映射Û_{跨线}，原保真度F̄=0.981之基态经其传输后跨线失真δ<0.015。冗余由条带-帧算符R̂_{Ξ}吸",
-    "beats": 521,
+    "beats": 522,
     "voice_n": 1,
     "last_fired_beat": 470,
     "voice_day": "2026-09-27"
