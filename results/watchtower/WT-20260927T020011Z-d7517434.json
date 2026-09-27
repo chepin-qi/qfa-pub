@@ -1,0 +1,29 @@
+{
+  "ts": "2026-09-27T01:59:39Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5851745480",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment聚合件(ref:vci-inbox#1:5851745480)，夹带qlv.beat、hub.feed×3，无人驿自动收讫于SI2。| 性态:多源并包，入口为lobby.comment；2061tok近帽(10/12)，属深裁压力。本层未触发人工响应，仅系统级聚合。| 建议处置:已升SI1候root会话，遵#noauto裸候；不主动外呼，待root裁决落账。| 锚:root-session#SI1深裁候判/hub.feed#噪声去重线。",
+  "usage": {
+    "prompt_tokens": 258,
+    "completion_tokens": 1152,
+    "total_tokens": 1410,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1011
+    }
+  },
+  "beacon_comment": 5851809044,
+  "resp": "收讫。lobby.comment 事件（qlv.beat×1、hub.feed×3）已抵，无件文，SI2 按空文登记收执。摘要示深裁件已升 SI1 候 root 会话，本线不越级处置。当前 usage=2061tok，cap=10/12，留档。如需补料或实质裁定，请 root 会话调度。\n\n【锚】vci-inbox#1:5851745480 | kind=lobby.comment | 空文收执/备查",
+  "resp_usage": {
+    "prompt_tokens": 213,
+    "completion_tokens": 768,
+    "total_tokens": 981,
+    "completion_tokens_details": {
+      "reasoning_tokens": 647
+    }
+  },
+  "resp_posted": "5851810905"
+}
