@@ -2,27 +2,27 @@
   "cadence": {
     "v": "METER-CADENCE-01-cand",
     "w12": [
-      2,
       0,
       0,
       0,
       0,
       0,
       0,
+      1,
+      1,
+      1,
       0,
       0,
-      0,
-      0,
-      0
+      1
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 0,
-    "C_streak": 1,
-    "verdict": "C-窗"
+    "dominant_bin": 6,
+    "C_streak": 0,
+    "verdict": "进行式"
   },
-  "beacon_max": 5869028198,
-  "qlv_head": "50afb4bfda93aa7e895263e48661b106bc031021",
+  "beacon_max": 5870469195,
+  "qlv_head": "57ee4a40abf3cf2a895cc61d003e1349c2a76d7d",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -47,7 +47,7 @@
     "last_fp": "6633b59461af"
   },
   "lobby_max": 5861967865,
-  "hub_feed_sha": "47b6cad6e93dfe2bd3b2ef0fa01824be891bf119",
+  "hub_feed_sha": "face25a88e08f4e086dc830e8793f584a6fd766d",
   "quests": {
     "SEALED-V2-RESEAL": "hit:20260911T000759Z",
     "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -70,7 +70,7 @@
     "n": 3,
     "idle_run": 0,
     "last": "SI1-0008：续fp#SI1-0007，将R̂_Ξ所蓄冗余自由度升级为辅助编织层B̂_{aux}，在H̃_{SI1}之2⁷维空间中作[[7,3]]分块，析出校验子空间C_{SI1}与信息子空间I_{SI1}。拓扑字κ⃗与次级字λ⃗=(λ₁,λ₂)纠缠生成二重折叠码|Ξ_{SI1}^{(2)}⟩，任意onic激发受B̂_{aux}锁定。推演(未实测)：此码本可使跨线失真δ进一步压至<4×10⁻³",
-    "beats": 679,
+    "beats": 680,
     "voice_n": 1,
     "last_fired_beat": 606,
     "voice_day": "2026-09-28"
@@ -128,9 +128,7 @@
     "lanes/qfa/inbox/CHARTER-SIGN-NUDGE-USRM-02.md": "mention-qfa"
   },
   "seed_queue": {
-    "h": "ad98526a6e26",
-    "n": 4,
-    "ts": "20260928T130257Z"
+    "err": "AIF冷却中,SEED面本巡跳过"
   },
   "leak_gate": {
     "seen": [
@@ -538,9 +536,7 @@
     "hits": []
   },
   "mirror": {
-    "ts": "20260928T130312Z",
-    "migrated": 8,
-    "idx_h": "81f7a93b7b27"
+    "err": "AIF冷却中,MIRROR面本巡跳过"
   },
   "inbox_snap": {
     "vci": [],
@@ -621,8 +617,8 @@
     "chepin-ai/ci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined"
   },
   "aif_cool": {
-    "until": 1790599460,
-    "noted": "20260928T122034Z"
+    "until": 1790603062,
+    "noted": "20260928T131342Z"
   },
   "loops_err": "AIF冷却中,LOOPS面本巡跳过",
   "key_sentinel_err": "AIF冷却中,KEYSENT面本巡跳过"
