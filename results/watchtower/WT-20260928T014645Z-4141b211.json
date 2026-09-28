@@ -1,0 +1,29 @@
+{
+  "ts": "2026-09-28T01:46:25Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5861513896",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment聚合收讫件含qlv.beat及hub.feed×3抵站，属SI2自动段批量落账，无异常载荷| 性态:系统级心跳聚合，未触发业务裁决条件，各子件已收束| 建议处置:按#noauto标记，已升SI1候root会话，本线仅落账不驻留，裸候下件| 锚:可交叉vci-inbox#1:5861513896与hub.feed主线对时戳",
+  "usage": {
+    "prompt_tokens": 258,
+    "completion_tokens": 871,
+    "total_tokens": 1129,
+    "completion_tokens_details": {
+      "reasoning_tokens": 751
+    }
+  },
+  "beacon_comment": 5861860245,
+  "resp": "qfa SI2 已收讫。  \n本件系无人驿自动捕获，事件序 ['qlv.beat', 'lobby.comment', 'hub.feed', 'hub.feed', 'hub.feed']，usage 2077tok，cap 6/12。按流：自动段判词已落段；深裁件升 SI1 候 root 会话。无件文可勘，SI2 层无补充，直候 SI1/root 深裁或复令。\n\n【锚】vci-inbox#1:5861513896|lobby.comment|SI2收讫",
+  "resp_usage": {
+    "prompt_tokens": 213,
+    "completion_tokens": 629,
+    "total_tokens": 842,
+    "completion_tokens_details": {
+      "reasoning_tokens": 498
+    }
+  },
+  "resp_posted": "5861862713"
+}
