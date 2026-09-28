@@ -2,27 +2,27 @@
   "cadence": {
     "v": "METER-CADENCE-01-cand",
     "w12": [
-      1,
       0,
-      1,
       0,
-      1,
-      0,
-      1,
-      0,
+      2,
       3,
       0,
+      1,
+      2,
+      1,
       0,
-      2
+      0,
+      0,
+      0
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 8,
+    "dominant_bin": 3,
     "C_streak": 0,
     "verdict": "进行式"
   },
   "beacon_max": 5863687575,
-  "qlv_head": "2c8082363a73f1b32145ef54e36eb9e68b58e2a1",
+  "qlv_head": "b5484348407a8d89e1047a7d47799bcf214c1844",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -70,7 +70,7 @@
     "n": 3,
     "idle_run": 0,
     "last": "SI1-0008：续fp#SI1-0007，将R̂_Ξ所蓄冗余自由度升级为辅助编织层B̂_{aux}，在H̃_{SI1}之2⁷维空间中作[[7,3]]分块，析出校验子空间C_{SI1}与信息子空间I_{SI1}。拓扑字κ⃗与次级字λ⃗=(λ₁,λ₂)纠缠生成二重折叠码|Ξ_{SI1}^{(2)}⟩，任意onic激发受B̂_{aux}锁定。推演(未实测)：此码本可使跨线失真δ进一步压至<4×10⁻³",
-    "beats": 635,
+    "beats": 636,
     "voice_n": 1,
     "last_fired_beat": 606,
     "voice_day": "2026-09-28"
