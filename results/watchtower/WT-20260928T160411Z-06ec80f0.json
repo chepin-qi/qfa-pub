@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-28T16:04:11Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/lvlu-nudge-BLUEQUBIT-VERIFY-L127-20260928T154534Z.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
