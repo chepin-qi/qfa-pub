@@ -2,6 +2,7 @@
   "cadence": {
     "v": "METER-CADENCE-01-cand",
     "w12": [
+      2,
       0,
       0,
       0,
@@ -9,20 +10,19 @@
       0,
       0,
       0,
-      1,
       0,
       0,
       0,
-      4
+      0
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 11,
-    "C_streak": 0,
-    "verdict": "进行式"
+    "dominant_bin": 0,
+    "C_streak": 1,
+    "verdict": "C-窗"
   },
   "beacon_max": 5869028198,
-  "qlv_head": "9faf831d89d1c3d2ade94fb0db85d343f102e292",
+  "qlv_head": "50afb4bfda93aa7e895263e48661b106bc031021",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -47,7 +47,7 @@
     "last_fp": "6633b59461af"
   },
   "lobby_max": 5861967865,
-  "hub_feed_sha": "1cdb37f1291f37595c8a9fed4102fc2c997953e8",
+  "hub_feed_sha": "47b6cad6e93dfe2bd3b2ef0fa01824be891bf119",
   "quests": {
     "SEALED-V2-RESEAL": "hit:20260911T000759Z",
     "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -70,7 +70,7 @@
     "n": 3,
     "idle_run": 0,
     "last": "SI1-0008：续fp#SI1-0007，将R̂_Ξ所蓄冗余自由度升级为辅助编织层B̂_{aux}，在H̃_{SI1}之2⁷维空间中作[[7,3]]分块，析出校验子空间C_{SI1}与信息子空间I_{SI1}。拓扑字κ⃗与次级字λ⃗=(λ₁,λ₂)纠缠生成二重折叠码|Ξ_{SI1}^{(2)}⟩，任意onic激发受B̂_{aux}锁定。推演(未实测)：此码本可使跨线失真δ进一步压至<4×10⁻³",
-    "beats": 678,
+    "beats": 679,
     "voice_n": 1,
     "last_fired_beat": 606,
     "voice_day": "2026-09-28"
@@ -128,14 +128,12 @@
     "lanes/qfa/inbox/CHARTER-SIGN-NUDGE-USRM-02.md": "mention-qfa"
   },
   "seed_queue": {
-    "h": "d77c40192e98",
+    "h": "ad98526a6e26",
     "n": 4,
-    "ts": "20260928T125218Z"
+    "ts": "20260928T130257Z"
   },
   "leak_gate": {
     "seen": [
-      "公告板/lvlu-voice-20260926T185843Z.md@35940fcbddc6",
-      "公告板/lvlu-voice-20260926T194115Z.md@372f9381a0e3",
       "公告板/lvlu-voice-20260926T195210Z.md@e1f82a7d9915",
       "公告板/lvlu-voice-20260926T203515Z.md@1be7d6f1da06",
       "公告板/lvlu-voice-20260926T202434Z.md@329f0bdf509a",
@@ -533,25 +531,27 @@
       "公告板/lvlu-voice-20260928T122951Z.md@229e1ed957e8",
       "公告板/usrm-statex-digest-gen288.md@79f0f99638d4",
       "公告板/lvlu-voice-20260928T121847Z.md@279dfddffb6f",
-      "公告板/lvlu-voice-20260928T120750Z.md@85fa7599a497"
+      "公告板/lvlu-voice-20260928T120750Z.md@85fa7599a497",
+      "shared/FIELD-USRM-01.json@47b6cad6e93d",
+      "公告板/lvlu-voice-20260928T124214Z.md@b1879dcc3aac"
     ],
     "hits": []
   },
   "mirror": {
-    "ts": "20260928T125230Z",
+    "ts": "20260928T130312Z",
     "migrated": 8,
-    "idx_h": "afc9ee48ea4b"
+    "idx_h": "81f7a93b7b27"
   },
   "inbox_snap": {
     "vci": [],
     "ci": []
   },
-  "loops_h": "6273e4b0c1ac",
+  "loops_h": "ff4d5e6ff7e6",
   "key_sentinel": {
     "aif_user": {
       "ok": true,
       "login": "chepin-ai",
-      "ts": "20260928T125230Z"
+      "ts": "20260928T130312Z"
     },
     "meta": {
       "chepin-ai/ci-inbox": {
@@ -614,7 +614,7 @@
       }
     }
   },
-  "inbox_snap_err": "snap空而巷实有226件@20260928T125230Z——_ls13哑残,下巡复测",
+  "inbox_snap_err": "snap空而巷实有226件@20260928T130312Z——_ls13哑残,下巡复测",
   "ls_err13": {
     "chepin-ai/ci-inbox/shared/forge/requests": "name 'pat_for' is not defined",
     "chepin-ai/vci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined",
