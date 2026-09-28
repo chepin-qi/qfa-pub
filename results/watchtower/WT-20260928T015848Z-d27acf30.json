@@ -1,0 +1,29 @@
+{
+  "ts": "2026-09-28T01:58:07Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5861868313",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:vci-inbox#1:5861868313混包收讫(qlv.beat+lobby.comment+hub.feed×3),usage=2061tok,cap10/12| 性态:批量混投,tok负荷偏高,自动段预收讫升SI1候root,未触发越真机钱面| 建议处置:hub.feed并账落账,余cap=2裸候root,不主动唤应| 锚:qlv.beat基线",
+  "usage": {
+    "prompt_tokens": 258,
+    "completion_tokens": 1494,
+    "total_tokens": 1752,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1379
+    }
+  },
+  "beacon_comment": 5861957357,
+  "resp": "收讫。lobby.comment 件文阙，据摘要直陈：事件列 ['qlv.beat', 'lobby.comment', 'hub.feed'×3] 已自动落驿。深裁件依制升 SI1，现候 root 会话处置。usage 2061 tok，cap 10/12，余量告紧，候场期间不扩载。未实测项未具。  \n【锚】vci-inbox#1:5861868313；深裁件 SI1 候 root",
+  "resp_usage": {
+    "prompt_tokens": 213,
+    "completion_tokens": 1146,
+    "total_tokens": 1359,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1031
+    }
+  },
+  "resp_posted": "5861961803"
+}
