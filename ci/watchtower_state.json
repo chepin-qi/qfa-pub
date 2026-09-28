@@ -5,14 +5,14 @@
       0,
       0,
       0,
-      0,
-      0,
-      2,
-      0,
-      0,
+      1,
+      1,
+      4,
       1,
       0,
       0,
+      1,
+      1,
       0
     ],
     "sigma": 1.0,
@@ -22,7 +22,7 @@
     "verdict": "进行式"
   },
   "beacon_max": 5876379997,
-  "qlv_head": "ea9069b8ece6deec1b309407068a941411f5e8f7",
+  "qlv_head": "640c210ebc287a05a15c05b9a05d2786a29688b9",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -70,7 +70,7 @@
     "n": 3,
     "idle_run": 0,
     "last": "SI1-0008：续fp#SI1-0007，将R̂_Ξ所蓄冗余自由度升级为辅助编织层B̂_{aux}，在H̃_{SI1}之2⁷维空间中作[[7,3]]分块，析出校验子空间C_{SI1}与信息子空间I_{SI1}。拓扑字κ⃗与次级字λ⃗=(λ₁,λ₂)纠缠生成二重折叠码|Ξ_{SI1}^{(2)}⟩，任意onic激发受B̂_{aux}锁定。推演(未实测)：此码本可使跨线失真δ进一步压至<4×10⁻³",
-    "beats": 713,
+    "beats": 714,
     "voice_n": 1,
     "last_fired_beat": 606,
     "voice_day": "2026-09-28"
@@ -128,9 +128,7 @@
     "lanes/qfa/inbox/CHARTER-SIGN-NUDGE-USRM-02.md": "mention-qfa"
   },
   "seed_queue": {
-    "h": "c1c96d62a109",
-    "n": 4,
-    "ts": "20260928T190328Z"
+    "err": "AIF冷却中,SEED面本巡跳过"
   },
   "leak_gate": {
     "seen": [
@@ -538,9 +536,7 @@
     "hits": []
   },
   "mirror": {
-    "ts": "20260928T190341Z",
-    "migrated": 8,
-    "idx_h": "7f7786c2ce89"
+    "err": "AIF冷却中,MIRROR面本巡跳过"
   },
   "inbox_snap": {
     "vci": [],
@@ -621,8 +617,8 @@
     "chepin-ai/ci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined"
   },
   "aif_cool": {
-    "until": 1790621085,
-    "noted": "20260928T181111Z"
+    "until": 1790624687,
+    "noted": "20260928T191402Z"
   },
   "loops_err": "AIF冷却中,LOOPS面本巡跳过",
   "key_sentinel_err": "AIF冷却中,KEYSENT面本巡跳过"
