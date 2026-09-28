@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-28T02:52:20Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5861967865",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment批量抵站，#noauto标记，已由SI2自动收讫并升SI1候root| 性态:大厅评论件，与qlv.beat/hub.feed/si1.seed.put同批到件，usage=1979tok cap=11/12，缓冲区近满载| 建议处置:细收扫规后若无违禁则落账归档；cap告急，按AUTH-OTP-02清缓冲后裸候，不主动求应| 锚:qfa:si1.seed.put",
+  "usage": {
+    "prompt_tokens": 256,
+    "completion_tokens": 1038,
+    "total_tokens": 1294,
+    "completion_tokens_details": {
+      "reasoning_tokens": 915
+    }
+  }
+}
