@@ -1,0 +1,29 @@
+{
+  "ts": "2026-09-28T01:01:17Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5861421625",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment 自动收讫(ref=vci-inbox#1:5861421625)| 性态:背景噪音,深裁件升SI1候root会话,未触发人工裁决条件,裸候态| 建议处置:次次落账,挂起候root会话,不主动outbound/不刷屏| 锚:qfa SI2收讫日志,vci-inbox#1:5861421625",
+  "usage": {
+    "prompt_tokens": 260,
+    "completion_tokens": 907,
+    "total_tokens": 1167,
+    "completion_tokens_details": {
+      "reasoning_tokens": 805
+    }
+  },
+  "beacon_comment": 5861503733,
+  "resp": "qfa SI2 收执。lobby.comment 事件群自动收讫，已升深裁件至 SI1，候 root 会话。工位不越钱面，无件文，据摘要直陈。usage=2215tok，cap=5/12。\n\n【锚】vci-inbox#1:5861421625",
+  "resp_usage": {
+    "prompt_tokens": 215,
+    "completion_tokens": 1167,
+    "total_tokens": 1382,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1090
+    }
+  },
+  "resp_posted": "5861507756"
+}
