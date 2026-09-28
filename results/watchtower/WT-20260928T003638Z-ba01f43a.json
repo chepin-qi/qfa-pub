@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-28T00:36:15Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:巷卡225→226迭代，kind=lane.drop，qtlv-eval-wave-6220cd5885be.md入inbox。| 性态:常规版本滚动，旧卡下线新卡就位。未触发异常阻塞或失响应，属平滑迁移。| 建议处置:执行落账，归档225；细收226件；裸候，不主动求应。| 锚:lanes/qtlv/inbox:qtlv-eval-wave-6220cd5885be.md",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 963,
+    "total_tokens": 1177,
+    "completion_tokens_details": {
+      "reasoning_tokens": 851
+    }
+  }
+}
