@@ -2,27 +2,27 @@
  "cadence": {
   "v": "METER-CADENCE-01-cand",
   "w12": [
-   2,
-   1,
-   2,
    0,
    0,
-   1,
+   0,
+   0,
+   0,
    4,
+   1,
    0,
-   0,
+   3,
    0,
    0,
    0
   ],
   "sigma": 1.0,
   "lock": null,
-  "dominant_bin": 6,
+  "dominant_bin": 5,
   "C_streak": 0,
   "verdict": "进行式"
  },
- "beacon_max": 5861274006,
- "qlv_head": "c3cef71bac076127be5a02485eaa90fdc6b849b6",
+ "beacon_max": 5861352540,
+ "qlv_head": "356dbe365041da56487dfbde0a125971a1ca175a",
  "quafu": {
   "8CAEDC103963FC6D": "0",
   "8BAFA1E022273996": "0",
@@ -43,11 +43,11 @@
  },
  "autoresp": {
   "date": "2026-09-28",
-  "calls": 4,
-  "last_fp": "0be72b4261e9"
+  "calls": 5,
+  "last_fp": "5313cfbd0142"
  },
- "lobby_max": 5851813623,
- "hub_feed_sha": "58d944e33c6aa329c14e44c7a1496432c48b3a0e",
+ "lobby_max": 5861318823,
+ "hub_feed_sha": "d69d9f364b339762af65af8189e2b45bf548560d",
  "quests": {
   "SEALED-V2-RESEAL": "hit:20260911T000759Z",
   "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -61,8 +61,8 @@
  "quests_boot": "2026-09-10T22:00:19Z",
  "qn_ISSUE-874-COMMENT": 1,
  "resp": {
-  "day": "2026-09-27",
-  "n": 6
+  "day": "2026-09-28",
+  "n": 3
  },
  "si1": {
   "seq": 9,
@@ -70,7 +70,7 @@
   "n": 3,
   "idle_run": 0,
   "last": "SI1-0008：续fp#SI1-0007，将R̂_Ξ所蓄冗余自由度升级为辅助编织层B̂_{aux}，在H̃_{SI1}之2⁷维空间中作[[7,3]]分块，析出校验子空间C_{SI1}与信息子空间I_{SI1}。拓扑字κ⃗与次级字λ⃗=(λ₁,λ₂)纠缠生成二重折叠码|Ξ_{SI1}^{(2)}⟩，任意onic激发受B̂_{aux}锁定。推演(未实测)：此码本可使跨线失真δ进一步压至<4×10⁻³",
-  "beats": 609,
+  "beats": 610,
   "voice_n": 1,
   "last_fired_beat": 606,
   "voice_day": "2026-09-28"
@@ -107,7 +107,10 @@
   "289952c8b27d",
   "f6207f48f0fd",
   "7390d001dc59",
-  "db9f2baf5ad2"
+  "db9f2baf5ad2",
+  "4ed2dd8a98e2",
+  "19801fbe4230",
+  "e1a9d054bfa9"
  ],
  "vciqfa_sealed_seen": [
   "sealed-20260911T004429Z-N28-QI-FULL-PAT-from-lvlu.md",
@@ -122,18 +125,12 @@
   "lanes/qfa/inbox/CHARTER-SIGN-NUDGE-USRM-02.md": "mention-qfa"
  },
  "seed_queue": {
-  "err": "AIF冷却中,SEED面本巡跳过"
+  "h": "45e2f380be31",
+  "n": 4,
+  "ts": "20260928T004957Z"
  },
  "leak_gate": {
   "seen": [
-   "shared/field-engine/QRAC-TRIALS-01/qrac_v2_rc_sim.py@9b498ac51560",
-   "shared/field-engine/chain_verify.py@9b498ac51560",
-   "公告板/lvlu-voice-20260926T034508Z.md@a7e35ec60eb3",
-   "公告板/lvlu-voice-20260926T043115Z.md@b35b749274fa",
-   "公告板/lvlu-voice-20260926T042012Z.md@1ce745a31726",
-   "公告板/by-cisvr/cisvr-305.md@7d9d4b768a9b",
-   "shared/transfer/QFA-ISSUE-FIX-01/ROOT-ACTION-CARD.md@b854b2d2891d",
-   "公告板/lvlu-voice-20260926T044213Z.md@f447fe993968",
    "公告板/lvlu-voice-20260926T052602Z.md@53e1513baa27",
    "公告板/lvlu-voice-20260926T051455Z.md@eb07d4d6aed8",
    "公告板/lvlu-voice-20260926T050350Z.md@b5adecb969ec",
@@ -525,23 +522,33 @@
    "shared/field-engine/QRAC-TRIALS-01/iqft2_3cz_decomp.json@41bc06fa484c",
    "shared/field-engine/QRAC-TRIALS-01/qrac_v4_shallow_sim.out.json@41bc06fa484c",
    "shared/field-engine/QRAC-TRIALS-01/qrac_v4_shallow_sim.py@41bc06fa484c",
-   "shared/FIELD-USRM-01.json@a91358852d9c"
+   "shared/FIELD-USRM-01.json@a91358852d9c",
+   "shared/FIELD-USRM-01.json@d69d9f364b33",
+   "公告板/lvlu-voice-20260928T002522Z.md@12cee8224acc",
+   "公告板/lvlu-voice-20260928T001417Z.md@2de98355e2c1",
+   "公告板/lvlu-voice-20260928T000245Z.md@768f3b0fa44f",
+   "公告板/usrm-statex-digest-gen216.md@e77458db9a73",
+   "公告板/lvlu-nudge-EVAL-KAPPA-LGT-L100-20260928T000259Z.md@8eaca3bcddb9",
+   "shared/FIELD-USRM-01.json@9c61571b3d47",
+   "公告板/qfa-voice-20260928T000323Z.md@fcc036db1f3c"
   ],
   "hits": []
  },
  "mirror": {
-  "err": "AIF冷却中,MIRROR面本巡跳过"
+  "ts": "20260928T005016Z",
+  "migrated": 8,
+  "idx_h": "9731fa3cd8fa"
  },
  "inbox_snap": {
   "vci": [],
   "ci": []
  },
- "loops_h": "74415b4aa164",
+ "loops_h": "09537567e212",
  "key_sentinel": {
   "aif_user": {
    "ok": true,
    "login": "chepin-ai",
-   "ts": "20260928T000338Z"
+   "ts": "20260928T005016Z"
   },
   "meta": {
    "chepin-ai/ci-inbox": {
@@ -604,7 +611,7 @@
    }
   }
  },
- "inbox_snap_err": "snap空而巷实有225件@20260928T000338Z——_ls13哑残,下巡复测",
+ "inbox_snap_err": "snap空而巷实有226件@20260928T005016Z——_ls13哑残,下巡复测",
  "ls_err13": {
   "chepin-ai/ci-inbox/shared/forge/requests": "name 'pat_for' is not defined",
   "chepin-ai/vci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined",

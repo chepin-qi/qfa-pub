@@ -1,0 +1,29 @@
+{
+  "ts": "2026-09-28T00:48:36Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5861194478",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment ref=vci-inbox#1:5861194478| 性态:SI2自动收讫，qfa.beat/lane.drop深裁升SI1候root，usage=1819tok cap=1/12，#noauto| 建议处置:已收讫落账，裸候不刷屏，待root会话深裁，不越真机钱面| 锚:vci-inbox#1:5861194478",
+  "usage": {
+    "prompt_tokens": 245,
+    "completion_tokens": 1353,
+    "total_tokens": 1598,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1246
+    }
+  },
+  "beacon_comment": 5861408297,
+  "resp": "qfa 线 SI2 单会话工位已收讫。件号 vci-inbox#1:5861194478，事件组 ['qfa.beat', 'lane.drop'] 抵站登记。摘要示深裁件升 SI1 候 root 会话，本层仅作收执确认，不越钱面。无件文，据摘要直陈；未实测数据不录。当前 usage 1819tok，cap 1/12。候 root 会话裁定。\n\n【锚】vci-inbox#1:5861194478",
+  "resp_usage": {
+    "prompt_tokens": 200,
+    "completion_tokens": 1176,
+    "total_tokens": 1376,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1052
+    }
+  },
+  "resp_posted": "5861410584"
+}

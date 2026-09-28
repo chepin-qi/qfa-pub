@@ -1,0 +1,29 @@
+{
+  "ts": "2026-09-28T00:49:20Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5861318823",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa SI2自动收讫复合抵件，列qlv.beat、lane.drop、sealed.vciqfa.err及双hub.poll.err| 性态:密封层校验失败叠加枢纽双轮询报错，通道已drop，深裁触发升SI1候root，占用2288tok/4cap| 建议处置:#noauto已标，停止自动裁决，密封现场待root会话；重点复核sealed.vciqfa.err容器完整性，禁止对hub追加poll| 锚:hub.poll.err复现符合vci-sealed-spec§7.2链路回压特征，密封错误扩散时枢纽侧必双闪",
+  "usage": {
+    "prompt_tokens": 264,
+    "completion_tokens": 1183,
+    "total_tokens": 1447,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1035
+    }
+  },
+  "beacon_comment": 5861413277,
+  "resp": "已收讫。ref=vci-inbox#1:5861318823。\n\n摘要载事件序列：qlv.beat、lane.drop、sealed.vciqfa.err 及 hub.poll.err×2。无件文，依摘要直陈。\n\n上列均为自动段判词标记之异常收讫。按摘要注，本件已标识为深裁件，升 SI1 候 root 会话裁定，SI2 不复越钱面细究。现仅作收执备案，token 用量 2288，槽位 4/12，无自动处置(#noauto)。\n\n【锚】ref=vci-inbox#1:5861318823; kind=lobby.comment; auto-sealed; #noauto",
+  "resp_usage": {
+    "prompt_tokens": 219,
+    "completion_tokens": 829,
+    "total_tokens": 1048,
+    "completion_tokens_details": {
+      "reasoning_tokens": 668
+    }
+  },
+  "resp_posted": "5861415133"
+}
