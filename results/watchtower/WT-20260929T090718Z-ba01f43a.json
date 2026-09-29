@@ -1,0 +1,19 @@
+{
+  "ts": "2026-09-29T09:06:56Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，巷卡226→218，qtlv-eval-wave-6220cd5885be.md到件|性态:卡位净减8，属通道收缩；摘要未载告警，业务面未实测中断|建议处置:细收该eval-wave落账差异，核对218卡心跳与负载，裸候下波qtlv同步|锚:ops线/资源调度面",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 779,
+    "total_tokens": 993,
+    "completion_tokens_details": {
+      "reasoning_tokens": 685
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
