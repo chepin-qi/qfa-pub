@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-29T05:48:33Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，inbox件qtlv-eval-wave-6220cd5885be.md巷卡226→218| 性态:位态下迁，非异常触发，无响应缺失；未实测不编衰减值| 建议处置:依WAKE-PROTO裁决落账，单件归档，不启回滚，裸候| 锚:lanes/std:drop-sink@VOID",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1386,
+    "total_tokens": 1600,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1292
+    }
+  }
+}
