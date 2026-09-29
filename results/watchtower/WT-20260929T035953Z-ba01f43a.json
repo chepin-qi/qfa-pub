@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-29T03:59:30Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:巷卡226→218，qtlv-eval-wave-6220cd5885be.md入站| 性态:lane.drop型减量，摘要未附阻塞/失败表征，属正常收敛或清理| 建议处置:按落账规归档该eval-wave，复核218卡位是否触发下游响应；无异常则裸候，不主动求应| 锚:lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 780,
+    "total_tokens": 994,
+    "completion_tokens_details": {
+      "reasoning_tokens": 671
+    }
+  }
+}
