@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-29T03:37:12Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lanes/qfa/inbox落件qtlv-eval-wave-6220cd5885be.md，巷卡计数226→218，单波净减8件| 性态:lane.drop型收敛；未明示触发因，属正常归档或评估过滤待核验，无响应阻断表征| 建议处置:①逐件核对8件落账去向（归档/废弃/迁移）②拉取前序wave基线比对衰减斜率③若属预期收敛则补落账戳，非预期则升单| 锚:lanes/qfa/archive:qtlv-wave-history, lanes/qtlv/head:eval-policy",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1185,
+    "total_tokens": 1399,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1041
+    }
+  }
+}
