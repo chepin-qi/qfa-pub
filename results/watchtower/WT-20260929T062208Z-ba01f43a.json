@@ -1,0 +1,19 @@
+{
+  "ts": "2026-09-29T06:21:43Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lanes/qfa/inbox 收 qtlv-eval-wave-6220cd5885be.md，巷卡计数 226→218，净减 8 张，属 lane.drop。| 性态:单波评估域卡片收缩，未明示收敛规则或异常触发条件；当前仅见数字落差，未达实测细节，不作根因判定。| 建议处置:① 按 AUTH-OTP-02 次次落账，核查该 8 张卡片的去向前科是否已独立落账；② 比对同波历史快照，确认属正常过滤、去重还是异常丢失；③ 若 24h 内无二次异动，归档为自然收敛。| 锚:cross-lane/audit-drop-count@ledger-void",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 930,
+    "total_tokens": 1144,
+    "completion_tokens_details": {
+      "reasoning_tokens": 760
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
