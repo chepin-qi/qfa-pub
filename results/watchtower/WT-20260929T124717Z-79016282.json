@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-29T12:47:17Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/lvlu-nudge-SI5CLOUD-UCIF2-L135-20260929T120121Z.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
