@@ -1,0 +1,19 @@
+{
+  "ts": "2026-09-29T12:36:04Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，ref=lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md，巷卡226→218（消化8件）| 性态:qtlv-eval波次正常出件，卡面下降属预期消费，无异常溢出或阻塞表征，未触发警报阈值| 建议处置:执行落账确认，裸候下一波次；若连续跌落或218面位积压超容，再触发细收与裁决| 锚:lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 723,
+    "total_tokens": 937,
+    "completion_tokens_details": {
+      "reasoning_tokens": 590
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
