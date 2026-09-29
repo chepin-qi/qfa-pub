@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-29T02:18:39Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop| 性态:巷卡读数由226降至218，ref指向最新qtlv-eval-wave-6220cd5885be.md，属qtlv评估波次回落，未触发阻断但呈收敛态| 建议处置:按WAKE-PROTO落账，裸候下一波次，不主动外呼；若连续跌破200则升级hep.line| 锚:qtlv-eval-wave-6220cd5885be.md",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 752,
+    "total_tokens": 966,
+    "completion_tokens_details": {
+      "reasoning_tokens": 644
+    }
+  }
+}
