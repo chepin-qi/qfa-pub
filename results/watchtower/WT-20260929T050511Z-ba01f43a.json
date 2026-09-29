@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-29T05:04:43Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:巷卡226→218减量落件，ref入inbox，qtlv-eval-wave-6220cd5885be.md触线。| 性态:lane.drop型减载；已触发，内文未实测，不编差值根数，属扫描后裸候态。| 建议处置:细收该eval-wave全量，裁决差值后次次落账；不主动外寻回应，裸候下一波。| 锚:lanes/qtlv/eval-base",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1078,
+    "total_tokens": 1292,
+    "completion_tokens_details": {
+      "reasoning_tokens": 965
+    }
+  }
+}
