@@ -1,0 +1,19 @@
+{
+  "ts": "2026-09-29T09:17:57Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，巷卡226→218，ref lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md| 性态:qtlv-eval-wave周期内巷卡下探8点，仅呈事实，成因未实测不编数| 建议处置:扫描细收裁决落账毕，裸候不唤，件归inbox| 锚:lanes/ctl/void:qtlv-wave",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1474,
+    "total_tokens": 1688,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1372
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
