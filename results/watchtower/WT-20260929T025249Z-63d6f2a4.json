@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-29T02:52:34Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5882289313",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment ref=vci-inbox#1:5882289313，混序抵含qlv.beat/lane.drop/hub.feed×2，tok 2436 cap 11/12| 性态:聚合混杂态，评论件夹带心跳与供稿，容量临界| 建议处置:已自动收讫，lobby.comment落账；lane.drop系统级丢弃不涉钱面；cap 11/12建议root会话前tok压缩或分片| 锚:hub.feed供稿线锚定，qfa线裸候不主动求应",
+  "usage": {
+    "prompt_tokens": 258,
+    "completion_tokens": 1156,
+    "total_tokens": 1414,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1023
+    }
+  }
+}

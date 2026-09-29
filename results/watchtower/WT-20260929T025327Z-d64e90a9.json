@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-29T02:52:49Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5882400417",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa SI2 自动收讫遇复合故障簇(qlv.beat/lane.drop/sealed.vciqfa.err/hub.poll.err×2)，tok 满仓(cap=12/12,usage=2286)。性态:lane 层丢包叠加 hub 轮询双错，密封模块异常，系资源耗尽触发的级联阻塞，非单点偶发。建议处置:冻结自动落账(#noauto)，升 SI1 交 root 会话深裁；释放 tok 槽位并降级非关键节拍；巡检 sealed.vciqfa 与 hub 链路，复现前禁止自动合并。锚:sync→vci-root#session.SI1 与 lane.infra 状态寄存器，留他线比对。",
+  "usage": {
+    "prompt_tokens": 264,
+    "completion_tokens": 1336,
+    "total_tokens": 1600,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1165
+    }
+  }
+}
