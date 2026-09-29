@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-29T05:26:30Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，ref=qtlv-eval-wave-6220cd5885be.md，巷卡读数226→218，该eval-wave触发生命周期结束| 性态:阈值回落或波次完结导致的正常弃巷；未实测文件内部payload，不判定异常断连，属合规落档| 建议处置:按次次落账原则移入lanes/qfa/archive；复核218是否命中硬阈值，后续裸候下一波eval| 锚:存档线/archive-qfa-logs|",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 783,
+    "total_tokens": 997,
+    "completion_tokens_details": {
+      "reasoning_tokens": 665
+    }
+  }
+}
