@@ -1,0 +1,19 @@
+{
+  "ts": "2026-09-29T13:53:08Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa-inbox收讫qtlv-eval-wave-6220cd5885be.md，巷卡读数226→218，属lane.drop类投递| 性态:文件到件伴随巷卡下降8单位，未触发异常告警，属正常eval-wave归档流；clock=VOID故无实测时戳，仅记收讫态，未触发vs触发未响应在此件无区分必要| 建议处置:执行WAKE-PROTO细收→裁决→落账；按AUTH-OTP-02投必有件/不刷屏，将md入eval柜待裁决，次次落账，裸候不主动外呼| 锚:lanes/qtlv/out:eval-wave-6220cd5885be",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1088,
+    "total_tokens": 1302,
+    "completion_tokens_details": {
+      "reasoning_tokens": 922
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
