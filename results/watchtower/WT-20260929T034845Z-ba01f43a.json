@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-29T03:48:20Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:巷卡226→218，收qtlv-eval-wave-6220cd5885be.md落件。| 性态:lane.drop，降幅约3.5%，属评估波次常规收敛；未触发异常阈值，未实测卡内流量，不编数。| 建议处置:按WAKE-PROTO落账归档，置裸候态，不主动求应；若连续波次drop超5%则提级巡检。| 锚:lanes/ops/watchlist:lane-contraction",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 847,
+    "total_tokens": 1061,
+    "completion_tokens_details": {
+      "reasoning_tokens": 732
+    }
+  }
+}
