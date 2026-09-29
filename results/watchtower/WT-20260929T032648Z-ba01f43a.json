@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-29T03:26:17Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa inbox 巷卡 226→218，差额8卡，由 qtlv-eval-wave-6220cd5885be.md 入件触发 lane.drop。| 性态:属卡面收束漂移，未触发异常阈值；无实测回响应答，按裸候处理。| 建议处置:执行落账，归入 processed 或保持 inbox 静默位；不主动外呼。| 锚:lanes/qtlv/eval-wave:6220cd5885be（他线锚，交叉锁位）。",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1100,
+    "total_tokens": 1314,
+    "completion_tokens_details": {
+      "reasoning_tokens": 979
+    }
+  }
+}
