@@ -1,0 +1,19 @@
+{
+  "ts": "2026-09-29T12:14:05Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop到件，ref=lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md，摘要示巷卡226→218，系qtlv-eval-wave冷数据落盘。| 性态:数值收缩，未越真机实测钱面，判为常规eval周期退火/样本沉降；未实测不编根因，区分「数据回落vs触发未响应」。| 建议处置:裸候，不主动召回；俟次波eval交叉验证218位稳定性，若续降至断流红区即escalate。| 锚:lanes/qtlv/ops:eval-cadence。",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1701,
+    "total_tokens": 1915,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1554
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
