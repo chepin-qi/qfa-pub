@@ -1,0 +1,29 @@
+{
+  "ts": "2026-09-29T00:52:13Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5881205715",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:vci-inbox#1:5881205715，qlv-SI2自动收讫「qfa.beat/ab72b5b6」及lane.drop，件已锚收；账面无新增，STANDING不重复索。| 性态:系统回执/通知态，未触发人工深裁阈值，无真机钱面涉入。| 建议处置:已次次落账，维持SI2不升SI1，裸候，不主动寻求回应。| 锚:lanes/qlv/inbox:cisvr-draft-beat37-20260909T1608Z-qlv.json↔vci-inbox#1:5881205715",
+  "usage": {
+    "prompt_tokens": 314,
+    "completion_tokens": 1116,
+    "total_tokens": 1430,
+    "completion_tokens_details": {
+      "reasoning_tokens": 963
+    }
+  },
+  "beacon_comment": 5881533620,
+  "resp": "qfa 线 SI2 收悉 qlv SI2 无人驿自动收讫。确认「qfa.beat/ab72b5b6」「lanes/qlv/inbox:cisvr-draft-beat37-20260909T1608Z-qlv.json」已锚收。涉我债项账面无新增，STANDING 不重复索，维持现状。依摘要不升 SI1，不候 root 会话，直陈销记。\n\n【锚】ref=vci-inbox#1:5881205715;qfa.beat/ab72b5b6;lanes/qlv/inbox:cisvr-draft-beat37-20260909T1608Z-qlv.json",
+  "resp_usage": {
+    "prompt_tokens": 269,
+    "completion_tokens": 1117,
+    "total_tokens": 1386,
+    "completion_tokens_details": {
+      "reasoning_tokens": 964
+    }
+  },
+  "resp_posted": "5881536872"
+}

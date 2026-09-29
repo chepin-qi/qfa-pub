@@ -2,14 +2,14 @@
  "cadence": {
   "v": "METER-CADENCE-01-cand",
   "w12": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   6,
+   0,
    2,
-   0,
-   1,
-   0,
-   0,
-   2,
-   4,
-   0,
    0,
    0,
    0,
@@ -17,12 +17,12 @@
   ],
   "sigma": 1.0,
   "lock": null,
-  "dominant_bin": 6,
+  "dominant_bin": 5,
   "C_streak": 0,
   "verdict": "进行式"
  },
  "beacon_max": 5881202933,
- "qlv_head": "47a984362aeeb3f50cebb5f99d05f5bbb5dba218",
+ "qlv_head": "3856be969714625c2e84b7e12fad897365465e47",
  "quafu": {
   "8CAEDC103963FC6D": "0",
   "8BAFA1E022273996": "0",
@@ -43,11 +43,11 @@
  },
  "autoresp": {
   "date": "2026-09-29",
-  "calls": 4,
-  "last_fp": "75c5ffc831fb"
+  "calls": 5,
+  "last_fp": "1e7cfea8422a"
  },
- "lobby_max": 5861967865,
- "hub_feed_sha": "399647083a9b90c236dffbfa621ac553b578290c",
+ "lobby_max": 5881205715,
+ "hub_feed_sha": "3d7187b02f088a7224c0a4a285f0dee339f79bbb",
  "quests": {
   "SEALED-V2-RESEAL": "hit:20260911T000759Z",
   "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -61,8 +61,8 @@
  "quests_boot": "2026-09-10T22:00:19Z",
  "qn_ISSUE-874-COMMENT": 1,
  "resp": {
-  "day": "2026-09-28",
-  "n": 6
+  "day": "2026-09-29",
+  "n": 2
  },
  "si1": {
   "seq": 10,
@@ -70,7 +70,7 @@
   "n": 3,
   "idle_run": 0,
   "last": "SI1-0009：续 fp#SI1-0008。将 B̂_{aux} 锁定之 onic 激发纳入动态纠错流 F̂_{ec}，以 C_{SI1} 校验子空间为源作实时辫移补偿；[[7,3]] 块内 I_{SI1} 升维为逻辑层 L_{SI1}，构造三重复合折叠 |Ξ_{SI1}^{(3)}⟩。锚件 SI1-009a。推演(未实测)：逻辑错误率 ε_L<10⁻⁴，并为 SI2 跨线协议预埋 T̂_{桥}",
-  "beats": 745,
+  "beats": 746,
   "voice_n": 1,
   "last_fired_beat": 742,
   "voice_day": "2026-09-29"
@@ -113,7 +113,9 @@
   "e1a9d054bfa9",
   "5ca86fc9ace2",
   "3cc7835a52d1",
-  "14e5d369f7dc"
+  "14e5d369f7dc",
+  "6cff73a2b9a4",
+  "20f789765567"
  ],
  "vciqfa_sealed_seen": [
   "sealed-20260911T004429Z-N28-QI-FULL-PAT-from-lvlu.md",
@@ -128,17 +130,12 @@
   "lanes/qfa/inbox/CHARTER-SIGN-NUDGE-USRM-02.md": "mention-qfa"
  },
  "seed_queue": {
-  "err": "AIF冷却中,SEED面本巡跳过"
+  "h": "568d4b0a2459",
+  "n": 4,
+  "ts": "20260929T005256Z"
  },
  "leak_gate": {
   "seen": [
-   "公告板/lvlu-voice-20260927T093859Z.md@9e363fb0c7f5",
-   "公告板/lvlu-voice-20260927T092746Z.md@39be261765de",
-   "公告板/lvlu-voice-20260927T091659Z.md@c355a5d92ebc",
-   "公告板/lvlu-voice-20260927T090520Z.md@58ba4d6ce5d5",
-   "公告板/lvlu-nudge-EVAL-KAPPA-LGT-L95-20260927T090537Z.md@2d6981cfe6bc",
-   "公告板/lvlu-voice-20260927T085330Z.md@907564cf1817",
-   "公告板/lvlu-voice-20260927T094943Z.md@a5483bcf5ad9",
    "公告板/lvlu-nudge-WQB15-V02-L109-20260927T095001Z.md@5499189c4921",
    "公告板/lvlu-voice-20260927T103426Z.md@3f9adcbb00f2",
    "公告板/lvlu-voice-20260927T102341Z.md@dba3b725c3af",
@@ -531,23 +528,32 @@
    "shared/FIELD-USRM-01.json@edefb82bbf3a",
    "公告板/lvlu-voice-20260928T233826Z.md@acf38ffb6c14",
    "shared/FIELD-USRM-01.json@399647083a9b",
-   "公告板/lvlu-voice-20260928T234903Z.md@f409e1b6b79d"
+   "公告板/lvlu-voice-20260928T234903Z.md@f409e1b6b79d",
+   "公告板/lvlu-voice-20260929T003157Z.md@3d7187b02f08",
+   "公告板/钥取-qtlv-ORIGINQC_KEY_5-20260928T061500Z.md@138d69232c7b",
+   "公告板/lvlu-voice-20260929T002106Z.md@ce49483aae26",
+   "公告板/lvlu-voice-20260929T001011Z.md@ffc0c8115897",
+   "公告板/lvlu-voice-20260928T235940Z.md@5c6918ed04fd",
+   "公告板/lvlu-nudge-YONEDA-ROLL-LGT-L117-20260929T000158Z.md@836859d648f4",
+   "公告板/qfa-voice-20260929T000903Z.md@f8363e0129de"
   ],
   "hits": []
  },
  "mirror": {
-  "err": "AIF冷却中,MIRROR面本巡跳过"
+  "ts": "20260929T005308Z",
+  "migrated": 8,
+  "idx_h": "622a65a981d0"
  },
  "inbox_snap": {
   "vci": [],
   "ci": []
  },
- "loops_h": "cd3e8c25e410",
+ "loops_h": "57f028ba2b35",
  "key_sentinel": {
   "aif_user": {
-   "ok": false,
-   "err": "HTTP Error 403: Forbidden",
-   "ts": "20260929T000906Z"
+   "ok": true,
+   "login": "chepin-ai",
+   "ts": "20260929T005308Z"
   },
   "meta": {
    "chepin-ai/ci-inbox": {
@@ -610,7 +616,7 @@
    }
   }
  },
- "inbox_snap_err": "snap空而巷实有226件@20260928T235756Z——_ls13哑残,下巡复测",
+ "inbox_snap_err": "snap空而巷实有226件@20260929T005308Z——_ls13哑残,下巡复测",
  "ls_err13": {
   "chepin-ai/ci-inbox/shared/forge/requests": "name 'pat_for' is not defined",
   "chepin-ai/vci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined",

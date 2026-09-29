@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-29T00:52:56Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/钥取-qtlv-ORIGINQC_KEY_5-20260928T061500Z.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
