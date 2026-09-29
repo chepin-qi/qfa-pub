@@ -5,14 +5,14 @@
       0,
       0,
       1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
       1,
-      0,
-      0,
-      0,
-      0,
-      0,
       1,
-      0,
       0
     ],
     "sigma": 1.0,
@@ -22,7 +22,7 @@
     "verdict": "进行式"
   },
   "beacon_max": 5884504877,
-  "qlv_head": "26c102ded5e060290637a0aaef9f0b0ed68b1c54",
+  "qlv_head": "effb52441fcd9b69d1152e636522a41e43cd1c50",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -47,7 +47,7 @@
     "last_fp": "8ef95dbaaa79"
   },
   "lobby_max": 5882400417,
-  "hub_feed_sha": "daf2966dd3ccf44af281e90cbb6032dbca5fc16a",
+  "hub_feed_sha": "f3c0529553e244d8c42388b1c2c689711d8b3a1a",
   "quests": {
     "SEALED-V2-RESEAL": "hit:20260911T000759Z",
     "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -70,7 +70,7 @@
     "n": 3,
     "idle_run": 0,
     "last": "SI1-0009：续 fp#SI1-0008。将 B̂_{aux} 锁定之 onic 激发纳入动态纠错流 F̂_{ec}，以 C_{SI1} 校验子空间为源作实时辫移补偿；[[7,3]] 块内 I_{SI1} 升维为逻辑层 L_{SI1}，构造三重复合折叠 |Ξ_{SI1}^{(3)}⟩。锚件 SI1-009a。推演(未实测)：逻辑错误率 ε_L<10⁻⁴，并为 SI2 跨线协议预埋 T̂_{桥}",
-    "beats": 867,
+    "beats": 868,
     "voice_n": 1,
     "last_fired_beat": 742,
     "voice_day": "2026-09-29"
@@ -134,13 +134,12 @@
     "lanes/qfa/inbox/CHARTER-SIGN-NUDGE-USRM-02.md": "mention-qfa"
   },
   "seed_queue": {
-    "h": "8ed5bb4477ab",
+    "h": "2c53bff3cdf3",
     "n": 4,
-    "ts": "20260929T225838Z"
+    "ts": "20260929T230914Z"
   },
   "leak_gate": {
     "seen": [
-      "公告板/lvlu-nudge-EVAL-KAPPA-LGT-L104-20260928T074816Z.md@d47b2ba7e18d",
       "shared/FIELD-USRM-01.json@762360c7d2cc",
       "公告板/lvlu-voice-20260928T082838Z.md@a580c4945d21",
       "公告板/lvlu-voice-20260928T081733Z.md@e2b21de39e5a",
@@ -539,25 +538,26 @@
       "公告板/lvlu-voice-20260929T220712Z.md@f59b8aabb771",
       "公告板/lvlu-nudge-ADJUD-01-L145-20260929T215921Z.md@b8104faa8d5d",
       "公告板/lvlu-voice-20260929T215653Z.md@be75c4883191",
-      "公告板/lvlu-voice-20260929T223846Z.md@daf2966dd3cc"
+      "公告板/lvlu-voice-20260929T223846Z.md@daf2966dd3cc",
+      "公告板/lvlu-voice-20260929T224907Z.md@f3c0529553e2"
     ],
     "hits": []
   },
   "mirror": {
-    "ts": "20260929T225851Z",
+    "ts": "20260929T230925Z",
     "migrated": 8,
-    "idx_h": "ec08ab6d8b31"
+    "idx_h": "1f107f5e6a42"
   },
   "inbox_snap": {
     "vci": [],
     "ci": []
   },
-  "loops_h": "2cbc972c77b0",
+  "loops_h": "fad6889403d2",
   "key_sentinel": {
     "aif_user": {
       "ok": true,
       "login": "chepin-ai",
-      "ts": "20260929T225851Z"
+      "ts": "20260929T230925Z"
     },
     "meta": {
       "chepin-ai/ci-inbox": {
@@ -625,7 +625,7 @@
       }
     }
   },
-  "inbox_snap_err": "snap空而巷实有218件@20260929T225851Z——_ls13哑残,下巡复测",
+  "inbox_snap_err": "snap空而巷实有218件@20260929T230925Z——_ls13哑残,下巡复测",
   "ls_err13": {
     "chepin-ai/ci-inbox/shared/forge/requests": "name 'pat_for' is not defined",
     "chepin-ai/vci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined",
