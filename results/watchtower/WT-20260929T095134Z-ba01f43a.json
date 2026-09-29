@@ -1,0 +1,19 @@
+{
+  "ts": "2026-09-29T09:51:05Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:巷卡226→218,减8卡,ref文件qtlv-eval-wave-6220cd5885be.md,kind=lane.drop| 性态:qtlv评估波次在入站口发生掉卡/合并,属lane级出清;未触发异常响应时视为正常收敛,未实测具体丢卡原因不编数| 建议处置:核验8卡是否为重复或过期波次,若属预期清理则直接落账;若为非预期丢失则溯上游qtlv-eval生成节点补件| 锚:lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md→lanes/qfa/audit:lane-drop-log",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 922,
+    "total_tokens": 1136,
+    "completion_tokens_details": {
+      "reasoning_tokens": 766
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
