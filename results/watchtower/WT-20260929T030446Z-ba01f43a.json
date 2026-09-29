@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-29T03:04:09Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件: lane.drop 致巷卡由226降至218，关联 qtlv-eval-wave-6220cd5885be.md| 性态: 批量卡位下迁，未实测根因，疑为评估波次收敛或归档| 建议处置: 查该文件最近 diff，核验属合并淘汰或误删；正常则落账，异常回退补卡| 锚: lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1023,
+    "total_tokens": 1237,
+    "completion_tokens_details": {
+      "reasoning_tokens": 911
+    }
+  }
+}
