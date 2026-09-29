@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-29T04:42:36Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，ref=lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md，摘要示巷卡226→218。| 性态:评估波次单文件下行收敛，已扫收；内容未实测，不编数，属裸候态，无异常响应触发。| 建议处置:按WAKE-PROTO裁决落账，待实测调阅后再定性，不越真机钱面。| 锚:lanes/ctl/qtlv-eval-wave-base",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1213,
+    "total_tokens": 1427,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1098
+    }
+  }
+}
