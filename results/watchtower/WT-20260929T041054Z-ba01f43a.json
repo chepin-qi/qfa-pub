@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-29T04:10:28Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:巷卡226→218，新件qtlv-eval-wave-6220cd5885be.md入inbox|性态:lane.drop，属正常汰换收敛，脱落8卡；未实测具体退因，不编数，不臆断未触发与触发未响应|建议处置:细收该eval-wave件，逐卡核对脱落原因，按WAKE-PROTO裁决落账|锚:lanes/ops/drop-log标准汰换口径",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 896,
+    "total_tokens": 1110,
+    "completion_tokens_details": {
+      "reasoning_tokens": 789
+    }
+  }
+}
