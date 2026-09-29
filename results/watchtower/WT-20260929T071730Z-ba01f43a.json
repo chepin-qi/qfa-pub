@@ -1,0 +1,19 @@
+{
+  "ts": "2026-09-29T07:16:58Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，摘要报巷卡226→218，对应ref波次qtlv-eval-wave-6220cd5885be.md，计数坍缩8位| 性态:属卡位掉道；仅据摘要，未触发细收，未实测内部帧结构，无法区分主动清理与异常丢弃| 建议处置:次次落账。标为DROP待勘，执行lane.sweep校验差异；若属正常回收则改标SWEEP并归档，若属异常则挂起并透传审计| 锚:lanes/audit/inbox:drop-qtlv-6220cd5885be",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1059,
+    "total_tokens": 1273,
+    "completion_tokens_details": {
+      "reasoning_tokens": 916
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
