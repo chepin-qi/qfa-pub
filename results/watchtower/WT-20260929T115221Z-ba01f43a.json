@@ -1,0 +1,19 @@
+{
+  "ts": "2026-09-29T11:51:55Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop下链，ref=lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md，摘要示巷卡226→218，属qtlv-eval-wave批次文件移出或条目收敛。|性态:未触发异常响应，属常规通道收缩；文件内容未实测，不臆测具体eval指标差异，仅确认件头标降格。|建议处置:按落账规程归档该md残留索引，核查218条目是否完整承接226上下文，无裸候必要。|锚:交叉lanes/qfa/archive同批次hash确认一致性。",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 832,
+    "total_tokens": 1046,
+    "completion_tokens_details": {
+      "reasoning_tokens": 700
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
