@@ -1,0 +1,19 @@
+{
+  "ts": "2026-09-29T07:49:37Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件: lane.drop 巷卡226→218，qtlv-eval-wave-6220cd5885be.md到件 | 性态: 负载回落/通道收缩，属正常波动或下游消化，未触发告警阈值（未实测具体瓶颈） | 建议处置: 裸候，不主动寻求回应；按AUTH-OTP-02次次落账，归档待下波评估 | 锚: qfa-lane.drop → tnx-wave-sync 他线锚定",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 665,
+    "total_tokens": 879,
+    "completion_tokens_details": {
+      "reasoning_tokens": 554
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
