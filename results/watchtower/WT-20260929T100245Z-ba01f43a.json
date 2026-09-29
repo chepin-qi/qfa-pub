@@ -1,0 +1,19 @@
+{
+  "ts": "2026-09-29T10:02:21Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa线inbox落件，巷卡226→218，ref=qtlv-eval-wave-6220cd5885be.md，kind=lane.drop。| 性态:件已投至inbox，未触发实测流，无响应数据，属裸候收束。| 建议处置:依WAKE-PROTO落账，不刷屏、不越真机钱面，裸候归档，不主动求应。| 锚:lanes/ctl/drop-log",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 865,
+    "total_tokens": 1079,
+    "completion_tokens_details": {
+      "reasoning_tokens": 756
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
