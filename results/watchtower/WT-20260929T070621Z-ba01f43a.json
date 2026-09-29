@@ -1,0 +1,19 @@
+{
+  "ts": "2026-09-29T07:05:50Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop 落账，qtlv-eval-wave-6220cd5885be 巷卡 226→218，drop 8 卡，属评估波次收敛/检汰。 | 性态:非故障丢件，乃 eval-wave 正常去重或过期剔除，未触真机钱面，无响应诉求，裸候态。 | 建议处置:已落账，毋需回滚；将该 eval-wave 归档至 lanes/qfa/archive，裸候下波。 | 锚:lanes/core/conv-rule.md",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1023,
+    "total_tokens": 1237,
+    "completion_tokens_details": {
+      "reasoning_tokens": 897
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
