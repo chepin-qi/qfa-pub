@@ -1,0 +1,19 @@
+{
+  "ts": "2026-09-29T08:55:30Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件: lane.drop，巷卡226→218，qtlv-eval-wave-6220cd5885be.md单波收敛8件| 性态: 摘要级计数变动，未触发单卡细扫，诚实标「未实测，缺退因归因」| 建议处置: 1)细收该md逐件核验收支；2)预期归档则推archive线落账；3)非预期掉线升lane.audit补扫| 锚:lanes/qfa/archive:qtlv-eval-wave-6220cd5885be.md",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1346,
+    "total_tokens": 1560,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1218
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
