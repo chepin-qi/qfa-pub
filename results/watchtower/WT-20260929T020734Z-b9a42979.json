@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-29T02:07:20Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5882171537",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment三连件抵驿，为qlv.beat/lane.drop伴生流，已自动收讫升SI1候root|性态:低敏弹幕聚合，usage=2641tok/余cap 2/12，未溢出；常流信令，无越真机钱面|建议处置:依裸候律不主动唤应，三连并案落账；降维为context noise存档，待root深裁或满cap清理|锚:sys.context#congestion.vci-5882171537",
+  "usage": {
+    "prompt_tokens": 260,
+    "completion_tokens": 1348,
+    "total_tokens": 1608,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1223
+    }
+  }
+}
