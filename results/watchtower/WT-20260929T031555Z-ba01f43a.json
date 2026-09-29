@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-29T03:15:29Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，巷卡226→218，qtlv-eval-wave-6220cd5885be.md入inbox，减量8卡| 性态:eval-wave波次触发下账，属生命周期归档或清理，未触发异常响应，仅观测到数量收缩| 建议处置:1)核该eval-wave是否已完结；2)查8卡流向（归档/删除/迁移）；3)裸候，不主动寻求回应| 锚:lanes/qfa/inbox收纳机制/lane.drop规约",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 882,
+    "total_tokens": 1096,
+    "completion_tokens_details": {
+      "reasoning_tokens": 762
+    }
+  }
+}
