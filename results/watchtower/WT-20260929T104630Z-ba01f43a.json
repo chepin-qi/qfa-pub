@@ -1,0 +1,19 @@
+{
+  "ts": "2026-09-29T10:45:55Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，qtlv-eval-wave-6220cd5885be.md 摘要示巷卡226→218（-8）| 性态:eval wave 后正常收缩，未见异常告警；属预期内回落，未触发细审 | 建议处置:复核218件留存状态，确认应结已结、无错丢；余量归档闭环 | 锚:lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md（他线锚定）",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1238,
+    "total_tokens": 1452,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1122
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
