@@ -1,0 +1,19 @@
+{
+  "ts": "2026-09-29T11:30:04Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，ref入驿，巷卡226→218，未触告警阈，无阻塞| 性态:轻量下行波动，属正常收敛，未触发响应机制| 建议处置:落账归档，裸候不求助；若续跌破200或异常抖动再出件| 锚:lanes/core/watchlist:card-floor-200",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 903,
+    "total_tokens": 1117,
+    "completion_tokens_details": {
+      "reasoning_tokens": 819
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
