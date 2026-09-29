@@ -1,0 +1,19 @@
+{
+  "ts": "2026-09-29T11:19:19Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa/inbox 发生 lane.drop，巷卡由226降至218，净减8件，对应 ref qtlv-eval-wave-6220cd5885be.md，系波次评估后出清| 性态:常规数量收敛，未触发异常响应，属正常落账型收缩| 建议处置:按 WAKE-PROTO 完成裁决落账，确认该8件已归档；恪守 AUTH-OTP-02 次次落账，裸候，不主动寻求回应| 锚:lanes/qtlv/eval-wave-6220cd5885be",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 881,
+    "total_tokens": 1095,
+    "completion_tokens_details": {
+      "reasoning_tokens": 748
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
