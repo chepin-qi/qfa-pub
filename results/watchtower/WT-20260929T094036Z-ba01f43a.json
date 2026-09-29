@@ -1,0 +1,19 @@
+{
+  "ts": "2026-09-29T09:39:52Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，qtlv-eval-wave后巷卡226→218| 性态:净减8卡，属eval-wave预期收缩/清理，无异常抖动| 建议处置:①核对脱落8卡未落账件；②确认drop为预期行为；③更新lane拓扑台账| 锚:ref=lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md;他线锚:qtlv-eval-wave-6220cd5885be",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1603,
+    "total_tokens": 1817,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1490
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
