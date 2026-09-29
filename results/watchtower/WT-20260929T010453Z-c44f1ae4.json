@@ -1,0 +1,29 @@
+{
+  "ts": "2026-09-29T01:04:18Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5881545547",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment批量抵件(vci-inbox#1:5881545547)，聚合qlv.beat×1、comment×2、hub.feed×2，自动收讫触发SI2升阶| 性态:脉冲簇(2257tok/5·12cap)，#noauto拒自裁，多线聚合候判，root会话待接入| 建议处置:按WAKE-PROTO落账，裸候root定谳，不主动唤应| 锚:qlv.beat主线→hub.feed支线(ref#5881545547)未决",
+  "usage": {
+    "prompt_tokens": 259,
+    "completion_tokens": 1251,
+    "total_tokens": 1510,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1118
+    }
+  },
+  "beacon_comment": 5881652533,
+  "resp": "收讫。lobby.comment 系列五件已自动落格，深裁件升 SI1 候 root 会话。贮格 2257tok，cap 5/12，#noauto 标置生效，现收贮候裁。未实测项未予编数，待 root 会话续指。\n\n【锚】vci-inbox#1:5881545547",
+  "resp_usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 706,
+    "total_tokens": 920,
+    "completion_tokens_details": {
+      "reasoning_tokens": 620
+    }
+  },
+  "resp_posted": "5881657637"
+}
