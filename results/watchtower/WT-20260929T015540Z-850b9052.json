@@ -1,0 +1,18 @@
+{
+  "ts": "2026-09-29T01:54:58Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5882016528",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment并获qlv.beat/lane.drop/sealed.vciqfa.err/hub.poll.err×2，usage=2286tok cap=9/12，已自动收讫升SI1候root。| 性态:sealed.vciqfa.err示密封层异常；hub.poll.err复现指枢纽轮询链路不稳；lane.drop伴生丢包。属复合异常，非单点抖动。| 建议处置:落账SI1深裁件，冻结自动流，裸候root会话裁决；勿复投。| 锚:vci-seal#harden.check",
+  "usage": {
+    "prompt_tokens": 264,
+    "completion_tokens": 1541,
+    "total_tokens": 1805,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1404
+    }
+  }
+}

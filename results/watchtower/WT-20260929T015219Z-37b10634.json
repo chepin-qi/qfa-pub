@@ -1,0 +1,29 @@
+{
+  "ts": "2026-09-29T01:51:58Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5881668949",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment主件抵，伴qlv.beat×1、hub.feed×3，自动收讫已扫描。| 性态:评件为实触，馈流为伴随噪波，心跳保活未断；tok 2052，槽位6/12未越阈。| 建议处置:依深裁例升SI1裸候root会话，不越真机钱面，不复扰、不刷屏，待主会话裁决落账。| 锚:vci-inbox#1:5881668949→root-queue/SI1。",
+  "usage": {
+    "prompt_tokens": 258,
+    "completion_tokens": 783,
+    "total_tokens": 1041,
+    "completion_tokens_details": {
+      "reasoning_tokens": 654
+    }
+  },
+  "beacon_comment": 5882126600,
+  "resp": "收讫。摘要五事件（qlv.beat×1、lobby.comment×1、hub.feed×3）已抵埠。件文空缺，据摘要直陈：自动段判词生效，深裁件升 SI1 候 root 会话；usage=2052tok，cap=6/12，#noauto。SI2 线无追加处置，候 root 会话裁定。\n\n【锚】vci-inbox#1:5881668949 | lobby.comment",
+  "resp_usage": {
+    "prompt_tokens": 213,
+    "completion_tokens": 960,
+    "total_tokens": 1173,
+    "completion_tokens_details": {
+      "reasoning_tokens": 854
+    }
+  },
+  "resp_posted": "5882131104"
+}
