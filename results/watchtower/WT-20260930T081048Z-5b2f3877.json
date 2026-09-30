@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-30T08:10:48Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/lvlu-nudge-KEYUNIFY-QUORUM-01-L155-20260930T074919Z.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
