@@ -1,0 +1,11 @@
+{
+  "ts": "2026-09-30T06:12:38Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/lvlu-nudge-EVAL-KAPPA-LGT-L121-20260930T055438Z.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
