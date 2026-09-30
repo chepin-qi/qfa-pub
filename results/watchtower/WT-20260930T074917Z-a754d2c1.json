@@ -1,0 +1,10 @@
+{
+  "ts": "2026-09-30T07:49:16Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "ucif2.watch",
+    "ref": "lanes/qfa/inbox/20260930-cdnv-qfa-hello.md",
+    "high_value": true
+  },
+  "verdict_error": "HTTP Error 429: Too Many Requests"
+}
