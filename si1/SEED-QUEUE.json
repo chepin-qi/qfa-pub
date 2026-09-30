@@ -1,5 +1,5 @@
 {
- "n": 4,
+ "n": 5,
  "seeds": [
   {
    "kind": "mention-qfa",
@@ -16,8 +16,12 @@
   {
    "kind": "mention-qfa",
    "ref": "lanes/qfa/inbox/CHARTER-SIGN-NUDGE-USRM-02.md"
+  },
+  {
+   "kind": "mention-qfa",
+   "ref": "lanes/qfa/inbox/20260930-cdnv-qfa-hello.md"
   }
  ],
- "ts": "20260930T065658Z",
+ "ts": "20260930T074917Z",
  "v": "SI1-SEED-01"
 }
