@@ -1,0 +1,11 @@
+{
+  "ts": "2026-10-01T12:01:59Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/lvlu-nudge-T5KEY-WAVE-01-L145-20261001T114949Z.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
