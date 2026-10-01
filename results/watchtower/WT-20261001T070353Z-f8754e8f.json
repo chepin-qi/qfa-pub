@@ -1,0 +1,11 @@
+{
+  "ts": "2026-10-01T07:03:53Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/lvlu-nudge-YONEDA-ROLL-LGT-L138-20261001T064834Z.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
