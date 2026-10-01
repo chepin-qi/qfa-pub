@@ -5,11 +5,11 @@
       0,
       0,
       0,
-      1,
-      5,
       0,
+      2,
       0,
       1,
+      0,
       0,
       0,
       0,
@@ -22,7 +22,7 @@
     "verdict": "进行式"
   },
   "beacon_max": 5884504877,
-  "qlv_head": "7158017892fad587e69c330aff6299881e6aeac4",
+  "qlv_head": "6dcdd8bab2a019e6bb11ceb9b868ae303fc34503",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -47,7 +47,7 @@
     "last_fp": "8ef95dbaaa79"
   },
   "lobby_max": 5882400417,
-  "hub_feed_sha": "1dcd9d9562ddd9bdb755445bce364c2d1fc975c4",
+  "hub_feed_sha": "1f241a6e7785c2df1341724d2544a39aa46d2d96",
   "quests": {
     "SEALED-V2-RESEAL": "hit:20260911T000759Z",
     "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -70,7 +70,7 @@
     "n": 3,
     "idle_run": 0,
     "last": "SI1-0009：续 fp#SI1-0008。将 B̂_{aux} 锁定之 onic 激发纳入动态纠错流 F̂_{ec}，以 C_{SI1} 校验子空间为源作实时辫移补偿；[[7,3]] 块内 I_{SI1} 升维为逻辑层 L_{SI1}，构造三重复合折叠 |Ξ_{SI1}^{(3)}⟩。锚件 SI1-009a。推演(未实测)：逻辑错误率 ε_L<10⁻⁴，并为 SI2 跨线协议预埋 T̂_{桥}",
-    "beats": 1070,
+    "beats": 1071,
     "voice_n": 1,
     "last_fired_beat": 1009,
     "voice_day": "2026-09-29"
@@ -135,14 +135,12 @@
     "lanes/qfa/inbox/20260930-cdnv-qfa-hello.md": "mention-qfa"
   },
   "seed_queue": {
-    "h": "3c30c4f3f0ac",
+    "h": "a556a3d8d565",
     "n": 5,
-    "ts": "20261001T104733Z"
+    "ts": "20261001T105818Z"
   },
   "leak_gate": {
     "seen": [
-      "公告板/lvlu-voice-20260929T222817Z.md@2e57d1903846",
-      "公告板/lvlu-voice-20260929T221735Z.md@db8fc243d99d",
       "公告板/lvlu-voice-20260929T220712Z.md@f59b8aabb771",
       "公告板/lvlu-nudge-ADJUD-01-L145-20260929T215921Z.md@b8104faa8d5d",
       "公告板/lvlu-voice-20260929T215653Z.md@be75c4883191",
@@ -540,25 +538,27 @@
       "公告板/by-cisvr/cisvr-327-beat117-close.md@a86943bd91d8",
       "公告板/lvlu-nudge-YONEDA-ROLL-LGT-L139-20261001T100702Z.md@2580f4ef26a4",
       "公告板/lvlu-voice-20261001T100505Z.md@b993aa699fd9",
-      "公告板/usrm-309.md@3fdb364cf6f9"
+      "公告板/usrm-309.md@3fdb364cf6f9",
+      "公告板/lvlu-voice-20261001T104703Z.md@1f241a6e7785",
+      "shared/FIELD-USRM-01.json@0bbc521fcc20"
     ],
     "hits": []
   },
   "mirror": {
-    "ts": "20261001T104748Z",
+    "ts": "20261001T105830Z",
     "migrated": 8,
-    "idx_h": "8adb4cb1718d"
+    "idx_h": "0ae0354efdfd"
   },
   "inbox_snap": {
     "vci": [],
     "ci": []
   },
-  "loops_h": "9d57f36a7194",
+  "loops_h": "e005fb9d071f",
   "key_sentinel": {
     "aif_user": {
       "ok": true,
       "login": "chepin-ai",
-      "ts": "20261001T104748Z"
+      "ts": "20261001T105830Z"
     },
     "meta": {
       "chepin-ai/ci-inbox": {
@@ -626,7 +626,7 @@
       }
     }
   },
-  "inbox_snap_err": "snap空而巷实有220件@20261001T104748Z——_ls13哑残,下巡复测",
+  "inbox_snap_err": "snap空而巷实有220件@20261001T105830Z——_ls13哑残,下巡复测",
   "ls_err13": {
     "chepin-ai/ci-inbox/shared/forge/requests": "name 'pat_for' is not defined",
     "chepin-ai/vci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined",
