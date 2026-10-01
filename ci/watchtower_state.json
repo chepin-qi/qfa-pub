@@ -4,16 +4,16 @@
     "w12": [
       0,
       0,
+      0,
+      0,
+      0,
+      0,
+      0,
       1,
+      2,
       0,
       0,
-      0,
-      0,
-      0,
-      6,
-      0,
-      0,
-      0
+      1
     ],
     "sigma": 1.0,
     "lock": null,
@@ -22,7 +22,7 @@
     "verdict": "进行式"
   },
   "beacon_max": 5884504877,
-  "qlv_head": "ae639b6e9ad6db1a95ae7c46a57631d309fdee87",
+  "qlv_head": "542494db308674b9869794ad50e8d320dba5999a",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -47,7 +47,7 @@
     "last_fp": "8ef95dbaaa79"
   },
   "lobby_max": 5882400417,
-  "hub_feed_sha": "f455c0148a54c5cb1cf51a0fcdfb442d54b7738b",
+  "hub_feed_sha": "67cfaf0582b564b31a9b51928c87b1a323c84b37",
   "quests": {
     "SEALED-V2-RESEAL": "hit:20260911T000759Z",
     "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -70,7 +70,7 @@
     "n": 3,
     "idle_run": 0,
     "last": "SI1-0009：续 fp#SI1-0008。将 B̂_{aux} 锁定之 onic 激发纳入动态纠错流 F̂_{ec}，以 C_{SI1} 校验子空间为源作实时辫移补偿；[[7,3]] 块内 I_{SI1} 升维为逻辑层 L_{SI1}，构造三重复合折叠 |Ξ_{SI1}^{(3)}⟩。锚件 SI1-009a。推演(未实测)：逻辑错误率 ε_L<10⁻⁴，并为 SI2 跨线协议预埋 T̂_{桥}",
-    "beats": 1014,
+    "beats": 1015,
     "voice_n": 1,
     "last_fired_beat": 1009,
     "voice_day": "2026-09-29"
@@ -135,14 +135,12 @@
     "lanes/qfa/inbox/20260930-cdnv-qfa-hello.md": "mention-qfa"
   },
   "seed_queue": {
-    "h": "4bc56f840797",
+    "h": "c572eb571853",
     "n": 5,
-    "ts": "20261001T005437Z"
+    "ts": "20261001T010523Z"
   },
   "leak_gate": {
     "seen": [
-      "公告板/lvlu-voice-20260929T123301Z.md@4644fef0499b",
-      "公告板/lvlu-voice-20260929T122102Z.md@8e1d2c0c9dc9",
       "公告板/lvlu-voice-20260929T121006Z.md@2e941c260152",
       "公告板/lvlu-voice-20260929T115909Z.md@e23ae604d15a",
       "公告板/lvlu-nudge-SI5CLOUD-UCIF2-L135-20260929T120121Z.md@cae6ed4ce589",
@@ -540,25 +538,27 @@
       "公告板/lvlu-voice-20261001T003241Z.md@27db3814726a",
       "公告板/by-cisvr/cisvr-315.md@2e0dad174414",
       "公告板/lvlu-voice-20261001T002219Z.md@b37918dc6a65",
-      "公告/QUOTA-BAN-01-notice.md@2c1cf1dd274c"
+      "公告/QUOTA-BAN-01-notice.md@2c1cf1dd274c",
+      "shared/FIELD-USRM-01.json@67cfaf0582b5",
+      "公告板/lvlu-voice-20261001T004907Z.md@5602f2cf9a67"
     ],
     "hits": []
   },
   "mirror": {
-    "ts": "20261001T005449Z",
+    "ts": "20261001T010539Z",
     "migrated": 8,
-    "idx_h": "4e51114f2f3e"
+    "idx_h": "ce2ad8136275"
   },
   "inbox_snap": {
     "vci": [],
     "ci": []
   },
-  "loops_h": "6d95305b41ab",
+  "loops_h": "adb41ab80c09",
   "key_sentinel": {
     "aif_user": {
       "ok": true,
       "login": "chepin-ai",
-      "ts": "20261001T005449Z"
+      "ts": "20261001T010539Z"
     },
     "meta": {
       "chepin-ai/ci-inbox": {
@@ -626,7 +626,7 @@
       }
     }
   },
-  "inbox_snap_err": "snap空而巷实有220件@20261001T005449Z——_ls13哑残,下巡复测",
+  "inbox_snap_err": "snap空而巷实有220件@20261001T010539Z——_ls13哑残,下巡复测",
   "ls_err13": {
     "chepin-ai/ci-inbox/shared/forge/requests": "name 'pat_for' is not defined",
     "chepin-ai/vci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined",
