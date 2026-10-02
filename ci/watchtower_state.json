@@ -4,25 +4,25 @@
     "w12": [
       1,
       1,
-      0,
       3,
-      1,
-      1,
-      0,
-      0,
       0,
       0,
       1,
-      2
+      0,
+      0,
+      0,
+      0,
+      1,
+      3
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 3,
+    "dominant_bin": 2,
     "C_streak": 0,
     "verdict": "进行式"
   },
   "beacon_max": 5884504877,
-  "qlv_head": "716eb1bab21e59b2baf79b6641d7661f6596429d",
+  "qlv_head": "db3280bdf380a01f7afec9fceb0820f00b84669c",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -70,7 +70,7 @@
     "n": 3,
     "idle_run": 0,
     "last": "SI1-0009：续 fp#SI1-0008。将 B̂_{aux} 锁定之 onic 激发纳入动态纠错流 F̂_{ec}，以 C_{SI1} 校验子空间为源作实时辫移补偿；[[7,3]] 块内 I_{SI1} 升维为逻辑层 L_{SI1}，构造三重复合折叠 |Ξ_{SI1}^{(3)}⟩。锚件 SI1-009a。推演(未实测)：逻辑错误率 ε_L<10⁻⁴，并为 SI2 跨线协议预埋 T̂_{桥}",
-    "beats": 1153,
+    "beats": 1154,
     "voice_n": 1,
     "last_fired_beat": 1145,
     "voice_day": "2026-09-29"
