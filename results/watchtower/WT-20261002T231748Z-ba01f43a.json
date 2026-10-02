@@ -1,0 +1,10 @@
+{
+  "ts": "2026-10-02T23:17:46Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict_error": "HTTP Error 429: Too Many Requests"
+}
