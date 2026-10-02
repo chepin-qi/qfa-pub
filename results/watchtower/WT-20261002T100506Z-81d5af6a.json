@@ -1,0 +1,9 @@
+{
+  "ts": "2026-10-02T10:05:06Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "quafu.poll.err",
+    "ref": "8CAEDC103963FC6D",
+    "high_value": false
+  }
+}
