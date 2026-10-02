@@ -1,0 +1,9 @@
+{
+  "ts": "2026-10-02T22:35:39Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.poll.err",
+    "ref": "hub.court",
+    "high_value": false
+  }
+}
