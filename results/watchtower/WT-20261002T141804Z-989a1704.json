@@ -1,0 +1,11 @@
+{
+  "ts": "2026-10-02T14:18:04Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "qlv.beat",
+    "ref": "1e873a4b",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
