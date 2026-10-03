@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T17:57:43Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop,qfa-inbox评估波次文件qtlv-eval-wave-6220cd5885be.md巷卡226→220| 性态:通道下压/归档回落，未触发异常响应，属正常落件或周期清理| 建议处置:裸候，不主动外呼；复核220锚点稳定性，若续跌则升单| 锚:qtlv-eval-wave-6220cd5885be.md|lanes/qfa/inbox",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 980,
+    "total_tokens": 1194,
+    "completion_tokens_details": {
+      "reasoning_tokens": 871
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
