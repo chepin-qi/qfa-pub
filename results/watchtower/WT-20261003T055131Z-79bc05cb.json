@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T05:51:15Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5965957255",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:vci-inbox#1:5965957255五连发(qlv.beat,lane.drop,sealed.vciqfa.err,hub.poll.err×2)，usage=2285tok，cap=9/12触线。| 性态:lane.drop与hub.poll.err并发表明连接层/节点瞬断；sealed.vciqfa.err为域密封异常。多错级联，非单链路问题。自动段权限已穷尽，标记#noauto并升SI1候root。| 建议处置:维持root深裁，不再自动重试；root应复核hub.poll.err时序，排查级联超时。自动段落账收讫，候root裁决。| 锚:root会话:SI1深裁队列",
+  "usage": {
+    "prompt_tokens": 264,
+    "completion_tokens": 1226,
+    "total_tokens": 1490,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1060
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}

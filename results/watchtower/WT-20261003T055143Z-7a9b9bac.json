@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T05:51:32Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5966032985",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qlv.beat/lane.drop/sealed.vciqfa.err及复现hub.poll.err自动抵栈| 性态:自动段聚合异常，tok 2284/10-12未触顶，系连接抖动与密封校验偏误，已升SI1候root会话| 建议处置:裸候，不主动回应；若hub.poll.err三连增或sealed复发则转人工深裁| 锚:AUTH-OTP-02/不越真机钱面/WAKE-PROTO落账",
+  "usage": {
+    "prompt_tokens": 264,
+    "completion_tokens": 758,
+    "total_tokens": 1022,
+    "completion_tokens_details": {
+      "reasoning_tokens": 639
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}

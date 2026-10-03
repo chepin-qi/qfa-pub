@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T05:50:59Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5965882436",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment入件,ref=vci-inbox#1:5965882436,聚合qlv.beat、lane.drop、sealed.vciqfa.err及hub.poll.err×2共五枚异常标记,自动收讫于SI2,已触发深裁升SI1。| 性态:qfa无人驿内部异常堆叠,通道丢包与密封/轮询错误伴生,未触真机钱面,属系统自扰态。| 建议处置:裸候。已落账,不主动求应,候root会话深裁。| 锚:root会话SI1深裁队列。",
+  "usage": {
+    "prompt_tokens": 264,
+    "completion_tokens": 1061,
+    "total_tokens": 1325,
+    "completion_tokens_details": {
+      "reasoning_tokens": 919
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}

@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T05:50:44Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5965805614",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment批量抵件，含qlv.beat/lane.drop/lobby.comment/hub.feed×2，自动收讫并升SI1候root会话。| 性态:多路信号聚合，无异常载荷；自动段已预裁，未触发人工干预条件，属正常收件。| 建议处置:维持SI1深裁队列裸候，不主动寻求回应；cap7/12余量充足，次次落账归档。| 锚:qlv.beat|hub.feed",
+  "usage": {
+    "prompt_tokens": 258,
+    "completion_tokens": 1078,
+    "total_tokens": 1336,
+    "completion_tokens_details": {
+      "reasoning_tokens": 961
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
