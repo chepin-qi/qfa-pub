@@ -1,0 +1,9 @@
+{
+  "ts": "2026-10-03T00:21:41Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.poll.err",
+    "ref": "vci-inbox#1",
+    "high_value": false
+  }
+}
