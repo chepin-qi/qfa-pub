@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T09:12:42Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件：lane.drop 到件，ref 为 lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md，摘要示巷卡编号自 226 收敛至 220，属文面索引回缩，未触真机面。 | 性态：冷件归档，无异常响应标记，依 inbox 清理律可落账。 | 建议处置：①核验 220 号位是否已有同波次占位；②确认原 226 索引无他线硬引用；③执行落账后裸候，不追呼。 | 锚：lanes/qfa/inbox 索引去重规则（他线锚）。",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 818,
+    "total_tokens": 1032,
+    "completion_tokens_details": {
+      "reasoning_tokens": 667
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
