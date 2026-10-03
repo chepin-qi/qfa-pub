@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T06:58:02Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qtlv-eval-wave-6220cd5885be.md落件,巷卡226→220|性态:clock=VOID,仅物理入库,未进入运行态;无实测心跳,不判触发响应,属静默落件|建议处置:按lane.drop落账,inbox留档登记;裸候,待WAKE周期激活后重扫,不主动外呼|锚:lanes/qtlv/ledger:drop-ack",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1076,
+    "total_tokens": 1290,
+    "completion_tokens_details": {
+      "reasoning_tokens": 972
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
