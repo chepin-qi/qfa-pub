@@ -1,0 +1,9 @@
+{
+  "ts": "2026-10-03T03:42:15Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "sealed.vciqfa.err",
+    "ref": "vci-qfa/inbox",
+    "high_value": false
+  }
+}
