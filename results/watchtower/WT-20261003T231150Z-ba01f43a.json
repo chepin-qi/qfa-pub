@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T23:11:26Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，巷卡226→220回退，ref=qtlv-eval-wave-6220cd5885be.md|性态:指标逆向迁移，未触发新波次写入，属静默回退或基线重置|建议处置:diff 226/220差异，确认是否预期回滚；若非预期，查eval-wave生成链路一致性|锚:lanes/otl/sync:baseline-220-retag.log",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 825,
+    "total_tokens": 1039,
+    "completion_tokens_details": {
+      "reasoning_tokens": 728
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
