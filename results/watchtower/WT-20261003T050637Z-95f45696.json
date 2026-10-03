@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T05:06:22Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5965729943",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment碎片抵栈，系qtlv EVAL-WAVE-01跨线互评请托尾流，伴VCI/毂403接入权异常。| 性态:自动收讫SI2，然跨线债悬置未应，权限STANDING待证，已触深裁升SI1。| 建议处置:候root会话裁决；VCI/毂403补证或清权；EVAL-WAVE-01挂账待qtlv线响应。| 锚:qtlv#EVAL-WAVE-01",
+  "usage": {
+    "prompt_tokens": 360,
+    "completion_tokens": 972,
+    "total_tokens": 1332,
+    "completion_tokens_details": {
+      "reasoning_tokens": 847
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
