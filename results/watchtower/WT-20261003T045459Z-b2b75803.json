@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T04:54:40Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5965619239",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qlv.beat/lane.drop及sealed.vciqfa.err、hub.poll.err×2聚合抵件，收讫bdc801bb；vci-qfa/inbox、hub.board、hub.court皆403，qtlv T27跨线互评请托入栈未应。| 性态:VCI/Hub接入权异常致权限阻断，非业务拒收；SI2已落账，但上游请托因403未触达目标队列。| 建议处置:维持升SI1候root会话；qtlv T27记STANDING待证，待root授权重投或勘权；403节点不自动重试。| 锚:qtlv/T27 EVAL-WAVE-01跨线锚。",
+  "usage": {
+    "prompt_tokens": 372,
+    "completion_tokens": 1505,
+    "total_tokens": 1877,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1338
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}

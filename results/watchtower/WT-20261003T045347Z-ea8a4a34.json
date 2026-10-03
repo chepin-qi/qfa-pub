@@ -1,0 +1,29 @@
+{
+  "ts": "2026-10-03T04:53:27Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5965470965",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment复合件（qlv.beat/lane.drop/lobby.comment/hub.feed×2）抵箱，自动段收讫并升SI1候root会话，usage=2410tok cap=3/12 #noauto| 性态:多信道并发脉冲，非单点噪音，自动层预裁已毕，tok余量充足| 建议处置:遵SI1深裁流裸候root会话，不主动唤起，待upstream触发或人工拉取后落账；#noauto标定，禁自动回环| 锚:qfa-root/vci-upstream",
+  "usage": {
+    "prompt_tokens": 258,
+    "completion_tokens": 1252,
+    "total_tokens": 1510,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1113
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden",
+  "resp": "lobby.comment 收讫。自动收讫事件序列 ['qlv.beat', 'lane.drop', 'lobby.comment', 'hub.feed', 'hub.feed'] 已归档。深裁件升 SI1 候 root 会话；usage=2410tok，cap=3/12。无件文，据摘要直陈处置，不越钱面。\n【锚】vci-inbox#1:5965470965",
+  "resp_usage": {
+    "prompt_tokens": 213,
+    "completion_tokens": 795,
+    "total_tokens": 1008,
+    "completion_tokens_details": {
+      "reasoning_tokens": 699
+    }
+  },
+  "resp_posted": "5965715488"
+}
