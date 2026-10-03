@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T04:31:07Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qtlv-eval-wave-6220cd5885be.md 巷卡226→220，lane.drop到件。| 性态:单波次评估文件收缩，属正常滤除或归档前状态，未触发异常响应。| 建议处置:以220为有效基线落账；校验md完整性后，将226余量归入archive；无需回退或补波。| 锚:lanes/qfa/archive:drop-baseline-v220 |",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1107,
+    "total_tokens": 1321,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1002
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
