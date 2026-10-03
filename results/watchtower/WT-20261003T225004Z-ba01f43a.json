@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T22:49:34Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa线巷卡226→220，波次qtlv-eval-wave-6220cd5885be.md落件，容量下迁6单位。| 性态:lane.drop，无真机面实测，属线级指标收缩；非阻断故障，当前触发未响应/待复核。| 建议处置:裸候存档，不主动求应；次次落账标记delta=-6；待下一eval波次触发后复核，若持续跌破阈限则启动降速或分流预案。| 锚:lanes/ops/alert:capacity-down-6（基建/运维线锚）",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1053,
+    "total_tokens": 1267,
+    "completion_tokens_details": {
+      "reasoning_tokens": 916
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
