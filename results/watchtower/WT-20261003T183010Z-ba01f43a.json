@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T18:29:58Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，ref=lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md，摘要示巷卡编号226→220，无附加载荷。| 性态:索引级变更，未触发实质响应条件；属空转落件，无实测数据可编。| 建议处置:按裸候原则归档，不主动外呼；若下游有回波则补裁决。| 锚:qtlv-eval-wave-6220cd5885be.md↗lanes/qfa/archive",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 989,
+    "total_tokens": 1203,
+    "completion_tokens_details": {
+      "reasoning_tokens": 870
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
