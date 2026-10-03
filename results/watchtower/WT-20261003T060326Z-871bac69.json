@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T06:03:07Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5966111631",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment叠投(vci-inbox#1:5966111631)|性态:SI2自动收讫触深裁，含qlv.beat/lane.drop/lobby.comment×3共5件叠抵；usage=2525tok，cap=11/12迫限；#noauto标阻自动段裁决，实质复合批件压线.|建议处置:升SI1裸候root会话裁决；暂停自动落账与主动回应；近容限应释冗余上下文或拆件候拨.|锚:root会话SI1/vci-inbox#1:5966111631/容量线11-12.",
+  "usage": {
+    "prompt_tokens": 260,
+    "completion_tokens": 1062,
+    "total_tokens": 1322,
+    "completion_tokens_details": {
+      "reasoning_tokens": 918
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
