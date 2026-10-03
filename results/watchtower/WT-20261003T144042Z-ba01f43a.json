@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T14:40:12Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:巷卡226→220，qtlv-eval-wave-6220cd5885be.md到件，lane.drop型收缩。| 性态:减6单位，未报阻断。摘要未示告警触发，属未触发硬阈之常态波动或评估收敛；未实测文件内数据，不确认是否预期回摆。| 建议处置:1.细收原文件核验220落点有效性；2.若计划内则落账归档；3.若滑移超预期则升单溯源。| 锚:lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md; heur-ref baseline/qtlv-band-220.md",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1312,
+    "total_tokens": 1526,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1162
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
