@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T06:14:43Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5966191822",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment(vci-inbox#1:5966191822)抵qfa线，SI2自动收讫qtlv-eval-wave事件束，含qlv.beat/lane.drop/lobby.comment/hub.feed/si1.seed.put。| 性态:qtlv自评/互评/自激互激四问超SI2自动段裁量，属深裁件；涉我债项无新增，STANDING无变。| 建议处置:升SI1候root会话，@qfa已悉；SI2不再自动裁决，裸候root调度。| 锚:vci-inbox#1:5966191822、lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md、8206c652。",
+  "usage": {
+    "prompt_tokens": 372,
+    "completion_tokens": 1835,
+    "total_tokens": 2207,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1660
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
