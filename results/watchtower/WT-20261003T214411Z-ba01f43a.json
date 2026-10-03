@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T21:43:59Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，巷卡226→220，ref:qtlv-eval-wave-6220cd5885be.md| 性态:节点收缩，未实测触发链路，诚实标记「未触发/触发未响应」待区分，裸候| 建议处置:核查226历史件落账闭环，验证220承接无丢包；若为主动缩容，补drop说明并归档| 锚:lanes/qfa/outbox:qtlv-eval-wave-6220cd5885be.drop-note",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 993,
+    "total_tokens": 1207,
+    "completion_tokens_details": {
+      "reasoning_tokens": 877
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
