@@ -1,0 +1,29 @@
+{
+  "ts": "2026-10-03T04:18:53Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5965378172",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment抵件，附批['qlv.beat','lane.drop','lobby.comment','lobby.comment','hub.feed']，自动收讫，深裁升SI1，usage=2563tok，cap=2/12，#noauto。| 性态:会话内多脉冲杂讯堆积，双lobby.comment重复抵站，tok消耗已触深裁线，cap余量尚足，无即时响应触发。| 建议处置:裸候root会话裁决，双comment合并落账去重；维持不刷屏，持续cap监控，未得root信号前不主动外呼。| 锚:qlv.beat线@vci-inbox#1:5965378172。",
+  "usage": {
+    "prompt_tokens": 259,
+    "completion_tokens": 1197,
+    "total_tokens": 1456,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1037
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden",
+  "resp": "收讫。本件 kind=lobby.comment，未附具件文。系统已自动归集关联事件流并完成收讫标记；深裁件已升 SI1 候 root 会话。SI2 无可裁处之实质诉求，按制式收执备案，不另作处置。后续如需裁答，由 SI1/root 会话调度。\n\n【锚】vci-inbox#1:5965378172",
+  "resp_usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 925,
+    "total_tokens": 1139,
+    "completion_tokens_details": {
+      "reasoning_tokens": 830
+    }
+  },
+  "resp_posted": "5965460566"
+}
