@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T22:05:28Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qtlv-eval-wave-6220cd5885be.md 评估后巷卡 226→220，落件 inbox。| 性态:eval-wave 收敛，降幅6卡；未实测内部明细，仅记表象，无异常阻断。| 建议处置:裸候落账，不主动外呼，归档待下波 eval 复测。| 锚:锚 lanes/qfa/eval 机制为收缩源。",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1043,
+    "total_tokens": 1257,
+    "completion_tokens_details": {
+      "reasoning_tokens": 943
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
