@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T13:34:41Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qtlv-eval-wave-6220cd5885be.md巷卡由226降至220，触发lane.drop，净减6件。| 性态:属通道正常收缩，未见越权或违规擦除，符合队列自净预期。| 建议处置:核验所清6件确为已决/过期件后落账；若涉未决件，立即回捞并补录裁决。| 锚:lanes/qfa/inbox维护规程/队列淘汰机制。",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 916,
+    "total_tokens": 1130,
+    "completion_tokens_details": {
+      "reasoning_tokens": 806
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
