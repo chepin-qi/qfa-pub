@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T16:30:53Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件: lanes/qfa/inbox 落件 qtlv-eval-wave-6220cd5885be.md，摘要示巷卡 226→220 | 性态: kind=lane.drop，新件投递；未触发细收，内容未实测，无真机钱面越界 | 建议处置: 循 WAKE-PROTO 细收→裁决→落账，核验 220 版本锚点完整性；裸候，不主动外呼 | 锚: qfa-inbox ↔ ref#qtlv-eval-wave-6220cd5885be",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1287,
+    "total_tokens": 1501,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1159
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
