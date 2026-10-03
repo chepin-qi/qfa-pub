@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T07:20:57Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qtlv-eval-wave-6220cd5885be.md入inbox触发巷卡跌落226→220|性态:lane.drop型水位回压，属eval-wave迭代期的正常卡值下迁，未越真机钱面；摘要仅显差值，未触发异常响应|建议处置:执行细收确认波次收敛参数，若跌幅在容差内则次次落账归档；若持续下探超阈值则升单排查回压源|锚:lanes/core/pressure-feedback.md",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 892,
+    "total_tokens": 1106,
+    "completion_tokens_details": {
+      "reasoning_tokens": 774
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
