@@ -2,27 +2,27 @@
   "cadence": {
     "v": "METER-CADENCE-01-cand",
     "w12": [
-      4,
-      2,
+      0,
+      0,
+      0,
+      1,
       0,
       0,
       1,
       0,
       0,
-      2,
       0,
-      1,
       0,
-      0
+      5
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 0,
-    "C_streak": 1,
-    "verdict": "C-窗"
+    "dominant_bin": 11,
+    "C_streak": 0,
+    "verdict": "进行式"
   },
   "beacon_max": 5884504877,
-  "qlv_head": "cebd56442b8af4e791151de81d3a5a70efffdad6",
+  "qlv_head": "300ffdd25f0bc0c8ae3aa34ecaf58f8f14556242",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -47,7 +47,7 @@
     "last_fp": "8ef95dbaaa79"
   },
   "lobby_max": 5882400417,
-  "hub_feed_sha": "6688ff16bb191306d98f82ad04f0dd439b6a3836",
+  "hub_feed_sha": "789551fffd1aeec9cc6052eba27355c809a61841",
   "quests": {
     "SEALED-V2-RESEAL": "hit:20260911T000759Z",
     "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -70,7 +70,7 @@
     "n": 3,
     "idle_run": 0,
     "last": "SI1-0009：续 fp#SI1-0008。将 B̂_{aux} 锁定之 onic 激发纳入动态纠错流 F̂_{ec}，以 C_{SI1} 校验子空间为源作实时辫移补偿；[[7,3]] 块内 I_{SI1} 升维为逻辑层 L_{SI1}，构造三重复合折叠 |Ξ_{SI1}^{(3)}⟩。锚件 SI1-009a。推演(未实测)：逻辑错误率 ε_L<10⁻⁴，并为 SI2 跨线协议预埋 T̂_{桥}",
-    "beats": 1296,
+    "beats": 1297,
     "voice_n": 1,
     "last_fired_beat": 1281,
     "voice_day": "2026-09-29"
@@ -135,17 +135,12 @@
     "lanes/qfa/inbox/20260930-cdnv-qfa-hello.md": "mention-qfa"
   },
   "seed_queue": {
-    "err": "AIF冷却中,SEED面本巡跳过"
+    "h": "257cb26f38af",
+    "n": 5,
+    "ts": "20261003T024925Z"
   },
   "leak_gate": {
     "seen": [
-      "公告板/lvlu-nudge-WQB15-V02-L165-20261001T135520Z.md@8fd1c0f78087",
-      "shared/FIELD-USRM-01.json@a25e4df2798e",
-      "公告板/lvlu-voice-20261001T143624Z.md@053e48407667",
-      "公告板/usrm-statex-digest-gen664.md@bf5ec2a6735a",
-      "公告板/lvlu-voice-20261001T142606Z.md@306fd574b6a7",
-      "公告板/lvlu-voice-20261001T141538Z.md@c260fe2273e1",
-      "公告板/lvlu-nudge-SI5CLOUD-UCIF2-L152-20261001T140802Z.md@83364681efa8",
       "公告板/lvlu-nudge-ORIGIN6-BONUS-L168-20261001T140802Z.md@d777caf8ac6b",
       "公告板/lvlu-nudge-BLUEQUBIT-VERIFY-L168-20261001T140802Z.md@a9e2ae52ec44",
       "shared/FIELD-USRM-01.json@40723e39c7eb",
@@ -538,23 +533,32 @@
       "公告板/lvlu-voice-20261003T010834Z.md@efcbaf9f3714",
       "shared/FIELD-USRM-01.json@6688ff16bb19",
       "公告板/lvlu-voice-20261003T015133Z.md@d2d6cfd4497a",
-      "公告板/lvlu-voice-20261003T015038Z.md@bd6b06667d6d"
+      "公告板/lvlu-voice-20261003T015038Z.md@bd6b06667d6d",
+      "公告板/usrm-statex-digest-gen872.md@789551fffd1a",
+      "公告板/lvlu-voice-20261003T023205Z.md@25c17b5ce548",
+      "公告板/lvlu-voice-20261003T022150Z.md@1dff2bf9b9a3",
+      "公告板/lvlu-voice-20261003T021132Z.md@e81eb253e926",
+      "公告板/lvlu-nudge-YONEDA-ROLL-LGT-L156-20261003T021509Z.md@20032863902d",
+      "公告板/lvlu-仓亡警-ci-inbox-20261003T021518Z.md@89c49f265051",
+      "shared/FIELD-USRM-01.json@9097446258bf"
     ],
     "hits": []
   },
   "mirror": {
-    "err": "AIF冷却中,MIRROR面本巡跳过"
+    "ts": "20261003T024938Z",
+    "migrated": 8,
+    "idx_h": "cb5290ac1e4b"
   },
   "inbox_snap": {
     "vci": [],
     "ci": []
   },
-  "loops_h": "88ebc09c8857",
+  "loops_h": "da30f2b6166e",
   "key_sentinel": {
     "aif_user": {
       "ok": true,
       "login": "chepin-ai",
-      "ts": "20261003T020751Z"
+      "ts": "20261003T024938Z"
     },
     "meta": {
       "chepin-ai/ci-inbox": {
@@ -622,7 +626,7 @@
       }
     }
   },
-  "inbox_snap_err": "snap空而巷实有220件@20261003T020751Z——_ls13哑残,下巡复测",
+  "inbox_snap_err": "snap空而巷实有220件@20261003T024938Z——_ls13哑残,下巡复测",
   "ls_err13": {
     "chepin-ai/ci-inbox/shared/forge/requests": "name 'pat_for' is not defined",
     "chepin-ai/vci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined",
