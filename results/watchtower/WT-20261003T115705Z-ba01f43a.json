@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T11:56:49Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，qtlv-eval-wave-6220cd5885be.md 落 qfa-inbox，摘要示巷卡 226→220。| 性态:单件 eval 纪要入线，数字变动为照录摘要，未实测复核。| 建议处置:细收后按档级归档或转相应下游 lane；若需验证 226→220 差值，应单开实测支线，不臆测原因。| 锚:lanes/qtlv/outbox:eval-wave-6220cd5885be.md",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1036,
+    "total_tokens": 1250,
+    "completion_tokens_details": {
+      "reasoning_tokens": 913
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
