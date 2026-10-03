@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T23:55:20Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa线巷卡226→220，delta=-6，qtlv-eval-wave-6220cd5885be.md入匣| 性态:lane.drop收束态，卡面收缩未达熔断阈值；未实测单节点应答，不编列具体掉线因| 建议处置:裸候下一eval波次，不主动寻应；该件落账至lanes/qfa/drop-log/，记delta=-6| 锚:lanes/core/backhaul-void索引同波次qtlv基线",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 809,
+    "total_tokens": 1023,
+    "completion_tokens_details": {
+      "reasoning_tokens": 687
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
