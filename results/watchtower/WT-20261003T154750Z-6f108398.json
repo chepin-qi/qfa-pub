@@ -1,0 +1,9 @@
+{
+  "ts": "2026-10-03T15:47:50Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hubfeed.poll.err",
+    "ref": "ci-inbox",
+    "high_value": false
+  }
+}
