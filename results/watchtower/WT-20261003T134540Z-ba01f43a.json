@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T13:45:17Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:巷卡容量226→220（lane.drop），关联qtlv-eval-wave-6220cd5885be.md波次评估。| 性态:配置级收缩，摘要无故障表征，未触发报警，未实测内部状态，属准入或资源调整。| 建议处置:细收该文件，确认220为预期基线；若非预期，回滚226并校验波次逻辑。| 锚:lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md / 基线226。",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1100,
+    "total_tokens": 1314,
+    "completion_tokens_details": {
+      "reasoning_tokens": 979
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
