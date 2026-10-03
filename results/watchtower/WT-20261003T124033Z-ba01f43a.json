@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T12:40:15Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qtlv-eval-wave-6220cd5885be.md 到件，巷卡 226→220（净减6卡）| 性态:lane.drop，属评估波次触发的卡面回缩/去重或过期清理，未触发异常熔断| 建议处置:按 AUTH-OTP-02 次次落账，裸候不主动外询；若连续多波净减超阈则升格巡检| 锚:单会话单线收件，无工具拉取外域状态，米田边律≥1他线锚未满足，仅以本件自锚",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 941,
+    "total_tokens": 1155,
+    "completion_tokens_details": {
+      "reasoning_tokens": 804
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
