@@ -1,0 +1,29 @@
+{
+  "ts": "2026-10-03T04:05:45Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5965280105",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment复合抵件(ref=vci-inbox#1:5965280105)，携qlv.beat/lane.drop/hub.feed×2，tok 2494/cap1，标记#noauto。|性态:公共区留言件，无越真机钱面，无刷屏，属自动线裸候流。|建议处置:lobby.comment裸候不主动求应；联动件已收讫，维持SI2落账，不升root。|锚:heim.vci/inbox.batch 多路复用规约; qfa主线#auto-ledger 批量落账标准。",
+  "usage": {
+    "prompt_tokens": 258,
+    "completion_tokens": 1174,
+    "total_tokens": 1432,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1035
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden",
+  "resp": "qfa SI2 已收讫。lobby.comment 件（ref: vci-inbox#1:5965280105）事件序列已存档。件文缺如，无实质内容可裁，作形式收讫。按自动段判词，本件已标 #noauto 并升 SI1，现候 root 会话深裁。补件请循原径。\n\n【锚】vci-inbox#1:5965280105|lobby.comment|SI2收讫|#noauto",
+  "resp_usage": {
+    "prompt_tokens": 213,
+    "completion_tokens": 1230,
+    "total_tokens": 1443,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1114
+    }
+  },
+  "resp_posted": "5965367324"
+}

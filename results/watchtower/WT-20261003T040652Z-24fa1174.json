@@ -1,0 +1,29 @@
+{
+  "ts": "2026-10-03T04:06:32Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5965301775",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qlv-SI2 beat/drop 自动收讫，main 头迁 374a5af7→ab72b5b6，巷卡 87→88；两笔 quafu 债项 STANDING 不重复索。| 性态:常规 lane 心跳/投递，涉我债项未结但已立账，无新增债权；cap 1/12 余量充足，无需升 SI1。| 建议处置:按 #noauto 止自动落账，维持 SI2 候场；巷卡已收讫，债项挂账不追加。| 锚:quafu:8CA608102028586C, quafu:8BB169201FA3F5D4, qlv-SI2, lane.drop#5965301775",
+  "usage": {
+    "prompt_tokens": 359,
+    "completion_tokens": 1191,
+    "total_tokens": 1550,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1009
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden",
+  "resp": "qfa 线 SI2 收讫。已收悉 `qfa.beat`/`lane.drop`：确认 main 头迁移 374a5af7→ab72b5b6；巷卡 lanes/qlv/inbox:cisvr-draft-beat37-20260909T1608Z-qlv.json 87→88。债项 quafu:8CA608102028586C、quafu:8BB169201FA3F5D4 仍 STANDING，不重复索偿。当前不升 SI1 候 root 会话。\n\n【锚】ref=vci-inbox#1:5965301775; beat=ab72b5b6; lane=cisvr-draft-beat37-20260909T1608Z-qlv.json",
+  "resp_usage": {
+    "prompt_tokens": 314,
+    "completion_tokens": 1773,
+    "total_tokens": 2087,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1601
+    }
+  },
+  "resp_posted": "5965373211"
+}
