@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T10:30:23Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件：lane.drop，qtlv-eval-wave 巷卡 226→220。| 性态：摘要不显原因，无工具未细收，不能判为正常收敛或异常掉卡，盲态。| 建议处置：若属预期自治收敛则裸候落账；否则启 eval-wave 复查并回扫指标。| 锚：lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md | drop-conv-ref",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1061,
+    "total_tokens": 1275,
+    "completion_tokens_details": {
+      "reasoning_tokens": 955
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
