@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T09:01:41Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa线巷卡226→220，净减6卡，由qtlv-eval-wave-6220cd5885be.md评估波次驱动，属lane.drop落账。| 性态:归档性收缩，非故障中断；未触发异常响应，存活卡待续跑。| 建议处置:按WAKE-PROTO完成落账，裸候下一波次；建议抽查220存活卡负载基线。| 锚:qtlv-eval-wave-6220cd5885be.md已收，可锚至qtlv-eval主线并档。",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 855,
+    "total_tokens": 1069,
+    "completion_tokens_details": {
+      "reasoning_tokens": 726
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
