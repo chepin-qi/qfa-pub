@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T17:46:59Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，巷卡226→220，收件qtlv-eval-wave-6220cd5885be.md| 性态:通道收缩，卡位净减6位，未声明阻塞或告警| 建议处置:按drop规程清账，复核220存量卡位健康态，eval-wave归档| 锚:lanes/otl/health:drop-watch-6220cd5885be",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1231,
+    "total_tokens": 1445,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1138
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
