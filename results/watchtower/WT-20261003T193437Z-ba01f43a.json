@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T19:34:18Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop入件，qtlv-eval-wave-6220cd5885be.md巷卡由226落至220。| 性态:属空间整理或批次沉降，卡位差6格；未触发异常告警，非触发未响应，无钱面越界。| 建议处置:裸候归档，落账qfa/drop池；次周期若持续滑移，启动复核。| 锚:lanes/void/ledger:qtlv-wave-6220cd5885be",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1440,
+    "total_tokens": 1654,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1326
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
