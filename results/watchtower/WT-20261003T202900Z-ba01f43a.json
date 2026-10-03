@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T20:28:37Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件：巷卡226→220，新件 qtlv-eval-wave-6220cd5885be.md 入巷归档。| 性态：lane.drop 落账型，件至即收，未触发响应链，属裸候静默态；eval 内数值未实测，不编数。| 建议处置：已次次落账，不主动求应，裸候待后续调档。| 锚：heimu-line/ledger#wave-eval-drop。",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 993,
+    "total_tokens": 1207,
+    "completion_tokens_details": {
+      "reasoning_tokens": 885
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
