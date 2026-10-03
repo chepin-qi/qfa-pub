@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T10:52:12Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:巷卡226→220回落，件qtlv-eval-wave-6220cd5885be.md入inbox| 性态:lane.drop，属eval-wave后卡口收敛，无异常触发记录，视同正常收缩| 建议处置:复核220活卡口落账完整性，确认6下迁卡无滞账；本件收档| 锚:lanes/qfa/archive:eval-wave-6220cd5885be-drop",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 725,
+    "total_tokens": 939,
+    "completion_tokens_details": {
+      "reasoning_tokens": 624
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
