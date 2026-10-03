@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T14:51:16Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qtlv-eval-wave-6220cd5885be.md 在 qfa/inbox 触发 lane.drop，巷卡自 226 回退至 220。| 性态:评估波次被淘汰，属常规通道自净；落差提示该波次未通过稳态校验或已被新迭代覆盖，基线落账于 220。| 建议处置:确认 220 基线无缺损后归档残波，释放占位；若 226 尚有未落账子件，向 core 线发起追索。| 锚:lanes/core/archive:drop-log-6220",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1304,
+    "total_tokens": 1518,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1169
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
