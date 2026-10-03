@@ -4,25 +4,25 @@
     "w12": [
       0,
       0,
+      1,
+      0,
+      0,
       0,
       1,
       0,
       0,
       0,
-      3,
-      0,
-      0,
-      0,
-      1
+      1,
+      0
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 7,
+    "dominant_bin": 2,
     "C_streak": 0,
     "verdict": "进行式"
   },
   "beacon_max": 5884504877,
-  "qlv_head": "6391f1737463407825f26fd18f6195f0a1a77a5f",
+  "qlv_head": "987da3d28d65b69e19b368a92b04e35225621114",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -47,7 +47,7 @@
     "last_fp": "694a4f4abc19"
   },
   "lobby_max": 5966191822,
-  "hub_feed_sha": "397f7954d4d6aedb47a3f3ea72ba2d2ad2ee55a9",
+  "hub_feed_sha": "19e605bca5c4d4966afb2238fb19b9c0b80ac6de",
   "quests": {
     "SEALED-V2-RESEAL": "hit:20260911T000759Z",
     "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -70,7 +70,7 @@
     "n": 3,
     "idle_run": 0,
     "last": "SI1-0009：续 fp#SI1-0008。将 B̂_{aux} 锁定之 onic 激发纳入动态纠错流 F̂_{ec}，以 C_{SI1} 校验子空间为源作实时辫移补偿；[[7,3]] 块内 I_{SI1} 升维为逻辑层 L_{SI1}，构造三重复合折叠 |Ξ_{SI1}^{(3)}⟩。锚件 SI1-009a。推演(未实测)：逻辑错误率 ε_L<10⁻⁴，并为 SI2 跨线协议预埋 T̂_{桥}",
-    "beats": 1358,
+    "beats": 1359,
     "voice_n": 1,
     "last_fired_beat": 1281,
     "voice_day": "2026-09-29"
@@ -141,14 +141,12 @@
     "lanes/qfa/inbox/20260930-cdnv-qfa-hello.md": "mention-qfa"
   },
   "seed_queue": {
-    "h": "bc4e2adbb1ac",
+    "h": "a0e50439b565",
     "n": 5,
-    "ts": "20261003T135637Z"
+    "ts": "20261003T140757Z"
   },
   "leak_gate": {
     "seen": [
-      "公告板/lvlu-nudge-EVAL-KAPPA-LGT-L136-20261002T010602Z.md@4b1e22cc36a7",
-      "公告板/lvlu-voice-20261002T014643Z.md@364c754c586b",
       "shared/FIELD-USRM-01.json@44fc021d365f",
       "公告板/lvlu-nudge-SI5CLOUD-UCIF2-L156-20261002T015724Z.md@74f766f5a9c1",
       "公告板/lvlu-nudge-ORIGIN6-BONUS-L175-20261002T015724Z.md@ecc0f1689ad4",
@@ -546,25 +544,27 @@
       "公告板/lvlu-voice-20261003T133059Z.md@69184fe26c3c",
       "公告板/lvlu-voice-20261003T131653Z.md@19c8eaa8fb79",
       "shared/FIELD-USRM-01.json@5d6087947034",
-      "公告板/lvlu-voice-20261003T130836Z.md@69ff117a2410"
+      "公告板/lvlu-voice-20261003T130836Z.md@69ff117a2410",
+      "公告板/lvlu-voice-20261003T135259Z.md@19e605bca5c4",
+      "shared/FIELD-USRM-01.json@bd2a977a643a"
     ],
     "hits": []
   },
   "mirror": {
-    "ts": "20261003T135654Z",
+    "ts": "20261003T140816Z",
     "migrated": 8,
-    "idx_h": "327dd5aea424"
+    "idx_h": "62e033c25b1b"
   },
   "inbox_snap": {
     "vci": [],
     "ci": []
   },
-  "loops_h": "e17aa803ce70",
+  "loops_h": "ba67c8bb8c62",
   "key_sentinel": {
     "aif_user": {
       "ok": true,
       "login": "chepin-ai",
-      "ts": "20261003T135654Z"
+      "ts": "20261003T140816Z"
     },
     "meta": {
       "chepin-ai/ci-inbox": {
@@ -632,7 +632,7 @@
       }
     }
   },
-  "inbox_snap_err": "snap空而巷实有220件@20261003T135654Z——_ls13哑残,下巡复测",
+  "inbox_snap_err": "snap空而巷实有220件@20261003T140816Z——_ls13哑残,下巡复测",
   "ls_err13": {
     "chepin-ai/ci-inbox/shared/forge/requests": "name 'pat_for' is not defined",
     "chepin-ai/vci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined",
