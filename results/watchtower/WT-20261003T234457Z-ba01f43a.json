@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T23:44:44Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:巷卡计数由226落至220，伴生qtlv-eval-wave-6220cd5885be.md评估波次新件| 性态:lane.drop类收缩，未触发告警则属静默核销；触发未响应需排异| 建议处置:细收该eval文件，比对220卡基线，若属预期波次回滚则落账归档；若属非授意丢卡，则升裸候待复| 锚:lanes/qfa/inbox锚定，可交叉lanes/sys/audit线复核卡基一致性",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 707,
+    "total_tokens": 921,
+    "completion_tokens_details": {
+      "reasoning_tokens": 580
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
