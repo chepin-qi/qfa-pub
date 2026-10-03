@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T13:13:07Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lanes/qfa/inbox 评估波次 qtlv-eval-wave-6220cd5885be.md 巷卡 226→220 降级落件| 性态:单文件评分收缩，无异常告警，属常规 lane.drop 迭代| 建议处置:裸候归档，次次落账，不主动寻求回应| 锚:lanes/core/ledger:lane-drop-6220cd5885be",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1444,
+    "total_tokens": 1658,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1346
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
