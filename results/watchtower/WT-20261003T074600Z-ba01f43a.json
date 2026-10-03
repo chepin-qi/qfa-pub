@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T07:45:44Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa inbox 波次件 qtlv-eval-wave-6220cd5885be.md 落巷，巷卡水位 226→220。| 性态:lane.drop 触发，属 wave 评估件生命周期终结/归档迁移，无异常响应缺失。| 建议处置:核实该件已合并至主评估仓或已落账归档；若 archive 侧未补链则补录，无需回扫。| 锚:lanes/qfa/archive:qtlv-eval-wave-6220cd5885be.md",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 931,
+    "total_tokens": 1145,
+    "completion_tokens_details": {
+      "reasoning_tokens": 810
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
