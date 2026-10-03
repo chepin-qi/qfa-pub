@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-03T12:07:55Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lanes/qfa/inbox 收 lane.drop 一件，巷卡 226→220，源文件 qtlv-eval-wave-6220cd5885be.md。| 性态:eval-wave 最新波次显示巷卡收缩，属容量降级事件；因仅摘要到件，未实测全量字段，暂记为触发已响应的单次跌落。| 建议处置:细收该 eval-wave 全量日志，裁决是否跌穿基线阈值；若孤立波动则落账归档，若连续下探则提级告警。| 锚:lanes/qfa/core:qtlv-baseline（基线锚定）",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1331,
+    "total_tokens": 1545,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1188
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
