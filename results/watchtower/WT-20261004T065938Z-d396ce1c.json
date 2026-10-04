@@ -1,0 +1,11 @@
+{
+  "ts": "2026-10-04T06:59:38Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/lvlu-voice-20261004T062852Z.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}
