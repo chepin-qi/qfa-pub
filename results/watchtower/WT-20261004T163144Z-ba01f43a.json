@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T16:31:32Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop线头跌巷|性态:巷卡226→220,qtlv-eval-wave线载荷下行,摘要仅示数变未触发异常告警|建议处置:裸候,不主动唤应;依AUTH-OTP-02次次落账,待下一波自发到件再校|锚:交叉lanes/qfa/hist:qtlv-baseline-*或lanes/cross/ops:wave-cap-review做他线锚定",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 781,
+    "total_tokens": 995,
+    "completion_tokens_details": {
+      "reasoning_tokens": 677
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
