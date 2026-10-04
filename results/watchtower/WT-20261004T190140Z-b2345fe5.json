@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T19:01:25Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "ucif2.watch",
+    "ref": "lanes/qfa/inbox/20261005-cdnv-qfa-thanks.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:ucif2帖涉qfa机旗，inbox来件(content-scan)，ref已收。| 性态:watch监视件，扫描示关联机旗标识，未实测文件内容，无真机钱面触发，待落账。| 建议处置:按WAKE-PROTO细收后裸候归档；若涉真机钱面则转人工复核。| 锚:ucif2.lane/cdnv-20261005",
+  "usage": {
+    "prompt_tokens": 223,
+    "completion_tokens": 1361,
+    "total_tokens": 1584,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1258
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
