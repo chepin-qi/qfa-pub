@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T14:43:41Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qtlv-eval-wave-6220cd5885be.md 落件，巷卡读数由226降至220，属lane.drop类下潜| 性态:单点收敛，未见异常抖动，符合评估波次自然沉降特征| 建议处置:落账归档，标记基线漂移阈值，待下一波次复核| 锚:ctlv基线/追踪波形交叉验证",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 739,
+    "total_tokens": 953,
+    "completion_tokens_details": {
+      "reasoning_tokens": 645
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
