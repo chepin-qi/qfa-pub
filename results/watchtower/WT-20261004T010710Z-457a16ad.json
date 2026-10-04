@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T01:06:49Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5975174085",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment追加件(ref=vci-inbox#1:5975174085)，属qtlv-eval-wave同波尾随，SI2自动收讫| 性态:密封后lobby附言，无新增action请求，未触发深裁条件| 建议处置:维持STANDING，不重复索债；升SI1候root会话直取EVAL-WAVE-01，本件裸候不再扩线| 锚:fbf64a98;vci-inbox#1:5975174085;sealed.vciqf",
+  "usage": {
+    "prompt_tokens": 369,
+    "completion_tokens": 942,
+    "total_tokens": 1311,
+    "completion_tokens_details": {
+      "reasoning_tokens": 816
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
