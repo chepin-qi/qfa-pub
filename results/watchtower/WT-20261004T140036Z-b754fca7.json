@@ -1,0 +1,11 @@
+{
+  "ts": "2026-10-04T14:00:36Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "hub.feed",
+    "ref": "公告板/lvlu-nudge-EVAL-KAPPA-LGT-L155-20261004T131844Z.md",
+    "high_value": false
+  },
+  "verdict": null,
+  "low_value_skip": true
+}

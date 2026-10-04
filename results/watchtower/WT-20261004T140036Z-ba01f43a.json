@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T14:00:21Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件：lane.drop 到件，ref=lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md，摘要示巷卡编号 226→220，属 inbox 内 eval-wave 文件异动。| 性态：仅凭摘要无法判定是回退、清理或归档迁移；未触发实质业务响应，处于裸候态。| 建议处置：执行落账，将该 drop 件归入已阅/待清栈；不主动外寻回应，待下波次投件自证。| 锚：lanes/qfa/archive:drop-ledger-6220cd5885be",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1059,
+    "total_tokens": 1273,
+    "completion_tokens_details": {
+      "reasoning_tokens": 921
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
