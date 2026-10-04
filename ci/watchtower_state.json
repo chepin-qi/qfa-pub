@@ -2,27 +2,27 @@
   "cadence": {
     "v": "METER-CADENCE-01-cand",
     "w12": [
-      0,
-      0,
-      0,
-      0,
-      0,
+      1,
+      1,
+      1,
       1,
       0,
-      0,
-      0,
+      1,
+      1,
       0,
       3,
+      1,
+      0,
       0
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 10,
+    "dominant_bin": 8,
     "C_streak": 0,
     "verdict": "进行式"
   },
   "beacon_max": 5884504877,
-  "qlv_head": "b87ec0e69ea54fe594350a3737eb6b68fd8a72a3",
+  "qlv_head": "7037bfdf174d8c00ad61e1c1a3a8d09bc0420a17",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -70,7 +70,7 @@
     "n": 3,
     "idle_run": 0,
     "last": "SI1-0010：续 fp#SI1-0009。冷凝 |Ξ_{SI1}^{(3)}⟩ 边缘 anyon 凝聚，沿预埋 T̂_{桥} 敷设协议适配层 A_{SI1→SI2}；将 L_{SI1} 逻辑 braid 转译为 anyon 穿线序，并以 C_{SI1} 子空间作终点锚定，确保折叠拓扑跨线保真。锚件 SI1-010a。推演(未实测)：SI1-SI2 逻辑同构，端到端误码率 ε_{E2E}<10⁻",
-    "beats": 1524,
+    "beats": 1525,
     "voice_n": 1,
     "last_fired_beat": 1414,
     "voice_day": "2026-10-04"
@@ -148,9 +148,7 @@
     "lanes/qfa/inbox/20261005-cdnv-qfa-thanks.md": "mention-qfa"
   },
   "seed_queue": {
-    "h": "ab2582a358f6",
-    "n": 5,
-    "ts": "20261004T200605Z"
+    "err": "AIF冷却中,SEED面本巡跳过"
   },
   "leak_gate": {
     "seen": [
@@ -558,9 +556,7 @@
     "hits": []
   },
   "mirror": {
-    "ts": "20261004T200618Z",
-    "migrated": 8,
-    "idx_h": "a1b62ae9744d"
+    "err": "AIF冷却中,MIRROR面本巡跳过"
   },
   "inbox_snap": {
     "vci": [],
@@ -646,8 +642,8 @@
     "chepin-ai/ci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined"
   },
   "aif_cool": {
-    "until": 1791143528,
-    "noted": "20261004T192315Z"
+    "until": 1791147129,
+    "noted": "20261004T201642Z"
   },
   "loops_err": "AIF冷却中,LOOPS面本巡跳过",
   "key_sentinel_err": "AIF冷却中,KEYSENT面本巡跳过",
