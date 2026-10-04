@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T08:04:14Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa inbox 落入 qtlv-eval-wave-6220cd5885be.md，摘要示巷卡226→220，为 eval-wave 下沿异动| 性态:单点跌落，无全域收敛证据，诚标「摘要到达，未触发实测」| 建议处置:挂起待完整波次报告；若趋势下沿则归 backlog 标黄；裸候不外寻| 锚:cross→lanes/qfa/backlog:eval-trend-ledger",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1083,
+    "total_tokens": 1297,
+    "completion_tokens_details": {
+      "reasoning_tokens": 970
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
