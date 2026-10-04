@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T00:19:13Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa inbox 到件 lane.drop，ref=qtlv-eval-wave-6220cd5885be.md，摘要示巷卡 226→220。| 性态:摘要级到件，文件未在本工位触发解析，属未触发；具体 eval 内容与数字异动未实测。| 建议处置:按 AUTH-OTP-02 裸候，不主动求应，置 drop 待扫区，待 qtlv 线实质回传后补扫裁决。| 锚:lanes/qtlv/eval-wave 他线锚。",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1239,
+    "total_tokens": 1453,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1112
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}

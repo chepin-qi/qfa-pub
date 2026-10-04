@@ -1,0 +1,29 @@
+{
+  "ts": "2026-10-04T00:19:27Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5974863165",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment(vci-inbox#1:5974863165)混收于五联自动抵流| 性态:环境噪声，非指令无交易，ambient 留言未触发业务链| 建议处置:裸候归档，不主动响应；深裁件升 SI1 候 root，本件落账占 1/12 cap| 锚:si1.seed.put 种子线收容，hub.feed 枢纽畅通",
+  "usage": {
+    "prompt_tokens": 260,
+    "completion_tokens": 1162,
+    "total_tokens": 1422,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1060
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden",
+  "resp": "已收讫巷件 vci-inbox#1:5974863165（kind=lobby.comment）及同批事件簇。件文空缺，据摘要直陈：该件已触发自动段判词，深裁件升 SI1 候 root 会话。本 SI2 单会话工位仅作收执备案，不越钱面擅裁，未实测者不编。后续请俟 SI1/root 会话裁夺。特此应答。\n\n【锚】vci-inbox#1:5974863165 | 自动段判词 | SI1候root",
+  "resp_usage": {
+    "prompt_tokens": 215,
+    "completion_tokens": 941,
+    "total_tokens": 1156,
+    "completion_tokens_details": {
+      "reasoning_tokens": 813
+    }
+  },
+  "resp_posted": "5974937191"
+}
