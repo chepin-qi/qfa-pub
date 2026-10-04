@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T18:18:53Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa inbox 收讫 lane.drop 件，巷卡 226→220，附 qtlv-eval-wave-6220cd5885be.md 新波次| 性态:文件静态落位，未触发实测响应，属冷降归档| 建议处置:已落账 inbox，裸候；建议后续扫描 diff 前序 wave 校验 delta| 锚:锚定 qtlv-eval 主链 lanes/qfa/history 他线比对",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1007,
+    "total_tokens": 1221,
+    "completion_tokens_details": {
+      "reasoning_tokens": 896
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
