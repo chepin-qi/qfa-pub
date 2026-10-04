@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T15:16:00Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:巷卡指标226→220，对应qtlv-eval-wave-6220cd5885be.md波次落盘| 性态:lane.drop类通道收缩，属评估波次自然回落，无额外触发| 建议处置:裸候，已落账；不主动寻求回应，继续细收后续波次| 锚:lanes/qfa/archive:eval-baseline.md",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 957,
+    "total_tokens": 1171,
+    "completion_tokens_details": {
+      "reasoning_tokens": 866
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
