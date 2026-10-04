@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T03:01:04Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5975712157",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment聚合件(ref:vci-inbox#1:5975712157)携qlv.beat/lane.drop/hub.feed/si1.seed.put五联抵站| 性态:SI2自动收讫升SI1候root，usage=2401tok触顶(cap 12/12饱和)，#noauto属深裁聚合态，触发未响应| 建议处置:按WAKE-PROTO落账SI1深裁候件，lobby.comment与seed.put分账挂候，裸候不主动外呼，待root激活后释入队列| 锚:si1.seed.put→qfa-root#session-hold",
+  "usage": {
+    "prompt_tokens": 260,
+    "completion_tokens": 1263,
+    "total_tokens": 1523,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1114
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
