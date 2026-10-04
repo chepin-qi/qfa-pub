@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T15:48:10Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，巷卡226→220，关联qtlv-eval-wave-6220cd5885be.md| 性态:eval-wave驱动通道收敛，摘要未报异常，视为预期内调整| 建议处置:①核验该eval-wave落账完整性；②执行lane.drop协议释放链路；③裸候下游，不主动seek回应| 锚:sys/ledger/lane-converge; lanes/qfa/drop-log",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1193,
+    "total_tokens": 1407,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1091
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
