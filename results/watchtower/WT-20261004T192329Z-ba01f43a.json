@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T19:23:15Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lanes/qfa/inbox 下 qtlv-eval-wave-6220cd5885be.md 巷卡 226→220，触发 lane.drop。| 性态:轻量收敛，差值6未越真机钱面；因无文件内实测详情，不编丢件根因，仅记 drop 待勘。| 建议处置:细收该 md 完整性，若属归档收敛则次次落账；如为异常掉件，补件后裸候重收。| 锚:lanes/qfa/archive:convergence-log(归档基准)",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1179,
+    "total_tokens": 1393,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1049
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
