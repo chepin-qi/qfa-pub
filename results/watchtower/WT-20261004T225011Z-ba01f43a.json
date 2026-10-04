@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T22:49:44Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，巷卡226→220，ref=lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md。| 性态:lane收敛，无额外载荷，未触发异常响应。| 建议处置:细收后裸候，按WAKE-PROTO落账，不主动回拨。| 锚:hek::lane-manifest/delta-220",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 963,
+    "total_tokens": 1177,
+    "completion_tokens_details": {
+      "reasoning_tokens": 873
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
