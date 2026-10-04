@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T04:48:51Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md 发生 lane.drop，巷卡位 226→220 下调，最新评估波次归档。| 性态:未触发异常响应，属常规落档/淘汰动作，计数减并位图收缩，无越真机钱面。| 建议处置:执行落账销档，更新巷卡位图释放槽位，不主动回召源端，裸候下一波次。| 锚:meta/归档:drop-log-6220cd5885be",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 992,
+    "total_tokens": 1206,
+    "completion_tokens_details": {
+      "reasoning_tokens": 864
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
