@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T08:36:37Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop 下件，qtlv-eval-wave-6220cd5885be.md 随巷卡 226→220 收敛归档，eval-wave 批次减员。| 性态:单文件离线，未见异常触发记录；属常态队列收缩或到期清理，诚实边界内未越真机钱面。| 建议处置:确认 220 位落账完成，裸候后续 eval-wave 投递，不刷屏追呼。| 锚:lanes/qfa/inbox 同目录余波待他线锚定，次次落账。",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1195,
+    "total_tokens": 1409,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1067
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
