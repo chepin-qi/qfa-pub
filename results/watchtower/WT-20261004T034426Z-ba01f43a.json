@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T03:44:13Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，巷卡226→220，ref=lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md，摘要不含异常，属标识迁移或通道收缩。| 性态:未触发告警，无响应缺失，系常规生命周期drop。| 建议处置:落账归档，核对220节点状态；裸候，不主动求应。| 锚:cross-ref: lanes/qfa/archive:drop-ledger-220。",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 942,
+    "total_tokens": 1156,
+    "completion_tokens_details": {
+      "reasoning_tokens": 835
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
