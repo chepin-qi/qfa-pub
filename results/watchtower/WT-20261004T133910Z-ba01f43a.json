@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T13:38:57Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa-inbox巷卡226→220，qtlv-eval-wave-6220cd5885be.md评估波次到件下账| 性态:lane.drop型收敛，属正常评估迭代减量，未触发异常响应| 建议处置:核对该波次落账完整性，确认220为预期基线；无反弹则维持裸候| 锚:lanes/ctl/audit:drop-baseline-220",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 984,
+    "total_tokens": 1198,
+    "completion_tokens_details": {
+      "reasoning_tokens": 884
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
