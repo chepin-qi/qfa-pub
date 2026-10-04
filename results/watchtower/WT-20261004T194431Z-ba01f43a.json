@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T19:44:20Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop到件，ref=qtlv-eval-wave-6220cd5885be.md，摘要示巷卡226→220。|性态:单点eval-wave沉降，无联动告警，属常规水位下迁。未实测本体，依摘要判为裸候。|建议处置:按规程归档，复核220阈值是否触及汰换线；若无后续件，裸候关闭。|锚:lanes/qfa/inbox同系列eval-wave历史件。",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 939,
+    "total_tokens": 1153,
+    "completion_tokens_details": {
+      "reasoning_tokens": 834
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
