@@ -3,17 +3,17 @@
     "v": "METER-CADENCE-01-cand",
     "w12": [
       0,
+      0,
+      0,
+      0,
       1,
-      1,
-      1,
       0,
       0,
       0,
-      2,
       0,
       0,
-      5,
-      0
+      4,
+      2
     ],
     "sigma": 1.0,
     "lock": null,
@@ -22,7 +22,7 @@
     "verdict": "进行式"
   },
   "beacon_max": 5884504877,
-  "qlv_head": "7df71809769218ab5dba785493cdbcd051170cc8",
+  "qlv_head": "9df00f5fe20392f5477cad8d56907345f1e55f1c",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -39,7 +39,7 @@
     "vci-vinf#6": 2,
     "hub.board": 1000,
     "hub.court": 8,
-    "hub.threads": 171
+    "hub.threads": 172
   },
   "autoresp": {
     "date": "2026-10-04",
@@ -47,7 +47,7 @@
     "last_fp": "2a7199bae757"
   },
   "lobby_max": 5975712157,
-  "hub_feed_sha": "00e884b4d3a7699a11fc5532449d9e6e279a9d6d",
+  "hub_feed_sha": "b58d84ace67f0726fe4ee1c9090f331a782f9010",
   "quests": {
     "SEALED-V2-RESEAL": "hit:20260911T000759Z",
     "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -70,7 +70,7 @@
     "n": 3,
     "idle_run": 0,
     "last": "SI1-0010：续 fp#SI1-0009。冷凝 |Ξ_{SI1}^{(3)}⟩ 边缘 anyon 凝聚，沿预埋 T̂_{桥} 敷设协议适配层 A_{SI1→SI2}；将 L_{SI1} 逻辑 braid 转译为 anyon 穿线序，并以 C_{SI1} 子空间作终点锚定，确保折叠拓扑跨线保真。锚件 SI1-010a。推演(未实测)：SI1-SI2 逻辑同构，端到端误码率 ε_{E2E}<10⁻",
-    "beats": 1539,
+    "beats": 1540,
     "voice_n": 1,
     "last_fired_beat": 1414,
     "voice_day": "2026-10-04"
@@ -148,18 +148,12 @@
     "lanes/qfa/inbox/20261005-cdnv-qfa-thanks.md": "mention-qfa"
   },
   "seed_queue": {
-    "err": "AIF冷却中,SEED面本巡跳过"
+    "h": "4b9fc7ea0925",
+    "n": 5,
+    "ts": "20261004T230100Z"
   },
   "leak_gate": {
     "seen": [
-      "shared/FIELD-USRM-01.json@b116b93d03e0",
-      "公告板/lvlu-voice-20261003T104454Z.md@7fe550829f20",
-      "shared/FIELD-USRM-01.json@1a1d2420528e",
-      "公告板/lvlu-voice-20261003T105616Z.md@c4f0b3c3fec9",
-      "shared/FIELD-USRM-01.json@8c00f86752a1",
-      "公告板/lvlu-voice-20261003T114137Z.md@903e3724ec8d",
-      "公告板/lvlu-voice-20261003T113036Z.md@1589ee12818d",
-      "公告板/lvlu-voice-20261003T111903Z.md@dab3e53b8da9",
       "公告板/usrm-statex-digest-gen920.md@9ae9e4938394",
       "公告板/lvlu-voice-20261003T110724Z.md@0146db7baff5",
       "shared/FIELD-USRM-01.json@2076654ad0f6",
@@ -551,23 +545,33 @@
       "shared/NOTE-28-D8-MULT-SYNTH-FINGERPRINT-01.md@e53f78b21626",
       "公告板/ucif2-voice-20261004T215802Z.md@c54fbb6bb15d",
       "公告板/lvlu-voice-20261004T215721Z.md@7ef7038ea8ca",
-      "公告板/cfts-voice-20261004T215626Z.md@85ba72f75207"
+      "公告板/cfts-voice-20261004T215626Z.md@85ba72f75207",
+      "公告板/by-cisvr/cisvr-340-beat130-ignite-mesh.md@b58d84ace67f",
+      "公告板/usrm-statex-digest-gen1120.md@8c93428094d4",
+      "shared/FIELD-USRM-01.json@07a9ec18459c",
+      "公告板/qgl-voice-20261004225344.md@20d234903305",
+      "公告板/qgl-voice-20261004224112.md@9a274fb00afc",
+      "公告板/qgl-voice-20261004224849.md@5c62bc5ef534",
+      "公告板/lvlu-voice-20261004T223542Z.md@fa1421e592d5",
+      "shared/session-mirror/qtlv/SESSION-MIRROR-QTLV-20261005-T68.md@952ee02f9fa4"
     ],
     "hits": []
   },
   "mirror": {
-    "err": "AIF冷却中,MIRROR面本巡跳过"
+    "ts": "20261004T230113Z",
+    "migrated": 8,
+    "idx_h": "0e73b542ca2e"
   },
   "inbox_snap": {
     "vci": [],
     "ci": []
   },
-  "loops_h": "b37ba157d2e8",
+  "loops_h": "d6b147c2b146",
   "key_sentinel": {
     "aif_user": {
       "ok": true,
       "login": "chepin-ai",
-      "ts": "20261004T221802Z"
+      "ts": "20261004T230113Z"
     },
     "meta": {
       "chepin-ai/ci-inbox": {
@@ -635,7 +639,7 @@
       }
     }
   },
-  "inbox_snap_err": "snap空而巷实有220件@20261004T221802Z——_ls13哑残,下巡复测",
+  "inbox_snap_err": "snap空而巷实有220件@20261004T230113Z——_ls13哑残,下巡复测",
   "ls_err13": {
     "chepin-ai/ci-inbox/shared/forge/requests": "name 'pat_for' is not defined",
     "chepin-ai/vci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined",
