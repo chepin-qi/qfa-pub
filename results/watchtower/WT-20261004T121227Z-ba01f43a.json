@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T12:12:12Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop到件，ref=lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md，摘要示\"巷卡 226→220\"，系该qtlv-eval-wave批次在inbox的计数收敛或文件级丢弃| 性态:到件裸候，未触发细收与实测，不编数；当前仅见计数落差，未判属正常收敛或异常丢件| 建议处置:①扫描该md完整头尾帧与血缘；②细收226→220六件差额去向，核对是否为预期收敛；③裁决后次次落账，若属异常丢件则补件并回写差额原因| 锚:lanes/qfa/inbox同系列前序波次件/qtlv-eval-wave-6220cd5885be.md本体哈希与父链签名",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 897,
+    "total_tokens": 1111,
+    "completion_tokens_details": {
+      "reasoning_tokens": 709
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
