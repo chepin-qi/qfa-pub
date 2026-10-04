@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T14:54:18Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，巷卡226→220，ref=qtlv-eval-wave-6220cd5885be.md | 性态:巷道收缩/版本回退，属评估波次正常清理，未触发异常响应 | 建议处置:落账归档，释放inbox句柄，裸候下一波次 | 锚:lanes/core/void-clock#drop-log",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 793,
+    "total_tokens": 1007,
+    "completion_tokens_details": {
+      "reasoning_tokens": 706
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
