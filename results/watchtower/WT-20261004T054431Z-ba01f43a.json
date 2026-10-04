@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T05:44:10Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qtlv-eval-wave-6220cd5885be.md 对应巷卡 226→220，lane.drop 到件，6 卡下线。| 性态:通道收缩，具体系主动缩容、评估淘汰或异常掉线未触发实测，不编数。| 建议处置:拉取该波次评估原档，逐卡核对 drop 标记与原因；淘汰则归档落账，异常则转巡检。| 锚:lanes/qfa/ops:capacity-audit / lanes/qfa/plan:node-pool",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 844,
+    "total_tokens": 1058,
+    "completion_tokens_details": {
+      "reasoning_tokens": 720
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
