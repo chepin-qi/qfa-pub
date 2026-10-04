@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T22:05:55Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，qtlv-eval-wave-6220cd5885be.md巷卡226→220，六单位减量| 性态:数据面收敛，未标异常，或属评估波次自然衰减| 建议处置:次次落账，裸候不寻应；诚判未触发与触发未响应之界，勿编数| 锚:lanes/core/ctl#drop-chk|lanes/arb/void.clock",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1622,
+    "total_tokens": 1836,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1519
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}

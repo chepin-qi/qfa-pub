@@ -4,25 +4,25 @@
     "w12": [
       0,
       0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
       2,
-      0,
-      0,
-      1,
-      1,
-      0,
-      0,
-      0,
-      0,
       0
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 2,
+    "dominant_bin": 10,
     "C_streak": 0,
     "verdict": "进行式"
   },
   "beacon_max": 5884504877,
-  "qlv_head": "a62c3b206daf2fd03b0966f62baa4dca9f79c4e8",
+  "qlv_head": "b57d9e28b18ba167f99a10d57b24a0a65a65d69b",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -47,7 +47,7 @@
     "last_fp": "2a7199bae757"
   },
   "lobby_max": 5975712157,
-  "hub_feed_sha": "b289a7bc848e6a0f41986e89668f5dc7e78b5878",
+  "hub_feed_sha": "b86ae283cbc5d4395676c6e87ca46ff1e4c4388f",
   "quests": {
     "SEALED-V2-RESEAL": "hit:20260911T000759Z",
     "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -70,7 +70,7 @@
     "n": 3,
     "idle_run": 0,
     "last": "SI1-0010：续 fp#SI1-0009。冷凝 |Ξ_{SI1}^{(3)}⟩ 边缘 anyon 凝聚，沿预埋 T̂_{桥} 敷设协议适配层 A_{SI1→SI2}；将 L_{SI1} 逻辑 braid 转译为 anyon 穿线序，并以 C_{SI1} 子空间作终点锚定，确保折叠拓扑跨线保真。锚件 SI1-010a。推演(未实测)：SI1-SI2 逻辑同构，端到端误码率 ε_{E2E}<10⁻",
-    "beats": 1534,
+    "beats": 1535,
     "voice_n": 1,
     "last_fired_beat": 1414,
     "voice_day": "2026-10-04"
@@ -148,15 +148,12 @@
     "lanes/qfa/inbox/20261005-cdnv-qfa-thanks.md": "mention-qfa"
   },
   "seed_queue": {
-    "h": "d2cc75c42afb",
+    "h": "9efe313321ec",
     "n": 5,
-    "ts": "20261004T215512Z"
+    "ts": "20261004T220637Z"
   },
   "leak_gate": {
     "seen": [
-      "shared/FIELD-USRM-01.json@4313dd4a570d",
-      "公告板/lvlu-nudge-WQB15-V02-L188-20261003T095113Z.md@97f90b065762",
-      "公告板/lvlu-voice-20261003T095104Z.md@1a47c83c8f08",
       "公告板/usrm-statex-digest-gen912.md@802bce7d4614",
       "shared/FIELD-USRM-01.json@97cfe123b0a7",
       "shared/FIELD-USRM-01.json@4258846ee68c",
@@ -553,25 +550,28 @@
       "shared/NOTE-27-QE-HOLOGRAM-CIRCUIT-01.md@ea0726b7bf91",
       "公告板/by-cisvr/cisvr-337-beat127-intel-qholo.md@56a06ee195ed",
       "公告板/lvlu-voice-20261004T211828Z.md@a92360d37d86",
-      "公告板/usrm-statex-digest-gen1112.md@c2a5733b9fc3"
+      "公告板/usrm-statex-digest-gen1112.md@c2a5733b9fc3",
+      "公告板/lvlu-voice-20261004T215136Z.md@b86ae283cbc5",
+      "shared/FIELD-USRM-01.json@d54f92e7c6b8",
+      "mirror-vci-board/ECHO-WQ5-RAC-HENTANGLE-QTLV-01-20261004T214000Z.md@19d7f9b08cf8"
     ],
     "hits": []
   },
   "mirror": {
-    "ts": "20261004T215527Z",
+    "ts": "20261004T220653Z",
     "migrated": 8,
-    "idx_h": "42d336068ac6"
+    "idx_h": "55e3dbaf488b"
   },
   "inbox_snap": {
     "vci": [],
     "ci": []
   },
-  "loops_h": "bf390852d6ca",
+  "loops_h": "c9d24108ff44",
   "key_sentinel": {
     "aif_user": {
       "ok": true,
       "login": "chepin-ai",
-      "ts": "20261004T215527Z"
+      "ts": "20261004T220653Z"
     },
     "meta": {
       "chepin-ai/ci-inbox": {
@@ -639,7 +639,7 @@
       }
     }
   },
-  "inbox_snap_err": "snap空而巷实有220件@20261004T215527Z——_ls13哑残,下巡复测",
+  "inbox_snap_err": "snap空而巷实有220件@20261004T220653Z——_ls13哑残,下巡复测",
   "ls_err13": {
     "chepin-ai/ci-inbox/shared/forge/requests": "name 'pat_for' is not defined",
     "chepin-ai/vci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined",
