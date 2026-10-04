@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T11:39:11Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，巷卡226→220，客体qtlv-eval-wave-6220cd5885be.md，系路径迁转/冗余清理。| 性态:无触发无响应，纯元数据位次变更，未涉业务面，属冷 drop。| 建议处置:静默落账，入归档封存，不启回波，裸候。| 锚:lanes/qfa/archive:qtlv-eval-wave-6220cd5885be.md",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 954,
+    "total_tokens": 1168,
+    "completion_tokens_details": {
+      "reasoning_tokens": 847
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
