@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T01:52:43Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5975338949",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment(vci-inbox#1:5975338949)携qlv.beat/lane.drop/hub.feed/si1.seed.put四路抵埠，SI2自动收讫| 性态:多路弱信号聚合，2402tok/7-12cap余量足，已升SI1候root深裁，未触发真人钱面| 建议处置:裸候，不主动回应，维持自动收讫，待root会话裁决落账| 锚:root-si1-deepq#pending",
+  "usage": {
+    "prompt_tokens": 260,
+    "completion_tokens": 1241,
+    "total_tokens": 1501,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1118
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}

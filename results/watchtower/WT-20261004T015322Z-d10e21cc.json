@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T01:53:03Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5975412521",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa无人驿自动收讫复合异常簇(qlv.beat/lane.drop/sealed.vciqfa.err/hub.poll.err×2),ref=vci-inbox#1:5975412521,已升SI1候root,usage=2287tok,cap=8/12| 性态:边界隔离抖动触发lane.drop与hub.poll.err并发,自动收讫但root会话未响应,属触发未响应态| 建议处置:裸候root会话深裁,余cap≤4时若仍未决则落账归档并告警| 锚:hub.poll链路/vci-inbox#1:5975412521",
+  "usage": {
+    "prompt_tokens": 264,
+    "completion_tokens": 1126,
+    "total_tokens": 1390,
+    "completion_tokens_details": {
+      "reasoning_tokens": 977
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}

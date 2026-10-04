@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T01:53:22Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5975480953",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:vci-inbox#1:5975480953 收讫 SI2 批量系统信标五件，序列为 qlv.beat/lane.drop/sealed.vciqfa.err/hub.poll.err×2 | 性态:心跳伴生 1 次通道脱落、1 次密封层校验异常及 2 次枢纽轮询失败，呈链路-密封-枢纽三重扰动，根因未确认 | 建议处置:lane.drop 查链路抖动；sealed.vciqfa.err 检密封证书与签名链；hub.poll.err 排查枢纽可达与凭证时效；#noauto 已标，维持 SI1 深裁候 root 会话，本件仅落账不自动修复 | 锚:root/SI1 深裁线已挂起，vci-hub 线待交叉验证",
+  "usage": {
+    "prompt_tokens": 264,
+    "completion_tokens": 1284,
+    "total_tokens": 1548,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1096
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
