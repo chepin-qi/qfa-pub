@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T20:59:48Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa线 inbox lane.drop，ref 为 qtlv-eval-wave-6220cd5885be.md，巷卡 226→220，差额 6 卡。| 性态:同步漂移或清理未落账，未见显性报错，属触发未响应或后台静默差。| 建议处置:核对 inbox 节点同步/清理日志，确认 6 卡属清理或实质丢件；清理则补审计落账，丢件则追档并冻结下游。| 锚:lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1080,
+    "total_tokens": 1294,
+    "completion_tokens_details": {
+      "reasoning_tokens": 946
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
