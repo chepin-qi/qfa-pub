@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T13:28:19Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，件qtlv-eval-wave-6220cd5885be.md于inbox脱落，摘要记巷卡226→220。| 性态:属评估波次收敛/归档或卡尺回拨，收缩6单位；未触发文件实测，仅凭摘要定态，不编数。| 建议处置:核实drop意图为归档而非误删；若波次完结，按落账规写入归档巷；裸候，不主动寻应。| 锚:archive-lane/void-ledger#drop-log",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1020,
+    "total_tokens": 1234,
+    "completion_tokens_details": {
+      "reasoning_tokens": 899
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
