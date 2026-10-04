@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T15:05:06Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lanes/qfa/inbox 入件 qtlv-eval-wave-6220cd5885be.md，巷卡 226→220，净减 6 卡。| 性态:lane.drop 型静默收缩，未见硬错触发，属 QTLV 评估 wave 链路卡位回拨；暂无实测吞吐锚定。| 建议处置:裸候下波 eval 回写，不复扩；若持续 drop 则升格巡查。| 锚:比对 lanes/main/eval 同 wave 未降卡，qfa 单线回拨，已落账。",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1055,
+    "total_tokens": 1269,
+    "completion_tokens_details": {
+      "reasoning_tokens": 922
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
