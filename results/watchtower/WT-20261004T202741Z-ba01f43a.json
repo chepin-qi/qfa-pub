@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T20:27:23Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qtlv-eval-wave-6220cd5885be.md 落件，巷卡读数由226降至220，kind=lane.drop。| 性态:单波评估文件水位下行，未触发警戒阈值，属常规 eval-wave 迭代收敛；因无实测探针接入，仅就摘要落账，不编具体指标成因。| 建议处置:按 lane.drop 归档至 eval 池，裸候下一波次；若连续3波下行超±10，则升级 lanes/core 复核。| 锚:lanes/core/inbox:threshold-monitor-void",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 976,
+    "total_tokens": 1190,
+    "completion_tokens_details": {
+      "reasoning_tokens": 845
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
