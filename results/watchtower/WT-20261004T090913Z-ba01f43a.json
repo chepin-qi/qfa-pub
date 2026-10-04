@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T09:08:51Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，巷卡226→220，ref=lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md| 性态:未触发异常告警，属待核收敛；无实测丢件链路，不编六件具体弃因| 建议处置:扫描该md落账态，细收六件差额流向，裁决为正常归档则落账，若异常丢失则回卷补件；裸候未应者补触发| 锚:lanes/qfa/archive:drop-audit-trace",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1398,
+    "total_tokens": 1612,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1274
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
