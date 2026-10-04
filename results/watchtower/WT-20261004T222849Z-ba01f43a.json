@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T22:28:21Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa/inbox 文件 qtlv-eval-wave-6220cd5885be.md 巷卡 226→220，收缩 6 卡。| 性态:lane.drop，未达临界阈值，属轻量收敛；无文件实测上下文，无法区分自然收尾与异常丢弃，记为未触发侧。| 建议处置:标记观察态，核查剩余 220 卡负载与该 wave 完成度；如为预期 eval 收尾则无需干预，反之补录丢弃原因。| 锚:锚定 qtlv-eval wave 生命周期管理规范，同步版本号 6220cd5885be 至台账。",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1023,
+    "total_tokens": 1237,
+    "completion_tokens_details": {
+      "reasoning_tokens": 879
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
