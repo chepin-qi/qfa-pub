@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T02:16:56Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5975633770",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment同批五事件抵港(ref:vci-inbox#1:5975633770)，自动段已收讫，#noauto触发升SI1候root。| 性态:深裁件；cap=11/12高水位，usage=2405tok；自动落账未触发，非响应失败。| 建议处置:拆件分线，lobby.comment留本工位裸候，余四件各归对应lane；待root会话裁决后落账，不越真机钱面。| 锚:root-si1#vci-inbox/5975633770",
+  "usage": {
+    "prompt_tokens": 260,
+    "completion_tokens": 1192,
+    "total_tokens": 1452,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1054
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
