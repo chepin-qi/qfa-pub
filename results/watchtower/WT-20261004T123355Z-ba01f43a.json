@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T12:33:32Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lanes/qfa/inbox收束，qtlv-eval-wave-6220cd5885be.md巷卡226→220，属lane.drop。| 性态:摘要仅呈数值收敛，触发状态不明，无实测数据，不做根因推测。| 建议处置:裸候落账，不主动外询，标记已阅归档。| 锚:lanes/qfa/void:wave-6220cd5885be",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1720,
+    "total_tokens": 1934,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1621
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
