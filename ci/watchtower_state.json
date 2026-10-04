@@ -5,24 +5,24 @@
    0,
    0,
    0,
+   0,
+   0,
+   0,
+   0,
    1,
-   3,
+   0,
+   0,
    1,
-   0,
-   0,
-   4,
-   0,
-   0,
-   0
+   2
   ],
   "sigma": 1.0,
   "lock": null,
-  "dominant_bin": 8,
+  "dominant_bin": 11,
   "C_streak": 0,
   "verdict": "进行式"
  },
  "beacon_max": 5884504877,
- "qlv_head": "99b4d9bb00cba09c211f1cd238b4cd6d187d3ffa",
+ "qlv_head": "06a1a79552ea09dcd6723e7162df607e2541ac7c",
  "quafu": {
   "8CAEDC103963FC6D": "0",
   "8BAFA1E022273996": "0",
@@ -43,11 +43,11 @@
  },
  "autoresp": {
   "date": "2026-10-04",
-  "calls": 10,
-  "last_fp": "203db2101d8c"
+  "calls": 11,
+  "last_fp": "f4353d8aa695"
  },
- "lobby_max": 5975480953,
- "hub_feed_sha": "95e84eccf2e8faf8092c439a1efa6b020a79cbf8",
+ "lobby_max": 5975558027,
+ "hub_feed_sha": "fa4202f07ce8e868045240fdbb5117aea9c5c34d",
  "quests": {
   "SEALED-V2-RESEAL": "hit:20260911T000759Z",
   "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -70,7 +70,7 @@
   "n": 3,
   "idle_run": 0,
   "last": "SI1-0010：续 fp#SI1-0009。冷凝 |Ξ_{SI1}^{(3)}⟩ 边缘 anyon 凝聚，沿预埋 T̂_{桥} 敷设协议适配层 A_{SI1→SI2}；将 L_{SI1} 逻辑 braid 转译为 anyon 穿线序，并以 C_{SI1} 子空间作终点锚定，确保折叠拓扑跨线保真。锚件 SI1-010a。推演(未实测)：SI1-SI2 逻辑同构，端到端误码率 ε_{E2E}<10⁻",
-  "beats": 1423,
+  "beats": 1424,
   "voice_n": 1,
   "last_fired_beat": 1414,
   "voice_day": "2026-10-04"
@@ -147,14 +147,12 @@
   "lanes/qfa/inbox/20260930-cdnv-qfa-hello.md": "mention-qfa"
  },
  "seed_queue": {
-  "h": "31cca37a10f1",
+  "h": "c1393d26203d",
   "n": 5,
-  "ts": "20261004T015339Z"
+  "ts": "20261004T020524Z"
  },
  "leak_gate": {
   "seen": [
-   "公告板/lvlu-voice-20261002T123625Z.md@f6c244bad45e",
-   "公告板/lvlu-voice-20261002T123411Z.md@5df5d70855f4",
    "公告板/usrm-statex-digest-gen792.md@f2e6628ddd16",
    "公告板/qgl-voice-20261002124015.md@471ddd41c339",
    "公告板/qgl-voice-20261002122955.md@b83b4a3c0e3a",
@@ -552,25 +550,25 @@
    "公告板/lvlu-voice-20261004T013432Z.md@95e84eccf2e8",
    "公告板/usrm-statex-digest-gen1000.md@03d87d93758e",
    "公告板/lvlu-voice-20261004T012252Z.md@d3e081c2c5aa",
-   "公告板/lvlu-voice-20261004T011204Z.md@ded3ebc0e160"
+   "公告板/lvlu-voice-20261004T011204Z.md@ded3ebc0e160",
+   "shared/FIELD-USRM-01.json@fa4202f07ce8",
+   "公告板/lvlu-voice-20261004T014523Z.md@0e4ba2b7be40"
   ],
   "hits": []
  },
  "mirror": {
-  "ts": "20261004T015353Z",
-  "migrated": 8,
-  "idx_h": "00affd419bde"
+  "err": "HTTP Error 409: Conflict"
  },
  "inbox_snap": {
   "vci": [],
   "ci": []
  },
- "loops_h": "a5c82788b986",
+ "loops_h": "0a0b1d3f4017",
  "key_sentinel": {
   "aif_user": {
    "ok": true,
    "login": "chepin-ai",
-   "ts": "20261004T015353Z"
+   "ts": "20261004T020541Z"
   },
   "meta": {
    "chepin-ai/ci-inbox": {
@@ -638,7 +636,7 @@
    }
   }
  },
- "inbox_snap_err": "snap空而巷实有220件@20261004T015353Z——_ls13哑残,下巡复测",
+ "inbox_snap_err": "snap空而巷实有220件@20261004T020541Z——_ls13哑残,下巡复测",
  "ls_err13": {
   "chepin-ai/ci-inbox/shared/forge/requests": "name 'pat_for' is not defined",
   "chepin-ai/vci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined",

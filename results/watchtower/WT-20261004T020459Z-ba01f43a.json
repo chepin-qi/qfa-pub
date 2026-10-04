@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T02:04:40Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qtlv-eval-wave-6220cd5885be.md 入线，巷卡标识由226收敛至220，kind=lane.drop。| 性态:未伴随异常码或服务熔断，属元数据层轻量漂移；实测状态未触发，仅编号迁移。| 建议处置:裸候归档，不主动寻求响应，次波次自动对齐落账。| 锚:lanes/meta/void-clock",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 830,
+    "total_tokens": 1044,
+    "completion_tokens_details": {
+      "reasoning_tokens": 733
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
