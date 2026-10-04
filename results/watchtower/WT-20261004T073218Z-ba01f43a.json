@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T07:32:03Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop减员，巷卡226→220，伴生eval-wave文件入件(ref:qtlv-eval-wave-6220cd5885be.md)。| 性态:未实测具体丢弃原因，无法判定系预期清理或异常丢失；摘要仅报净减6件，未区分触发与否。| 建议处置:按落账原则确认220实存；追溯6件drop明细与eval-wave关联性；若无异常则归档。| 锚:lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1045,
+    "total_tokens": 1259,
+    "completion_tokens_details": {
+      "reasoning_tokens": 918
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
