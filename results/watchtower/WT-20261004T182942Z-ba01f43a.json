@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T18:29:26Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qtlv-eval-wave-6220cd5885be.md 由巷卡226落位220，kind=lane.drop，为退件/归档。| 性态:仅示卡位迁移，无实测响应数据，属静默落件；未触发与触发未响应不可辨，严守诚实边界不臆数。| 建议处置:裸候。确认inbox落账，不主动回刷。| 锚:lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md|vid=6220cd5885be",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1455,
+    "total_tokens": 1669,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1328
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
