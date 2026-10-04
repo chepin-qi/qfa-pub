@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T19:33:48Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件: lanes/qfa/inbox 落入 qtlv-eval-wave-6220cd5885be.md，摘要示巷卡 226→220(Δ-6)。| 性态: kind=lane.drop，属单波评估文件触发的读数下坠；未实测，不编故障率，暂记为“已落件、待细收”。| 建议处置: 1) 细收该 md 全文，确认 220 为预期波谷还是异常 drop；2) 若异常则复测 lane 基线；3) 按 OTP-02 落账后裸候，不主动刷屏。| 锚: lanes/qtlv/eval-wave:6220cd5885be",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1243,
+    "total_tokens": 1457,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1082
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
