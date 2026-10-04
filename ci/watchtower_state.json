@@ -2,27 +2,27 @@
   "cadence": {
     "v": "METER-CADENCE-01-cand",
     "w12": [
+      0,
+      1,
+      0,
+      0,
       2,
-      0,
-      3,
-      2,
-      0,
       1,
       0,
       1,
+      4,
       0,
       0,
-      1,
-      0
+      1
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 2,
+    "dominant_bin": 8,
     "C_streak": 0,
     "verdict": "进行式"
   },
   "beacon_max": 5884504877,
-  "qlv_head": "accd66babf7f73d9c49e0e6a550abdad3373e22c",
+  "qlv_head": "8770b34aa27e6997b3556cc9cd9ec794b01c55a6",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -70,7 +70,7 @@
     "n": 3,
     "idle_run": 0,
     "last": "SI1-0010：续 fp#SI1-0009。冷凝 |Ξ_{SI1}^{(3)}⟩ 边缘 anyon 凝聚，沿预埋 T̂_{桥} 敷设协议适配层 A_{SI1→SI2}；将 L_{SI1} 逻辑 braid 转译为 anyon 穿线序，并以 C_{SI1} 子空间作终点锚定，确保折叠拓扑跨线保真。锚件 SI1-010a。推演(未实测)：SI1-SI2 逻辑同构，端到端误码率 ε_{E2E}<10⁻",
-    "beats": 1466,
+    "beats": 1467,
     "voice_n": 1,
     "last_fired_beat": 1414,
     "voice_day": "2026-10-04"
@@ -147,7 +147,9 @@
     "lanes/qfa/inbox/20260930-cdnv-qfa-hello.md": "mention-qfa"
   },
   "seed_queue": {
-    "err": "AIF冷却中,SEED面本巡跳过"
+    "h": "5c83b7e5e868",
+    "n": 5,
+    "ts": "20261004T095153Z"
   },
   "leak_gate": {
     "seen": [
@@ -555,18 +557,20 @@
     "hits": []
   },
   "mirror": {
-    "err": "AIF冷却中,MIRROR面本巡跳过"
+    "ts": "20261004T095207Z",
+    "migrated": 8,
+    "idx_h": "f55f5fd75c0b"
   },
   "inbox_snap": {
     "vci": [],
     "ci": []
   },
-  "loops_h": "1190bb6f8aa6",
+  "loops_h": "8e93542dfc5e",
   "key_sentinel": {
     "aif_user": {
       "ok": true,
       "login": "chepin-ai",
-      "ts": "20261004T092013Z"
+      "ts": "20261004T095207Z"
     },
     "meta": {
       "chepin-ai/ci-inbox": {
@@ -634,7 +638,7 @@
       }
     }
   },
-  "inbox_snap_err": "snap空而巷实有220件@20261004T092013Z——_ls13哑残,下巡复测",
+  "inbox_snap_err": "snap空而巷实有220件@20261004T095207Z——_ls13哑残,下巡复测",
   "ls_err13": {
     "chepin-ai/ci-inbox/shared/forge/requests": "name 'pat_for' is not defined",
     "chepin-ai/vci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined",
