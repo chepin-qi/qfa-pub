@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T17:35:54Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，ref=lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md，巷卡 226→220。| 性态:eval-wave 后收敛性下卡，未实测触发器，暂判「触发未响应」待核。| 建议处置:核对 qtlv-eval-wave 预期产出，若属预期收敛则直接落账；若异常掉卡，通知 lanes/qtlv 回溯补卡。| 锚:lanes/qtlv#eval-converge|meta/audit#lane-drop-6220",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1353,
+    "total_tokens": 1567,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1224
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
