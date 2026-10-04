@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T01:41:26Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lanes/qfa/inbox 落件，ref 归集至 qtlv-eval-wave-6220cd5885be.md，巷卡由226迁转220| 性态:归档收敛动作，属正常卡位整理，未见异常触发，文件已实落非裸候| 建议处置:按落账流程收束本件，确认220卡位已承载该md后释放226旧锚，无需回扫| 锚:lanes/qfa/drop-log 或 archive 索引可交叉核验落位一致性",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 936,
+    "total_tokens": 1150,
+    "completion_tokens_details": {
+      "reasoning_tokens": 814
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
