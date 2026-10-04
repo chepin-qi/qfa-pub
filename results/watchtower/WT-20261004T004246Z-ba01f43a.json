@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T00:42:22Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，qtlv-eval-wave-6220cd5885be.md最新波次后巷卡226→220，净出巷6件。| 性态:评估归档型收缩，无异常告警。未实测文件内态，不编单件死活，按批量落件处理。| 建议处置:已落账，裸候。不主动回拨，若qtlv线有召回令另件触发。| 锚:锚qtlv线归档落件规程。",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1427,
+    "total_tokens": 1641,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1314
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
