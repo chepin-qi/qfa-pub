@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T18:40:00Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，qtlv-eval-wave-6220cd5885be.md，巷卡226→220| 性态:读数下迁6点/2.65%，未触发硬阈；未实测底层eval日志，不编根因，记为“触发未响应”或纯指标波动| 建议处置:细收该wave drop reason与父层配置diff，单波波动直接落账，连降三波则升格review并回捞前序| 锚:lanes/core/audit:lane-health-check-220.md",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1374,
+    "total_tokens": 1588,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1249
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
