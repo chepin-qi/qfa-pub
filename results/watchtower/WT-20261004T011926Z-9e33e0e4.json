@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T01:18:46Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5975257778",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment并四子件(qlv.beat/lane.drop/hub.feed/si1.seed.put)抵港，自动收讫已升SI1候root，#noauto。| 性态:深裁候命态，多路并发未触发越界；cap6/12，tok2509均在常限，无越真机钱面。| 建议处置:裸候，不主动外呼/不落账；维持SI1序列，待root会话深裁后执落账。| 锚:qlv.beat→节律线/lane.drop→信道抛落线/hub.feed→馈流线/si1.seed.put→种子线。",
+  "usage": {
+    "prompt_tokens": 260,
+    "completion_tokens": 1818,
+    "total_tokens": 2078,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1667
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
