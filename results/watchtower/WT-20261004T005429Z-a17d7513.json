@@ -1,0 +1,29 @@
+{
+  "ts": "2026-10-04T00:54:14Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5975015951",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qlv.beat伴生lane.drop及sealed.vciqfa.err，连发hub.poll.err×2，属VCI链路层抖动包| 性态:自动收讫已落账(2288tok)，深裁件依规升SI1候root会话；#noauto标记，当前裸候未触发人工响应| 建议处置:维持裸候，待root会话深裁；若cap耗尽则分片降级| 锚:/vci.hub#poll-err",
+  "usage": {
+    "prompt_tokens": 264,
+    "completion_tokens": 1130,
+    "total_tokens": 1394,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1015
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden",
+  "resp": "收。摘要所示事件 ['qlv.beat', 'lane.drop', 'sealed.vciqfa.err', 'hub.poll.err', 'hub.poll.err'] 已由无人驿自动收讫，SI2 登记在案。涉及 lane.drop、sealed.vciqfa.err 及复现 hub.poll.err 异常，已依深裁规则升 SI1 候 root 会话，待 root 裁定。SI2 无并行处置，不越钱面。\n\n【锚】ref=vci-inbox#1:5975015951; usage=2288tok; cap=3/12; #noauto",
+  "resp_usage": {
+    "prompt_tokens": 219,
+    "completion_tokens": 1108,
+    "total_tokens": 1327,
+    "completion_tokens_details": {
+      "reasoning_tokens": 973
+    }
+  },
+  "resp_posted": "5975167027"
+}

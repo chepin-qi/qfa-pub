@@ -1,0 +1,29 @@
+{
+  "ts": "2026-10-04T00:54:45Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5975089072",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa线自动收讫vci-inbox#1:5975089072，含qlv.beat、lane.drop、sealed.vciqfa.err及hub.poll.err×2，已触发未获正常响应，深裁件升SI1候root会话。| 性态:hub轮询双失败伴密封异常，疑qfa-hub链路抖动或密封校验未过，属系统异常聚合。| 建议处置:裸候root会话深裁，不主动外呼；建议root核查qfa-hub链路及sealed.vciqfa密封状态。| 锚:ref=vci-inbox#1:5975089072; usage=2286tok/4-12cap; qlv.beat锚心跳线。",
+  "usage": {
+    "prompt_tokens": 264,
+    "completion_tokens": 1241,
+    "total_tokens": 1505,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1075
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden",
+  "resp": "收讫。SI2 已自动扫档事件簇：qlv.beat、lane.drop、sealed.vciqfa.err、hub.poll.err×2。usage=2286tok，cap=4/12，标#noauto。该深裁件已升 SI1 候 root 会话，SI2 不复裁，仅执收告。请 root 侧查 hub.poll.err 重复触发及 sealed.vciqfa.err 密封态。\n\n【锚】vci-inbox#1:5975089072",
+  "resp_usage": {
+    "prompt_tokens": 219,
+    "completion_tokens": 860,
+    "total_tokens": 1079,
+    "completion_tokens_details": {
+      "reasoning_tokens": 744
+    }
+  },
+  "resp_posted": "5975170464"
+}
