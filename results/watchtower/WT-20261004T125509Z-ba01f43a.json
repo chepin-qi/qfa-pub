@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T12:54:55Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，巷卡由226缩至220，delta=-6，ref为qtlv-eval-wave-6220cd5885be.md。| 性态:容量收缩，未触发告警阈值但偏离原基线；因单会话无工具，未实测文件内指标，仅按摘要落账。| 建议处置:核对前述md是否计划内缩容；若是，更新cap基线并归档；若否，升单至lane.review排障。| 锚:lanes/qfa/ops-cap:baseline-220",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 993,
+    "total_tokens": 1207,
+    "completion_tokens_details": {
+      "reasoning_tokens": 871
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
