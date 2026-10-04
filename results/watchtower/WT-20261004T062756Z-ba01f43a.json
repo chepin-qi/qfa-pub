@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T06:27:41Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qtlv-eval-wave-6220cd5885be.md 到件，巷卡由226落至220，lane.drop触发。| 性态:属版本/容量下修，仅标号漂移；未触发运行态崩溃，亦无异常响应记录。未实测具体性能基线，不臆断数值。| 建议处置:遵裸候原则，不主动寻应，次次落账归档；待下一eval波次复测220卡稳定性，若与预期基线一致则合账，异常则回卷。| 锚:lanes/qtld-rig/anchor:eval-baseline-220。",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1041,
+    "total_tokens": 1255,
+    "completion_tokens_details": {
+      "reasoning_tokens": 901
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
