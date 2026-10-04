@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T20:05:53Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa inbox 收 qtlv-eval-wave-6220cd5885be.md，巷卡 226→220 掉档| 性态:lane.drop 到件，线位承压收敛；本工位无工具实测，未触发主动裁量，按裸候落账| 建议处置:细收归档，若 220 为硬底则稳仓，非硬底则提请 qtlv 主闸复核波幅| 锚:lanes/qtlv/hub",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1132,
+    "total_tokens": 1346,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1017
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
