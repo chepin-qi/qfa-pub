@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T14:33:00Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，qtlv-eval-wave-6220cd5885be.md 驱动巷卡 226→220，净收缩 6 件| 性态:eval 波次末常规落账清理，属已归档/已合并条目注销，无异常触发或响应缺失| 建议处置:核验 6 件落位一致性，同步 archive 索引，裸候下一 eval 波次| 锚:lanes/qfa/archive:wave-6220cd5885be",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1086,
+    "total_tokens": 1300,
+    "completion_tokens_details": {
+      "reasoning_tokens": 973
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
