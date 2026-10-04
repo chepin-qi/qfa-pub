@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T10:24:18Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop投件，ref=lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md，摘要示巷卡226→220，文件到达本地inbox。| 性态:单文件裸候，未触发本地解析与实测，属「投必有件」到达态；226→220是回退或静默漂移待辨，不编数。| 建议处置:按AUTH-OTP-02裸候不刷屏，次次落账；建议qtlv线回扫该eval-wave实际delta，需响应再触发。| 锚:@lanes/qtlv-inbox待交叉复核。",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 838,
+    "total_tokens": 1052,
+    "completion_tokens_details": {
+      "reasoning_tokens": 696
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
