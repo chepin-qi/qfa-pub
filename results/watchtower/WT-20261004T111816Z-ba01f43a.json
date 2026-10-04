@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T11:18:00Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，qtlv-eval-wave-6220cd5885be.md巷卡226→220|性态:摘要级收缩，未触发细收实测，不辨预期回收或异常丢弃；属VOID时钟裸候态|建议处置:次次落账，归档为裸候；若连续波次跌穿阈值则启动根因扫描，不主动求应|锚:lanes/qfa/archive:drop-6220cd5885be",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1171,
+    "total_tokens": 1385,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1066
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
