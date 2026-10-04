@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T20:38:01Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa inbox 评估波次 qtlv-eval-wave-6220cd5885be.md 巷卡值由226降至220 | 性态:单向衰减/降幅约2.7%，属lane.drop类数值漂移，未触发硬阈但需持续观察 | 建议处置:1)复核该波次数据完整性；2)比对前序波次确认衰减斜率；3)如持续下探至<200则升级预警 | 锚:lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1795,
+    "total_tokens": 2009,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1669
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
