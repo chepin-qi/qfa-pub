@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T18:50:35Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa inbox 巷卡 226→220，件 qtlv-eval-wave-6220cd5885be.md 标最新且触发 lane.drop。| 性态:细收后出件，该件已从 inbox 移除，属正常落账漂移；无异常响应，未触发错误码。| 建议处置:执行落账，将该件归至 archive/qtlv-wave；确认 220 余件锚定状态；无需回退。| 锚:archive-line/qtlv-wave-6220cd5885be 已挂起，待硬落账。",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 922,
+    "total_tokens": 1136,
+    "completion_tokens_details": {
+      "reasoning_tokens": 790
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
