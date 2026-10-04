@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T08:47:13Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qtlv-eval-wave-6220cd5885be.md巷卡下迁(226→220)，kind=lane.drop到件 | 性态:评估波次文件卡位收缩，未触发异常响应，属常规lane归档前状态 | 建议处置:按lane.drop规程完成落账，校验完整性后归入220巷或转递下游 | 锚:lanes/qtb/void:lane-drop-220",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1146,
+    "total_tokens": 1360,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1048
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
