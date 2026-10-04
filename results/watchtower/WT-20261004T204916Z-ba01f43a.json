@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T20:48:56Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa inbox 收束 qtlv-eval-wave-6220cd5885be.md，巷卡由226降至220，6卡下退。| 性态:lane.drop 件，未明示触发根因，暂归「缩容回收」或「eval-wave 自然收敛」；缺实测日志，不判异常/正常。| 建议处置:落账该波次，拉取 6 卡退出时序与 signal 码，若为主动回收则归档；若触发未响应则转 lanes/sys/ops:drop-audit。| 锚:lanes/sys/ops:drop-audit",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1026,
+    "total_tokens": 1240,
+    "completion_tokens_details": {
+      "reasoning_tokens": 887
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
