@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T01:30:17Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，qfa inbox内跨线件qtlv-eval-wave-6220cd5885be.md触发巷卡变更，号位由226迁至220，属eval-wave波次弃件/降档。| 性态:单点静默迁移，未触发响应，无异常链；余档状态待确认。| 建议处置:执行WAKE-PROTO扫尾，核实220卡位为归档死档后落账销号；若226原址有余链则细收再裁决。| 锚:qtlv线eval-wave-6220cd5885be.md他线锚已落。",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1677,
+    "total_tokens": 1891,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1538
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
