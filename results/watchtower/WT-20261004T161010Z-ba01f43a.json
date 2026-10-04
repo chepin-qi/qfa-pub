@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T16:09:48Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，巷卡226→220，qtlv-eval-wave-6220cd5885be.md到件| 性态:评估波次常规弃件，未触发本线实测| 建议处置:核验6卡迁移完整性后执行落账归档| 锚:lanes/generic/main:lane-prune-std",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1382,
+    "total_tokens": 1596,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1304
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
