@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T15:58:49Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，qtlv-eval-wave-6220cd5885be.md巷卡226→220 | 性态:指标下迁，收缩6位；本件仅凭摘要落账，未触发原档实测，无法区分系样本剔除、评分收敛或通道收窄 | 建议处置:裸候。建议主控回查该eval-wave前后波次，确认是否趋势性收缩；若属预期内收敛则无需回滚 | 锚:qtlv-eval-wave-6220cd5885be.md(qtlv线产出/落qfa inbox)",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1705,
+    "total_tokens": 1919,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1575
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
