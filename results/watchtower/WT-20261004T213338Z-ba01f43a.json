@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-04T21:32:49Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lanes/qfa/inbox 下 qtlv-eval-wave-6220cd5885be.md 巷卡由226降至220，发生 lane.drop| 性态:本线 inbox 容量收缩，属波次归档或评估节点清理；未见异常触发，无响应缺失| 建议处置:次次落账，核查该 md 归档逻辑，确认6件差异为预期内清理；裸候，不主动外呼| 锚:lanes/sys/drop-log",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1698,
+    "total_tokens": 1912,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1588
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
