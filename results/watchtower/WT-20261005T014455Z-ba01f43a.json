@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-05T01:44:25Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lanes/qfa/inbox lane.drop，ref=qtlv-eval-wave-6220cd5885be.md，巷卡226→220，脱落6卡。| 性态:存量静默收缩；摘要未载根因及响应态，诚实标记为根因未扫，暂无法区分「未触发」与「触发未响应」。| 建议处置:对脱落6卡执行尸检（diff前波），若属评估淘汰则归档落账，若异常丢包则提级补卡。| 锚:lanes/qtlv/inbox:wave-retire-protocol.md",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1110,
+    "total_tokens": 1324,
+    "completion_tokens_details": {
+      "reasoning_tokens": 979
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
