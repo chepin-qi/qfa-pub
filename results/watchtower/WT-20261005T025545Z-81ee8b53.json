@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-05T02:55:10Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5987021235",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment聚合件(ref=vci-inbox#1:5987021235)，同批携qlv.beat等4路信号抵驿，usage=2408tok/cap=12/12。| 性态:聚合空载。lobby.comment无实质评论载荷，属触发未响应；已自动收讫SI2并升SI1候root。| 建议处置:本分身落账lobby.comment线为\"裸候\"，不主动外呼；余线分拨各工位；待root深裁或cap释放后联动。| 锚:vci-inbox#1→root-SI1深裁队列。",
+  "usage": {
+    "prompt_tokens": 260,
+    "completion_tokens": 1154,
+    "total_tokens": 1414,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1010
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
