@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-05T01:56:38Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5986609400",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:SI2自动收讫5联件(qlv.beat,lane.drop,sealed.vciqfa.err,hub.poll.err×2),2285tok,cap=8/12,已升SI1候root| 性态:心跳正常余四异常，链路丢弃、密封面扰动、枢纽轮询失败复现，判定链路-枢纽层簇发劣化，非单点噪点| 建议处置:维持升舱裸候，hub.poll.err不主动重试，lane.drop与sealed.err记仓不翻转；cap余量充足，持续监听| 锚:vci-hub连通基线@monitor|root-SI1候审队列",
+  "usage": {
+    "prompt_tokens": 264,
+    "completion_tokens": 1808,
+    "total_tokens": 2072,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1656
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}

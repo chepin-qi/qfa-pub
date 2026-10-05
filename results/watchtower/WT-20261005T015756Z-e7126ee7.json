@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-05T01:57:31Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5986702209",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:vci-inbox#1 聚合异常，含lane.drop×1、sealed.vciqfa.err×1、hub.poll.err×2，已自动收讫并升SI1候root深裁；usage=2291tok，cap=9/12逼近阈值。| 性态:边际衰减非致命；密封层校验未过，hub双发指向连通性抖动，存在溢载风险。| 建议处置:维持裸候，不主动外呼；待root会话前执行lane.flush与hub.repoll释压。| 锚:vci-inbox#1:5986702209|qlv.beat|hub.poll.err",
+  "usage": {
+    "prompt_tokens": 264,
+    "completion_tokens": 930,
+    "total_tokens": 1194,
+    "completion_tokens_details": {
+      "reasoning_tokens": 785
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}

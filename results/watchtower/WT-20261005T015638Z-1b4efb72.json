@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-05T01:56:02Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5986518492",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment(批件vci-inbox#1:5986518492)|性态:自动收讫杂项包单件，无实质载荷触发，与beat/drop/feed/err同批静默落袋|建议处置:已落账，裸候SI1深裁，不主动撩拨|锚:lobby线本件挂起，升SI1锚root会话，同批err已标ucif线",
+  "usage": {
+    "prompt_tokens": 261,
+    "completion_tokens": 1184,
+    "total_tokens": 1445,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1082
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
