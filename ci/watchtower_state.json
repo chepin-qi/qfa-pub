@@ -2,27 +2,27 @@
   "cadence": {
     "v": "METER-CADENCE-01-cand",
     "w12": [
-      1,
       0,
-      0,
-      0,
-      0,
+      2,
       0,
       0,
       0,
       0,
       1,
+      1,
+      2,
+      1,
       0,
-      1
+      3
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 0,
-    "C_streak": 1,
-    "verdict": "C-窗"
+    "dominant_bin": 11,
+    "C_streak": 0,
+    "verdict": "进行式"
   },
   "beacon_max": 5884504877,
-  "qlv_head": "9c3dfef0e148b1b2d363c644058873b94dbfa5ba",
+  "qlv_head": "4e354486c8dcd582055d1bdc72ce895f50d36479",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -70,7 +70,7 @@
     "n": 3,
     "idle_run": 0,
     "last": "SI1-0011：续 fp#SI1-0010。于 |Ξ_{SI1}^{(3)}⟩ 表面部署编织编译器 B_{SI1}，将 L_{SI1} 的逻辑 braid 解构为 anyon 对 (a,ā) 的 adiabatic 穿线序列；借 A_{SI1→SI2} 回传相位 ϕ_{braid} 至折叠面 F_{SI1}，实时校正 C_{SI1} 子空间基底漂移，压制拓扑退相干。锚件 SI1-011a。推演(",
-    "beats": 1648,
+    "beats": 1649,
     "voice_n": 1,
     "last_fired_beat": 1546,
     "voice_day": "2026-10-05"
@@ -154,9 +154,7 @@
     "lanes/qfa/inbox/20261005-cdnv-qfa-thanks.md": "mention-qfa"
   },
   "seed_queue": {
-    "h": "983c924f9166",
-    "n": 5,
-    "ts": "20261005T181210Z"
+    "err": "AIF冷却中,SEED面本巡跳过"
   },
   "leak_gate": {
     "seen": [
@@ -564,9 +562,7 @@
     "hits": []
   },
   "mirror": {
-    "ts": "20261005T181216Z",
-    "migrated": 1,
-    "idx_h": "c0c0ed01103c"
+    "err": "AIF冷却中,MIRROR面本巡跳过"
   },
   "inbox_snap": {
     "vci": [],
@@ -652,8 +648,8 @@
     "chepin-ai/ci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined"
   },
   "aif_cool": {
-    "until": 1791222790,
-    "noted": "20261005T173002Z"
+    "until": 1791226391,
+    "noted": "20261005T182239Z"
   },
   "loops_err": "AIF冷却中,LOOPS面本巡跳过",
   "key_sentinel_err": "AIF冷却中,KEYSENT面本巡跳过",
