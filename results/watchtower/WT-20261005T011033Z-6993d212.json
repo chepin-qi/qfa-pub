@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-05T01:10:06Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5986315683",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment 三同型件随 qlv.beat/lane.drop 批量抵站(ref:vci-inbox#1:5986315683)| 性态:站厅背景噪讯；#noauto 抑自动；cap 5/12 余量紧；内容未触发判读，属触发未响应| 建议处置:三 comment 合并单账裸候，不主动求应；lane.drop 已卸荷；qlv.beat 记心跳；session 锁余量| 锚:qfd-噪音合并例/otp-02裸候条",
+  "usage": {
+    "prompt_tokens": 260,
+    "completion_tokens": 1205,
+    "total_tokens": 1465,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1070
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}

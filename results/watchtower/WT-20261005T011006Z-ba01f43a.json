@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-05T01:09:40Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop报件，ref=lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md，摘要示巷卡226→220| 性态:计数净减6，属常规收拢落账，未触发异常告警，无响应缺失| 建议处置:按WAKE-PROTO完成落账确认，核对220存量与波次清单一致性，裸候次件| 锚:可交叉lanes/qfa/ledger或qtlv-eval主链审计点",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1134,
+    "total_tokens": 1348,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1018
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}

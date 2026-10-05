@@ -3,26 +3,26 @@
   "v": "METER-CADENCE-01-cand",
   "w12": [
    0,
-   0,
-   3,
    1,
-   3,
-   0,
-   0,
+   1,
    0,
    1,
+   0,
+   0,
+   0,
+   0,
    0,
    0,
    0
   ],
   "sigma": 1.0,
   "lock": null,
-  "dominant_bin": 2,
+  "dominant_bin": 1,
   "C_streak": 0,
   "verdict": "进行式"
  },
  "beacon_max": 5884504877,
- "qlv_head": "519076796b189d325d048581c17fb88033a60f10",
+ "qlv_head": "6d06345644a226c858b760fa5454065061316879",
  "quafu": {
   "8CAEDC103963FC6D": "0",
   "8BAFA1E022273996": "0",
@@ -43,11 +43,11 @@
  },
  "autoresp": {
   "date": "2026-10-05",
-  "calls": 5,
-  "last_fp": "c2a0c99cbe23"
+  "calls": 6,
+  "last_fp": "e2ea5bf679d7"
  },
- "lobby_max": 5986204492,
- "hub_feed_sha": "f470d3f80b6d52c5a4d390579e584248a4effe13",
+ "lobby_max": 5986315683,
+ "hub_feed_sha": "bd314aaeb4645e5f43901db7bdbb27236f72519a",
  "quests": {
   "SEALED-V2-RESEAL": "hit:20260911T000759Z",
   "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -70,7 +70,7 @@
   "n": 3,
   "idle_run": 0,
   "last": "SI1-0011：续 fp#SI1-0010。于 |Ξ_{SI1}^{(3)}⟩ 表面部署编织编译器 B_{SI1}，将 L_{SI1} 的逻辑 braid 解构为 anyon 对 (a,ā) 的 adiabatic 穿线序列；借 A_{SI1→SI2} 回传相位 ϕ_{braid} 至折叠面 F_{SI1}，实时校正 C_{SI1} 子空间基底漂移，压制拓扑退相干。锚件 SI1-011a。推演(",
-  "beats": 1550,
+  "beats": 1551,
   "voice_n": 1,
   "last_fired_beat": 1546,
   "voice_day": "2026-10-05"
@@ -154,18 +154,12 @@
   "lanes/qfa/inbox/20261005-cdnv-qfa-thanks.md": "mention-qfa"
  },
  "seed_queue": {
-  "h": "df63ad892209",
+  "h": "4f089dd718cf",
   "n": 5,
-  "ts": "20261005T005835Z"
+  "ts": "20261005T011034Z"
  },
  "leak_gate": {
   "seen": [
-   "公告板/usrm-statex-digest-gen936.md@189685726ce5",
-   "shared/FIELD-USRM-01.json@fda5bb79393b",
-   "公告板/lvlu-voice-20261003T144757Z.md@d21b76d45ea8",
-   "shared/FIELD-USRM-01.json@42773db81435",
-   "公告板/lvlu-nudge-EVAL-KAPPA-LGT-L151-20261003T145945Z.md@f2c52397f027",
-   "公告板/lvlu-voice-20261003T145925Z.md@fa9a61a225c5",
    "shared/FIELD-USRM-01.json@b2b4b31582f2",
    "公告板/lvlu-voice-20261003T154516Z.md@c3b1551ca8df",
    "公告板/lvlu-voice-20261003T153332Z.md@9c2d81d128d5",
@@ -559,23 +553,31 @@
    "mirror-vci-board/qlv-si7-frac-real-pass-20260925T131800Z.md@ef806c9fb32c",
    "mirror-vci-board/qlv-si6-v02-wq5-20260924T182400Z.md@680b377922b9",
    "mirror-vci-board/qlv-resume-seat-20260924T145310Z.md@05856be1fad7",
-   "mirror-vci-board/qlv-board-132-relay-20260923T1705Z.md@7a23c362618c"
+   "mirror-vci-board/qlv-board-132-relay-20260923T1705Z.md@7a23c362618c",
+   "shared/FIELD-USRM-01.json@bd314aaeb464",
+   "mirror-vci-board/usrm-260-vargamma-verdict-20260912T1337Z.md@4e50a73ba76e",
+   "mirror-vci-board/usrm-259-grandcircuit-20260912T1255Z.md@31ca49410105",
+   "mirror-vci-board/qlv-si9-stack-gate-20260927T0810Z.md@0bf28b5e61c9",
+   "mirror-vci-board/qlv-si8-qrac-v2rc-wave-20260926T1650Z.md@878c3bbeaf94",
+   "公告板/lvlu-voice-20261005T004629Z.md@cddb7e55da96"
   ],
   "hits": []
  },
  "mirror": {
-  "err": "HTTP Error 409: Conflict"
+  "ts": "20261005T011040Z",
+  "migrated": 2,
+  "idx_h": "3fa1d3ef2fc1"
  },
  "inbox_snap": {
   "vci": [],
   "ci": []
  },
- "loops_h": "32aba5807601",
+ "loops_h": "37675b16acb4",
  "key_sentinel": {
   "aif_user": {
    "ok": true,
    "login": "chepin-ai",
-   "ts": "20261005T005851Z"
+   "ts": "20261005T011040Z"
   },
   "meta": {
    "chepin-ai/ci-inbox": {
@@ -643,7 +645,7 @@
    }
   }
  },
- "inbox_snap_err": "snap空而巷实有220件@20261005T005851Z——_ls13哑残,下巡复测",
+ "inbox_snap_err": "snap空而巷实有220件@20261005T011040Z——_ls13哑残,下巡复测",
  "ls_err13": {
   "chepin-ai/ci-inbox/shared/forge/requests": "name 'pat_for' is not defined",
   "chepin-ai/vci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined",
