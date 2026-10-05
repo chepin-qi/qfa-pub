@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-05T03:39:15Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa-inbox lane.drop，巷卡 226→220，件号 qtlv-eval-wave-6220cd5885be.md 落入| 性态:未触发本地解析（单会话文本工位无文件系统工具），无法实测该 eval-wave 件内容；计数下降可能为正常收敛或异常丢件，需区分「归档下架」与「未落账缺失」| 建议处置:1) 核查 226→220 间 6 个差量是否已落账归档；2) 若该件为最新 eval-wave，按 lanes/qfa/inbox 常规流挂账待扫；3) 裸候，不主动召回| 锚:lanes/qfa/inbox 常规处理流 / eval-wave 系列件历史基线",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 900,
+    "total_tokens": 1114,
+    "completion_tokens_details": {
+      "reasoning_tokens": 724
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
