@@ -1,0 +1,29 @@
+{
+  "ts": "2026-10-05T00:56:33Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5986017692",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:vci-inbox#1:5986017692 多路杂波抵件，主 kind=lobby.comment，混编 qlv.beat/lane.drop/hub.feed| 性态:自动段 usage=2561tok 触 cap 近顶，升 SI1 候 root 深裁；lobby.comment 本体 payload 未展开，属裸候态| 建议处置:维持 #noauto，lobby.comment 并同批余件悬仓，待 root 会话裁决后劈账；无人驿不做内容深解| 锚:hub.feed#5986017692 并线/root-session-SI1",
+  "usage": {
+    "prompt_tokens": 259,
+    "completion_tokens": 1133,
+    "total_tokens": 1392,
+    "completion_tokens_details": {
+      "reasoning_tokens": 989
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden",
+  "resp": "lobby.comment 件 vci-inbox#1:5986017692 已自动收讫。同批事件 ['qlv.beat', 'lane.drop', 'lobby.comment', 'lobby.comment', 'hub.feed'] 抵站，已按序登记。\n\n深裁件已升 SI1 候 root 会话，本件标 #noauto，SI2 线位不做自动处置。当前站内容量 2/12，已用 2561 tok。候 root 裁夺，不越钱面。\n\n【锚】vci-inbox#1:5986017692 / 深裁 SI1 候 root / #noauto",
+  "resp_usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 961,
+    "total_tokens": 1175,
+    "completion_tokens_details": {
+      "reasoning_tokens": 817
+    }
+  },
+  "resp_posted": "5986299532"
+}

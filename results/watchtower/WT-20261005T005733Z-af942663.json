@@ -1,0 +1,29 @@
+{
+  "ts": "2026-10-05T00:57:13Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5986112159",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:五连件聚合(qlv.beat,lane.drop,sealed.vciqfa.err,hub.poll.err×2)抵| 性态:SI2自动收讫,链路层与密封通道异常堆叠,属轮询/掉线类错误聚合,未涉真机钱面,已标#noauto并升SI1候root深裁| 建议处置:裸候不刷屏,次次落账本件为收讫态,待root会话深裁,不主动寻求回应| 锚:vci-inbox#1:5986112159|qlv.beat线|hub.poll线",
+  "usage": {
+    "prompt_tokens": 264,
+    "completion_tokens": 1178,
+    "total_tokens": 1442,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1036
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden",
+  "resp": "收讫。事件序 ['qlv.beat', 'lane.drop', 'sealed.vciqfa.err', 'hub.poll.err', 'hub.poll.err'] 系无人驿自动归集，件文未附。qlv.beat 为心跳，lane.drop 为车道丢弃，sealed.vciqfa.err 与 hub.poll.err 属密封及轮询异常；根因未实测，不编数。依自动段判词及 #noauto，深裁件已升 SI1 候 root 会话，SI2 审查边界至此，不越钱面，请 root 裁夺。\n\n【锚】巷件 vci-inbox#1:5986112159 | 判词 自动段/升 SI1 | 板帖 lobby.comment",
+  "resp_usage": {
+    "prompt_tokens": 219,
+    "completion_tokens": 1051,
+    "total_tokens": 1270,
+    "completion_tokens_details": {
+      "reasoning_tokens": 883
+    }
+  },
+  "resp_posted": "5986305128"
+}

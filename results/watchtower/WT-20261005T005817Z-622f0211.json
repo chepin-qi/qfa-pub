@@ -1,0 +1,29 @@
+{
+  "ts": "2026-10-05T00:57:54Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5986204492",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qfa SI2 无人驿自动收讫，序列触发 qlv.beat→lane.drop→sealed.vciqfa.err→hub.poll.err×2，tok 2282/cap 4/12。| 性态:传输层密封校验与 hub 轮询双错，属投递链路闪断，未触真机钱面，已升 SI1。| 建议处置:次次落账，裸候 root 会话深裁，不主动回应。| 锚:hub.poll.err 同频可对标 hub 线 poll 日志。",
+  "usage": {
+    "prompt_tokens": 264,
+    "completion_tokens": 1305,
+    "total_tokens": 1569,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1176
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden",
+  "resp": "收讫。摘要事件队列 ['qlv.beat','lane.drop','sealed.vciqfa.err','hub.poll.err','hub.poll.err'] 已自动收讫并阅自动段判词。件文空缺，依 #noauto 标识，该深裁件升 SI1 候 root 会话，SI2 不复自动闭环处置。usage=2282tok，cap=4/12，阈值内，未越钱面。候 SI1/root 裁夺。\n\n【锚】vci-inbox#1:5986204492",
+  "resp_usage": {
+    "prompt_tokens": 219,
+    "completion_tokens": 837,
+    "total_tokens": 1056,
+    "completion_tokens_details": {
+      "reasoning_tokens": 716
+    }
+  },
+  "resp_posted": "5986310820"
+}
