@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-05T00:06:46Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 3200,
+    "total_tokens": 3414,
+    "completion_tokens_details": {
+      "reasoning_tokens": 3199
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
