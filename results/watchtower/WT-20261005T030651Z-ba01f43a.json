@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-05T03:06:20Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qtlv-eval-wave-6220cd5885be.md入件，巷卡226→220，lane.drop异动。| 性态:通道指标收缩6单位，摘要未明示根因，难判主动缩容或异常丢弃，属未决波动。| 建议处置:按WAKE-PROTO落账归档；若降幅超容差，追读完整md确认根因；当前裸候。| 锚:该件存于lanes/qfa/inbox，可交叉history同类wave比对趋势。",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1180,
+    "total_tokens": 1394,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1063
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
