@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-05T06:32:10Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件：lanes/qfa/inbox 收讫 qtlv-eval-wave-6220cd5885be.md，摘要示巷卡 226→220，未展开细收。| 性态：单件裸候，属 wave 评估类 drop，内容未触发实测，无法确认 226→220 是号段迁移或指标缩减。| 建议处置：执行细收扫描该 md 全文，比对前序 wave 锚点，核实差异后裁决落账；若仅为号段映射更新，直接归档。| 锚：lanes/qtlv/ref:wave-schema-6220（他线锚，供波次结构对照）。",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1303,
+    "total_tokens": 1517,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1158
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
