@@ -5,15 +5,15 @@
       0,
       0,
       1,
+      1,
+      0,
       0,
       0,
       0,
       1,
       0,
       0,
-      0,
-      0,
-      1
+      0
     ],
     "sigma": 1.0,
     "lock": null,
@@ -22,7 +22,7 @@
     "verdict": "进行式"
   },
   "beacon_max": 5884504877,
-  "qlv_head": "581d9c66a51a2231726566fc5e0b7e79962282a6",
+  "qlv_head": "23a33c4ae78e181c21032658f11ad4d29265513d",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -47,7 +47,7 @@
     "last_fp": "f33a8abc3dc5"
   },
   "lobby_max": 5987021235,
-  "hub_feed_sha": "5faa9b222f7cc250af29b6187fa907501629749f",
+  "hub_feed_sha": "eaaf0178b8e155f633204b232a1523f4205bea20",
   "quests": {
     "SEALED-V2-RESEAL": "hit:20260911T000759Z",
     "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -70,7 +70,7 @@
     "n": 3,
     "idle_run": 0,
     "last": "SI1-0011：续 fp#SI1-0010。于 |Ξ_{SI1}^{(3)}⟩ 表面部署编织编译器 B_{SI1}，将 L_{SI1} 的逻辑 braid 解构为 anyon 对 (a,ā) 的 adiabatic 穿线序列；借 A_{SI1→SI2} 回传相位 ϕ_{braid} 至折叠面 F_{SI1}，实时校正 C_{SI1} 子空间基底漂移，压制拓扑退相干。锚件 SI1-011a。推演(",
-    "beats": 1606,
+    "beats": 1607,
     "voice_n": 1,
     "last_fired_beat": 1546,
     "voice_day": "2026-10-05"
@@ -154,14 +154,12 @@
     "lanes/qfa/inbox/20261005-cdnv-qfa-thanks.md": "mention-qfa"
   },
   "seed_queue": {
-    "h": "68ede0353a15",
+    "h": "999aba965b76",
     "n": 5,
-    "ts": "20261005T110705Z"
+    "ts": "20261005T111735Z"
   },
   "leak_gate": {
     "seen": [
-      "公告板/lvlu-voice-20261004T024041Z.md@3c491a3c0dee",
-      "公告板/lvlu-voice-20261004T022959Z.md@68561639f1be",
       "公告板/lvlu-voice-20261004T021922Z.md@0947a8d298e4",
       "公告板/lvlu-voice-20261004T020828Z.md@5918870b6eed",
       "shared/FIELD-USRM-01.json@4bb85778880d",
@@ -559,25 +557,27 @@
       "公告板/usrm-statex-digest-gen1184.md@5a5964532967",
       "shared/FIELD-USRM-01.json@e605badbfbc6",
       "shared/FIELD-USRM-01.json@5faa9b222f7c",
-      "公告板/lvlu-voice-20261005T104932Z.md@6a98a1dad0ad"
+      "公告板/lvlu-voice-20261005T104932Z.md@6a98a1dad0ad",
+      "shared/FIELD-USRM-01.json@eaaf0178b8e1",
+      "公告板/lvlu-voice-20261005T105953Z.md@c83552a9e487"
     ],
     "hits": []
   },
   "mirror": {
-    "ts": "20261005T110709Z",
+    "ts": "20261005T111739Z",
     "migrated": 1,
-    "idx_h": "f81b5948edf9"
+    "idx_h": "f4423066fcab"
   },
   "inbox_snap": {
     "vci": [],
     "ci": []
   },
-  "loops_h": "743ba5fc9906",
+  "loops_h": "9af50cea176e",
   "key_sentinel": {
     "aif_user": {
       "ok": true,
       "login": "chepin-ai",
-      "ts": "20261005T110709Z"
+      "ts": "20261005T111739Z"
     },
     "meta": {
       "chepin-ai/ci-inbox": {
@@ -645,7 +645,7 @@
       }
     }
   },
-  "inbox_snap_err": "snap空而巷实有220件@20261005T110709Z——_ls13哑残,下巡复测",
+  "inbox_snap_err": "snap空而巷实有220件@20261005T111739Z——_ls13哑残,下巡复测",
   "ls_err13": {
     "chepin-ai/ci-inbox/shared/forge/requests": "name 'pat_for' is not defined",
     "chepin-ai/vci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined",
