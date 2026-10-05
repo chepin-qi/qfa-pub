@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-05T06:10:18Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qtlv-eval-wave-6220cd5885be.md巷卡226→220，触发lane.drop| 性态:编号逆序漂移，非自然递增；属版本回滚或索引错位导致的仓位异动，未触发硬删除，呈静默态| 建议处置:①稽核commit链，确认226与220的回滚关系；②校验inbox索引一致性；③若属预期回滚，补录凭证并落账；若非预期，执行lane.restore并溯源| 锚:lanes/qtlv/eval-wave-registry",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1330,
+    "total_tokens": 1544,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1206
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
