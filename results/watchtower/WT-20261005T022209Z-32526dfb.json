@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-05T02:21:28Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5986914920",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment(ref=vci-inbox#1:5986914920)| 性态:SI2自动收讫，已触发升SI1候root会话；usage=2509tok/cap11/12逼近阈值，#noauto生效，属裸候态，未触发root响应，无越真机钱面| 建议处置:恪守AUTH-OTP-02裸候原则，不主动寻应；本件已落账扫描，lobby.comment线不做二次扩散，候root终裁| 锚:hub.feed同批#5986914920;lane.drop联线",
+  "usage": {
+    "prompt_tokens": 260,
+    "completion_tokens": 1493,
+    "total_tokens": 1753,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1358
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
