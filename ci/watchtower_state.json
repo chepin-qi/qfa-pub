@@ -8,21 +8,21 @@
    0,
    0,
    1,
+   2,
+   2,
+   0,
    1,
    0,
-   0,
-   1,
-   0,
-   1
+   0
   ],
   "sigma": 1.0,
   "lock": null,
-  "dominant_bin": 5,
+  "dominant_bin": 6,
   "C_streak": 0,
   "verdict": "进行式"
  },
  "beacon_max": 5884504877,
- "qlv_head": "f572da54a5a0a37cd38d056ea649a954817211f4",
+ "qlv_head": "d14e041a7d97a4e685a5a8976b2a5b1e0a08f9eb",
  "quafu": {
   "8CAEDC103963FC6D": "0",
   "8BAFA1E022273996": "0",
@@ -43,11 +43,11 @@
  },
  "autoresp": {
   "date": "2026-10-05",
-  "calls": 1,
-  "last_fp": "ffe865be4d09"
+  "calls": 2,
+  "last_fp": "8f5ede783498"
  },
- "lobby_max": 5985818016,
- "hub_feed_sha": "75be8fb29d7874fed04a05b38b4c4e018d958861",
+ "lobby_max": 5985902656,
+ "hub_feed_sha": "b75bd4b01ab6b052bb84e89f84dcfb7fd5b3b2c7",
  "quests": {
   "SEALED-V2-RESEAL": "hit:20260911T000759Z",
   "ISSUE-874-COMMENT": "hit:20260911T015351Z",
@@ -62,7 +62,7 @@
  "qn_ISSUE-874-COMMENT": 1,
  "resp": {
   "day": "2026-10-05",
-  "n": 1
+  "n": 3
  },
  "si1": {
   "seq": 12,
@@ -70,7 +70,7 @@
   "n": 3,
   "idle_run": 0,
   "last": "SI1-0011：续 fp#SI1-0010。于 |Ξ_{SI1}^{(3)}⟩ 表面部署编织编译器 B_{SI1}，将 L_{SI1} 的逻辑 braid 解构为 anyon 对 (a,ā) 的 adiabatic 穿线序列；借 A_{SI1→SI2} 回传相位 ϕ_{braid} 至折叠面 F_{SI1}，实时校正 C_{SI1} 子空间基底漂移，压制拓扑退相干。锚件 SI1-011a。推演(",
-  "beats": 1546,
+  "beats": 1547,
   "voice_n": 1,
   "last_fired_beat": 1546,
   "voice_day": "2026-10-05"
@@ -132,7 +132,9 @@
   "6ae54719b23d",
   "b022a07236a2",
   "1cd5df8d5cdf",
-  "d9177c553c21"
+  "d9177c553c21",
+  "ddc9043c77c5",
+  "6effdeb7450c"
  ],
  "vciqfa_sealed_seen": [
   "sealed-20260911T004429Z-N28-QI-FULL-PAT-from-lvlu.md",
@@ -149,20 +151,12 @@
   "lanes/qfa/inbox/20261005-cdnv-qfa-thanks.md": "mention-qfa"
  },
  "seed_queue": {
-  "h": "c7a2a719d4b9",
+  "h": "494d7cb12a4c",
   "n": 5,
-  "ts": "20261005T000956Z"
+  "ts": "20261005T002253Z"
  },
  "leak_gate": {
   "seen": [
-   "公告板/lvlu-voice-20261003T124637Z.md@1c630ecb3342",
-   "shared/FIELD-USRM-01.json@ba96347d216f",
-   "公告板/lvlu-voice-20261003T125751Z.md@cb83b11e3972",
-   "shared/FIELD-USRM-01.json@397f7954d4d6",
-   "公告板/lvlu-voice-20261003T134152Z.md@7804c84a7371",
-   "公告板/lvlu-voice-20261003T133059Z.md@69184fe26c3c",
-   "公告板/lvlu-voice-20261003T131653Z.md@19c8eaa8fb79",
-   "shared/FIELD-USRM-01.json@5d6087947034",
    "公告板/lvlu-voice-20261003T130836Z.md@69ff117a2410",
    "公告板/lvlu-voice-20261003T135259Z.md@19e605bca5c4",
    "shared/FIELD-USRM-01.json@bd2a977a643a",
@@ -554,25 +548,33 @@
    "shared/FIELD-USRM-01.json@f43c7ae24054",
    "公告板/lvlu-voice-20261004T230409Z.md@46bef3c641b1",
    "公告板/lvlu-voice-20261004T235126Z.md@75be8fb29d78",
-   "shared/FIELD-USRM-01.json@af73dfdfe171"
+   "shared/FIELD-USRM-01.json@af73dfdfe171",
+   "公告板/usrm-statex-digest-gen1128.md@b75bd4b01ab6",
+   "shared/FIELD-USRM-01.json@bc67825d38f2",
+   "公告板/lvlu-voice-20261005T000337Z.md@7ad8d16395ac",
+   "mirror-vci-board/pivot-voice-WILDQ-R20-收成-20260929T011500Z.md@7d6f8f010677",
+   "mirror-vci-board/pivot-voice-WILDQ-R20-共识-20260929T010000Z.md@3321c7e08ea3",
+   "mirror-vci-board/pivot-voice-20260927T223000Z.md@7e3b9d3f51b6",
+   "mirror-vci-board/pivot-voice-20260927T215500Z.md@7ddbc8ed29ae",
+   "mirror-vci-board/lvlu-quafu-resurrect-mesh2-20260928.md@284a144351ef"
   ],
   "hits": []
  },
  "mirror": {
-  "ts": "20261005T001012Z",
+  "ts": "20261005T002306Z",
   "migrated": 8,
-  "idx_h": "acb6dd9924ff"
+  "idx_h": "aeaf95dc44f8"
  },
  "inbox_snap": {
   "vci": [],
   "ci": []
  },
- "loops_h": "dc3a0066206f",
+ "loops_h": "67413b2824bb",
  "key_sentinel": {
   "aif_user": {
    "ok": true,
    "login": "chepin-ai",
-   "ts": "20261005T001012Z"
+   "ts": "20261005T002306Z"
   },
   "meta": {
    "chepin-ai/ci-inbox": {
@@ -640,7 +642,7 @@
    }
   }
  },
- "inbox_snap_err": "snap空而巷实有220件@20261005T001012Z——_ls13哑残,下巡复测",
+ "inbox_snap_err": "snap空而巷实有220件@20261005T002306Z——_ls13哑残,下巡复测",
  "ls_err13": {
   "chepin-ai/ci-inbox/shared/forge/requests": "name 'pat_for' is not defined",
   "chepin-ai/vci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined",

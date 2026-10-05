@@ -1,0 +1,29 @@
+{
+  "ts": "2026-10-05T00:21:14Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5985901731",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment批量到件(ref=vci-inbox#1:5985901731)，联包含qlv.beat/lane.drop/hub.feed/si1.seed.put共五类，SI2自动收讫，usage=2476tok cap=1/12。| 性态:多源异构事件聚合，自动段已扫描；#noauto标记升SI1候root会话，当前未触发主动响应，属裸候态。| 建议处置:按WAKE-PROTO完成本件落账，维持裸候不刷屏；token余量充足，候root深裁或下行指令，严守诚实边界不越真机钱面。| 锚:锚vci-inbox#1:5985901731至hub.feed线备SI1回溯。",
+  "usage": {
+    "prompt_tokens": 260,
+    "completion_tokens": 1518,
+    "total_tokens": 1778,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1344
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden",
+  "resp": "收讫。lobby.comment 及联动事件 ['qlv.beat', 'lane.drop', 'hub.feed', 'si1.seed.put'] 已落格。深裁件升 SI1 候 root 会话；usage=2476 tok，cap=1/12。件文空，#noauto 下 SI2 不越钱面，无实测、不编数，直陈锚定。\n\n【锚】lobby.comment | vci-inbox#1:5985901731 | 自动段判词",
+  "resp_usage": {
+    "prompt_tokens": 215,
+    "completion_tokens": 1490,
+    "total_tokens": 1705,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1375
+    }
+  },
+  "resp_posted": "5986007620"
+}
