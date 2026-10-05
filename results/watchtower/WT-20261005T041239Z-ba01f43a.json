@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-05T04:12:21Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lane.drop，qtlv-eval-wave-6220cd5885be.md由巷卡226迁220| 性态:qtlv评估波次文件编号迁移，未实测内容，属纯地址落位/冷件| 建议处置:按AUTH-OTP-02落账，裸候，不主动求应，待实测数据到件再裁决| 锚:lanes/qtlv/eval-wave基准线",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 1068,
+    "total_tokens": 1282,
+    "completion_tokens_details": {
+      "reasoning_tokens": 968
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
