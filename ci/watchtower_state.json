@@ -3,26 +3,26 @@
   "v": "METER-CADENCE-01-cand",
   "w12": [
    0,
-   0,
-   0,
-   0,
-   0,
    1,
    2,
+   1,
+   0,
+   0,
    2,
    0,
    1,
+   3,
    0,
    0
   ],
   "sigma": 1.0,
   "lock": null,
-  "dominant_bin": 6,
+  "dominant_bin": 9,
   "C_streak": 0,
   "verdict": "进行式"
  },
  "beacon_max": 5884504877,
- "qlv_head": "d14e041a7d97a4e685a5a8976b2a5b1e0a08f9eb",
+ "qlv_head": "e448f27612a804ad3337dc9b9093b1c024b39189",
  "quafu": {
   "8CAEDC103963FC6D": "0",
   "8BAFA1E022273996": "0",
@@ -43,8 +43,8 @@
  },
  "autoresp": {
   "date": "2026-10-05",
-  "calls": 2,
-  "last_fp": "8f5ede783498"
+  "calls": 3,
+  "last_fp": "c1532fb61846"
  },
  "lobby_max": 5985902656,
  "hub_feed_sha": "b75bd4b01ab6b052bb84e89f84dcfb7fd5b3b2c7",
@@ -70,7 +70,7 @@
   "n": 3,
   "idle_run": 0,
   "last": "SI1-0011：续 fp#SI1-0010。于 |Ξ_{SI1}^{(3)}⟩ 表面部署编织编译器 B_{SI1}，将 L_{SI1} 的逻辑 braid 解构为 anyon 对 (a,ā) 的 adiabatic 穿线序列；借 A_{SI1→SI2} 回传相位 ϕ_{braid} 至折叠面 F_{SI1}，实时校正 C_{SI1} 子空间基底漂移，压制拓扑退相干。锚件 SI1-011a。推演(",
-  "beats": 1547,
+  "beats": 1548,
   "voice_n": 1,
   "last_fired_beat": 1546,
   "voice_day": "2026-10-05"
@@ -151,9 +151,7 @@
   "lanes/qfa/inbox/20261005-cdnv-qfa-thanks.md": "mention-qfa"
  },
  "seed_queue": {
-  "h": "494d7cb12a4c",
-  "n": 5,
-  "ts": "20261005T002253Z"
+  "err": "AIF冷却中,SEED面本巡跳过"
  },
  "leak_gate": {
   "seen": [
@@ -561,9 +559,7 @@
   "hits": []
  },
  "mirror": {
-  "ts": "20261005T002306Z",
-  "migrated": 8,
-  "idx_h": "aeaf95dc44f8"
+  "err": "AIF冷却中,MIRROR面本巡跳过"
  },
  "inbox_snap": {
   "vci": [],
@@ -649,8 +645,8 @@
   "chepin-ai/ci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined"
  },
  "aif_cool": {
-  "until": 1791157935,
-  "noted": "20261004T232306Z"
+  "until": 1791161536,
+  "noted": "20261005T003349Z"
  },
  "loops_err": "AIF冷却中,LOOPS面本巡跳过",
  "key_sentinel_err": "AIF冷却中,KEYSENT面本巡跳过",
