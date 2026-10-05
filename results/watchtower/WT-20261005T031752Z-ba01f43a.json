@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-05T03:17:29Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lane.drop",
+    "ref": "lanes/qfa/inbox:qtlv-eval-wave-6220cd5885be.md",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:qtlv-eval-wave-6220cd5885be.md 巷卡 226→220, lane.drop 6卡| 性态:评估波次迭代瘦身,属预期内收缩;未触发异常响应,无钱面涉越| 建议处置:①核验6卡删除清单与评估范围一致性 ②确认无悬停任务遗留 ③落账归档,裸候下波| 锚:lanes/qfa/archive:qtlv-baseline-VOID.md",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 826,
+    "total_tokens": 1040,
+    "completion_tokens_details": {
+      "reasoning_tokens": 715
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
