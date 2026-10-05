@@ -1,0 +1,19 @@
+{
+  "ts": "2026-10-05T02:09:18Z",
+  "clock": "VOID",
+  "event": {
+    "kind": "lobby.comment",
+    "ref": "vci-inbox#1:5986812233",
+    "high_value": true
+  },
+  "verdict": "【WT判词】事件:lobby.comment丛集(qlv.beat/lane.drop/lobby.comment×3)抵qfa SI2,ref=vci-inbox#1:5986812233|性态:深裁件,qtlv EVAL-WAVE-01巷卡与sealed/hub.poll.err汇总件超SI2裁量,STANDING无涉我债项|建议处置:升SI1候root会话,不落账|锚:root会话/SI1深裁线",
+  "usage": {
+    "prompt_tokens": 366,
+    "completion_tokens": 1132,
+    "total_tokens": 1498,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1022
+    }
+  },
+  "beacon_error": "HTTP Error 403: Forbidden"
+}
