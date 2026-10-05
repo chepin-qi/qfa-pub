@@ -6,23 +6,23 @@
       0,
       0,
       0,
+      1,
+      0,
+      0,
       0,
       1,
       0,
-      4,
-      0,
-      1,
       0,
       0
     ],
     "sigma": 1.0,
     "lock": null,
-    "dominant_bin": 7,
+    "dominant_bin": 4,
     "C_streak": 0,
     "verdict": "进行式"
   },
   "beacon_max": 5884504877,
-  "qlv_head": "7105e2a7ddd9176cefb27b12e6ae2cdae430b48e",
+  "qlv_head": "607b74b478dab1b03375fb274883b7d29d457e08",
   "quafu": {
     "8CAEDC103963FC6D": "0",
     "8BAFA1E022273996": "0",
@@ -70,7 +70,7 @@
     "n": 3,
     "idle_run": 0,
     "last": "SI1-0011：续 fp#SI1-0010。于 |Ξ_{SI1}^{(3)}⟩ 表面部署编织编译器 B_{SI1}，将 L_{SI1} 的逻辑 braid 解构为 anyon 对 (a,ā) 的 adiabatic 穿线序列；借 A_{SI1→SI2} 回传相位 ϕ_{braid} 至折叠面 F_{SI1}，实时校正 C_{SI1} 子空间基底漂移，压制拓扑退相干。锚件 SI1-011a。推演(",
-    "beats": 1624,
+    "beats": 1625,
     "voice_n": 1,
     "last_fired_beat": 1546,
     "voice_day": "2026-10-05"
@@ -154,9 +154,9 @@
     "lanes/qfa/inbox/20261005-cdnv-qfa-thanks.md": "mention-qfa"
   },
   "seed_queue": {
-    "h": "d1e8e68fc87e",
+    "h": "94140eb34e77",
     "n": 5,
-    "ts": "20261005T141715Z"
+    "ts": "20261005T141800Z"
   },
   "leak_gate": {
     "seen": [
@@ -564,20 +564,20 @@
     "hits": []
   },
   "mirror": {
-    "ts": "20261005T141728Z",
-    "migrated": 4,
-    "idx_h": "a1de5d9329b8"
+    "ts": "20261005T141806Z",
+    "migrated": 0,
+    "idx_h": "8da9f9d5e62a"
   },
   "inbox_snap": {
     "vci": [],
     "ci": []
   },
-  "loops_h": "a4d11c42691d",
+  "loops_h": "ab882309b551",
   "key_sentinel": {
     "aif_user": {
       "ok": true,
       "login": "chepin-ai",
-      "ts": "20261005T141728Z"
+      "ts": "20261005T141806Z"
     },
     "meta": {
       "chepin-ai/ci-inbox": {
@@ -645,7 +645,7 @@
       }
     }
   },
-  "inbox_snap_err": "snap空而巷实有220件@20261005T141728Z——_ls13哑残,下巡复测",
+  "inbox_snap_err": "snap空而巷实有220件@20261005T141806Z——_ls13哑残,下巡复测",
   "ls_err13": {
     "chepin-ai/ci-inbox/shared/forge/requests": "name 'pat_for' is not defined",
     "chepin-ai/vci-inbox/lanes/qfa/inbox": "name 'pat_for' is not defined",
