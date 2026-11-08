@@ -3,7 +3,7 @@
  "ignited": "beat-42",
  "day": "2026-11-08",
  "beats_today": 1,
- "empty_streak": 0,
+ "empty_streak": 1,
  "last": {
   "inbox_len": "41",
   "inbox_max": "38",
@@ -23,7 +23,7 @@
  "ecap_prev": "2e434990ec0215e8ac9e034813b66b7ba1b90da592ef69082b13d5ecf648e5de",
  "ecap_seq": 175,
  "note": "v1.2 dampened 2026-09-07: v1.1 noise-runaway 41 beats in 2h (face-churn as events, cap leaked via state-push races) — 案在账不抹史; counter restarted 6/12",
- "last_run": "2026-11-08T17:12:21Z",
+ "last_run": "2026-11-08T17:13:59Z",
  "event_beats_today": 1,
  "fired_events": {
   "inbox_len": "41",
